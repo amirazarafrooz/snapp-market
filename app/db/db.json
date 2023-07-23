@@ -1,0 +1,79 @@
+{
+  "products": [
+    { 
+      "id": 110001,
+      "name": "json-server",
+      "mainCategory": "dairy-product",
+      "subCategory": 990001,
+      "brand":330002,
+      "unit":"litr",
+      "quantity":"1",
+      "seller":220001,
+      "currencyunit":"تومان",
+      "price":28500,
+      "discount":"25%",
+      "tags":["ساده","کم چرب"],
+      "instock" : 10,
+      "images" : [
+        "https://api.snapp.market/media/cache/product-variation_image2/uploads/images/vendors/users/app/6321c5faae6f7.jpg",
+        "https://api.snapp.market/media/cache/product-variation_image2/uploads/images/vendors/users/app/20220914-390471-20.jpg"]
+     }
+  ],
+  "categories":[
+    {"id":990001,
+    "name":"milk",
+    "parentCategory":"dairy-product"
+  }
+  ],
+  "brands":[
+    {
+      "id":330001,
+      "name":"kale"
+    },
+    {
+      "id":330002,
+      "name":"rozaneh"
+    }
+  ],
+  "captions": [
+    { "id": 660001,"category":"dairy-product|990001" ,"body": "some comment", "title": "لبنیات و خرید لبنیات", "subcaption": [{"title":"انواع لبنیات", "body": "some comment"},
+                                                                                                                                {"title":"خواص لبنیات", "body": "some comment"}]}
+  ],
+  "campaigns": [
+    {
+      "id":550001,
+      "name": "Sale",
+      "type":"swiper|1Banner|3Banner",
+      "title":"حراج اول ماه",
+      "caption":"برای کل ماهت، به صرفه خرید کن!",
+      "hasButton":true,
+      "buttonData":[{
+        "buttonText":"مشاهده همه محصولات",
+        "buttonUrl":"",
+        "buttonIcon":"leftArrow"
+      }],
+      "hasTag":true,
+      "tagData":[{
+        "tagText":"تخفیف تا 50%",
+        "tagBackColor":"red"
+      }],
+      "campaignTarget":"discount|subcategory|brand",
+      "campaignProducts":[110001,110002]
+      }
+    ],
+  "markets": [
+    { 
+      "id": 220001, "name": "hyperstar saba", "type": "grocery"
+    }],
+    "users": 
+     [ 
+      { "id": 440001, "name": "Ehsan" }
+  ]
+  
+}
+
+
+
+
+
+
