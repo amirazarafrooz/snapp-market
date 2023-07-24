@@ -1,0 +1,296 @@
+{
+  "products": [
+    {
+      "id": 110001,
+      "name": "شیر کم چرب مدت دار روزانه ۱ لیتری",
+      "category": { "main": "لبنیات", "sub": "شیر" },
+      "brand": "روزانه",
+      "quantity": "۱ لیتر",
+      "seller": "هایپراستار",
+      "price": "38٬000 تومان",
+      "inStock": 10,
+      "discount": 25,
+      "campaignType": "discount",
+      "tags": ["ساده", "کم چرب"],
+      "images": [
+        "https://api.snapp.market/media/cache/product_variation_transparent_image/20230214-204889-20000.png",
+        "https://api.snapp.market/media/cache/product-variation_image_thumbnail/uploads/images/vendors/users/app/608e67349312d.jpg",
+        "https://api.snapp.market/media/cache/product-variation_image_thumbnail/uploads/images/vendors/users/app/5d88723f7508a.jpg"
+      ]
+    }
+  ],
+  "campaigns": [
+    {
+      "id": 330001,
+      "type": "swiper",
+      "title": "حراج اول ماه",
+      "caption": "برای کل ماهت، به صرفه خرید کن!",
+      "buttonData": [
+        { "buttonText": "مشاهده همه محصولات", "buttonIcon": "leftArrow" }
+      ],
+      "tagData": [{ "tagText": "تخفیف تا 50%", "tagBackColor": "red" }],
+      "campaignTarget": "discount",
+      "images": []
+    },
+    {
+      "id": 330002,
+      "type": "1Banner",
+      "title": "",
+      "caption": "",
+      "buttonData": [],
+      "tagData": [],
+      "campaignTarget": "discount|subcategory|brand",
+      "images": [
+        "https://api.snapp.market/uploads/images/mobile-sliders/646db13b6b2fe.jpg"
+      ]
+    },
+    {
+      "id": 330003,
+      "type": "swiper",
+      "title": "شیر",
+      "caption": "",
+      "buttonData": [],
+      "tagData": [],
+      "campaignTarget": "subCategory",
+      "subCategoryName": "شیر",
+      "images": []
+    },
+    {
+      "id": 330004,
+      "type": "swiper",
+      "title": "نوشابه",
+      "caption": "",
+      "buttonData": [],
+      "tagData": [],
+      "campaignTarget": "subCategory",
+      "subCategoryName": "نوشابه",
+      "images": []
+    },
+    {
+      "id": 330005,
+      "type": "3Banner",
+      "title": "تخفیف های مارکتی",
+      "caption": "",
+      "buttonData": [],
+      "tagData": [],
+      "campaignTarget": "subCategory",
+      "subCategoryName": "پنیرآشپزی|لوازم یکبار مصرف|نوشابه",
+      "images": [
+        "https://api.snapp.market/uploads/images/mobile-sliders/64bae62b808dd.jpg",
+        "https://api.snapp.market/uploads/images/mobile-sliders/64bae6454dccb.jpg",
+        "https://api.snapp.market/uploads/images/mobile-sliders/64bae658549dc.jpg"
+      ]
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 330001,
+      "main": "dairy-product",
+      "mainFA": "لبنیات",
+      "subs": ["شیر", "پنیر", "ماست", "دوغ", "کره", "خامه", "کشک"]
+    },
+    {
+      "id": 330002,
+      "main": "drinks",
+      "mainFA": "نوشیدنی",
+      "subs": [
+        "نوشابه",
+        "ماءالشعیر",
+        "آبمیوه",
+        "چای و دمنوش",
+        "آب",
+        "قهوه و هات چاکلت",
+        "نوشیدنی انرژی زا",
+        "شربت",
+        "عرقیجات"
+      ]
+    },
+    {
+      "id": 330003,
+      "main": "fruit-and-vegetables",
+      "mainFA": "میوه و سبزیجات تازه",
+      "subs": ["میوه تازه", "سبزیجات و صیفی جات"]
+    },
+    {
+      "id": 330004,
+      "main": "nuts",
+      "mainFA": "خشکبار، دسر و شیرینی",
+      "subs": [
+        "دسر",
+        "آجیل",
+        "خرما",
+        "ژله",
+        "خشکبار",
+        "پودر کیک و پنکیک",
+        "انواع شیرینی"
+      ]
+    },
+    {
+      "id": 330005,
+      "main": "fashion",
+      "mainFA": "مد و پوشاک",
+      "subs": ["لباس زیر"]
+    },
+    {
+      "id": 330006,
+      "main": "grocery-bread",
+      "mainFA": "خواربار و نان",
+      "subs": [
+        "روغن",
+        "ماکارونی و لازانیا و رشته",
+        "برنج",
+        "رب",
+        "حبوبات و سویا",
+        "انواع نان",
+        "قند و شکر و نبات",
+        "پودر سوخاری و آرد",
+        "غلات"
+      ]
+    },
+    {
+      "id": 330007,
+      "main": "proteins",
+      "mainFA": "مواد پروتئینی",
+      "subs": [
+        "تخم مرغ و ماکیان",
+        "مرغ",
+        "گوشت قرمز",
+        "ماهی و میگو",
+        "سوسیس و کالباس"
+      ]
+    },
+    {
+      "id": 330008,
+      "main": "canned-food",
+      "mainFA": "کنسرو و غذای آماده",
+      "subs": [
+        "تن ماهی",
+        "غذای آماده مصرف",
+        "غذای نیمه آماده",
+        "کنسرو و کمپوت",
+        "فرآورده های منجمد یخچالی",
+        "انواع خمیر"
+      ]
+    },
+    {
+      "id": 330009,
+      "main": "home-and-lifestyle",
+      "mainFA": "خانه و سبک زندگی",
+      "subs": [
+        "لوازم آشپزخانه",
+        "لوازم یکبارمصرف",
+        "لوازم خانه",
+        "کالای حمام و سرویس بهداشتی",
+        "ابزار آلات و یراق آلات",
+        "باغبانی",
+        "گردش و سفر",
+        "ورزش و بازی",
+        "خودرو، موتور سیکلت و دوچرخه"
+      ]
+    },
+    {
+      "id": 330010,
+      "main": "digital-appliances",
+      "mainFA": "لوازم برقی و دیجیتال",
+      "subs": [
+        "باتری، محافظ و رابط",
+        "باتری، محافظ و رابط",
+        "باتری، محافظ و رابط",
+        "لوازم برقی آشپزخانه",
+        "لوازم برقی شخصی"
+      ]
+    },
+    {
+      "id": 330011,
+      "main": "detergent",
+      "mainFA": "دستمال و شوینده",
+      "subs": [
+        "دستمال کاغذی",
+        "دستمال حوله ای و آشپزخانه",
+        "دستمال توالت",
+        "نظافت خانه و آشپزخانه",
+        "پاک کننده و ضدعفونی کننده سرویس بهداشتی",
+        "شستشوی ظروف",
+        "شستشوی لباس",
+        "فوم و مایع دستشویی"
+      ]
+    },
+    {
+      "id": 330012,
+      "main": "health-and-beauty",
+      "mainFA": "آرایشی و بهداشتی",
+      "subs": [
+        "محصولات آرایشی",
+        "بهداشت و مراقبت صورت",
+        "شامپو و مراقبت مو",
+        "آرایش مو",
+        "بهداشت و مراقبت بدن",
+        "بهداشت دهان",
+        "عطر و ادکلن",
+        "اصلاح صورت و بدن",
+        "بهداشت جنسی",
+        "اسپری و ضدتعریق",
+        "بهداشت زنان"
+      ]
+    },
+    {
+      "id": 330013,
+      "main": "breakfast",
+      "mainFA": "صبحانه",
+      "subs": [
+        "عسل",
+        "مربا",
+        "حلوا ارده و شیره",
+        "شکلات صبحانه",
+        "غلات صبحانه",
+        "کره بادام زمینی"
+      ]
+    },
+    {
+      "id": 330014,
+      "main": "kids",
+      "mainFA": "کودک و نوزاد",
+      "subs": [
+        "پوشک کودک",
+        "مواد غذایی کودک",
+        "بهداشت کودک",
+        "لوازم کودک و نوزاد",
+        "اسباب بازی کودک"
+      ]
+    },
+    {
+      "id": 330015,
+      "main": "junk-food",
+      "mainFA": "تنقلات",
+      "subs": [
+        "بیسکویت و ویفر",
+        "چیپس",
+        "کیک و کلوچه",
+        "پفک و اسنک",
+        "شکلات و آبنبات",
+        "پاستیل و آدامس",
+        "آجیل تک و مغز آجیل",
+        "پاپ کورن و گندمک",
+        "آلوچه و لواشک",
+        "نی شیر"
+      ]
+    },
+    {
+      "id": 330015,
+      "main": "condiment",
+      "mainFA": "چاشنی و افزودنی",
+      "subs": [
+        "سس",
+        "ادویه",
+        "خیارشور و زیتون",
+        "آبلیمو و سرکه و آبغوره",
+        "ترشی و شور",
+        "افزودنی های شیرینی پزی",
+        "زعفران",
+        "سبزیجات خشک و سرخ شده",
+        "سایر افزودنی ها"
+      ]
+    }
+  ]
+}

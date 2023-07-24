@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "start-json": "json-server --watch ./app/db/db.json --port 8000"
+    "start-json": "json-server --watch ./db/db.json --port 8000"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
