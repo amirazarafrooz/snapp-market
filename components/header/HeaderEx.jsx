@@ -6,6 +6,8 @@ import marketlogo from "../../public/assets/images/market-logo.jpg";
 import clock from "../../public/assets/images/clock-icon.svg";
 import delivery from "../../public/assets/images/delivery-icon.svg";
 import search from "../../public/assets/images/search-icon.svg";
+import { SearchBar } from "./SearchBar";
+import { UserProfile } from "./UserProfile";
 
 export const HeaderEx = () => {
   return (
@@ -51,30 +53,13 @@ export const HeaderEx = () => {
               </span>
             </div>
           </div>
+          {/* userProfile and cartBtn container */}
           <div className="flex items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              width="32"
-              height="32"
-              fill="currentColor"
-              className="ml-[10px]"
-              viewBox="0 0 32 32"
-              style={{ width: 18, height: 18 }}
-            >
-              <defs>
-                <symbol id="UserIcon" viewBox="0 0 32 32">
-                  <path d="M27.313 20.688a15.92 15.92 0 00-6.083-3.817 9.244 9.244 0 003.602-10.367 9.247 9.247 0 00-8.836-6.508 9.246 9.246 0 00-8.832 6.508 9.244 9.244 0 003.602 10.367A16.03 16.03 0 00-.004 32h2.5c0-7.457 6.047-13.5 13.5-13.5 7.457 0 13.5 6.043 13.5 13.5h2.5a15.88 15.88 0 00-4.683-11.313zM15.995 16a6.752 6.752 0 01-6.75-6.75 6.752 6.752 0 016.75-6.75 6.75 6.75 0 110 13.5zm0 0"></path>
-                </symbol>
-              </defs>
-              <use fill="#FFF" href="#UserIcon" xlinkHref="#UserIcon"></use>
-            </svg>
-            <span className="hidden tablet:text-snp-light tablet:w-24 tablet:truncate tablet:block tablet:ml-2 font-iransansl " >پایونیر تیم گروه دوم</span>
-            <div>
-              <button className=" hidden md:bg-snp-light rounded text-snp-primary px-6 py-2 font-iransansl tablet:w-36 tablet:block">
-                سبد خرید
-              </button>
-            </div>
+          {/* user info  */}
+          <UserProfile headerId={"HeaderEx"}/>
+            <button className=" hidden tablet:bg-snp-light rounded text-snp-primary px-6 py-2 font-iransansl tablet:w-36 tablet:block">
+              سبد خرید
+            </button>
           </div>
         </div>
       </div>
@@ -137,14 +122,7 @@ export const HeaderEx = () => {
                 <button className="w-32 h-10 ml-[10px] bg-white font-iransans text-sm rounded-md hidden tablet:block">دسته بندی ها</button>
             </div>
             {/* Search box */}
-            <div className="flex  items-center  p-2 w-full" >
-                <form className="relative flex  items-center w-full">
-                    <input type="text" className="block w-full  h-9 font-iransans rounded-full indent-10 placeholder-gray-900 text-xs tablet:w-96 tablet:h-10" placeholder="جست و جوی برند یا محصول"></input>
-                    <button className="absolute flex  justify-center items-center w-10"><Image alt="search button" src={search}/></button>
-                    {/* <input type="text" id="large-input" class="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/> */}
-
-                </form>
-            </div>
+            <SearchBar device={'mobile'}/>
       </div>
       </div>
     </div>
