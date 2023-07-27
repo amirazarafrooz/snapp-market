@@ -1,5 +1,5 @@
 import './globals.css'
-
+import { Header } from '@/components/header/Header'
 
 export const metadata = {
   title: 'اسنپ مارکت',
@@ -8,8 +8,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fa">
-      <body>{children}</body>
+    <html lang="fa" dir="rtl">
+      <body>
+        <Header/>
+        {children}</body>
     </html>
   )
 }

@@ -6,28 +6,33 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors: {
-      'primary': '#0a2cdc',
-      'secondary': '#556ff7',
-      'light': '#e6e9fd',
-      'highdiscount': '#fa0f1b',
-      'lowdiscount': '#42B029',
-      'yellow': '#ffc82c',
-      'white': '#FFFFFF',
-      'black': '#000000',
-      'gray': '#CCCDD3',
-      'lightgray' : '#eeeeee',
-      'orange' : '#FDA058'
-    },
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-      iransans : ["iransans", 'sans-serif'],
-      iransansb : ["iransansbold", 'sans-serif'],
-      iransansl : ["iransanslight", 'sans-serif'],
-
-    },
+   
+ 
     extend: {
+      colors: {
+        'snp-primary': '#0a2cdc',
+        'snp-secondary': '#556ff7',
+        'snp-light': '#e6e9fd',
+        'snp-highdiscount': '#fa0f1b',
+        'snp-lowdiscount': '#42B029',
+        'snp-yellow': '#ffc82c',
+        'snp-white': '#FFFFFF',
+        'snp-black': '#000000',
+        'snp-gray': '#CCCDD3',
+        'snp-lightgray' : '#eeeeee',
+        'snp-orange' : '#FDA058'
+      },
+      fontFamily: {
+        sans: ['Graphik', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
+        iransans : ["iransans", 'sans-serif'],
+        iransansb : ["iransansbold", 'sans-serif'],
+        iransansl : ["iransanslight", 'sans-serif'],
+  
+      },
+      brightness: {
+        25: '.25',
+      },
       spacing: {
         '8xl': '96rem',
         '9xl': '128rem',
@@ -35,7 +40,25 @@ module.exports = {
       borderRadius: {
         '4xl': '2rem',
       },
-    }
+      width: {
+        '144' : '32rem',
+        '188' : '48rem',
+        '248' : '62rem',
+        '300' : '75rem'
+      },
+      screens: {
+        'tablet': '768px',
+        // => @media (min-width: 768px) { ... }
+  
+        'laptop': '992px',
+        // => @media (min-width: 992px) { ... }
+  
+        'desktop': '1200px',
+        // => @media (min-width: 1200px) { ... }
+      },
+  }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
