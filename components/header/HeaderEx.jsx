@@ -19,7 +19,7 @@ export const HeaderEx = () => {
     >
       {/*  upper row container  */}
       <div className="flex justify-center ">
-        <div className="w-144 h-12 flex border-b border-snp-lightgray border-opacity-25 justify-between px-2 pt-[2px] pb-[10px] tablet:w-188 laptop:w-248 desktop:w-300">
+        <div className="w-144 h-12 flex border-b border-snp-lightgray border-opacity-25 justify-between px-2 pt-[2px] pb-[10px] tablet:w-192 laptop:w-248 desktop:w-300">
           {/* right column */}
           <div className="flex">
             {/* logo */}
@@ -66,7 +66,7 @@ export const HeaderEx = () => {
 
       {/* middle row container */}
       <div className="flex justify-center  ">
-        <div className="flex  flex-col items-start  p-2 w-144 h-32 border-b border-snp-lightgray border-opacity-25 tablet:w-188 tablet:flex-row tablet:justify-between tablet:border-none tablet:h-24 laptop:w-248 desktop:w-300" >
+        <div className="flex  flex-col items-start  p-2 w-144 h-32 border-b border-snp-lightgray border-opacity-25 tablet:w-192 tablet:flex-row tablet:justify-between tablet:border-none tablet:h-24 laptop:w-248 desktop:w-300" >
           {/* market detail */}
           <div className="flex items-center justify-center mt-4 ">
             <Image
@@ -116,7 +116,7 @@ export const HeaderEx = () => {
 
       {/* Lower row container */}
       <div className=" flex justify-center tablet:w-full ">
-        <div className="flex  items-center  p-2 w-144 tablet:justify-start  tablet:w-188 laptop:w-248 desktop:w-300">
+        <div className="flex  items-center  p-2 w-144 tablet:justify-start  tablet:w-192 laptop:w-248 desktop:w-300">
         {/* Category btn */}
             <div className="">
                 <button className="w-32 h-10 ml-[10px] bg-white font-iransans text-sm rounded-md hidden tablet:block">دسته بندی ها</button>

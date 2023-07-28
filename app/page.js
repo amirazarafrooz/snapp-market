@@ -1,43 +1,39 @@
 import Image from 'next/image'
 import snappmarketlogo from "../public/assets/images/snappmarket-logo.svg"
+import { DiscountSwiper } from '@/components/DiscountSwiper/DiscountSwiper'
+import { CampaignSwiper } from '@/components/CampaignSwiper/CampaignSwiper'
 
 export default function Home() {
   return (
-<>
-    <main className=" flex flex-row gap-5 items-center justify-center p-5 h-96 bg-slate-500">
-       
-      <p className=' flex flex-row gap-5 items-center justify-center p-5 bg-snp-secondary rounded-lg shadow-md hover:shadow-md w-1/2 font-iransansb font-extrabold text-3xl text-white'>
-       اسنپ مارکت<Image src={snappmarketlogo} width={85} height={85}></Image> </p>
 
+    <main className='w-full h-screen flex justify-center'>
+
+      <div className='bg-gray-100 mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300 '>
+
+<div className='h-96 bg-yellow-300'> </div>
+<div className='h-96 bg-yellow-300'> </div>
+<div className='h-96 bg-yellow-300'> </div>
+<div className='h-96 bg-yellow-300'> </div>
+<div className='h-96 bg-yellow-300'> </div>
+<div className='h-96 bg-yellow-300'> </div>
+<div className='h-96 bg-yellow-300'> </div>
+
+      </div>
     </main>
 
-<main className=" flex flex-row gap-5 items-center justify-center p-5 h-96 bg-slate-500">
-       
-<p className=' flex flex-row gap-5 items-center justify-center p-5 bg-snp-secondary rounded-lg shadow-md hover:shadow-md w-1/2 font-iransansb font-extrabold text-3xl text-white'>
- اسنپ مارکت<Image src={snappmarketlogo} width={85} height={85}></Image> </p>
 
-</main>
 
-<main className=" flex flex-row gap-5 items-center justify-center p-5 h-96 bg-slate-500">
-       
-<p className=' flex flex-row gap-5 items-center justify-center p-5 bg-snp-secondary rounded-lg shadow-md hover:shadow-md w-1/2 font-iransansb font-extrabold text-3xl text-white'>
- اسنپ مارکت<Image src={snappmarketlogo} width={85} height={85}></Image> </p>
-
-</main>
-
-<main className=" flex flex-row gap-5 items-center justify-center p-5 h-96 bg-slate-500">
-       
-<p className=' flex flex-row gap-5 items-center justify-center p-5 bg-snp-secondary rounded-lg shadow-md hover:shadow-md w-1/2 font-iransansb font-extrabold text-3xl text-white'>
- اسنپ مارکت<Image src={snappmarketlogo} width={85} height={85}></Image> </p>
-
-</main>
-
-<main className=" flex flex-row gap-5 items-center justify-center p-5 h-96 bg-slate-500">
-       
-<p className=' flex flex-row gap-5 items-center justify-center p-5 bg-snp-secondary rounded-lg shadow-md hover:shadow-md w-1/2 font-iransansb font-extrabold text-3xl text-white'>
- اسنپ مارکت<Image src={snappmarketlogo} width={85} height={85}></Image> </p>
-
-</main>
-</>
-  )
+)
 }
+
+
+
+{/* <section className="w-full flex items-center justify-center bg-blue-700 py-6 px-4 rounded-md mt-10">
+  <DiscountSwiper />
+</section>
+<section className="mt-10">
+  <CampaignSwiper title={"با تخفیف بخر!"} />
+</section>
+<section className="mt-10">
+  <CampaignSwiper title={"شیر"} />
+</section> */}
