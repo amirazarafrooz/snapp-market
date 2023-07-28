@@ -1,3 +1,4 @@
+import { Providers } from '../redux/providers'
 import './globals.css'
 import { Header } from '@/components/header/Header'
 
@@ -10,8 +11,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
       <body>
+        <Providers>
         <Header/>
-        {children}</body>
+        {children}
+        </Providers>
+        </body>
     </html>
   )
 }
