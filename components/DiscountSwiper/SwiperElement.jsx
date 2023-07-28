@@ -57,9 +57,9 @@ export const SwiperElement = () => {
   }, []);
 
   return (
-    <div className="w-[45%] md:w-[65%] lg:w-[72%]">
+    <div className="w-[45%] md:w-[65%] lg:w-[80%]">
       <swiper-container ref={swiperElRef} autoHeight={true} init="false">
-        {/* <swiper-slide>
+        <swiper-slide>
           <div className="bg-white rounded-md overflow-hidden px-4 py-3 w-56 h-full">
             <div className="w-full h-full">
               <a href="#">
@@ -384,7 +384,7 @@ export const SwiperElement = () => {
               </div>
             </div>
           </div>
-        </swiper-slide> */}
+        </swiper-slide>
 
         <swiper-slide>
           <div className="bg-white text-black w-48 h-[360px] rounded ">
