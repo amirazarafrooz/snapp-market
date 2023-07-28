@@ -41,12 +41,15 @@ module.exports = {
         '4xl': '2rem',
       },
       width: {
-        '144' : '32rem',
-        '188' : '48rem',
-        '248' : '62rem',
-        '300' : '75rem'
+        '144' : '32rem', //576px
+        '192' : '48rem', //768px
+        '248' : '62rem', //992px
+        '300' : '75rem'  //1200px
       },
       screens: {
+        'mobile': '576px',
+        // => @media (min-width: 560px) { ... }
+
         'tablet': '768px',
         // => @media (min-width: 768px) { ... }
   

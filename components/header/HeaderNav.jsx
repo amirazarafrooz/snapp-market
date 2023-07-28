@@ -6,7 +6,7 @@ export const HeaderNav = () => {
     <>
       {/* navbar menu-scrolled */}
       <div className="hidden tablet:flex tablet:justify-center tablet:w-full tablet:bg-white shadow-2xl ">
-        <div className="tablet:flex tablet:justify-between tablet:items-center tablet:px-2 tablet:pt-4 tablet:pb-5 tablet:h-12  tablet:w-188 laptop:w-248 desktop:w-300">
+        <div className="tablet:flex tablet:justify-between tablet:items-center tablet:px-2 tablet:pt-4 tablet:pb-5 tablet:h-12  tablet:w-192 laptop:w-248 desktop:w-300">
           {/* right container */}
           <div className="tablet:flex ">
             <div className="tablet:w-25 tablet:flex tablet:justify-start tablet:items-center tablet:font-iransans tablet:text-sm tablet:ml-6">

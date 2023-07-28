@@ -27,7 +27,7 @@ export const HeaderSc = () => {
       >
         {/*  upper row container  */}
         <div className="flex justify-center tablet:items-center tablet:flex tablet:h-full  ">
-          <div className="w-144 h-12 flex border-b border-snp-lightgray border-opacity-25 justify-between px-2 pt-[2px] pb-[10px]  tablet:p-2 tablet:border-none tablet:justify-between tablet:w-188 laptop:w-248 desktop:w-300">
+          <div className="w-144 h-12 flex border-b border-snp-lightgray border-opacity-25 justify-between px-2 pt-[2px] pb-[10px]  tablet:p-2 tablet:border-none tablet:justify-between tablet:w-192 laptop:w-248 desktop:w-300">
             {/* right container */}
             <div className="flex  tablet:justify-start tablet:w-full desktop:justify-between ">
               {/* logo */}
@@ -117,7 +117,7 @@ export const HeaderSc = () => {
 
         {/* Lower row container */}
         <div className=" flex justify-center items-center h-14 tablet:w-full tablet:hidden laptop:hidden desktop:hidden ">
-          <div className="flex  items-center   w-144 tablet:justify-start  tablet:w-188 laptop:w-248 desktop:w-300">
+          <div className="flex  items-center   w-144 tablet:justify-start  tablet:w-192 laptop:w-248 desktop:w-300">
             
             {/* Search box */}
             <SearchBar device={'mobile'} />
