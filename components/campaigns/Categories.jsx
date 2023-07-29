@@ -12,16 +12,16 @@ export const Categories = () => {
 
     return (
         
-        <div className='flex flex-wrap gap-2 justify-center items-center'>
+        <div className='flex flex-wrap gap-2 justify-center items-center laptop:gap-4'>
             {categories.map((item) => (
-            <div className='flex items-center rounded-md h-20 w-[30%]  bg-snp-light'>
+            <div className='flex items-center rounded-lg h-20 w-[30%] bg-snp-light tablet:w-[23%] laptop:w-56 laptop:h-28 '>
                 
                 <Link className='flex items-center justify-start w-full p-2' href={`/${item.main}`}> 
                 
                 
-                <Image className='ml-2' width={53} height={53} src="https://api.snapp.market/uploads/images/mobile-sliders/63d636d2a3219.png"></Image>
+                <Image className='ml-2 laptop:w-24 laptop:h-24' width={53} height={53} src={item.image}></Image>
                 
-                <span className='font-iransans text-xs'>{item.mainFA} </span>
+                <span className='text-snp-lightblack font-iransans text-xs tablet:text-sm laptop:text-base'>{item.mainFA} </span>
                 </Link>
                 </div>))}
         </div>
