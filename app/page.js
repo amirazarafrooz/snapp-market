@@ -10,13 +10,13 @@ export default function Home() {
 
       <div className='bg-gray-100 mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300 '>
 
+{/* <div className='h-96 bg-yellow-300'> </div>
 <div className='h-96 bg-yellow-300'> </div>
 <div className='h-96 bg-yellow-300'> </div>
 <div className='h-96 bg-yellow-300'> </div>
 <div className='h-96 bg-yellow-300'> </div>
 <div className='h-96 bg-yellow-300'> </div>
-<div className='h-96 bg-yellow-300'> </div>
-<div className='h-96 bg-yellow-300'> </div>
+<div className='h-96 bg-yellow-300'> </div> */}
 
       </div>
     </main>
