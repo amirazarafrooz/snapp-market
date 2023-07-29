@@ -16,13 +16,13 @@ export default function Home() {
     
       <div className='w-full p-2 mt-6'> <div className=' bg-snp-secondary h-96 rounded-md'>swipper</div></div>
       <BannerCampaign bannercount={'maltich'}/>
+      <Categories/>
       <BannerCampaign bannercount={'sunich'}/>
       <div className='w-full p-2'> <div className=' bg-snp-secondary h-96 rounded-md'>swipper</div></div>
       <div className='w-full p-2'> <div className=' bg-snp-secondary h-96 rounded-md'>swipper</div></div>
       <BannerCampaign bannercount={'marketingDiscount'}/>
       <div className='w-full p-2'> <div className=' bg-snp-secondary h-96 rounded-md'>swipper</div></div>
       <BannerCampaign bannercount={'buyandcook'}/>
-      <Categories/>
 
 
 

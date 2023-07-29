@@ -2333,7 +2333,7 @@
       "main": "fruit-and-vegetables",
       "mainFA": "میوه و سبزیجات تازه",
       "subs": ["میوه تازه", "سبزیجات و صیفی جات"],
-      "images" : "https://api.snapp.market/uploads/images/mobile-sliders/63d632e6ce1c6.png"
+      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d632e6ce1c6.png"
     },
     {
       "id": 330004,
@@ -2365,7 +2365,7 @@
         "پودر سوخاری و آرد",
         "غلات"
       ],
-      "images" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50eca58e99.png"
+      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50eca58e99.png"
     },
     {
       "id": 330007,
@@ -2378,7 +2378,7 @@
         "ماهی و میگو",
         "سوسیس و کالباس"
       ],
-      "images" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50f5f2fe4d.png"
+      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50f5f2fe4d.png"
     },
     {
       "id": 330008,
@@ -2471,7 +2471,7 @@
         "غلات صبحانه",
         "کره بادام زمینی"
       ],
-      "images" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50fc8ee595.png"
+      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50fc8ee595.png"
     },
     {
       "id": 330014,
@@ -2502,7 +2502,7 @@
         "آلوچه و لواشک",
         "نی شیر"
       ],
-      "images" : "https://api.snapp.market/uploads/images/mobile-sliders/63d52f484a444.png"
+      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d52f484a444.png"
     },
     {
       "id": 330015,
