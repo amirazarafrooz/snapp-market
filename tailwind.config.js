@@ -21,7 +21,8 @@ module.exports = {
         'snp-gray': '#CCCDD3',
         'snp-lightgray' : '#eeeeee',
         'snp-orange' : '#FDA058',
-        'snp-lightblack' : '#1a1c23'
+        'snp-lightblack' : '#1a1c23',
+        'snp-bg-body' : '#FAFAFA'
       },
       fontFamily: {
         sans: ['Graphik', 'sans-serif'],
