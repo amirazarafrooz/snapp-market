@@ -32,14 +32,15 @@ export const HeaderSelector = () => {
 
     return (
         <>
-            {stickyClass==='hidden'?
-                <div className={`relative z-50`}><HeaderEx/></div>:
+            {/* {stickyClass==='hidden'? */}
+                <div className={`relative z-50`}><HeaderEx/></div>
+                {/* :
                 null
-                 }
+                 } */}
 
         <div className={stickyClass==='hidden'?
-           ` fixed left-0 top-0 w-full -translate-y-28 transition-all duration-700` :
-           ` fixed left-0 top-0 w-full translate-y-0 transition-all duration-700` }>
+           ` fixed left-0 top-0 w-full -translate-y-28 transition-all duration-700 z-50` :
+           ` fixed left-0 top-0 w-full translate-y-0 transition-all duration-700 z-50` }>
             <HeaderSc/>
         </div>
             <NavbarMobile/>
