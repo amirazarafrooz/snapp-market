@@ -8,7 +8,7 @@ import Link from "next/link";
 export const BannerCampaign = ({ bannercount }) => {
   return (
     <>
-    <div className=" w-full p-2 mt-2 mb-10 flex overflow-hidden">
+    <div className=" w-full p-2 mt-2  flex overflow-hidden">
      
      
       {bannercount === 'maltich' && (<div>
@@ -58,7 +58,7 @@ export const BannerCampaign = ({ bannercount }) => {
 
 {bannercount === 'marketingDiscount' && (
     <div>
-        <div className="mb-4 text-center mobile:text-right"><h1 className="font-iransansb">تخفیف های ویژه</h1> </div>
+        <div className="mb-4 text-center mobile:text-right"><h1 className="font-iransansb">تخفیف های مارکتی</h1> </div>
         <div className="flex flex-row gap-2  flex-wrap justify-center items-center tablet:gap-4 tablet:flex-nowrap ">
           <Link className=" mobile:w-[48%] tablet:w-1/3 " href="/"><Image className="rounded-md " width={382} height={198} src={"https://api.snapp.market/uploads/images/mobile-sliders/64c404a22ca54.jpg"}/></Link>
           <Link className=" mobile:w-[48%] tablet:w-1/3" href="/"><Image className="rounded-md " width={382} height={198} src={"https://api.snapp.market/uploads/images/mobile-sliders/64c404c40294d.jpg"}/></Link>
