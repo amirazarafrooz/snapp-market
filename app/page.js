@@ -5,6 +5,9 @@ import { CampaignSwiper } from '@/components/CampaignSwiper/CampaignSwiper'
 import { BannerCampaign } from '@/components/campaigns/BannerCampaign'
 import { Categories } from '@/components/campaigns/Categories'
 import { AboutSnappmarket } from '@/components/captions/about'
+import { ShoppingCard } from '@/components/ShoppingCard'
+import Button from '@/components/button/Button'
+
 
 
 export default function Home() {
@@ -14,8 +17,31 @@ export default function Home() {
         {/* main layout  */}
       <div className='mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300'>
       
-    
-      <div className='w-full p-2 mt-6'> <div className=' bg-snp-secondary h-96 rounded-md'>swipper</div></div>
+      <Button btnStyleparam={'categories'} >دسته‌بندی‌ها</Button>     
+      <Button btnStyleparam={'addtoCart'} >افزودن به سبد</Button>   
+      <Button btnStyleparam={'cart'} >سبد خرید</Button> 
+      <Button btnStyleparam={'finalizeorder'} >نهایی کردن خرید</Button>
+  
+
+
+      <div className='w-full p-2 mt-6'> 
+      
+      <div className=' bg-snp-secondary h-96 rounded-md'>
+        <div className='m-5 p-5'>
+      <Button btnStyleparam={'allProduct'} >مشاهده همه محصولات</Button>
+      
+      <Button btnStyleparam={'addtoCartR'} >افزودن به سبد</Button>
+      <Button btnStyleparam={'minus'}></Button>
+      <Button btnStyleparam={'plus'}></Button>
+      <Button btnStyleparam={'bin'}></Button>
+
+
+
+      
+      </div>
+        swipper</div>
+       
+      </div>
       <BannerCampaign bannercount={'maltich'}/>
       <Categories/>
       <BannerCampaign bannercount={'sunich'}/>
@@ -25,8 +51,6 @@ export default function Home() {
       <div className='w-full p-2'> <div className=' bg-snp-secondary h-96 rounded-md'>swipper</div></div>
       <BannerCampaign bannercount={'buyandcook'}/>
       <AboutSnappmarket/>
-
-
 
 
  {/* <div className='h-96 bg-yellow-300'>aaaa </div>
