@@ -9,11 +9,12 @@ export const Footer = () => {
   return (
     <div className="flex flex-col justify-center items-center font-iransans mt-6 mb-20">
       {/* upper section */}
-      <div className="flex flex-col w-144 justify-center tablet:w-192 laptop:w-248 desktop:w-300">
+      <div className="flex flex-col  justify-center tablet:w-192 laptop:w-248 gap-x-4 desktop:w-300 laptop:justify-between ">
         {/* privilege cards */}
-        <div className="flex flex-wrap justify-center items-center leading-7 w-144 px-2 py-6 tablet:flex-nowrap tablet:justify-center tablet:w-192 laptop:w-248  laptop:justify-around desktop:w-300 ">
-          <div className="flex flex-col justify-center items-center h-40 w-60 mobile:flex-row tablet:flex-col tablet:justify-center tablet:items-center tablet:w-44 tablet:px2 laptop:w-56 ">
-       <div className="w-16 h-16 flex justify-center items-center border-gray-100 border-solid border-2 rounded-md mobile:w-24 mobile:h-16 mobile:ml-3 tablet:w-16 tablet:h-24 laptop:w-20 laptop:h-16">  
+        <div className="flex flex-col justify-center items-center leading-7  px-2 py-6 tablet:flex-nowrap tablet:justify-center mobile:flex-col mobile:w-144 tablet:flex-row  tablet:w-192  laptop:w-248   desktop:w-300  ">
+            <div className="flex  w-full mobile:w-full tablet:w-1/2  desktop:justify-evenly ">
+          <div className="flex  flex-col justify-center items-center h-40  mobile:flex-row tablet:flex-col tablet:justify-center tablet:items-center tablet:w-44 tablet:px2 laptop:w-56 ">
+       <div className="w-16 h-16 flex justify-center items-center border-gray-100 border-solid border-2 rounded-md mobile:w-20 mobile:h-16 mobile:ml-3 tablet:w-16 tablet:h-20 laptop:w-16 laptop:h-16">  
        <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -48,15 +49,17 @@ export const Footer = () => {
         </symbol>
       </defs>
       <use fill="#757575" href="#SaleIcon" xlinkHref="#SaleIcon"></use>
-    </svg>
+        </svg>
+
+
             </div>
             <div className="flex flex-col justify-center items-center text-center mobile:text-right mobile:items-start tablet:items-center tablet:text-center ">
               <span className="mt-2 mobile:text-sm tablet:text-base">تخفیف بیشتر محصولات</span>
               <span className="mt-2 text-sm mobile:text-xs tablet:leading-8 text-gray-500">کالاها با قیمت کمتر از درج شده ارسال می‌شود</span>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center h-40 w-60 mobile:flex-row tablet:flex-col tablet:justify-center tablet:items-center tablet:w-44 tablet:px2 laptop:w-56 " >
-          <div className="w-16 h-16 flex justify-center items-center border-gray-100 border-solid border-2 rounded-md mobile:w-20 mobile:h-16 mobile:ml-3 tablet:w-16 tablet:h-24 laptop:w-20 laptop:h-16">
+          <div className="flex  flex-col justify-center items-center h-40  mobile:flex-row tablet:flex-col tablet:justify-center tablet:items-center tablet:w-44 tablet:px2 laptop:w-56 " >
+          <div className="w-16 h-16 flex justify-center items-center border-gray-100 border-solid border-2 rounded-md mobile:w-20 mobile:h-16 mobile:ml-3 tablet:w-16 tablet:h-20 laptop:w-16 laptop:h-16">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -101,8 +104,10 @@ export const Footer = () => {
               <span className="mt-2 mobile:text-xs text-sm  tablet:leading-8 text-gray-500">سفارشات شما در زمان مقرر ارسال می‌شود</span>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center h-40 w-60 mobile:flex-row tablet:flex-col tablet:justify-center tablet:items-center tablet:w-44 tablet:px2 laptop:w-56 " >
-          <div className="w-16 h-16 flex justify-center items-center border-gray-100 border-solid border-2 rounded-md mobile:w-24 mobile:h-16 mobile:ml-3 tablet:w-16 tablet:h-24 laptop:w-20 laptop:h-16">
+          </div>
+          <div className="flex tablet:w-1/2  desktop:justify-evenly gap-4 ">
+          <div className="flex  flex-col justify-center items-center h-40  mobile:flex-row tablet:flex-col tablet:justify-center tablet:items-center tablet:w-44 tablet:px2 laptop:w-56 " >
+          <div className="w-16 h-16 flex justify-center items-center border-gray-100 border-solid border-2 rounded-md mobile:w-20 mobile:h-16 mobile:ml-3 tablet:w-16 tablet:h-20 laptop:w-16 laptop:h-16">
           <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -145,11 +150,11 @@ export const Footer = () => {
             </div>
             <div className="flex flex-col justify-center items-center text-center mobile:text-right mobile:items-start tablet:items-center tablet:text-center">
               <span className="mt-2 mobile:text-sm tablet:text-base">ارسال بهترین کالاها</span>
-              <span className="mt-2 text-sm mobile:text-xs tablet:leading-8 text-gray-500 whitespace-nowrap ">محصولات ارسالی از بین بهترین‌ها گلچین می‌شود</span>
+              <span className="mt-2 text-sm mobile:text-xs tablet:leading-8 text-gray-500 laptop:whitespace-nowrap ">محصولات ارسالی از بین بهترین‌ها گلچین می‌شود</span>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center h-40 w-60 mobile:flex-row tablet:flex-col tablet:justify-center tablet:items-center tablet:w-44 tablet:px2 laptop:w-56 ">
-          <div className="w-16 h-16 flex justify-center items-center border-gray-100 border-solid border-2 rounded-md mobile:w-24 mobile:h-16 mobile:ml-3 tablet:w-16 tablet:h-24 laptop:w-20 laptop:h-16">
+          <div className="flex  flex-col justify-center items-center h-40  mobile:flex-row tablet:flex-col tablet:justify-center tablet:items-center tablet:w-44 tablet:px2 laptop:w-56 ">
+          <div className="w-16 h-16 flex justify-center items-center border-gray-100 border-solid border-2 rounded-md mobile:w-20 mobile:h-16 mobile:ml-3 tablet:w-16 tablet:h-20 laptop:w-16 laptop:h-16">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -187,6 +192,7 @@ export const Footer = () => {
               <span className="mt-2 text-sm mobile:text-xs  tablet:leading-8 text-gray-500">سفارشات با بسته‌بندی مناسب ارسال می‌شود</span>
             </div>
           </div>
+          </div>
         </div>
         {/* download app */}
         <div className="flex flex-col items-center tablet:items-start">
@@ -204,18 +210,18 @@ export const Footer = () => {
 
 
       {/* lower section */}
-      <div className="px-3 py-6 tablet:flex laptop:w-248 desktop:w-300">
-        <div className="flex">
+      <div className="px-3 py-6 tablet:flex laptop:w-248 desktop:w-300 laptop:flex laptop:justify-between">
+        <div className="flex  laptop:flex laptop:justify-between  laptop:w-192 desktop:w-248 ">
         {/* about us */}
         <div className="hidden px-2 mobile:block mobile:flex-auto">
-            <span>درباره‌ما</span>
-            <p className="text-sm leading-9 mobile:text-xs mobile:leading-7 mobile:flex-auto mobile:w-44 text-gray-500">اسنپ مارکت حاصل همکاری دو شرکت بزرگ اسنپ و‌هایپراستار است تا کالاهای مورد نیاز کاربران را در اسرع وقت برای آنها ارسال کند.</p>
+            <span className="laptop:text-base">درباره‌ما</span>
+            <p className="text-sm leading-9 mobile:text-xs mobile:leading-7 mobile:flex-auto mobile:w-44 text-gray-500 laptop:text-sm laptop:leading-7">اسنپ مارکت حاصل همکاری دو شرکت بزرگ اسنپ و‌هایپراستار است تا کالاهای مورد نیاز کاربران را در اسرع وقت برای آنها ارسال کند.</p>
             <span className="text-sm leading-9 text-gray-500"><a>هایپر استار</a> | <a>مایلی</a></span>
         </div>
         {/* accesses */}
         <div className="flex-auto px-2">
-            <span >دسترسی‌ها</span>
-            <ul className="text-sm leading-9 mobile:text-xs mobile:leading-7 mobile:flex-auto w-32   text-gray-500">
+            <span className="laptop:text-base">دسترسی‌ها</span>
+            <ul className="text-sm leading-9 mobile:text-xs mobile:leading-7 mobile:flex-auto w-32   text-gray-500 laptop:text-sm laptop:leading-7">
                 <li>درباره‌ما</li>
                 <li>وبلاگ</li>
                 <li>قوانین</li>
@@ -228,8 +234,8 @@ export const Footer = () => {
         </div>
         {/* contact us */}
         <div className="flex-auto px-2">
-            <span>تماس با ما</span>
-        <ul className="text-sm leading-9 text-gray-500 mobile:text-xs mobile:leading-7 mobile:flex-auto w-44">
+            <span className="laptop:text-base">تماس با ما</span>
+        <ul className="text-sm leading-9 text-gray-500 mobile:text-xs mobile:leading-7 mobile:flex-auto w-44 laptop:text-sm laptop:leading-7">
                 <li>تلفن : ۰۲۱۹۶۶۲۱۴۲۵</li>
                 <li><p>آدرس: خیابان ولیعصر بالاتر از اسفندیار خیابان سعیدی نبش کوچه مهردادپلاک۱ طبقه ۳</p></li>
                 <li>ایمیل : info@snapp.market</li>
@@ -282,12 +288,25 @@ export const Footer = () => {
         </div>
         </div>
         {/* certifications badge */}
-        <div className="flex justify-around  tablet:w-48 tablet:items-start tablet:pt-7 ">
-            <Image className="px-1 py-4 rounded-md shadow-md mobile:w-28 mobile:px-2 tablet:h-14 tablet:w-14 tablet:px-1 tablet:py-1" src={samandehi}></Image>
-            <Image className="px-1 py-4 rounded-md shadow-md mobile:w-28 mobile:px-2 mobile:py-6 tablet:h-14 tablet:w-14 tablet:px-1 tablet:py-1"  src={enamad}></Image>
-            <Image className="px-1 py-4 rounded-md shadow-md mobile:w-28 mobile:px-2 mobile:py-6 tablet:h-14 tablet:w-14 tablet:px-1 tablet:py-1"  src={kasbokar}></Image>
+        <div className="flex justify-around  tablet:w-48 laptop:w-96 tablet:items-start tablet:pt-7 gap-4 ">
+            <div className="px-1 py-4 rounded-md shadow-md mobile:w-28 mobile:px-2 mobile:py-6  tablet:h-14 tablet:w-14 tablet:px-1 tablet:py-1 laptop:w-32 laptop:h-36">
+            <Image src={samandehi}></Image>
+            </div>
+            <div className="px-1 py-4 rounded-md shadow-md mobile:w-28 mobile:px-2 mobile:py-6 tablet:h-14 tablet:w-14 tablet:px-1 tablet:py-1 laptop:w-32 laptop:h-36">
+            <Image   src={enamad}></Image>
+            </div>
+            <div className="px-1 py-4 rounded-md shadow-md mobile:w-28 mobile:px-2 mobile:py-6 tablet:h-14 tablet:w-14 tablet:px-1 tablet:py-1 laptop:w-32 laptop:h-36 ">
+            <Image   src={kasbokar}></Image>
+            </div>
         </div>
       </div>
     </div>
   );
 };
+
+
+// className="px-1 py-4 rounded-md shadow-md mobile:w-28 mobile:px-2 mobile:py-6  tablet:h-14 tablet:w-14 tablet:px-1 tablet:py-1"
+
+// className="px-1 py-4 rounded-md shadow-md mobile:w-28 mobile:px-2 mobile:py-6 tablet:h-14 tablet:w-14 tablet:px-1 tablet:py-1   "
+
+// className="px-1 py-4 rounded-md shadow-md mobile:w-28 mobile:px-2 mobile:py-6 tablet:h-14 tablet:w-14 tablet:px-1 tablet:py-1  "
