@@ -1,3 +1,4 @@
+import { Footer } from '@/components/footer/Footer'
 import { Providers } from '../redux/providers'
 import './globals.css'
 import { Header } from '@/components/header/Header'
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <Providers>
          <Header/>
         {children}
+        <Footer/>
         </Providers>
         </body>
     </html>
