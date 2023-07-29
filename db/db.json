@@ -2308,7 +2308,8 @@
       "id": 330001,
       "main": "dairy-product",
       "mainFA": "لبنیات",
-      "subs": ["شیر", "پنیر", "ماست", "دوغ", "کره", "خامه", "کشک"]
+      "subs": ["شیر", "پنیر", "ماست", "دوغ", "کره", "خامه", "کشک"],
+      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d501d34d337.png"
     },
     {
       "id": 330002,
@@ -2324,13 +2325,15 @@
         "نوشیدنی انرژی زا",
         "شربت",
         "عرقیجات"
-      ]
+      ],
+      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d52f2859f0a.png"
     },
     {
       "id": 330003,
       "main": "fruit-and-vegetables",
       "mainFA": "میوه و سبزیجات تازه",
-      "subs": ["میوه تازه", "سبزیجات و صیفی جات"]
+      "subs": ["میوه تازه", "سبزیجات و صیفی جات"],
+      "images" : "https://api.snapp.market/uploads/images/mobile-sliders/63d632e6ce1c6.png"
     },
     {
       "id": 330004,
@@ -2344,13 +2347,8 @@
         "خشکبار",
         "پودر کیک و پنکیک",
         "انواع شیرینی"
-      ]
-    },
-    {
-      "id": 330005,
-      "main": "fashion",
-      "mainFA": "مد و پوشاک",
-      "subs": ["لباس زیر"]
+      ],
+      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d5103134c9d.png"
     },
     {
       "id": 330006,
@@ -2366,7 +2364,8 @@
         "قند و شکر و نبات",
         "پودر سوخاری و آرد",
         "غلات"
-      ]
+      ],
+      "images" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50eca58e99.png"
     },
     {
       "id": 330007,
@@ -2378,7 +2377,8 @@
         "گوشت قرمز",
         "ماهی و میگو",
         "سوسیس و کالباس"
-      ]
+      ],
+      "images" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50f5f2fe4d.png"
     },
     {
       "id": 330008,
@@ -2391,7 +2391,8 @@
         "کنسرو و کمپوت",
         "فرآورده های منجمد یخچالی",
         "انواع خمیر"
-      ]
+      ],
+      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50ff5a3258.png"
     },
     {
       "id": 330009,
@@ -2407,8 +2408,9 @@
         "گردش و سفر",
         "ورزش و بازی",
         "خودرو، موتور سیکلت و دوچرخه"
-      ]
-    },
+      ],
+      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d51055c5511.png"
+     },
     {
       "id": 330010,
       "main": "digital-appliances",
@@ -2419,7 +2421,8 @@
         "باتری، محافظ و رابط",
         "لوازم برقی آشپزخانه",
         "لوازم برقی شخصی"
-      ]
+      ],
+      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d52f7cb9980.png"
     },
     {
       "id": 330011,
@@ -2434,7 +2437,8 @@
         "شستشوی ظروف",
         "شستشوی لباس",
         "فوم و مایع دستشویی"
-      ]
+      ],
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d636d2a3219.png"
     },
     {
       "id": 330012,
@@ -2452,7 +2456,8 @@
         "بهداشت جنسی",
         "اسپری و ضدتعریق",
         "بهداشت زنان"
-      ]
+      ],
+      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50ef7e6845.png"
     },
     {
       "id": 330013,
@@ -2465,7 +2470,8 @@
         "شکلات صبحانه",
         "غلات صبحانه",
         "کره بادام زمینی"
-      ]
+      ],
+      "images" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50fc8ee595.png"
     },
     {
       "id": 330014,
@@ -2477,7 +2483,8 @@
         "بهداشت کودک",
         "لوازم کودک و نوزاد",
         "اسباب بازی کودک"
-      ]
+      ],
+      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d5100e30e59.png"
     },
     {
       "id": 330015,
@@ -2494,7 +2501,8 @@
         "پاپ کورن و گندمک",
         "آلوچه و لواشک",
         "نی شیر"
-      ]
+      ],
+      "images" : "https://api.snapp.market/uploads/images/mobile-sliders/63d52f484a444.png"
     },
     {
       "id": 330015,
@@ -2510,7 +2518,8 @@
         "زعفران",
         "سبزیجات خشک و سرخ شده",
         "سایر افزودنی ها"
-      ]
+      ],
+      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/649fc64a53159.png"
     }
   ]
 }
