@@ -2,13 +2,30 @@ import Image from 'next/image'
 import snappmarketlogo from "../public/assets/images/snappmarket-logo.svg"
 import { DiscountSwiper } from '@/components/DiscountSwiper/DiscountSwiper'
 import { CampaignSwiper } from '@/components/CampaignSwiper/CampaignSwiper'
+import { BannerCampaign } from '@/components/campaigns/BannerCampaign'
+import { Categories } from '@/components/campaigns/Categories'
+
 
 export default function Home() {
   return (
 
-    <main className='w-full h-screen flex justify-center'>
+    <main className='w-full  flex justify-center'>
+        {/* main layout  */}
+      <div className='bg-gray-100 mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300'>
+      
+    
+      <div className='w-full p-2 mt-6'> <div className=' bg-snp-secondary h-96 rounded-md'>swipper</div></div>
+      <BannerCampaign bannercount={'maltich'}/>
+      <BannerCampaign bannercount={'sunich'}/>
+      <div className='w-full p-2'> <div className=' bg-snp-secondary h-96 rounded-md'>swipper</div></div>
+      <div className='w-full p-2'> <div className=' bg-snp-secondary h-96 rounded-md'>swipper</div></div>
+      <BannerCampaign bannercount={'marketingDiscount'}/>
+      <div className='w-full p-2'> <div className=' bg-snp-secondary h-96 rounded-md'>swipper</div></div>
+      <BannerCampaign bannercount={'buyandcook'}/>
+      <Categories/>
 
-      <div className='bg-gray-100 mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300 '>
+
+
 
  {/* <div className='h-96 bg-yellow-300'>aaaa </div>
 <div className='h-96 bg-yellow-300'> bbb</div>
@@ -36,4 +53,4 @@ export default function Home() {
 </section>
 <section className="mt-10">
   <CampaignSwiper title={"شیر"} />
-</section> */}
+</section>  */}
