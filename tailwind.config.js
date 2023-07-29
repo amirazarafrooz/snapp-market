@@ -20,7 +20,8 @@ module.exports = {
         'snp-black': '#000000',
         'snp-gray': '#CCCDD3',
         'snp-lightgray' : '#eeeeee',
-        'snp-orange' : '#FDA058'
+        'snp-orange' : '#FDA058',
+        'snp-lightblack' : '#1a1c23'
       },
       fontFamily: {
         sans: ['Graphik', 'sans-serif'],
