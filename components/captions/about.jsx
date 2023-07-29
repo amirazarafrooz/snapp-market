@@ -1,6 +1,6 @@
 export const AboutSnappmarket = () => {
   return (
-    <div className=" flex justify-center w-full ">
+    <div className=" flex justify-center w-full mb-10">
       <div className=" bg-white w-full h-auto pt-4 pb-6 px-3.5 border border-solid border-gray-300 border-opacity-50 rounded">
         <div className=" font-iransans py-4 font-semibold text-[19px] text-gray-500">
           <h1> سوپرمارکت اینترنتی اسنپ مارکت</h1>
