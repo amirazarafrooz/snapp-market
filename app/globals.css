@@ -35,3 +35,7 @@ body {
   color: black;
   background: white;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
