@@ -6,9 +6,9 @@ import { Carousel } from "../Carousel/Carousel";
 
 const data = await getLocalData();
 const products = data.products;
-const campaign = data.campaign;
+const campaigns = data.campaigns;
 
-export const CampaignSwiper = () => {
+export const CampaignSwiper = ({ CampaignTitle }) => {
   return (
     <>
       <div
@@ -20,9 +20,17 @@ export const CampaignSwiper = () => {
           backgroundImage: `url(${campaignBackground.src})`,
         }}
       >
-        <CampaignSwiperTittle/>
+        {campaigns
+          .filter((item) => item.title === CampaignTitle)
+          .map((item) => (
+            <CampaignSwiperTittle item={item.title} />
+          ))}
         <div className=" sm:w-[80%]  md:w-[90%]">
-          <Carousel space={"ml-4"} cartClassName={"rounded-md"} products={products} />
+          <Carousel
+            space={"ml-4"}
+            cartClassName={"rounded-md"}
+            products={products}
+          />
         </div>
         {/* <ProductSwiper products={products} /> */}
       </div>
