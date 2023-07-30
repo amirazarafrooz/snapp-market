@@ -4,7 +4,7 @@ import { ProductItemCard } from "../ProductItemCard";
 import Link from "next/link";
 import clsx from "clsx";
 
-export const Carousel = ({ products, className }) => {
+export const Carousel = ({ products, className ,space }) => {
   const scrollLeft = () => {
     document.getElementById("content").scrollLeft -= 236;
   };
@@ -20,7 +20,7 @@ export const Carousel = ({ products, className }) => {
       >
         {products.map(({ images, name, quantity, discount, price, id }) => {
           return (
-            <div key={id} className="ml-3">
+            <div key={id} className={space}>
               <ProductItemCard
                 name={name}
                 quantity={quantity}
