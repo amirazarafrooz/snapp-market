@@ -2,7 +2,7 @@ import { getLocalData } from "@/lib/localdata";
 import { CampaignSwiperTittle } from "./CampaignSwiperTittle";
 import { ProductSwiper } from "./ProductSwiper";
 import campaignBackground from "../../public/assets/images/campaignBackground.png";
-
+import { Carousel } from "../Carousel/Carousel";
 
 const data = await getLocalData();
 const products = data.products;
@@ -20,8 +20,11 @@ export const CampaignSwiper = () => {
           backgroundImage: `url(${campaignBackground.src})`,
         }}
       >
-        <CampaignSwiperTittle campaign={campaign} />
-        <ProductSwiper products={products} />
+        <CampaignSwiperTittle/>
+        <div className=" sm:w-[80%]  md:w-[90%]">
+          <Carousel space={"ml-4"} cartClassName={"rounded-md"} products={products} />
+        </div>
+        {/* <ProductSwiper products={products} /> */}
       </div>
     </>
   );
