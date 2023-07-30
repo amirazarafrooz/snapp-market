@@ -1,9 +1,9 @@
-export const CampaignSwiperTittle = ({ campaign }) => {
+export const CampaignSwiperTittle = ({ title }) => {
   // {campaign.filter((item) => item.title === "شیر")}
   return (
     <>
-      <div className="flex w-full h-full sm:w-[20%] md:w-[10%] text-center ">
-        <p className="text-xl font-iransansb text-snp-white w-full">شیر</p>
+      <div className="flex w-full h-full pt-1 pb-3 pr-1 text-right sm:w-[20%] md:w-[10%] sm:text-center   ">
+        <p className="text-lg font-iransans text-snp-white w-full sm:text-xl sm:font-iransansb">{title}</p>
       </div>
     </>
   );

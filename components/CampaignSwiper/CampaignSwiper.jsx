@@ -8,7 +8,7 @@ const data = await getLocalData();
 const products = data.products;
 const campaign = data.campaign;
 
-export const CampaignSwiper = () => {
+export const CampaignSwiper = ({title}) => {
   return (
     <>
       <div
@@ -20,8 +20,8 @@ export const CampaignSwiper = () => {
           backgroundImage: `url(${campaignBackground.src})`,
         }}
       >
-        <CampaignSwiperTittle />
-        <div className=" sm:w-[80%]  md:w-[90%]">
+        <CampaignSwiperTittle title={title} />
+        <div className="w-full sm:w-[80%]  md:w-[90%]">
           <Carousel space={"ml-4"} cartClassName={"rounded-md"} products={products} />
         </div>
         {/* <ProductSwiper products={products} /> */}
