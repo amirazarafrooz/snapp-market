@@ -4,7 +4,7 @@ import { ProductItemCard } from "../ProductItemCard";
 import Link from "next/link";
 import clsx from "clsx";
 
-export const Carousel = ({ products, className ,space }) => {
+export const Carousel = ({ products, className ,space , cartClassName }) => {
   const scrollLeft = () => {
     document.getElementById("content").scrollLeft -= 236;
   };
@@ -27,6 +27,7 @@ export const Carousel = ({ products, className ,space }) => {
                 discount={discount}
                 price={price}
                 images={images}
+                cartClassName={cartClassName}
               />
             </div>
           );

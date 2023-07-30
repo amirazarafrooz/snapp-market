@@ -20,9 +20,9 @@ export const CampaignSwiper = () => {
           backgroundImage: `url(${campaignBackground.src})`,
         }}
       >
-        <CampaignSwiperTittle />
-        <div className="w-[90%]">
-          <Carousel products={products} />
+        <CampaignSwiperTittle/>
+        <div className=" sm:w-[80%]  md:w-[90%]">
+          <Carousel space={"ml-4"} cartClassName={"rounded-md"} products={products} />
         </div>
         {/* <ProductSwiper products={products} /> */}
       </div>

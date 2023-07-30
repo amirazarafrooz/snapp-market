@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Image from "next/image";
 
 export const ProductItemCard = ({
@@ -6,12 +7,13 @@ export const ProductItemCard = ({
   quantity,
   discount,
   price,
+  cartClassName
 }) => {
   const Price = (price * (100 - discount)) / 100;
   const prodPrice = Price.toFixed(3);
 
   return (
-    <div className="bg-snp-white rounded-md overflow-hidden px-3.5 py-2 w-56 h-full">
+    <div className={clsx("bg-snp-white overflow-hidden px-3.5 py-2 w-56 h-full" , cartClassName)}>
       {/* use Link instead of a tag below */}
       <a href="#">
         <Image
