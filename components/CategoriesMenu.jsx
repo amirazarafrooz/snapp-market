@@ -1,19 +1,28 @@
 import React from 'react';
+import Image from 'next/image';
 import { getLocalData } from '../lib/localdata';
 import Link from 'next/link';
-
+import megamenu from '../public/assets/images/MegaMenuBg.png'
 const data = await getLocalData();
 const menu = data.categories
 
 
 export const CategoriesMenu = ({showToggle}) => {
 
+  
+  
 
     return (
-        <>
+        
+      <>
+
+
         {(showToggle) && (
-        <div className=' right-0 top-0 fixed flex flex-col w-72 h-full bg-snp-white z-50 px-6 pt-6 pb-2 '>
-            <div className='flex justify-between items-center mb-6 font-iransansb'> 
+     
+          <div className='w-full flex justify-center items-start -mt-4 laptop:px-2 '>
+        <div className='fixed right-0 top-0 z-50 flex flex-col   laptop:flex  laptop:justify-start laptop:items-center laptop: laptop:flex-wrap laptop:gap-0 w-72 h-full bg-snp-white px-6 pt-6 pb-2
+                        laptop:relative laptop:w-248 laptop:shadow-md laptop:h-96 laptop:px-6 laptop:pt-5 laptop:pb-2 laptop:mx-auto laptop:rounded-b-lg laptop:rounded-tl-lg desktop:w-300'>
+            <div className='flex justify-between items-center mb-6  font-iransansb laptop:hidden'> 
                 <h1>دسته‌بندی‌ها</h1>
                 <span>
                 <svg
@@ -36,19 +45,22 @@ export const CategoriesMenu = ({showToggle}) => {
                 </span>
                 </div>
             {menu.map((item) => 
-            (   <Link className='group hover:bg-white' href={`/categories/${item.main}`}>
+            (   <Link className=' group hover:bg-white laptop:h-1/6   laptop:my-1'  href={`/categories/${item.main}`}>
                 
-                <div className='flex flex-col font-iransans py-3 leading-5'>
+                <div className='flex flex-col font-iransans py-3 laptop:py-1 laptop:p-0 laptop:h-16 leading-5'>
 
-                <div className='text-snp-primary text-sm leading-5 '>{item.mainFA} </div>
+                <div className='flex items-center text-snp-primary text-sm leading-5 before:ml-2 before:text-snp-secondary before:opacity-50 before:content-["•"] before:text-2xl
+                                     before:group-hover:text-snp-primaryh before:group-hover:opacity-100 before:group-hover:scale-125'>{item.mainFA} </div>
 
-                <div className='  truncate block text-ellipsis text-gray-400 text-sm leading-5 pt-1 w-52 group-hover:text-snp-lowdiscount'>{item.subs.map((item)=>(<span className=''>{item} ، </span>))} </div>
+                <div className='  truncate block text-ellipsis text-gray-400 text-sm leading-5 pt-1 w-52 laptop:w-44 group-hover:text-snp-lowdiscount'>{item.subs.map((item)=>(<span className=''>{item} ، </span>))} </div>
 
              </div>
              </Link>))}
+             <div className='flex items-end justify-end  h-full'><Image width={201} height={143} src={megamenu}></Image></div>
+        </div>
         </div>
         )}
-        </>
+</>        
     );
 };
 
