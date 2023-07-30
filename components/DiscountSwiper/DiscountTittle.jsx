@@ -1,6 +1,7 @@
 export const DiscountTittle = () => {
   return (
-    <div className="text-black text-right w-[55%] md:w-[35%] lg:w-[20%]">
+    <div className="text-black text-right w-[55%] md:w-[35%] lg:w-[25%]">
+
       <div className="px-2">
         <span className="bg-red-600 text-white py-1 px-2.5 rounded font-iransans">
           تخفیف تا ۵۰٪

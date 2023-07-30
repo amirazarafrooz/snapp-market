@@ -5,6 +5,7 @@ import { CampaignSwiper } from '@/components/CampaignSwiper/CampaignSwiper'
 import { BannerCampaign } from '@/components/campaigns/BannerCampaign'
 import { Categories } from '@/components/campaigns/Categories'
 import { AboutSnappmarket } from '@/components/captions/about'
+
 import { ShoppingCard } from '@/components/ShoppingCard'
 import Button from '@/components/button/Button'
 
@@ -17,6 +18,7 @@ export default function Home() {
         {/* main layout  */}
       <div className='mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300'>
       
+
       <Button btnStyleparam={'categories'} >دسته‌بندی‌ها</Button>     
       <Button btnStyleparam={'addtoCart'} >افزودن به سبد</Button>   
       <Button btnStyleparam={'cart'} >سبد خرید</Button> 

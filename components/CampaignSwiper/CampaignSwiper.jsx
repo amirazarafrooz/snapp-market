@@ -1,12 +1,27 @@
+import { getLocalData } from "@/lib/localdata";
 import { CampaignSwiperTittle } from "./CampaignSwiperTittle";
 import { ProductSwiper } from "./ProductSwiper";
+import campaignBackground from "../../public/assets/images/campaignBackground.png";
+
+
+const data = await getLocalData();
+const products = data.products;
+const campaign = data.campaign;
 
 export const CampaignSwiper = () => {
   return (
     <>
-      <div className="w-full flex flex-col justify-center items-center sm:flex-row bg-blue-700 p-2 rounded-md">
-        <CampaignSwiperTittle title={"با تخفیف بخر!"}/>
-        <ProductSwiper />
+      <div
+        className="w-full flex flex-col justify-center items-center sm:flex-row p-2 rounded-md"
+        style={{
+          backgroundRepeat: "no-repeat",
+          objectFit: "cover",
+          backgroundSize: "cover",
+          backgroundImage: `url(${campaignBackground.src})`,
+        }}
+      >
+        <CampaignSwiperTittle campaign={campaign} />
+        <ProductSwiper products={products} />
       </div>
     </>
   );
