@@ -10,11 +10,13 @@ module.exports = {
  
     extend: {
       colors: {
-        'snp-primary': '#0a2cdc',
+        'snp-primaryh' : '#0A2CDC',
+        'snp-primary': '#2347FB',
         'snp-secondary': '#556ff7',
         'snp-light': '#e6e9fd',
         'snp-highdiscount': '#fa0f1b',
         'snp-lowdiscount': '#42B029',
+        'snp-finalizeBytnh': '#058B18',
         'snp-yellow': '#ffc82c',
         'snp-white': '#FFFFFF',
         'snp-black': '#000000',
@@ -22,7 +24,8 @@ module.exports = {
         'snp-lightgray' : '#eeeeee',
         'snp-orange' : '#FDA058',
         'snp-lightblack' : '#1a1c23',
-        'snp-bg-body' : '#FAFAFA'
+        'snp-bg-body' : '#FAFAFA',
+
       },
       fontFamily: {
         sans: ['Graphik', 'sans-serif'],

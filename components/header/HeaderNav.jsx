@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Button from "../button/Button";
 
 export const HeaderNav = () => {
   return (
@@ -10,7 +11,8 @@ export const HeaderNav = () => {
           {/* right container */}
           <div className="tablet:flex ">
             <div className="tablet:w-25 tablet:flex tablet:justify-start tablet:items-center tablet:font-iransans tablet:text-sm tablet:ml-6">
-              <svg
+              
+              {/* <svg
                 className="ml-1"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -26,8 +28,9 @@ export const HeaderNav = () => {
                   </symbol>
                 </defs>
                 <use href="#GridOutlineIcon" xlinkHref="#GridOutlineIcon"></use>
-              </svg>
-              <span>دسته بندی ها</span>
+              </svg> */}
+              <Button btnStyleparam={'categories'}>دسته‌بندی‌ها</Button>
+              {/* <span>دسته بندی ها</span> */}
             </div>
 
             <div className="tablet:w-40 tablet:flex tablet:justify-start tablet:items-center tablet:font-iransans tablet:text-sm">
