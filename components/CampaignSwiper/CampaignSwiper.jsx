@@ -30,6 +30,7 @@ export const CampaignSwiper = ({ CampaignTitle }) => {
             space={"ml-4"}
             cartClassName={"rounded-md"}
             products={products}
+            content={'s2'}
           />
         </div>
         {/* <ProductSwiper products={products} /> */}

@@ -4,12 +4,12 @@ import { ProductItemCard } from "../ProductItemCard";
 import Link from "next/link";
 import clsx from "clsx";
 
-export const Carousel = ({ products, className, space, cartClassName }) => {
+export const Carousel = ({ products, className, space, cartClassName ,content}) => {
   const scrollLeft = () => {
-    document.getElementById("content").scrollLeft -= 240;
+    document.getElementById(content).scrollLeft -= 240;
   };
   const scrollRight = () => {
-    document.getElementById("content").scrollLeft += 240;
+    document.getElementById(content).scrollLeft += 240;
   };
 
   return (
@@ -20,12 +20,12 @@ export const Carousel = ({ products, className, space, cartClassName }) => {
       )}
     >
       <div
-        id="content"
+        id={content}
         className="carousel flex items-center justify-start overflow-x-auto scroll-smooth  scrollbar-hide h-full"
       >
         {products.map(({ images, name, quantity, discount, price, id }) => {
           return (
-            <div key={id} className={space}>
+            <div key={name} className={space}>
               <ProductItemCard
                 name={name}
                 quantity={quantity}
