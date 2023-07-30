@@ -77,6 +77,7 @@ export const SwiperElement = ({ products }) => {
             );
           })}
 
+
         <swiper-slide>
           <Link href={"/"}>
             <div className="bg-white text-black w-48 h-[352px] rounded ">
