@@ -4,29 +4,35 @@ import { ProductItemCard } from "../ProductItemCard";
 import Link from "next/link";
 import clsx from "clsx";
 
-export const Carousel = ({ products, className }) => {
+export const Carousel = ({ products, className, space, cartClassName }) => {
   const scrollLeft = () => {
-    document.getElementById("content").scrollLeft -= 236;
+    document.getElementById("content").scrollLeft -= 240;
   };
   const scrollRight = () => {
-    document.getElementById("content").scrollLeft += 236;
+    document.getElementById("content").scrollLeft += 240;
   };
 
   return (
-    <div className={clsx("relative w-full h-full", className)}>
+    <div
+      className={clsx(
+        "relative w-full h-full transition-all duration-300",
+        className
+      )}
+    >
       <div
         id="content"
         className="carousel flex items-center justify-start overflow-x-auto scroll-smooth  scrollbar-hide h-full"
       >
         {products.map(({ images, name, quantity, discount, price, id }) => {
           return (
-            <div key={id} className="ml-3">
+            <div key={id} className={space}>
               <ProductItemCard
                 name={name}
                 quantity={quantity}
                 discount={discount}
                 price={price}
                 images={images}
+                cartClassName={cartClassName}
               />
             </div>
           );
@@ -39,7 +45,7 @@ export const Carousel = ({ products, className }) => {
           </div>
         </Link>
       </div>
-      <div className="absolute right-0 top-1/2">
+      <div className="absolute right-3 top-1/2">
         <button
           onClick={scrollRight}
           className="p-2 m-2 rounded-full bg-blue-600 shadow-snp-primary text-snp-white"
@@ -47,7 +53,7 @@ export const Carousel = ({ products, className }) => {
           <FiChevronRight />
         </button>
       </div>
-      <div className="absolute left-0 top-1/2 ">
+      <div className="absolute left-3 top-1/2 ">
         <button
           onClick={scrollLeft}
           className="p-2 m-2 rounded-full bg-blue-600 shadow-snp-primary text-snp-white"
