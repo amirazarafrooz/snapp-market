@@ -21,9 +21,7 @@ export default function Home() {
       <div className='mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300'>
       
 
-
-      {/* <CategoriesMenu showToggle={true}/> */}
-  
+      <CategoriesMenu showToggle={false}/>
   
 
       <div className='w-full p-2 mt-6'> <DiscountSwiper/></div>
