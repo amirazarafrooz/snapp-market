@@ -8,6 +8,7 @@ import delivery from "../../public/assets/images/delivery-icon.svg";
 import search from "../../public/assets/images/search-icon.svg";
 import { SearchBar } from "./SearchBar";
 import { UserProfile } from "./UserProfile";
+import Button from "../button/Button";
 
 export const HeaderEx = () => {
   return (
@@ -57,9 +58,9 @@ export const HeaderEx = () => {
           <div className="flex items-center">
           {/* user info  */}
           <UserProfile headerId={"HeaderEx"}/>
-            <button className=" hidden tablet:bg-snp-light rounded text-snp-primary px-6 py-2 font-iransansl tablet:w-36 tablet:block">
-              سبد خرید
-            </button>
+
+            <Button btnStyleparam={'cart'} >سبد خرید</Button> 
+
           </div>
         </div>
       </div>
@@ -119,7 +120,7 @@ export const HeaderEx = () => {
         <div className="flex  items-center  p-2 w-144 tablet:justify-start  tablet:w-192 laptop:w-248 desktop:w-300">
         {/* Category btn */}
             <div className="">
-                <button className="w-32 h-10 ml-[10px] bg-white font-iransans text-sm rounded-md hidden tablet:block">دسته بندی ها</button>
+                <Button btnStyleparam={'categories'} >دسته‌بندی‌ها</Button>     
             </div>
             {/* Search box */}
             <SearchBar device={'mobile'}/>
