@@ -1,10 +1,12 @@
 "use client";
 import { useRef, useEffect } from "react";
 import { register } from "swiper/element/bundle";
+import { ProductItemCard } from "../ProductItemCard";
+import Link from "next/link";
 
 register();
 
-export const SwiperElement = () => {
+export const SwiperElement = ({ products }) => {
   const swiperElRef = useRef(null);
 
   useEffect(() => {
@@ -57,341 +59,32 @@ export const SwiperElement = () => {
   }, []);
 
   return (
-    <div className="w-[45%] md:w-[65%] lg:w-[80%]">
+    <div className="w-[45%] md:w-[65%] lg:w-[75%]">
       <swiper-container ref={swiperElRef} autoHeight={true} init="false">
-        <swiper-slide>
-          <div className="bg-white rounded-md overflow-hidden px-4 py-3 w-56 h-full">
-            <div className="w-full h-full">
-              <a href="#">
-                <img
-                  className="w-full"
-                  src="https://api.snapp.market/media/cache/product_variation_transparent_image/20230327-282592-20000.png"
-                  alt=""
+        {products
+          .filter((product) => product.discount > 10) /// for example items that discount more than 10%
+          .map(({ images, name, quantity, discount, price, id }) => {
+            return (
+              <swiper-slide key={id}>
+                <ProductItemCard
+                  name={name}
+                  quantity={quantity}
+                  discount={discount}
+                  price={price}
+                  images={images}
                 />
-                <p className="text-black mt-2 text-sm min-h-[3.5rem]">
-                  اسپری خوشبو کننده زنانه Remember Me سری We بیول
-                </p>
-                <p className="text-xs text-gray-500">۴ عدد</p>
-              </a>
-              <div className="flex w-full">
-                <div className="mt-4 w-1/2">
-                  <div className="flex items-center w-full">
-                    <span className=" bg-red-600 text-white text-sm px-1 py-0.5 rounded-md">
-                      ٪۲۰
-                    </span>
-                    <p className="line-through text-xs text-gray-400 mr-2">
-                      ۱۰۰۰۰
-                    </p>
-                  </div>
-                  <div className="flex items-center w-full">
-                    <p className="text-black">۷۳٬۰۰۰</p>
-                    <p className="text-gray-500 mr-1 text-sm">تومان</p>
-                  </div>
-                </div>
-                <div className="w-1/2 mx-auto h-full mt-auto">
-                  <button className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2">
-                    افزودن به سبد
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div className="bg-white rounded-md overflow-hidden px-4 py-3 w-56 h-full">
-            <a href="#">
-              <img
-                className="w-full"
-                src="https://api.snapp.market/media/cache/product_variation_transparent_image/20230327-282592-20000.png"
-                alt=""
-              />
-              <p className="text-black mt-2 text-sm min-h-[3.5rem]">
-                اسپری خوشبو کننده زنانه Remember Me سری We بیول
-              </p>
-              <p className="text-xs text-gray-500">۴ عدد</p>
-            </a>
-            <div className="flex w-full">
-              <div className="mt-4 w-1/2">
-                <div className="flex items-center w-full">
-                  <span className=" bg-red-600 text-white text-sm px-1 py-0.5 rounded-md">
-                    ٪۲۰
-                  </span>
-                  <p className="line-through text-xs text-gray-400 mr-2">
-                    ۱۰۰۰۰
-                  </p>
-                </div>
-                <div className="flex items-center w-full">
-                  <p className="text-black">۷۳٬۰۰۰</p>
-                  <p className="text-gray-500 mr-1 text-sm">تومان</p>
-                </div>
-              </div>
-              <div className="w-1/2 mx-auto h-full mt-auto">
-                <button className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2">
-                  افزودن به سبد
-                </button>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div className="bg-white rounded-md overflow-hidden px-4 py-3 w-56 h-full">
-            <a href="#">
-              <img
-                className="w-full"
-                src="https://api.snapp.market/media/cache/product_variation_transparent_image/20230327-282592-20000.png"
-                alt=""
-              />
-              <p className="text-black mt-2 text-sm min-h-[3.5rem]">
-                اسپری خوشبو کننده زنانه Remember Me سری We بیول
-              </p>
-              <p className="text-xs text-gray-500">۴ عدد</p>
-            </a>
-            <div className="flex w-full">
-              <div className="mt-4 w-1/2">
-                <div className="flex items-center w-full">
-                  <span className=" bg-red-600 text-white text-sm px-1 py-0.5 rounded-md">
-                    ٪۲۰
-                  </span>
-                  <p className="line-through text-xs text-gray-400 mr-2">
-                    ۱۰۰۰۰
-                  </p>
-                </div>
-                <div className="flex items-center w-full">
-                  <p className="text-black">۷۳٬۰۰۰</p>
-                  <p className="text-gray-500 mr-1 text-sm">تومان</p>
-                </div>
-              </div>
-              <div className="w-1/2 mx-auto h-full mt-auto">
-                <button className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2">
-                  افزودن به سبد
-                </button>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div className="bg-white rounded-md overflow-hidden px-4 py-3 w-56 h-full">
-            <a href="#">
-              <img
-                className="w-full"
-                src="https://api.snapp.market/media/cache/product_variation_transparent_image/20230327-282592-20000.png"
-                alt=""
-              />
-              <p className="text-black mt-2 text-sm min-h-[3.5rem]">
-                اسپری خوشبو کننده زنانه Remember Me سری We بیول
-              </p>
-              <p className="text-xs text-gray-500">۴ عدد</p>
-            </a>
-            <div className="flex w-full">
-              <div className="mt-4 w-1/2">
-                <div className="flex items-center w-full">
-                  <span className=" bg-red-600 text-white text-sm px-1 py-0.5 rounded-md">
-                    ٪۲۰
-                  </span>
-                  <p className="line-through text-xs text-gray-400 mr-2">
-                    ۱۰۰۰۰
-                  </p>
-                </div>
-                <div className="flex items-center w-full">
-                  <p className="text-black">۷۳٬۰۰۰</p>
-                  <p className="text-gray-500 mr-1 text-sm">تومان</p>
-                </div>
-              </div>
-              <div className="w-1/2 mx-auto h-full mt-auto">
-                <button className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2">
-                  افزودن به سبد
-                </button>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div className="bg-white rounded-md overflow-hidden px-4 py-3 w-56 h-full">
-            <a href="#">
-              <img
-                className="w-full"
-                src="https://api.snapp.market/media/cache/product_variation_transparent_image/20230327-282592-20000.png"
-                alt=""
-              />
-              <p className="text-black mt-2 text-sm min-h-[3.5rem]">
-                اسپری خوشبو کننده زنانه Remember Me سری We بیول
-              </p>
-              <p className="text-xs text-gray-500">۴ عدد</p>
-            </a>
-            <div className="flex w-full">
-              <div className="mt-4 w-1/2">
-                <div className="flex items-center w-full">
-                  <span className=" bg-red-600 text-white text-sm px-1 py-0.5 rounded-md">
-                    ٪۲۰
-                  </span>
-                  <p className="line-through text-xs text-gray-400 mr-2">
-                    ۱۰۰۰۰
-                  </p>
-                </div>
-                <div className="flex items-center w-full">
-                  <p className="text-black">۷۳٬۰۰۰</p>
-                  <p className="text-gray-500 mr-1 text-sm">تومان</p>
-                </div>
-              </div>
-              <div className="w-1/2 mx-auto h-full mt-auto">
-                <button className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2">
-                  افزودن به سبد
-                </button>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div className="bg-white rounded-md overflow-hidden px-4 py-3 w-56 h-full">
-            <a href="#">
-              <img
-                className="w-full"
-                src="https://api.snapp.market/media/cache/product_variation_transparent_image/20230327-282592-20000.png"
-                alt=""
-              />
-              <p className="text-black mt-2 text-sm min-h-[3.5rem]">
-                اسپری خوشبو کننده زنانه Remember Me سری We بیول
-              </p>
-              <p className="text-xs text-gray-500">۴ عدد</p>
-            </a>
-            <div className="flex w-full">
-              <div className="mt-4 w-1/2">
-                <div className="flex items-center w-full">
-                  <span className=" bg-red-600 text-white text-sm px-1 py-0.5 rounded-md">
-                    ٪۲۰
-                  </span>
-                  <p className="line-through text-xs text-gray-400 mr-2">
-                    ۱۰۰۰۰
-                  </p>
-                </div>
-                <div className="flex items-center w-full">
-                  <p className="text-black">۷۳٬۰۰۰</p>
-                  <p className="text-gray-500 mr-1 text-sm">تومان</p>
-                </div>
-              </div>
-              <div className="w-1/2 mx-auto h-full mt-auto">
-                <button className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2">
-                  افزودن به سبد
-                </button>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div className="bg-white rounded-md overflow-hidden px-4 py-3 w-56 h-full">
-            <a href="#">
-              <img
-                className="w-full"
-                src="https://api.snapp.market/media/cache/product_variation_transparent_image/20230327-282592-20000.png"
-                alt=""
-              />
-              <p className="text-black mt-2 text-sm min-h-[3.5rem]">
-                اسپری خوشبو کننده زنانه Remember Me سری We بیول
-              </p>
-              <p className="text-xs text-gray-500">۴ عدد</p>
-            </a>
-            <div className="flex w-full">
-              <div className="mt-4 w-1/2">
-                <div className="flex items-center w-full">
-                  <span className=" bg-red-600 text-white text-sm px-1 py-0.5 rounded-md">
-                    ٪۲۰
-                  </span>
-                  <p className="line-through text-xs text-gray-400 mr-2">
-                    ۱۰۰۰۰
-                  </p>
-                </div>
-                <div className="flex items-center w-full">
-                  <p className="text-black">۷۳٬۰۰۰</p>
-                  <p className="text-gray-500 mr-1 text-sm">تومان</p>
-                </div>
-              </div>
-              <div className="w-1/2 mx-auto h-full mt-auto">
-                <button className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2">
-                  افزودن به سبد
-                </button>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div className="bg-white rounded-md overflow-hidden px-4 py-3 w-56 h-full">
-            <a href="#">
-              <img
-                className="w-full"
-                src="https://api.snapp.market/media/cache/product_variation_transparent_image/20230327-282592-20000.png"
-                alt=""
-              />
-              <p className="text-black mt-2 text-sm min-h-[3.5rem]">
-                اسپری خوشبو کننده زنانه Remember Me سری We بیول
-              </p>
-              <p className="text-xs text-gray-500">۴ عدد</p>
-            </a>
-            <div className="flex w-full">
-              <div className="mt-4 w-1/2">
-                <div className="flex items-center w-full">
-                  <span className=" bg-red-600 text-white text-sm px-1 py-0.5 rounded-md">
-                    ٪۲۰
-                  </span>
-                  <p className="line-through text-xs text-gray-400 mr-2">
-                    ۱۰۰۰۰
-                  </p>
-                </div>
-                <div className="flex items-center w-full">
-                  <p className="text-black">۷۳٬۰۰۰</p>
-                  <p className="text-gray-500 mr-1 text-sm">تومان</p>
-                </div>
-              </div>
-              <div className="w-1/2 mx-auto h-full mt-auto">
-                <button className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2">
-                  افزودن به سبد
-                </button>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div className="bg-white rounded-md overflow-hidden px-4 py-3 w-56 h-full">
-            <a href="#">
-              <img
-                className="w-full"
-                src="https://api.snapp.market/media/cache/product_variation_transparent_image/20230327-282592-20000.png"
-                alt=""
-              />
-              <p className="text-black mt-2 text-sm min-h-[3.5rem]">
-                اسپری خوشبو کننده زنانه Remember Me سری We بیول
-              </p>
-              <p className="text-xs text-gray-500">۴ عدد</p>
-            </a>
-            <div className="flex w-full">
-              <div className="mt-4 w-1/2">
-                <div className="flex items-center w-full">
-                  <span className=" bg-red-600 text-white text-sm px-1 py-0.5 rounded-md">
-                    ٪۲۰
-                  </span>
-                  <p className="line-through text-xs text-gray-400 mr-2">
-                    ۱۰۰۰۰
-                  </p>
-                </div>
-                <div className="flex items-center w-full">
-                  <p className="text-black">۷۳٬۰۰۰</p>
-                  <p className="text-gray-500 mr-1 text-sm">تومان</p>
-                </div>
-              </div>
-              <div className="w-1/2 mx-auto h-full mt-auto">
-                <button className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2">
-                  افزودن به سبد
-                </button>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
+              </swiper-slide>
+            );
+          })}
 
         <swiper-slide>
-          <div className="bg-white text-black w-48 h-[360px] rounded ">
-            <div className="w-full h-full flex items-center justify-center">
-              <a href="#">لینک های بیشتر</a>
+          <Link href={"/"}>
+            <div className="bg-white text-black w-48 h-[352px] rounded ">
+              <div className="w-full h-full flex items-center justify-center">
+                <p className=" font-iransans underline">لینک های بیشتر</p>
+              </div>
             </div>
-          </div>
+          </Link>
         </swiper-slide>
       </swiper-container>
     </div>

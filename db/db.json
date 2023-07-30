@@ -5,24 +5,6 @@
       "name": "شیر کم چرب مدت دار روزانه ۱ لیتری",
       "category": { "main": "لبنیات", "sub": "شیر" },
       "brand": "روزانه",
-      "quantity": "۱ لیتر",
-      "seller": "هایپراستار",
-      "price": "38٬000 تومان",
-      "inStock": 10,
-      "discount": 25,
-      "campaignType": "discount",
-      "tags": ["ساده", "کم چرب"],
-      "images": [
-        "https://api.snapp.market/media/cache/product_variation_transparent_image/20230214-204889-20000.png",
-        "https://api.snapp.market/media/cache/product-variation_image_thumbnail/uploads/images/vendors/users/app/608e67349312d.jpg",
-        "https://api.snapp.market/media/cache/product-variation_image_thumbnail/uploads/images/vendors/users/app/5d88723f7508a.jpg"
-      ]
-    },
-    {
-      "id": 110001,
-      "name": "شیر کم چرب مدت دار روزانه ۱ لیتری",
-      "category": { "main": "لبنیات", "sub": "شیر" },
-      "brand": "روزانه",
       "quantity": "1 لیتر",
       "seller": "هایپراستار",
       "price": "38.000",

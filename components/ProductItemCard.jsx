@@ -1,27 +1,42 @@
-export const ProductItemCard = ({ image, name, quantity, discount, price }) => {
+import Image from "next/image";
+
+export const ProductItemCard = ({
+  images,
+  name,
+  quantity,
+  discount,
+  price,
+}) => {
+  const Price = (price * (100 - discount)) / 100;
+  const prodPrice = Price.toFixed(3);
+
   return (
-    <div className="bg-snp-white rounded-md overflow-hidden px-4 py-3 w-56 h-full">
+    <div className="bg-snp-white rounded-md overflow-hidden px-3 py-2 w-52 h-full">
+      {/* use Link instead of a tag below */}
       <a href="#">
-        <img
-          className="w-full"
-          src="https://api.snapp.market/media/cache/product-variation_image2/uploads/images/vendors/users/app/608e672b98ed8.jpg"
-          alt=""
-        />
-        <p className="text-snp-black mt-2 text-sm min-h-[3.5rem] font-iransansl ">
-          اسپری خوشبو کننده زنانه Remember Me سری We بیول
+        <Image
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
+          src={images[0]}
+        ></Image>
+        <p className="text-snp-black mt-2 text-sm min-h-[4rem] font-iransansl ">
+          {name}
         </p>
-        <p className="text-xs text-gray-600 font-iransansl">۴ عدد</p>
+        <p className="text-xs text-gray-400 font-iransansl">{quantity}</p>
       </a>
       <div className="flex w-full">
         <div className="mt-4 w-1/2">
           <div className="flex items-center w-full">
-            <span className=" bg-snp-highdiscount text-snp-white text-md px-1 py-0.5 rounded-md font-iransansb">
-              ٪۲۰
-            </span>
-            <p className=" line-through text-xs text-snp-gray mr-2">۱۰۰۰۰</p>
+            <div className=" bg-snp-highdiscount text-snp-white px-1.5 rounded-md font-iransans flex items-center">
+              <p className="h-full my-auto">{discount}</p>
+              <p>٪</p>
+            </div>
+            <p className=" line-through text-xs text-snp-gray mr-2">{price}</p>
           </div>
           <div className="flex items-center w-full">
-            <p className="text-snp-black font-iransans">۷۳٬۰۰۰</p>
+            <p className="text-snp-black font-iransans">{prodPrice}</p>
             <p className=" text-gray-600 mr-1 text-xs font-iransansl">تومان</p>
           </div>
         </div>
