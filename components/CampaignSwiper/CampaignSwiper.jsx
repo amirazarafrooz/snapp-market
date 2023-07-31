@@ -8,7 +8,7 @@ const data = await getLocalData();
 const products = data.products;
 const campaigns = data.campaigns;
 
-export const CampaignSwiper = ({ CampaignTitle }) => {
+export const CampaignSwiper = ({ CampaignTitle,campaignId }) => {
   return (
     <>
       <div
@@ -30,7 +30,7 @@ export const CampaignSwiper = ({ CampaignTitle }) => {
             space={"ml-4"}
             cartClassName={"rounded-md"}
             products={products}
-            content={'s2'}
+            content={campaignId}
           />
         </div>
         {/* <ProductSwiper products={products} /> */}
