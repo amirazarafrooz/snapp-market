@@ -39,8 +39,8 @@ export const HeaderSelector = () => {
                  } */}
 
         <div className={stickyClass==='hidden'?
-           ` fixed left-0 top-0 w-full -translate-y-28 transition-all duration-700 z-50` :
-           ` fixed left-0 top-0 w-full translate-y-0 transition-all duration-700 z-50` }>
+           ` fixed left-0 top-0 w-full -translate-y-28 transition-all duration-0 z-40` :
+           ` fixed left-0 top-0 w-full translate-y-0 transition-all duration-0 z-40` }>
             <HeaderSc/>
         </div>
             <NavbarMobile/>
