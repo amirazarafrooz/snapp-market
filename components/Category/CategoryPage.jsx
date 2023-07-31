@@ -7,9 +7,8 @@ const data = await getLocalData();
 const category = data.categories;
 
 export const CategoryPage = ({ categoryName }) => {
-  console.log(categoryName);
   return (
-    <div className="w-full laptop:flex">
+    <div className="w-full laptop:flex relative">
       {category
         .filter((item) => item.main === categoryName)
         .map((item) => (

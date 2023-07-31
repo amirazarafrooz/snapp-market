@@ -5,8 +5,8 @@ import { FaAngleLeft } from "react-icons/fa6";
 
 export const CategoryListDesk = ({ list }) => {
   return (
-    <div className="hidden laptop:block laptop:w-1/4 mt-8">
-      <div className="w-[95%] border rounded py-4 px-3">
+    <div className="w-[95%] px-3 hidden laptop:flex laptop:w-1/4 my-8 ">
+      <div className="w-full h-fit border rounded py-4 px-3 sticky top-[130px]">
         <p className=" font-iransans text-md mb-5">دسته بندی‌ها :</p>
         {list.map((item) => {
           return (

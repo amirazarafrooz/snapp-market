@@ -6,12 +6,11 @@ const data = await getLocalData();
 const products = data.products;
 
 export const CategoryCarousel = ({ lists }) => {
-  console.log(lists);
   return (
-    <div className="w-full laptop:w-3/4 ">
+    <div className="w-full laptop:w-3/4">
       {lists.map((item) => {
         return (
-          <div className="mt-8 border rounded overflow-hidden">
+          <div className="my-8 border rounded overflow-hidden">
             <CategoryCarouselTittle title={item} />
             <Carousel
               content={item}
