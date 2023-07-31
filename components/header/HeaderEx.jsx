@@ -20,21 +20,21 @@ export const HeaderEx = () => {
     >
       {/*  upper row container  */}
       <div className="flex justify-center ">
-        <div className="w-144 h-12 flex border-b border-snp-lightgray border-opacity-25 justify-between px-2 pt-[2px] pb-[10px] tablet:w-192 laptop:w-248 desktop:w-300">
+        <div className="w-144 h-12 flex  border-b border-snp-lightgray border-opacity-25 justify-between px-2 pt-[2px] pb-[10px] tablet:w-192 laptop:w-248 desktop:w-300">
           {/* right column */}
           <div className="flex">
             {/* logo */}
-            <Image className="h-full w-12 " src={logo}></Image>
+            <Image className="h-full w-12 tablet:w-14" src={logo}></Image>
 
             {/* location container */}
-            <div className="flex items-center p-2">
+            <div className="flex w-[70%] items-center p-2 tablet:mr-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="white"
-                className="w-6 h-6 ml-2"
+                className="w-4 h-4 ml-2"
               >
                 <path
                   strokeLinecap="round"
@@ -58,9 +58,9 @@ export const HeaderEx = () => {
           <div className="flex items-center">
           {/* user info  */}
           <UserProfile headerId={"HeaderEx"}/>
-
+          <div className="hidden tablet:block">
             <Button btnStyleparam={'cart'} >سبد خرید</Button> 
-
+        </div>
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@ export const HeaderEx = () => {
       <div className=" flex justify-center tablet:w-full ">
         <div className="flex  items-center  p-2 w-144 tablet:justify-start  tablet:w-192 laptop:w-248 desktop:w-300">
         {/* Category btn */}
-            <div className="">
+            <div className="hidden tablet:block">
                 <Button btnStyleparam={'categories'} >دسته‌بندی‌ها</Button>     
             </div>
             {/* Search box */}
