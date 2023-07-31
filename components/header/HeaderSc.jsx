@@ -86,9 +86,10 @@ export const HeaderSc = () => {
                 <UserProfile headerId={"HeaderSc"} />
              
               {/* button cart  */}
-              <div>
-
+              <div className="hidden tablet:block">
+              
                 <Button btnStyleparam={'cart'} >سبد خرید</Button>
+
               </div>
             </div>
           </div>
