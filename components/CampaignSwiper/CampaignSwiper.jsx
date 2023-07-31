@@ -8,7 +8,7 @@ const data = await getLocalData();
 const products = data.products;
 const campaigns = data.campaigns;
 
-export const CampaignSwiper = ({ CampaignTitle,campaignId }) => {
+export const CampaignSwiper = ({ CampaignTitle, campaignId }) => {
   return (
     <>
       <div
@@ -29,7 +29,9 @@ export const CampaignSwiper = ({ CampaignTitle,campaignId }) => {
           <Carousel
             space={"ml-4"}
             cartClassName={"rounded-md"}
-            products={products}
+            products={products.filter(
+              (item) => item.category.sub === CampaignTitle
+            )}
             content={campaignId}
           />
         </div>
