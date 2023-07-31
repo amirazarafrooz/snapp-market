@@ -25,7 +25,7 @@ export const Categories = () => {
                 height={53}
                 src={item.image}
               ></Image>
-              <span className="text-snp-lightblack font-iransans text-xs tablet:text-sm laptop:text-base">
+              <span className="text-snp-lightblack font-iransans text-xs tablet:text-sm laptop:text-base px-2">
                 {item.mainFA}{" "}
               </span>
             </Link>
