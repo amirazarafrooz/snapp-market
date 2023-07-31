@@ -4,28 +4,31 @@ import { ProductItemCard } from "../ProductItemCard";
 import Link from "next/link";
 import clsx from "clsx";
 
-export const Carousel = ({ products, className, space, cartClassName }) => {
+export const Carousel = ({
+  products,
+  className,
+  space,
+  cartClassName,
+  content,
+}) => {
   const scrollLeft = () => {
-    document.getElementById("content").scrollLeft -= 240;
+    document.getElementById(content).scrollLeft -= 240;
   };
   const scrollRight = () => {
-    document.getElementById("content").scrollLeft += 240;
+    document.getElementById(content).scrollLeft += 240;
   };
 
   return (
     <div
-      className={clsx(
-        "relative w-full h-full transition-all duration-300",
-        className
-      )}
+      className={clsx("relative w-full transition-all duration-400 ", className)}
     >
       <div
-        id="content"
-        className="carousel flex items-center justify-start overflow-x-auto scroll-smooth  scrollbar-hide h-full"
+        id={content}
+        className=" flex items-center justify-start overflow-x-auto scroll-smooth  scrollbar-hide  h-full"
       >
         {products.map(({ images, name, quantity, discount, price, id }) => {
           return (
-            <div key={id} className={space}>
+            <div key={name} className={space}>
               <ProductItemCard
                 name={name}
                 quantity={quantity}
@@ -38,25 +41,33 @@ export const Carousel = ({ products, className, space, cartClassName }) => {
           );
         })}
         <Link href={"/"}>
-          <div className="bg-white text-black w-48 h-[360px] rounded ">
+          <div className="bg-white text-black w-48 h-[356px] rounded ">
             <div className="w-full h-full flex items-center justify-center">
-              <p className=" font-iransans underline">لینک های بیشتر</p>
+              <p className="text-sm text-snp-secondary font-iransans underline">
+                لینک های بیشتر
+              </p>
             </div>
           </div>
         </Link>
       </div>
-      <div className="absolute right-3 top-1/2">
+      <div className="absolute right-3 top-[43%]">
         <button
           onClick={scrollRight}
-          className="p-2 m-2 rounded-full bg-blue-600 shadow-snp-primary text-snp-white"
+          className="p-2 m-2 rounded-full bg-snp-primary text-snp-white"
+          style={{
+            boxShadow: "rgba(56, 88, 241, 0.65) 0px 0.5rem 4rem 0.4rem",
+          }}
         >
           <FiChevronRight />
         </button>
       </div>
-      <div className="absolute left-3 top-1/2 ">
+      <div className="absolute left-3 top-[43%] ">
         <button
           onClick={scrollLeft}
-          className="p-2 m-2 rounded-full bg-blue-600 shadow-snp-primary text-snp-white"
+          className="p-2 m-2 rounded-full bg-snp-primary  text-snp-white"
+          style={{
+            boxShadow: "rgba(56, 88, 241, 0.65) 0px 0.5rem 4rem 0.4rem",
+          }}
         >
           <FiChevronLeft />
         </button>
