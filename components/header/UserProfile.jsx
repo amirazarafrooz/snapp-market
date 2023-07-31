@@ -4,7 +4,7 @@ export const UserProfile = ({ headerId }) => {
   return (
     <>
       {headerId === "HeaderSc" ? (
-        <div className="flex items-center  laptop:mx-4 h-full">
+        <div className="flex items-center laptop:mx-4 h-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"

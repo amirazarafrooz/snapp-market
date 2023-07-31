@@ -23,6 +23,7 @@ export const DiscountSwiper = () => {
       <div className="w-[45%] md:w-[65%] lg:w-[70%]">
         <Carousel space={"ml-4"}
             cartClassName={"rounded-md"} products={products.filter(item => item.discount > 25)} content={'s1'} />
+
       </div>
       {/* <SwiperElement products={products} /> */}
     </section>
