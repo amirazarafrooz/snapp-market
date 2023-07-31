@@ -11,9 +11,18 @@ import { HeaderNav } from "./HeaderNav";
 import { SearchBar } from "./SearchBar";
 import { UserProfile } from "./UserProfile";
 import Button from "../button/Button";
+import { useState , useCallback } from "react";
 
 
 export const HeaderSc = () => {
+
+  const [showUserProfile, setShowUserProfile] = useState(false);
+
+  const userProfileHandler = useCallback(() => {
+    console.log("user o zadi3");
+    setShowUserProfile(!showUserProfile);
+  }, [showUserProfile]);
+
   return (
     <div>
       {/* main container */}
@@ -83,7 +92,7 @@ export const HeaderSc = () => {
                <SearchBar device={'tablet+'}/> 
               
               {/* user info */}
-                <UserProfile headerId={"HeaderSc"} />
+                <UserProfile headerId={"HeaderSc"}  clickHandler={userProfileHandler} showUserProfile={showUserProfile}/>
              
               {/* button cart  */}
               <div className="hidden tablet:block">
