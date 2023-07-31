@@ -2260,6 +2260,17 @@
     {
       "id": 330004,
       "type": "swiper",
+      "title": "با تخفیف بخر!",
+      "caption": "",
+      "buttonData": [],
+      "tagData": [],
+      "campaignTarget": "subCategory",
+      "subCategoryName": "discount<15",
+      "images": []
+    },
+    {
+      "id": 330005,
+      "type": "swiper",
       "title": "نوشابه",
       "caption": "",
       "buttonData": [],
@@ -2269,7 +2280,7 @@
       "images": []
     },
     {
-      "id": 330005,
+      "id": 330006,
       "type": "3Banner",
       "title": "تخفیف های مارکتی",
       "caption": "",
