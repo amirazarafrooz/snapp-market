@@ -10,6 +10,7 @@ export const Carousel = ({
   space,
   cartClassName,
   content,
+  imageClass
 }) => {
   const scrollLeft = () => {
     document.getElementById(content).scrollLeft -= 240;
@@ -21,7 +22,7 @@ export const Carousel = ({
   return (
     <div
       className={clsx(
-        "relative w-full transition-all duration-400 ",
+        "relative w-full transition-all duration-400 overflow-hidden ",
         className
       )}
     >
@@ -39,6 +40,7 @@ export const Carousel = ({
                 price={price}
                 images={images}
                 cartClassName={cartClassName}
+                imageClass={imageClass}
               />
             </div>
           );

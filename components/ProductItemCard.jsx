@@ -1,5 +1,7 @@
 import clsx from "clsx";
 import Image from "next/image";
+import Button from "./button/Button";
+import Link from "next/link";
 
 export const ProductItemCard = ({
   images,
@@ -8,6 +10,7 @@ export const ProductItemCard = ({
   discount,
   price,
   cartClassName,
+  imageClass
 }) => {
   const Price = (price * (100 - discount)) / 100;
   const prodPrice = Price.toFixed(3);
@@ -15,13 +18,14 @@ export const ProductItemCard = ({
   return (
     <div
       className={clsx(
-        "bg-snp-white overflow-hidden px-3.5 py-2 w-56 h-[356px]",
+        "bg-snp-white overflow-hidden px-3.5 py-2 w-56 h-[356px]  group",
         cartClassName
       )}
     >
       {/* use Link instead of a tag below */}
-      <a href="#">
+      <Link href={'/'} className=" transition-all duration-300">
         <Image
+        className={`group-hover:${imageClass}`}
           width={0}
           height={0}
           sizes="100vw"
@@ -32,7 +36,7 @@ export const ProductItemCard = ({
           {name}
         </p>
         <p className="text-xs text-gray-400 font-iransansl">{quantity}</p>
-      </a>
+      </Link>
       <div className="flex w-full h-[53px] mt-2">
         <div className="w-1/2 mt-auto">
           {discount ? (
@@ -50,7 +54,9 @@ export const ProductItemCard = ({
           ) : null}
           <div className="w-full mt-auto">
             <div className="flex items-center">
-              <p className="text-snp-black font-iransans text-md">{prodPrice}</p>
+              <p className="text-snp-black font-iransans text-md">
+                {prodPrice}
+              </p>
               <p className=" text-gray-600 mr-2 text-xs font-iransansl">
                 تومان
               </p>
@@ -58,9 +64,10 @@ export const ProductItemCard = ({
           </div>
         </div>
         <div className="w-1/2 mx-auto mt-auto">
-          <button className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2">
+          <Button btnStyleparam={"addtoCartR"}>افزودن به سبد</Button>
+          {/* <button className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2">
             افزودن به سبد
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
