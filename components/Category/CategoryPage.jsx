@@ -6,7 +6,7 @@ import { CategoryCarousel } from "./CategoryCarousel";
 const data = await getLocalData();
 const category = data.categories;
 
-export const CategoryTest = ({ categoryName }) => {
+export const CategoryPage = ({ categoryName }) => {
   console.log(categoryName);
   return (
     <div className="w-full laptop:flex">
