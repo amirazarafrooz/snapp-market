@@ -1,6 +1,10 @@
 import Image from "next/image";
 import snappmarketlogo from "../../../public/assets/images/snappmarket-logo.svg";
 import { CategoryPage } from "@/components/Category/CategoryPage";
+import { getLocalData } from "@/lib/localdata";
+
+const data = await getLocalData();
+const category = data.categories;
 
 export default function CategoriesDetail({ params }) {
   return (
