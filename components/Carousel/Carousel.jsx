@@ -20,7 +20,10 @@ export const Carousel = ({
 
   return (
     <div
-      className={clsx("relative w-full transition-all duration-400 ", className)}
+      className={clsx(
+        "relative w-full transition-all duration-400 ",
+        className
+      )}
     >
       <div
         id={content}
