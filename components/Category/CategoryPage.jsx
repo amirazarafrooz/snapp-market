@@ -3,10 +3,9 @@ import { CategoryListDesk } from "./CategoryListDesk";
 import { CategoryListTab } from "./CategoryListTab";
 import { CategoryCarousel } from "./CategoryCarousel";
 
-const data = await getLocalData();
-const category = data.categories;
 
 export const CategoryPage = ({ categoryName }) => {
+
   return (
     <div className="w-full laptop:flex relative">
       {category
