@@ -11,7 +11,7 @@ const Button = ({ btnStyleparam, children }) => {
   const theme =
     "flex justify-center items-center rounded-md whitespace-nowrap font-iransans ";
   const themeR =
-    "flex justify-center items-center border-2 border-snp-lightgray rounded-full whitespace-nowrap font-iransans text-xs bg-snp-white text-snp-primary  hover:bg-snp-primary hover:text-snp-white hover:border-none";
+    "flex justify-center items-center border border-snp-lightgray rounded-full whitespace-nowrap font-iransans text-xs bg-snp-white text-snp-primary  hover:bg-snp-primary hover:text-snp-white hover:border-none";
 
     const themeRplus =  "flex justify-center items-center  rounded-full whitespace-nowrap font-iransans text-xs bg-snp-primary text-snp-white  hover:text-snp-white hover:bg-snp-primaryh ";
 

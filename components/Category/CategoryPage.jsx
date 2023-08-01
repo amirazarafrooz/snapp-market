@@ -4,12 +4,13 @@ import { CategoryListTab } from "./CategoryListTab";
 import { CategoryCarousel } from "./CategoryCarousel";
 
 
-export const CategoryPage = async ({ categoryName }) => {
-  const data = await getLocalData();
-  const category = data.categories;
-  console.log(categoryName);
+const data = await getLocalData();
+const category = data.categories;
+
+export const CategoryPage = ({ categoryName }) => {
+  
   return (
-    <div className="w-full laptop:flex">
+    <div className="w-full laptop:flex relative">
       {category
         .filter((item) => item.main === categoryName)
         .map((item) => (
