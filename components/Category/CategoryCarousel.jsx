@@ -12,7 +12,7 @@ export const CategoryCarousel =({item ,seeMore}) => {
             <Carousel
               content={item}
               products={products.filter(product => product.category.sub === item)}
-              cartClassName={"border-l hover:shadow-xl "}
+              cartClassName={"border-l hover:shadow-xl hover:-translate-y-1"}
               imageClass={"-translate-y-1"}
             />
           </div>

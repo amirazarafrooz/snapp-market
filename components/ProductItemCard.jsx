@@ -19,7 +19,7 @@ export const ProductItemCard = ({
   return (
     <div
       className={clsx(
-        "bg-snp-white overflow-hidden px-3.5 py-2 w-56 h-[356px]  group",
+        "bg-snp-white overflow-hidden px-3.5 py-2 w-56 h-[356px]  group transition-all duration-400",
         cartClassName
       )}
     >
