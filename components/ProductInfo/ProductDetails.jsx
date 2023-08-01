@@ -13,7 +13,7 @@ export const ProductDetails = ({
   const totalPrice = Price.toFixed(3);
   return (
     <div className="w-full tablet:w-1/2 px-4 mt-10 tablet:mt-0 tablet:px-12">
-      <p className=" font-iransansb text-xl">{name}</p>
+      <p className=" font-iransansb text-xl tracking-wide">{name}</p>
       <div className="flex items-center py-3 mt-2">
         <p className="font-iransans ml-2 text-sm">برند :</p>
         <p className=" font-iransansb text-sm text-snp-primary">{brand}</p>

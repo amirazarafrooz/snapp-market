@@ -8,21 +8,16 @@ export const CustomArrowLeft = ({  style, onClick }) => {
       style={{
         ...style,
         display: "block",
-        background: "rgb(205, 205, 205)",
+        background: "rgb(225, 225, 225)",
         position: "absolute",
         top: "45%",
         left: "10px",
         zIndex: "10",
         cursor: "pointer",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
         backgroundImage: `url(${boxArrowRight.src})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        color: "rgb()",
-        width : "30px" ,
-        height : "30px"
+        backgroundSize : '12px',
       }}
       onClick={onClick}
     />
