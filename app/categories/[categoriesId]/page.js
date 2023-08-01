@@ -6,6 +6,21 @@ import { getLocalData } from "@/lib/localdata";
 const data = await getLocalData();
 const category = data.categories;
 
+
+  export async function getStaticPaths(){
+    const paths= category.map((item)=>{
+      return {
+        params: {
+          categoriesId:`${item.main}`,
+        },
+      }
+    })
+
+    return {
+      paths,
+      fallback:false,
+    }
+  }
 export default function CategoriesDetail({ params }) {
   return (
     <main className="bg-snp-bg-body w-full  flex justify-center">
