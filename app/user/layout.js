@@ -5,13 +5,14 @@ export default function ProfileLayout({ children }) {
   return (
     <section className="flex justify-center items-center flex-col my-4 laptop:flex-row laptop:p-8 laptop:items-start laptop:justify-center">
 
-      <div className="w-144 tablet:w-192 laptop:w-64 desktop:w-80 flex justify-center border-[1px] rounded-sm px-4 my-4 bg-snp-white ">
+      <div className="w-144 tablet:w-192 laptop:w-64 desktop:w-80 flex justify-center border-[1px] rounded-sm px-4 my-4 bg-snp-white">
             <div className="w-full flex flex-col font-iransans text-sm h-40 tablet:h-52 laptop:h-64 ">
                 <h3 className=" font-iransans text-base pt-2 pb-3 pr-4">پروفایل</h3>
                 <div className="flex justify-evenly h-full border-t-[1px] laptop:flex-col ">
                 <div className="flex justify-center items-center">
-                    <Link href={"/user/profile"} className="flex flex-col justify-center p-3 mt-1 items-center text-gray-500 text-[13px]  w-full font-iransans tablet:p-8 laptop:p-1 laptop:flex-row laptop:justify-start ">
-                        <svg
+                    <Link href={"/user/profile"} className="flex flex-col justify-center p-3 mt-1 items-center text-gray-500 text-[13px]  w-full font-iransans tablet:p-8 laptop:p-1 laptop:flex-row  laptop:justify-between">
+                       <div className="flex flex-col justify-center items-center whitespace-nowrap laptop:flex laptop:flex-row ">
+                         <svg
                         xmlns="http://www.w3.org/2000/svg"
                         xmlnsXlink="http://www.w3.org/1999/xlink"
                         width="32"
@@ -30,6 +31,7 @@ export default function ProfileLayout({ children }) {
                         <use fill="#757575" href="#UserIcon" xlinkHref="#UserIcon"></use>
                         </svg>
                         <span className="mt-2">حساب کاربری</span>
+                        </div>
                           <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -55,7 +57,8 @@ export default function ProfileLayout({ children }) {
                     </Link>
                     </div>
                     <div className="flex justify-center items-center">
-                    <Link href={'/user/credeit'} className=" flex flex-col justify-center p-3 mt-1 items-center text-gray-500 text-[13px]  w-full font-iransans tablet:p-8 laptop:p-1 laptop:flex-row laptop:justify-start">
+                    <Link href={'/user/credeit'} className=" flex flex-col justify-center p-3 mt-1 items-center text-gray-500 text-[13px]  w-full font-iransans tablet:p-8 laptop:p-1 laptop:flex-row laptop:justify-between">
+                    <div className="flex flex-col justify-center items-center whitespace-nowrap laptop:flex laptop:flex-row ">
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
                         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -75,13 +78,14 @@ export default function ProfileLayout({ children }) {
                         <use fill="#757575" href="#CoinsIcon" xlinkHref="#CoinsIcon"></use>
                         </svg> 
                         <span className="mt-2">افزایش اعتباری</span>
+                        </div>
                         <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width="32"
       height="32"
       fill="currentColor"
-      className="arrow-left"
+      className="arrow-left hidden laptop:block"
       color="gray"
       viewBox="0 0 32 32"
       style={{ width: 12, height: 12 }}
@@ -100,7 +104,8 @@ export default function ProfileLayout({ children }) {
                     </Link>
                     </div>
                     <div className="flex justify-center items-center ">
-                    <Link href={'/user/orders'} className=" flex flex-col bg-snp-light rounded-md justify-center p-3 mt-1 items-center text-snp-secondary text-[13px]  w-full font-iransans tablet:p-8 laptop:p-1 laptop:flex-row laptop:justify-start">
+                    <Link href={'/user/orders'} className=" flex flex-col bg-snp-light rounded-md justify-center p-3 mt-1 items-center text-snp-secondary text-[13px]  w-full font-iransans tablet:p-8 laptop:p-1 laptop:flex-row laptop:justify-between">
+                    <div className="flex flex-col justify-center items-center whitespace-nowrap laptop:flex laptop:flex-row ">
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
                         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -126,13 +131,14 @@ export default function ProfileLayout({ children }) {
                         ></use>
                         </svg> 
                         <span className="mt-2">لیست‌ سفارش‌ها</span>
+                        </div>
                         <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width="32"
       height="32"
       fill="currentColor"
-      className="arrow-left"
+      className="arrow-left hidden laptop:block"
       color="gray"
       viewBox="0 0 32 32"
       style={{ width: 12, height: 12 }}
@@ -151,7 +157,8 @@ export default function ProfileLayout({ children }) {
                     </Link>
                     </div>
                     <div className="flex justify-center items-center">
-                    <Link href={'/'} className="flex flex-col justify-center p-3 mt-1 items-center text-gray-500 text-[13px]  w-full font-iransans tablet:p-8 laptop:p-1 laptop:flex-row laptop:justify-start">
+                    <Link href={'/'} className="flex flex-col justify-center p-3 mt-1 items-center text-gray-500 text-[13px]  w-full font-iransans tablet:p-8 laptop:p-1 laptop:flex-row laptop:justify-between">
+                    <div className="flex flex-col justify-center items-center whitespace-nowrap laptop:flex laptop:flex-row ">
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
                         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -172,13 +179,14 @@ export default function ProfileLayout({ children }) {
                         <use fill="#757575" href="#LogoutIcon" xlinkHref="#LogoutIcon"></use>
                         </svg> 
                         <span className="mt-2">خروج</span>
+                        </div>
                         <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width="32"
       height="32"
       fill="currentColor"
-      className="arrow-left"
+      className="arrow-left hidden laptop:block"
       color="gray"
       viewBox="0 0 32 32"
       style={{ width: 12, height: 12 }}
