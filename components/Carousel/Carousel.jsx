@@ -34,6 +34,7 @@ export const Carousel = ({
           return (
             <div key={name} className={space}>
               <ProductItemCard
+                id={id}
                 name={name}
                 quantity={quantity}
                 discount={discount}

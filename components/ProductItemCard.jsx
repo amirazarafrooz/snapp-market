@@ -4,6 +4,7 @@ import Button from "./button/Button";
 import Link from "next/link";
 
 export const ProductItemCard = ({
+  id,
   images,
   name,
   quantity,
@@ -22,8 +23,7 @@ export const ProductItemCard = ({
         cartClassName
       )}
     >
-      {/* use Link instead of a tag below */}
-      <Link href={'/'} className=" transition-all duration-300">
+      <Link href={`/products/${id}`} className=" transition-all duration-300">
         <Image
         className={`group-hover:${imageClass}`}
           width={0}
