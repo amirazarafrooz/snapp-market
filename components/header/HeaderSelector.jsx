@@ -7,7 +7,8 @@ import { NavbarMobile } from './NavbarMobile';
 
 
 
-export const HeaderSelector = () => {
+export const HeaderSelector =  ({categoryItems}) => {
+
 
 // logic
     const [stickyClass, setStickyClass] = useState('hidden');
@@ -32,11 +33,11 @@ export const HeaderSelector = () => {
 
     return (
         <>
-            {/* {stickyClass==='hidden'? */}
-                <div className={`relative z-20`}><HeaderEx/></div>
-                {/* :
-                null
-                 } */}
+
+
+                <div className={`relative z-20`}><HeaderEx categoryItems={categoryItems}/>
+                </div>
+                
 
         <div className={stickyClass==='hidden'?
            ` fixed left-0 top-0 w-full -translate-y-28 transition-all duration-0 z-10` :

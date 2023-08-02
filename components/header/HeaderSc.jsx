@@ -14,7 +14,7 @@ import Button from "../button/Button";
 import { useState , useCallback } from "react";
 
 
-export const HeaderSc = () => {
+export const HeaderSc = ({categoryItems}) => {
 
   const [showUserProfile, setShowUserProfile] = useState(false);
 
@@ -123,7 +123,7 @@ export const HeaderSc = () => {
 
 
     {/* navbar menu-scrolled */}
-      <HeaderNav/>
+      <HeaderNav categoryItems={categoryItems}/>
 
 
 

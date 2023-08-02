@@ -9,13 +9,22 @@ import search from "../../public/assets/images/search-icon.svg";
 import { SearchBar } from "./SearchBar";
 import { UserProfile } from "./UserProfile";
 import Button from "../button/Button";
+import { CategoriesMenu } from '../CategoriesMenu';
 
-export const HeaderEx = () => {
+
+export const HeaderEx =  ({categoryItems }) => {
+  
   const [showUserProfile, setShowUserProfile] = useState(false);
   const userProfileHandler = useCallback(() => {
     console.log("user o zadi3");
     setShowUserProfile(!showUserProfile);
   }, [showUserProfile]);
+
+  const [showcategory, setShowCategory] = useState(false);
+  const categoryleHandler = useCallback(() => {
+    console.log("user o zadi3");
+    setShowCategory(!showcategory);
+  }, [showcategory]);
 
 
   
@@ -133,7 +142,9 @@ export const HeaderEx = () => {
           <div className="flex  items-center  p-2 w-144 tablet:justify-start  tablet:w-192 laptop:w-248 desktop:w-300">
             {/* Category btn */}
             <div className="hidden tablet:block">
-              <Button btnStyleparam={"categories"}>دسته‌بندی‌ها</Button>
+              {/* <Button btnStyleparam={"categories"}>دسته‌بندی‌ها</Button> */}
+              <CategoriesMenu showToggle={showcategory} categoryItems={categoryItems} clickHandler={categoryleHandler}/>
+
             </div>
             {/* Search box */}
             <SearchBar device={"mobile"} />
