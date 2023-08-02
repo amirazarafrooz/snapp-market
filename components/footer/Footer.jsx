@@ -201,7 +201,7 @@ export const Footer = () => {
             اپلیکیشن اسنپ مارکت را دانلود کنید و هر روز تخفیفات هیجان انگیز
             مشاهده کنید
           </span >
-          <Image className="p-1 mt-5" height={35} src={appBazzar}></Image>
+          <Image alt="appbazzar-icon" className="p-1 mt-5" height={35} src={appBazzar}></Image>
         </div>
       </div>
 
@@ -290,13 +290,13 @@ export const Footer = () => {
         {/* certifications badge */}
         <div className="flex justify-around  tablet:w-48 laptop:w-96 tablet:items-start tablet:pt-7 gap-4 ">
             <div className="px-1 py-4 rounded-md shadow-md mobile:w-28 mobile:px-2 mobile:py-6  tablet:h-14 tablet:w-14 tablet:px-1 tablet:py-1 laptop:w-32 laptop:h-36">
-            <Image src={samandehi}></Image>
+            <Image alt="samandehi-logo" src={samandehi}></Image>
             </div>
             <div className="px-1 py-4 rounded-md shadow-md mobile:w-28 mobile:px-2 mobile:py-6 tablet:h-14 tablet:w-14 tablet:px-1 tablet:py-1 laptop:w-32 laptop:h-36">
-            <Image   src={enamad}></Image>
+            <Image  alt="enamad-logo" src={enamad}></Image>
             </div>
             <div className="px-1 py-4 rounded-md shadow-md mobile:w-28 mobile:px-2 mobile:py-6 tablet:h-14 tablet:w-14 tablet:px-1 tablet:py-1 laptop:w-32 laptop:h-36 ">
-            <Image   src={kasbokar}></Image>
+            <Image alt="kasbokar-logo"  src={kasbokar}></Image>
             </div>
         </div>
       </div>

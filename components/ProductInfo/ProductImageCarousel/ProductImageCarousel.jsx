@@ -11,7 +11,7 @@ export const ProductImageCarousel = ({ images }) => {
     customPaging: function (i) {
       return (
         <div>
-          <Image
+          <Image alt="background-slider"
             src={images[i + 1]}
             width={0}
             height={0}
@@ -35,7 +35,7 @@ export const ProductImageCarousel = ({ images }) => {
         {images.map((item) => {
           return (
             <div className="w-full h-72 border rounded">
-              <Image
+              <Image alt="background-slider"
                 src={item}
                 width={0}
                 height={0}
