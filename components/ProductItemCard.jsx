@@ -23,7 +23,6 @@ export const ProductItemCard = ({
   const cart = useSelector((store) => store.cart);
   const handleAdd = useCallback(() => {
     dispatch(add({ id, name, price, discount, images, count: 0 }));
-    setIsHide(true);
   }, []);
   return (
     <div
