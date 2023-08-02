@@ -1,8 +1,17 @@
 import React from "react";
 import Link from "next/link";
 import Button from "../button/Button";
+import { useState , useCallback } from "react";
+import { CategoriesMenu } from "../CategoriesMenu";
 
-export const HeaderNav = () => {
+export const HeaderNav = ({categoryItems}) => {
+
+  const [showcategory, setShowCategory] = useState(false);
+  const categoryleHandler = useCallback(() => {
+    console.log("user o zadi4");
+    setShowCategory(!showcategory);
+  }, [showcategory]);
+
   return (
     <>
       {/* navbar menu-scrolled */}
@@ -29,7 +38,8 @@ export const HeaderNav = () => {
                 </defs>
                 <use href="#GridOutlineIcon" xlinkHref="#GridOutlineIcon"></use>
               </svg> */}
-              <Button btnStyleparam={'categories'}>دسته‌بندی‌ها</Button>
+              {/* <Button btnStyleparam={'categories'}>دسته‌بندی‌ها</Button> */}
+              <CategoriesMenu showToggle={showcategory} categoryItems={categoryItems} clickHandler={categoryleHandler}/>
               {/* <span>دسته بندی ها</span> */}
             </div>
 
