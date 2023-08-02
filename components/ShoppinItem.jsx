@@ -8,7 +8,7 @@ export const ShoppingItem = ({ details , handleDecrement , handleAdd }) => {
   return (
     <div className="w-full h-full flex py-3 border-b border-b-gray-50 hover:border-b-gray-200">
       <div className=" w-28 h-full">
-        <Image
+        <Image alt="shopicon-image"
           width={0}
           height={0}
           sizes="100vw"

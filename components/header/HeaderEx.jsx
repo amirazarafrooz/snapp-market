@@ -5,24 +5,22 @@ import logo from "../../public/assets/images/snappmarket-logo.svg";
 import marketlogo from "../../public/assets/images/market-logo.jpg";
 import clock from "../../public/assets/images/clock-icon.svg";
 import delivery from "../../public/assets/images/delivery-icon.svg";
-import search from "../../public/assets/images/search-icon.svg";
 import { SearchBar } from "./SearchBar";
 import { UserProfile } from "./UserProfile";
 import Button from "../button/Button";
 import { CategoriesMenu } from '../CategoriesMenu';
+import Link from "next/link";
 
 
 export const HeaderEx =  ({categoryItems }) => {
   
   const [showUserProfile, setShowUserProfile] = useState(false);
   const userProfileHandler = useCallback(() => {
-    console.log("user o zadi3");
     setShowUserProfile(!showUserProfile);
   }, [showUserProfile]);
 
   const [showcategory, setShowCategory] = useState(false);
   const categoryleHandler = useCallback(() => {
-    console.log("user o zadi3");
     setShowCategory(!showcategory);
   }, [showcategory]);
 
@@ -32,22 +30,25 @@ export const HeaderEx =  ({categoryItems }) => {
     <div>
       {/* main container */}
       {/* overflow-hidden */}
+   
       <div
-      className="w-full h-64 p-2 tablet:h-56"  
+        className="w-full h-64 p-2 tablet:h-56"  
         style={{
           backgroundRepeat: "no-repeat",
           objectFit: "cover",
           backgroundSize: "cover",
           backgroundImage: `url(${headerbanner.src})`,
+          
         }}
-      >
+          > 
+      
         {/*  upper row container  */}
         <div className="flex justify-center ">
           <div className="w-144 h-12 flex  border-b border-snp-lightgray border-opacity-25 justify-between px-2 pt-[2px] pb-[10px] tablet:w-192 laptop:w-248 desktop:w-300">
             {/* right column */}
             <div className="flex">
               {/* logo */}
-              <Image className="h-full w-12 tablet:w-14" src={logo}></Image>
+              <Link href={'/'}><Image alt="snappmarket-logo" className="h-full w-12 tablet:w-14" src={logo}></Image></Link>
 
               {/* location container */}
               <div className="flex w-[70%] items-center p-2 tablet:mr-3">
@@ -93,7 +94,7 @@ export const HeaderEx =  ({categoryItems }) => {
           <div className="flex  flex-col items-start  p-2 w-144 h-32 border-b border-snp-lightgray border-opacity-25 tablet:w-192 tablet:flex-row tablet:justify-between tablet:border-none tablet:h-24 laptop:w-248 desktop:w-300">
             {/* market detail */}
             <div className="flex items-center justify-center mt-4 ">
-              <Image
+              <Image alt="market-logo"
                 className="w-8 h-8 rounded-full ml-2 p-1 tablet:w-14 tablet:h-14 laptop:w-16 laptop:h-16 "
                 src={marketlogo}
               ></Image>
@@ -105,7 +106,7 @@ export const HeaderEx =  ({categoryItems }) => {
             {/* market caption */}
             <div className="flex justify-between  w-72 mt-4 tablet:flex-col tablet:w-40 tablet:mt-12 laptop:w-64">
               <div className="tablet:flex tablet:mb-4">
-                <Image
+                <Image alt="clock-icon"
                   width={17}
                   height={17}
                   src={clock}
@@ -117,7 +118,7 @@ export const HeaderEx =  ({categoryItems }) => {
               </div>
               <div className="flex flex-col">
                 <div className="tablet:flex tablet:items-start ">
-                  <Image
+                  <Image alt="delivery-icon"
                     width={17}
                     height={17}
                     src={delivery}

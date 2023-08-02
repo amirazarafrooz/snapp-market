@@ -19,7 +19,7 @@ export const Categories = () => {
               className="flex items-center gap-2 justify-start w-full "
               href={`/categories/${item.main}`}
             >
-              <Image
+              <Image alt="categories-icon"
                 className="ml-2 laptop:w-24 laptop:h-24"
                 width={53}
                 height={53}

@@ -3,9 +3,6 @@ import Image from "next/image";
 import headerbanner from "../../public/assets/images/header-banner.png";
 import logo from "../../public/assets/images/snappmarket-logo.svg";
 import marketlogo from "../../public/assets/images/market-logo.jpg";
-import clock from "../../public/assets/images/clock-icon.svg";
-import delivery from "../../public/assets/images/delivery-icon.svg";
-import search from "../../public/assets/images/search-icon.svg";
 import Link from "next/link";
 import { HeaderNav } from "./HeaderNav";
 import { SearchBar } from "./SearchBar";
@@ -19,7 +16,6 @@ export const HeaderSc = ({categoryItems}) => {
   const [showUserProfile, setShowUserProfile] = useState(false);
 
   const userProfileHandler = useCallback(() => {
-    console.log("user o zadi3");
     setShowUserProfile(!showUserProfile);
   }, [showUserProfile]);
 
@@ -41,7 +37,7 @@ export const HeaderSc = ({categoryItems}) => {
             {/* right container */}
             <div className="flex  tablet:justify-start tablet:w-full desktop:justify-between ">
               {/* logo */}
-              <Image className="h-full w-12 tablet:w-14  " src={logo}></Image>
+              <Link href={'/'}><Image alt="snappmarket-logo" className="h-full w-12 tablet:w-14  " src={logo}></Image></Link>
 
               {/* location container */}
               <div className="desktop:flex items-center p-2 hidden tablet:hidden">
@@ -73,7 +69,7 @@ export const HeaderSc = ({categoryItems}) => {
 
               {/* market detail */}
               <div className="flex items-center justify-center mr-2 tablet:w-48 ">
-                <Image
+                <Image alt="market-logo"
                   className="w-6 h-6 rounded-full ml-2 p-1 tablet:w-10 tablet:h-10 laptop:w-11 laptop:h-11 "
                   src={marketlogo}
                 ></Image>

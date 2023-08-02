@@ -22,7 +22,7 @@ const Button = ({ btnStyleparam, children }) => {
 
       {btnStyleparam === "categories" ? (
         <button className={`${theme} bg-snp-white w-32 h-10 p-3 text-sm`}>
-          <Image className="ml-2" width={15} height={15} src={categoruIcon} />
+          <Image alt="category-icon" className="ml-2" width={15} height={15} src={categoruIcon} />
           {children}
         </button>
       ) : null}
@@ -40,7 +40,7 @@ const Button = ({ btnStyleparam, children }) => {
 
       {btnStyleparam === "cart" ? (
         <button className={`${theme} w-36 h-9 py-1 px-3 text-sm font-medium bg-snp-white text-snp-primary `}>
-          <Image className="ml-2" width={20} height={20} src={cartIcon} />
+          <Image alt="cart-icon" className="ml-2" width={20} height={20} src={cartIcon} />
           {children}
           <div className="flex justify-center items-center font-iransans text-md text-snp-primary rounded-full bg-snp-lightgray w-6 h-6 mr-3 pt-1">
             14
@@ -55,7 +55,7 @@ const Button = ({ btnStyleparam, children }) => {
           className={`${theme} text-xs rounded-md border-snp-white border-2 text-snp-white w-48 h-9 py-2 px-7 text-[13px]`}
         >
           {children}
-          <Image className="mr-1" width={12} height={12} src={arrowIcon} />
+          <Image alt="productbtn-icon" className="mr-1" width={12} height={12} src={arrowIcon} />
         </button>
       ) : null}
 
