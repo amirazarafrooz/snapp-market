@@ -1,7 +1,10 @@
+"use client";
 import clsx from "clsx";
 import Image from "next/image";
 import Button from "./button/Button";
 import Link from "next/link";
+import { useDispatch, useSelector } from "react-redux";
+import { add } from "@/redux/cartSlice";
 
 export const ProductItemCard = ({
   id,
@@ -11,11 +14,12 @@ export const ProductItemCard = ({
   discount,
   price,
   cartClassName,
-  imageClass
+  imageClass,
 }) => {
   const Price = (price * (100 - discount)) / 100;
   const prodPrice = Price.toFixed(3);
-
+  const dispatch = useDispatch();
+  const cart = useSelector((store) => store.cart);
   return (
     <div
       className={clsx(
@@ -25,7 +29,7 @@ export const ProductItemCard = ({
     >
       <Link href={`/products/${id}`} className=" transition-all duration-300">
         <Image
-        className={`group-hover:${imageClass}`}
+          className={`group-hover:${imageClass}`}
           width={0}
           height={0}
           sizes="100vw"
@@ -64,10 +68,35 @@ export const ProductItemCard = ({
           </div>
         </div>
         <div className="w-1/2 mx-auto mt-auto">
-          <Button btnStyleparam={"addtoCartR"}>افزودن به سبد</Button>
-          {/* <button className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2">
+          {/* <Button
+            onclick={() => dispatch(add({ id, name, images, price, discount }))}
+            btnStyleparam={"addtoCartR"}
+          >
             افزودن به سبد
-          </button> */}
+          </Button> */}
+          {/* {cart.filter(
+            (item) =>
+              (!item ? (
+                <button
+                  onClick={() =>
+                    dispatch(
+                      add({ id, name, price, discount, images, count: 0 })
+                    )
+                  }
+                  className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2"
+                >
+                  افزودن به سبد
+                </button>
+              ) : <button>{item.count}</button>)
+          )} */}
+          <button
+            onClick={() =>
+              dispatch(add({ id, name, price, discount, images , count : 0}))
+            }
+            className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2"
+          >
+            افزودن به سبد
+          </button>
         </div>
       </div>
     </div>

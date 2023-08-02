@@ -26,7 +26,7 @@ export const CampaignSwiper = ({ CampaignTitle, campaignId }) => {
           .map((item) => (
             <CampaignSwiperTittle item={item.title} />
           ))}
-        <div className=" sm:w-[80%]  md:w-[90%]">
+        <div className="w-full sm:w-[80%]  md:w-[90%]">
           <Carousel
             space={"ml-4"}
             cartClassName={"rounded-md"}
