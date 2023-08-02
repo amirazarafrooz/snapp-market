@@ -42,9 +42,9 @@ export const HeaderSelector =  ({categoryItems}) => {
         <div className={stickyClass==='hidden'?
            ` fixed left-0 top-0 w-full -translate-y-28 transition-all duration-0 z-10` :
            ` fixed left-0 top-0 w-full translate-y-0 transition-all duration-0 z-10` }>
-            <HeaderSc/>
+            <HeaderSc categoryItems={categoryItems}/>
         </div>
-            <NavbarMobile/>
+            <NavbarMobile categoryItems={categoryItems}/>
         </>
     );
 };
