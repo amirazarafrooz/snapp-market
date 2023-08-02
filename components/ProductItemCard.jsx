@@ -32,7 +32,7 @@ export const ProductItemCard = ({
       )}
     >
       <Link href={`/products/${id}`} className=" transition-all duration-300">
-        <Image
+        <Image alt="product-image"
           className={`group-hover:${imageClass}`}
           width={0}
           height={0}

@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import megamenu from '../public/assets/images/MegaMenuBg.png'
 import Button from './button/Button';
-import { useEffect, useRef } from 'react';
 
 
 
@@ -65,7 +64,7 @@ export const CategoriesMenu =  ({showToggle, categoryItems, clickHandler}) => {
 
              </div>
              </Link>))}
-             <div className='flex items-end justify-end  h-full'><Image width={201} height={143} src={megamenu}></Image></div>
+             <div className='flex items-end justify-end  h-full'><Image alt='mega-menu' width={201} height={143} src={megamenu}></Image></div>
         </div>
         </div>
         </div>

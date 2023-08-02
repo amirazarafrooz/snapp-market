@@ -5,11 +5,9 @@ import { useState, useCallback } from 'react';
 import { CategoriesMenu } from '../CategoriesMenu';
 
 export const NavbarMobile = ({categoryItems}) => {
-console.log('nav mobile',{categoryItems});
 
   const [showcategory, setShowCategory] = useState(false);
   const categoryleHandler = useCallback(() => {
-    console.log("user o zadi3");
     setShowCategory(!showcategory);
   }, [showcategory]);
 
