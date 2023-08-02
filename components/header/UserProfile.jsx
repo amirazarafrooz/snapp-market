@@ -130,7 +130,7 @@ export const UserProfile = ({ headerId, clickHandler, showUserProfile }) => {
               </Link>
 
               <Link
-                href={"/products"}
+                href={"/user"}
                 className="group hover:bg-[#FAFAFA] flex justify-start p-3 mt-1 items-center text-gray-400 text-[13px]  w-full font-iransans"
               >
                 <svg
