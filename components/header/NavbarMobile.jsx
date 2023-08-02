@@ -1,15 +1,25 @@
 
 
 import React from 'react';
+import { useState, useCallback } from 'react';
+import { CategoriesMenu } from '../CategoriesMenu';
 
-export const NavbarMobile = () => {
+export const NavbarMobile = ({categoryItems}) => {
+console.log('nav mobile',{categoryItems});
+
+  const [showcategory, setShowCategory] = useState(false);
+  const categoryleHandler = useCallback(() => {
+    console.log("user o zadi3");
+    setShowCategory(!showcategory);
+  }, [showcategory]);
+
     return (
         <div>
 {/* navbar menu-mobile */}
 
 <div className="flex justify-center w-full bg-snp-light fixed bottom-0  tablet:hidden laptop:hidden desktop:hidden">
 <div className="flex justify-around w-144 h-22 px-2 pt-4 pb-5">
-  <div className="w-14  flex flex-col justify-center items-center font-iransansl">
+  <div className="w-14  flex flex-col justify-center items-center font-iransansl cursor-pointer">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="20"
@@ -25,7 +35,7 @@ export const NavbarMobile = () => {
     </svg>
     <span>خانه</span>
   </div>
-  <div className="w-18 flex flex-col justify-center items-center font-iransansl">
+  <div className="w-18 flex flex-col justify-center items-center font-iransansl cursor-pointer" onClick={categoryleHandler}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -41,11 +51,13 @@ export const NavbarMobile = () => {
         </symbol>
       </defs>
       <use href="#GridOutlineIcon" xlinkHref="#GridOutlineIcon"></use>
-    </svg>
-    <span>دسته بندی ها</span>
-  </div>
+    </svg> 
+     <CategoriesMenu showToggle={showcategory} categoryItems={categoryItems} clickHandler={categoryleHandler}/>
+     <span>دسته بندی ها</span>
+   </div>
+   
 
-  <div className="w-16 flex flex-col justify-center items-center font-iransansl">
+  <div className="w-16 flex flex-col justify-center items-center font-iransansl cursor-pointer">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="20"

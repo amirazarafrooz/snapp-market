@@ -154,7 +154,7 @@ export const HeaderEx =  ({categoryItems }) => {
 
       {/* navbar menu */}
 
-      <div className="flex justify-center w-full bg-white fixed bottom-0 sm:hidden">
+      {/* <div className="flex justify-center w-full bg-white fixed bottom-0 sm:hidden">
         <div className="flex justify-around w-144 h-22 px-2 pt-4 pb-5">
           <div className="w-14  flex flex-col justify-center items-center font-iransansl">
             <svg
@@ -210,7 +210,7 @@ export const HeaderEx =  ({categoryItems }) => {
             <span>سبد خرید</span>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
