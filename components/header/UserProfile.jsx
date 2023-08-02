@@ -63,8 +63,9 @@ export const UserProfile = ({ headerId, clickHandler, showUserProfile }) => {
           </div>
         )}
         {showUserProfile && (
-           <div className="fixed top-0 left-0 right-0 bottom-0 overflow-hidden bg-[#0000001f] z-0" onClick={clickHandler}>
-          <div className="bg-snp-white shadow-md  fixed top-14 left-44 w-60 h-72 z-50 rounded-b-lg" >
+           <div className="fixed flex justify-center top-14 left-0 right-0 bottom-0 overflow-hidden bg-[#0000001f] z-20" onClick={clickHandler}>
+            <div className="relative flex justify-end w-144 tablet:w-192 laptop:w-248 desktop:w-300 h-full z-50">
+          <div className="bg-snp-white shadow-md  tablet:ml-12 w-60 mobile:w-60 h-72  rounded-b-lg" >
             <div className="flex flex-col justify-center font-iransans p-3 h-[85px] border-b-2 bg-[#FAFAFA] ">
               <span className="text-sm leading-7 ">پایونیر تیم </span>
               <div className="mt-3 text-sm ">
@@ -190,6 +191,8 @@ export const UserProfile = ({ headerId, clickHandler, showUserProfile }) => {
             </div>
           </div>
           </div>
+          </div>
+
         )}
       </div>
     </>
