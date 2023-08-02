@@ -2,6 +2,7 @@ import Image from "next/image";
 import snappmarketlogo from "../../../public/assets/images/snappmarket-logo.svg";
 import { CategoryPage } from "@/components/Category/CategoryPage";
 import { getLocalData } from "@/lib/localdata";
+import { SubCategoryPage} from "@/components/Category/SubCategoryPage";
 
 const data = await getLocalData();
 const category = data.categories;
@@ -13,6 +14,7 @@ const category = data.categories;
         params: {
           categoriesId:`${item.main}`,
         },
+        
       }
     })
 
@@ -21,7 +23,7 @@ const category = data.categories;
       fallback:false,
     }
   }
-export default function CategoriesDetail({ params }) {
+export default function CategoriesDetail({ params  }) {
   return (
     <main className="bg-snp-bg-body w-full  flex justify-center">
       <div className="mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300">
@@ -30,6 +32,8 @@ export default function CategoriesDetail({ params }) {
         صفحه دسته بندی ها {params.categoriesId}
         <Image src={snappmarketlogo} width={85} height={85}></Image>{" "}
       </p> */}
+      <SubCategoryPage mainFilterParam={'شیر'}/>
+
       </div>
     </main>
   );
