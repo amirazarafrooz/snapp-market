@@ -3,6 +3,7 @@ import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { ProductItemCard } from "../ProductItemCard";
 import Link from "next/link";
 import clsx from "clsx";
+import { useCallback, useRef } from "react";
 
 export const Carousel = ({
   products,
@@ -10,14 +11,15 @@ export const Carousel = ({
   space,
   cartClassName,
   content,
-  imageClass
+  imageClass,
 }) => {
-  const scrollLeft = () => {
-    document.getElementById(content).scrollLeft -= 240;
-  };
-  const scrollRight = () => {
-    document.getElementById(content).scrollLeft += 240;
-  };
+  const scroll = useRef(null);
+  const scrollLeft = useCallback(() => {
+    scroll.current.scrollLeft -= 240;
+  } , [scroll]);
+  const scrollRight = useCallback(() => {
+    scroll.current.scrollLeft += 240;
+  }, [scroll]);
 
   return (
     <div
@@ -27,7 +29,7 @@ export const Carousel = ({
       )}
     >
       <div
-        id={content}
+        ref={scroll}
         className=" flex items-center justify-start overflow-x-auto scroll-smooth  scrollbar-hide  h-full"
       >
         {products.map(({ images, name, quantity, discount, price, id }) => {
