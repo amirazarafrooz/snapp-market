@@ -9,11 +9,10 @@ const products = data.products;
 const campaigns = data.campaigns;
 
 export const CampaignSwiper = ({ CampaignTitle, campaignId }) => {
-
   return (
     <>
       <div
-        className="w-full flex flex-col justify-center items-center sm:flex-row p-2 rounded-md"
+        className="w-full flex flex-col justify-center items-center p-2 rounded-md sm:flex-row"
         style={{
           backgroundRepeat: "no-repeat",
           objectFit: "cover",
@@ -26,14 +25,13 @@ export const CampaignSwiper = ({ CampaignTitle, campaignId }) => {
           .map((item) => (
             <CampaignSwiperTittle item={item.title} />
           ))}
-        <div className="w-full sm:w-[80%]  md:w-[90%]">
+        <div className="w-full mx-auto px-1.5 sm:px-0 sm:w-[80%]  md:w-[90%]">
           <Carousel
             space={"ml-4"}
             cartClassName={"rounded-md"}
             products={products.filter(
               (item) => item.category.sub === CampaignTitle
             )}
-
             content={campaignId}
           />
         </div>
