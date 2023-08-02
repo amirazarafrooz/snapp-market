@@ -20,9 +20,7 @@ export const ProductItemCard = ({
   const Price = (price * (100 - discount)) / 100;
   const prodPrice = Price.toFixed(3);
   const dispatch = useDispatch();
-  const [isHide, setIsHide] = useState(false);
   const cart = useSelector((store) => store.cart);
-  console.log(cart);
   const handleAdd = useCallback(() => {
     dispatch(add({ id, name, price, discount, images, count: 0 }));
     setIsHide(true);
@@ -104,62 +102,6 @@ export const ProductItemCard = ({
               افزودن به سبد
             </button>
           )}
-          {/* {cart
-            .filter((item) => !item ?  item.id == id : [])
-            .map((item) => {
-              item ? (
-                <>
-                  <button
-                    onClick={handleAdd}
-                    className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2"
-                  >
-                    افزودن به سبد
-                  </button>
-                </>
-              ) : (
-                <div className="flex justify-center items-center w-full">
-                  {item.count == 1 ? (
-                    <Button btnStyleparam={"bin_addtoCartR"}></Button>
-                  ) : (
-                    <Button btnStyleparam={"minus_addtoCartR"}></Button>
-                  )}
-
-                  <p className="mx-2 text-snp-primaryh font-iransansb text-lg">
-                    {item.count}
-                  </p>
-                  <Button btnStyleparam={"plus_addtoCartR"}></Button>
-                </div>
-              );
-            })} */}
-          {/* {!isHide ? (
-            <button
-              onClick={handleAdd}
-              className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2"
-            >
-              افزودن به سبد
-            </button>
-          ) : (
-            <>
-              {cart
-                .filter((item) => item.id == id)
-                .map((item) => {
-                  return (
-                    <div className="flex justify-center items-center w-full">
-                      {item.count == 1 ? (
-                        <Button btnStyleparam={"bin_addtoCartR"}></Button>
-                      ) : (
-                        <Button btnStyleparam={"minus_addtoCartR"}></Button>
-                      )}
-
-                      <p className="mx-2 text-snp-primaryh font-iransansb text-lg">
-                        {item.count}
-                      </p>
-                      <Button btnStyleparam={"plus_addtoCartR"}></Button>
-                    </div>
-                  );
-                })}
-            </>
-          )} */}
         </div>
       </div>
     </div>
