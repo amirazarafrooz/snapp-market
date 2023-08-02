@@ -5,6 +5,7 @@ import Button from "./button/Button";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 import { add } from "@/redux/cartSlice";
+import { useCallback, useRef, useState } from "react";
 
 export const ProductItemCard = ({
   id,
@@ -19,11 +20,17 @@ export const ProductItemCard = ({
   const Price = (price * (100 - discount)) / 100;
   const prodPrice = Price.toFixed(3);
   const dispatch = useDispatch();
+  const [isHide, setIsHide] = useState(false);
   const cart = useSelector((store) => store.cart);
+  console.log(cart);
+  const handleAdd = useCallback(() => {
+    dispatch(add({ id, name, price, discount, images, count: 0 }));
+    setIsHide(true);
+  }, []);
   return (
     <div
       className={clsx(
-        "bg-snp-white overflow-hidden px-3.5 py-2 w-56 h-[356px]  group transition-all duration-400",
+        "bg-snp-white overflow-hidden px-3.5 py-2 w-56 h-[356px]  group transition-all duration-400 ",
         cartClassName
       )}
     >
@@ -68,35 +75,91 @@ export const ProductItemCard = ({
           </div>
         </div>
         <div className="w-1/2 mx-auto mt-auto">
-          {/* <Button
-            onclick={() => dispatch(add({ id, name, images, price, discount }))}
-            btnStyleparam={"addtoCartR"}
-          >
-            افزودن به سبد
-          </Button> */}
-          {/* {cart.filter(
-            (item) =>
-              (!item ? (
-                <button
-                  onClick={() =>
-                    dispatch(
-                      add({ id, name, price, discount, images, count: 0 })
-                    )
-                  }
-                  className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2"
-                >
-                  افزودن به سبد
-                </button>
-              ) : <button>{item.count}</button>)
+          {cart.filter((item) => item.id == id)[0]?.count > 0 ? (
+            <>
+              {cart
+                .filter((item) => item.id == id)
+                .map((item) => {
+                  return (
+                    <div className="flex items-center">
+                      {item.count == 1 ? (
+                        <Button btnStyleparam={"bin_addtoCartR"}></Button>
+                      ) : (
+                        <Button btnStyleparam={"minus_addtoCartR"}></Button>
+                      )}
+
+                      <p className="mx-2 text-snp-primaryh font-iransansb text-lg">
+                        {item.count}
+                      </p>
+                      <Button btnStyleparam={"plus_addtoCartR"}></Button>
+                    </div>
+                  );
+                })}
+            </>
+          ) : (
+            <button
+              onClick={handleAdd}
+              className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2"
+            >
+              افزودن به سبد
+            </button>
+          )}
+          {/* {cart
+            .filter((item) => !item ?  item.id == id : [])
+            .map((item) => {
+              item ? (
+                <>
+                  <button
+                    onClick={handleAdd}
+                    className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2"
+                  >
+                    افزودن به سبد
+                  </button>
+                </>
+              ) : (
+                <div className="flex justify-center items-center w-full">
+                  {item.count == 1 ? (
+                    <Button btnStyleparam={"bin_addtoCartR"}></Button>
+                  ) : (
+                    <Button btnStyleparam={"minus_addtoCartR"}></Button>
+                  )}
+
+                  <p className="mx-2 text-snp-primaryh font-iransansb text-lg">
+                    {item.count}
+                  </p>
+                  <Button btnStyleparam={"plus_addtoCartR"}></Button>
+                </div>
+              );
+            })} */}
+          {/* {!isHide ? (
+            <button
+              onClick={handleAdd}
+              className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2"
+            >
+              افزودن به سبد
+            </button>
+          ) : (
+            <>
+              {cart
+                .filter((item) => item.id == id)
+                .map((item) => {
+                  return (
+                    <div className="flex justify-center items-center w-full">
+                      {item.count == 1 ? (
+                        <Button btnStyleparam={"bin_addtoCartR"}></Button>
+                      ) : (
+                        <Button btnStyleparam={"minus_addtoCartR"}></Button>
+                      )}
+
+                      <p className="mx-2 text-snp-primaryh font-iransansb text-lg">
+                        {item.count}
+                      </p>
+                      <Button btnStyleparam={"plus_addtoCartR"}></Button>
+                    </div>
+                  );
+                })}
+            </>
           )} */}
-          <button
-            onClick={() =>
-              dispatch(add({ id, name, price, discount, images , count : 0}))
-            }
-            className="w-full text-xs font-bolder tracking-wide text-blue-600 border border-blue-400 hover:bg-blue-600 hover:text-white hover:border-none rounded-full p-2"
-          >
-            افزودن به سبد
-          </button>
         </div>
       </div>
     </div>
