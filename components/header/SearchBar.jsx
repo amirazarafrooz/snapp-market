@@ -20,7 +20,7 @@ export const SearchBar = ({ device }) => {
           </form>
         </div>
       ) : (
-        <div className="hidden  tablet:w-64 tablet:flex  tablet:items-center  tablet:p-2 laptop:w-52 desktop:w-96">
+        <div className="hidden tablet:w-64 tablet:flex  tablet:items-center  tablet:p-2 laptop:w-52 desktop:w-96">
           <form className="tablet:relative tablet:flex  tablet:items-center tablet:w-full ">
             <input
               type="text"
