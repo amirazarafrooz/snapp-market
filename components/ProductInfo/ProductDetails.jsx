@@ -1,4 +1,5 @@
 import Button from "../button/Button";
+import { ProductsDetailsButton } from "./ProductDetailsButton";
 
 export const ProductDetails = ({
   name,
@@ -9,6 +10,7 @@ export const ProductDetails = ({
   price,
   discount,
 }) => {
+  const product = { name, category, brand, seller, tags, price, discount };
   const Price = (price * (100 - discount)) / 100;
   const totalPrice = Price.toFixed(3);
   return (
@@ -58,7 +60,7 @@ export const ProductDetails = ({
           </div>
         </div>
         <div className="flex justify-end mt-4">
-          <Button btnStyleparam={"addtoCart"}>افزودن به سبد</Button>
+          <ProductsDetailsButton product={product}/>
         </div>
       </div>
     </div>
