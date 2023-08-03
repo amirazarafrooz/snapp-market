@@ -58,6 +58,7 @@ export const SubCategoryPage = ({mainFilterParam}) => {
                 price={price}
                 images={images}
                 cartClassName={"border-l hover:shadow-lg hover:-translate-y-1"}
+
                 imageClass={"-translate-y-1"}
               />
             </div>
