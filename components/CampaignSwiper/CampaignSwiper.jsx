@@ -7,7 +7,10 @@ const data = await getLocalData();
 const products = data.products;
 const campaigns = data.campaigns;
 
-export const CampaignSwiper = ({ CampaignTitle}) => {
+export const CampaignSwiper = ({ CampaignTitle }) => {
+  const campaignProducts = products.filter(
+    (item) => item.category.sub === CampaignTitle
+  );
   return (
     <>
       <div
@@ -19,21 +22,19 @@ export const CampaignSwiper = ({ CampaignTitle}) => {
           backgroundImage: `url(${campaignBackground.src})`,
         }}
       >
-        {campaigns
+        <CampaignSwiperTittle title={CampaignTitle}/>
+        {/* {campaigns
           .filter((item) => item.title === CampaignTitle)
           .map((item) => (
             <CampaignSwiperTittle item={item.title} />
-          ))}
+          ))} */}
         <div className="w-full mx-auto px-1.5 sm:px-0 sm:w-[80%]  md:w-[90%]">
           <Carousel
             space={"ml-4"}
             cartClassName={"rounded-md"}
-            products={products.filter(
-              (item) => item.category.sub === CampaignTitle
-            )}
+            products={campaignProducts}
           />
         </div>
-        {/* <ProductSwiper products={products} /> */}
       </div>
     </>
   );

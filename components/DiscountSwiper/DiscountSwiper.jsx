@@ -6,6 +6,7 @@ const data = await getLocalData();
 const products = data.products;
 
 export const DiscountSwiper = () => {
+  const highDiscount = products.filter((item) => item.discount > 25);
   return (
     <section
       className="w-full flex items-center justify-center py-4 px-6 rounded-md"
@@ -19,7 +20,7 @@ export const DiscountSwiper = () => {
         <Carousel
           space={"ml-4"}
           cartClassName={"rounded-md"}
-          products={products.filter((item) => item.discount > 25)}
+          products={highDiscount}
         />
       </div>
     </section>

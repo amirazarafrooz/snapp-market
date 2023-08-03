@@ -28,7 +28,7 @@ export default function Home() {
       <div className='w-full p-2'><CampaignSwiper CampaignTitle={'شیر'} /></div>
       <div className='w-full p-2'> <CampaignSwiper CampaignTitle={'نوشابه'} /></div>
       <BannerCampaign bannercount={'marketingDiscount'}/>
-      <div className='w-full p-2'> <CampaignSwiper CampaignTitle={'با تخفیف بخر!'} /></div>
+      <div className='w-full p-2'> <CampaignSwiper CampaignTitle={'آجیل'} /></div>
       <BannerCampaign bannercount={'buyandcook'}/>
       <AboutSnappmarket/>
 
