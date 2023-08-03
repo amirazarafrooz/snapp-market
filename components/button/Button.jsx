@@ -111,7 +111,7 @@ const Button = ({ btnStyleparam, children, product }) => {
       {/* ------------------------------------ add to cart fully rounded button -----------------------------------------*/}
 
       {btnStyleparam === "addtoCartR" ? (
-        <button className={`${themeR}    h-9 px-4 `}>{children}</button>
+        <button className={`${themeR}    h-9 px-4 `} onClick={handleAdd}>{children}</button>
       ) : null}
 
       {/* ------------------------------------ addtocart in product items sub button -----------------------------------------*/}
