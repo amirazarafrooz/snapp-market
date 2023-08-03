@@ -43,8 +43,8 @@ export const SubCategoryPage = ({mainFilterParam}) => {
         {/* items load here */}
         <div className="flex justify-start items-start flex-wrap border-l-[1px] border-r-[1px] bg-blue-200">
         
-        {products
-        .filter((item)=>(item.category.sub==`${mainFilterParam}`))
+        {products    
+        .filter((item)=>(item.category.sub == `${categories.filter((item)=>item.main==mainFilterParam)[0].mainFA}`))    
         .map(({ images, name, quantity, discount, price, id }) => {
           return (
             <div className="flex w-full mobile:w-1/2 tablet:w-1/3 desktop:w-1/4" key={name}>

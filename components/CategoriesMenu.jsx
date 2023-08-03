@@ -52,7 +52,9 @@ export const CategoriesMenu =  ({showToggle, categoryItems, clickHandler}) => {
                  </svg>
                 </span>
                 </div>
-            {categoryItems?.map((item) => 
+            {categoryItems
+            .filter((item)=>item.subs.length>0)
+            ?.map((item) => 
             (   <Link className=' group hover:bg-white laptop:h-1/6   laptop:my-1'  href={`/categories/${item.main}`}>
                 
                 <div className='flex flex-col font-iransans py-3 laptop:py-1 laptop:p-0 laptop:h-16 leading-5'>
