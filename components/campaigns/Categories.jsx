@@ -13,7 +13,9 @@ export const Categories = () => {
         دسته بندی ها
       </h3>
       <div className="flex flex-wrap mt-3 gap-2 justify-center items-center tablet:gap-4 ">
-        {categories.map((item) => (
+        {categories
+        .filter((item)=>item.subs.length>0)
+        .map((item) => (
           <div className="flex items-center rounded-lg h-20 w-[30%] bg-snp-light tablet:w-[23%] laptop:w-56 laptop:h-28 ">
             <Link
               className="flex items-center gap-2 justify-start w-full "
