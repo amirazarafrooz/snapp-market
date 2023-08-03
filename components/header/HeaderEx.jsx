@@ -10,6 +10,7 @@ import { UserProfile } from "./UserProfile";
 import Button from "../button/Button";
 import { CategoriesMenu } from '../CategoriesMenu';
 import Link from "next/link";
+import { ShoppingCard } from "./ShoppingCard";
 
 
 export const HeaderEx =  ({categoryItems }) => {
@@ -23,6 +24,11 @@ export const HeaderEx =  ({categoryItems }) => {
   const categoryleHandler = useCallback(() => {
     setShowCategory(!showcategory);
   }, [showcategory]);
+
+  const [showCart, setShowCart] = useState(false);
+  const cartHandler = useCallback(() => {
+    setShowCart(!showCart);
+  }, [showCart]);
 
 
   
@@ -83,7 +89,8 @@ export const HeaderEx =  ({categoryItems }) => {
               {/* user info  */}
               <UserProfile headerId={"HeaderEx"} clickHandler={userProfileHandler} showUserProfile={showUserProfile}  />
               <div className="hidden tablet:block">
-                <Button btnStyleparam={"cart"}>سبد خرید</Button>
+                {/* <Button btnStyleparam={"cart"} >سبد خرید</Button> */}
+                <ShoppingCard cartHandler={cartHandler} showCart={showCart}/>
               </div>
             </div>
           </div>

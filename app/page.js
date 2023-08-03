@@ -5,7 +5,6 @@ import { BannerCampaign } from '@/components/campaigns/BannerCampaign'
 import { Categories } from '@/components/campaigns/Categories'
 import { AboutSnappmarket } from '@/components/captions/about'
 
-import { ShoppingCard } from '@/components/ShoppingCard'
 import Button from '@/components/button/Button'
 import { CategoriesMenu } from '@/components/CategoriesMenu'
 import { Carousel } from '@/components/Carousel/Carousel'
@@ -21,7 +20,6 @@ export default function Home() {
       <div className='mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300'>
       <CategoriesMenu showToggle={true}/>
       
-
 
       <div className='w-full p-2 mt-6'> <DiscountSwiper/></div>
       <BannerCampaign bannercount={'maltich'}/>

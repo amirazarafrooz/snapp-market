@@ -9,6 +9,7 @@ import { SearchBar } from "./SearchBar";
 import { UserProfile } from "./UserProfile";
 import Button from "../button/Button";
 import { useState , useCallback } from "react";
+import { ShoppingCard } from "./ShoppingCard";
 
 
 export const HeaderSc = ({categoryItems}) => {
@@ -18,6 +19,11 @@ export const HeaderSc = ({categoryItems}) => {
   const userProfileHandler = useCallback(() => {
     setShowUserProfile(!showUserProfile);
   }, [showUserProfile]);
+
+  const [showCart, setShowCart] = useState(false);
+  const cartHandler = useCallback(() => {
+    setShowCart(!showCart);
+  }, [showCart]);
 
   return (
     <div>
@@ -93,7 +99,9 @@ export const HeaderSc = ({categoryItems}) => {
               {/* button cart  */}
               <div className="hidden tablet:block">
               
-                <Button btnStyleparam={'cart'} >سبد خرید</Button>
+                {/* <Button btnStyleparam={'cart'} >سبد خرید</Button> */}
+                <ShoppingCard cartHandler={cartHandler} showCart={showCart}/>
+
 
               </div>
             </div>

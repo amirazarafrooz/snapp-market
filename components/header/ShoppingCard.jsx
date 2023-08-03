@@ -2,16 +2,16 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { ShoppingItem } from "./ShoppinItem";
+import { ShoppingItem } from "../ShoppinItem";
 import { add, decrement } from "@/redux/cartSlice";
+import Button from "../button/Button";
 
-export const ShoppingCard = () => {
+export const ShoppingCard = ({cartHandler , showCart}) => {
+
   const modalWrapperRef = useRef();
   const cart = useSelector((store) => store.cart);
   const dispatch = useDispatch();
-  const handleCloseClick = (e) => {
-    e.preventDefault();
-  };
+  
   // const handleDecrement = (id) => {
   //   dispatch(decrement(id))
   // }
@@ -20,11 +20,17 @@ export const ShoppingCard = () => {
   // }
 
   ("fixed z-50 w-full max-w-md h-full max-h-full overflow-x-hidden overflow-y-auto md:inset-0 text-gray-900 bg-white flex flex-col");
-  return (
-    <div className="w-full h-full  bg-[rgba(0,0,0,0.6)]">
-      <div className=" fixed left-0 top-0 z-[99] bg-snp-white h-full max-h-full w-full max-w-md overflow-x-hidden overflow-y-auto flex flex-col">
+  return ( 
+    <>
+    <div onClick={cartHandler}>
+      <Button btnStyleparam={"cart"}>سبد خرید</Button>
+      </div>
+    {showCart && (
+       <div className="fixed flex justify-end top-0 left-0 right-0 bottom-0 bg-[#0000006e]  z-[201] h-screen " onClick={cartHandler}>
+        
+      <div className=" relative left-0 top-0 bg-snp-white h-full max-h-full w-full max-w-md  flex flex-col z-[202]">
         <div
-          className="flex items-start justify-between py-2 pr-3 shadow border-b border-b-snp-lightgray font-iransans"
+          className="flex items-start justify-between py-2 pr-3 h-96 shadow border-b border-b-snp-lightgray font-iransans"
           ref={modalWrapperRef}
         >
           <p>سبد خرید من</p>
@@ -32,7 +38,7 @@ export const ShoppingCard = () => {
             type="button"
             className=" text-snp-primary bg-transparent rounded-lg font-thin text-[2px] w-7 h-7 inline-flex justify-center items-center ml-2"
             data-modal-hide="defaultModal"
-            onClick={handleCloseClick}
+            onClick={cartHandler}
           >
             <svg
               className="w-3.5 h-3.5 "
@@ -77,5 +83,7 @@ export const ShoppingCard = () => {
         </div>
       </div>
     </div>
+    )}
+    </>
   );
 };
