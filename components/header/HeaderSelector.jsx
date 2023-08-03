@@ -1,13 +1,18 @@
 'use client'
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { HeaderEx } from '../header/HeaderEx';
 import { HeaderSc } from '../header/HeaderSc';
 import { NavbarMobile } from './NavbarMobile';
+import { ShoppingCard } from './ShoppingCard';
 
 
 
 export const HeaderSelector =  ({categoryItems}) => {
+
+
+
+
 
 
 // logic
