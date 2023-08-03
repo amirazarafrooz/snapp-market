@@ -5,6 +5,8 @@ import { getLocalData } from "@/lib/localdata";
 
 const data = await getLocalData();
 const products = data.products;
+const categories=data.categories;
+
 
 export const SubCategoryPage = ({mainFilterParam}) => {
   return (
