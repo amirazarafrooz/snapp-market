@@ -1,6 +1,5 @@
 import { getLocalData } from "@/lib/localdata";
 import { CampaignSwiperTittle } from "./CampaignSwiperTittle";
-import { ProductSwiper } from "./ProductSwiper";
 import campaignBackground from "../../public/assets/images/campaignBackground.png";
 import { Carousel } from "../Carousel/Carousel";
 
@@ -8,7 +7,7 @@ const data = await getLocalData();
 const products = data.products;
 const campaigns = data.campaigns;
 
-export const CampaignSwiper = ({ CampaignTitle, campaignId }) => {
+export const CampaignSwiper = ({ CampaignTitle}) => {
   return (
     <>
       <div
@@ -32,7 +31,6 @@ export const CampaignSwiper = ({ CampaignTitle, campaignId }) => {
             products={products.filter(
               (item) => item.category.sub === CampaignTitle
             )}
-            content={campaignId}
           />
         </div>
         {/* <ProductSwiper products={products} /> */}

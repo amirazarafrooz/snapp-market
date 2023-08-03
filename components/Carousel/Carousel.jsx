@@ -10,7 +10,6 @@ export const Carousel = ({
   className,
   space,
   cartClassName,
-  content,
   imageClass,
 }) => {
   const scroll = useRef(null);

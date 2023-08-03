@@ -25,10 +25,10 @@ export default function Home() {
       <BannerCampaign bannercount={'maltich'}/>
       <Categories/>
       <BannerCampaign bannercount={'sunich'}/>
-      <div className='w-full p-2'><CampaignSwiper CampaignTitle={'شیر'} campaignId={"s2"}/></div>
-      <div className='w-full p-2'> <CampaignSwiper CampaignTitle={'نوشابه'} campaignId={"s3"}/></div>
+      <div className='w-full p-2'><CampaignSwiper CampaignTitle={'شیر'} /></div>
+      <div className='w-full p-2'> <CampaignSwiper CampaignTitle={'نوشابه'} /></div>
       <BannerCampaign bannercount={'marketingDiscount'}/>
-      <div className='w-full p-2'> <CampaignSwiper CampaignTitle={'با تخفیف بخر!'} campaignId={"s4"}/></div>
+      <div className='w-full p-2'> <CampaignSwiper CampaignTitle={'با تخفیف بخر!'} /></div>
       <BannerCampaign bannercount={'buyandcook'}/>
       <AboutSnappmarket/>
 
