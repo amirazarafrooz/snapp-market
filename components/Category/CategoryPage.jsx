@@ -10,16 +10,8 @@ const category = data.categories;
 export const CategoryPage = async ({ categoryName }) => {
   return (
     <div className="w-full laptop:flex relative">
-      {category
-        .filter((item) => item.main === categoryName)
-        .map((item) => (
-          <CategoryListDesk list={item.subs} />
-        ))}
-      {category
-        .filter((item) => item.main === categoryName)
-        .map((item) => (
-          <CategoryListTab list={item.subs} title={item.mainFA} />
-        ))}
+      <CategoryListDesk categoryName={categoryName} />
+      <CategoryListTab categoryName={categoryName} />
       {category
         .filter((item) => item.main === categoryName)
         .map((item) => {
