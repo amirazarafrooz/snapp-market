@@ -44,15 +44,15 @@ export const ShoppingItem = ({ details , handleDecrement , handleAdd }) => {
           </div>
           <div className="flex justify-center items-center  h-full mt-auto py-3 px-6">
             {count == 1 ? (
-              <Button btnStyleparam={"bin_addtoCartR"} onClick={handleDecrement}></Button>
+              <Button btnStyleparam={"bin_addtoCartR"} ></Button>
             ) : (
-              <Button btnStyleparam={"minus_addtoCartR"} onClick={handleDecrement}></Button>
+              <Button btnStyleparam={"minus_addtoCartR"} ></Button>
             )}
 
             <p className="mx-3 text-snp-primaryh font-iransansb text-lg">
               {count}
             </p>
-            <Button btnStyleparam={"plus_addtoCartR"} onClick={handleAdd}></Button>
+            <Button btnStyleparam={"plus_addtoCartR"} ></Button>
           </div>
         </div>
       </div>
