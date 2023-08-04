@@ -53,7 +53,6 @@ export const SubCategoryPage = ({mainFilterParam}) => {
               <ProductItemCard
                 product={product}
                 cartClassName={"border-l hover:shadow-lg hover:-translate-y-1"}
-
                 imageClass={"-translate-y-1"}
               />
             </div>
