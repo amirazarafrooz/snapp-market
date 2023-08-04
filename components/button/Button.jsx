@@ -4,10 +4,12 @@ import Image from "next/image";
 import categoruIcon from "../../public/assets/images/category-icon.svg";
 import cartIcon from "../../public/assets/images/cartbtn-icon.svg";
 import arrowIcon from "../../public/assets/images/arrow-icon.svg";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { add, decrement, removeItem, reset } from "@/redux/cartSlice";
 
 const Button = ({ btnStyleparam, children, product }) => {
+  const cart = useSelector(store => store.cart);
+  const cartCounts = cart.reduce((init , cur) => init += cur.count , 0)
   const dispath = useDispatch();
   const handleAdd = useCallback(() => {
     dispath(add({ ...product, count: 0 }));
@@ -72,7 +74,7 @@ const Button = ({ btnStyleparam, children, product }) => {
           />
           {children}
           <div className="flex justify-center items-center font-iransans text-md text-snp-primary rounded-full bg-snp-lightgray w-6 h-6 mr-3 pt-1">
-            14
+            {cartCounts}
           </div>
         </button>
       ) : null}
