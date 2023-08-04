@@ -10,7 +10,6 @@ export const Carousel = ({
   className,
   space,
   cartClassName,
-  content,
   imageClass,
 }) => {
   const scroll = useRef(null);
@@ -32,16 +31,11 @@ export const Carousel = ({
         ref={scroll}
         className=" flex items-center justify-start overflow-x-auto scroll-smooth  scrollbar-hide  h-full"
       >
-        {products.map(({ images, name, quantity, discount, price, id }) => {
+        {products.map((product) => {
           return (
-            <div key={name} className={space}>
+            <div key={product.id} className={space}>
               <ProductItemCard
-                id={id}
-                name={name}
-                quantity={quantity}
-                discount={discount}
-                price={price}
-                images={images}
+                product={product}
                 cartClassName={cartClassName}
                 imageClass={imageClass}
               />
