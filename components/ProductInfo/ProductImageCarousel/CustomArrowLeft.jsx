@@ -18,6 +18,7 @@ export const CustomArrowLeft = ({  style, onClick }) => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize : '12px',
+        boxShadow: 'rgba(0, 0, 0, 0.11) 0px 0.6rem 1rem 0px',
       }}
       onClick={onClick}
     />
