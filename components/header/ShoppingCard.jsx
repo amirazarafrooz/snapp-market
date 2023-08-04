@@ -17,11 +17,11 @@ export const ShoppingCard = ({cartHandler , showCart}) => {
   useEffect(() => {
     // Applying on mount
     if(showCart) {
-           modal.current.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.style.overflow = "hidden";
-            console.log('makhfi');
+      // document.body.style.overflow = "hidden";
+                  console.log('makhfi');
 
           } else {
-            modal.current.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.style.overflow = "visible";
+            document.body.style.overflow = "visible";
           console.log('ashkara');
 
         }

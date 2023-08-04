@@ -15,7 +15,7 @@ export const CategoriesMenu =  ({showToggle, categoryItems, clickHandler}) => {
   useEffect(() => {
     // Applying on mount
     if(showToggle) {
-      document.body.style.overflow = "hidden";
+      // document.body.style.overflow = "hidden";
       console.log('makhfi');
 
           } else {
