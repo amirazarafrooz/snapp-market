@@ -11,7 +11,8 @@ export const ProductImageCarousel = ({ images }) => {
     customPaging: function (i) {
       return (
         <div>
-          <Image alt="background-slider"
+          <Image
+            alt="background-slider"
             src={images[i + 1]}
             width={0}
             height={0}
@@ -32,19 +33,25 @@ export const ProductImageCarousel = ({ images }) => {
   return (
     <div className="w-full h-full tablet:w-1/2 px-4 tablet:px-12 mb-auto">
       <Slider {...settings}>
-        {images.map((item) => {
+        {images.map((item, index) => {
           return (
-            <div className="w-full h-72 border rounded">
-              <Image alt="background-slider"
-                src={item}
-                width={0}
-                height={0}
-                style={{
-                  width: "fit-content",
-                  height: "100%",
-                  margin: "0 auto",
-                }}
-              ></Image>
+            <div
+              key={index}
+              className="h-72 tablet:h-80 laptop:h-80 border rounded "
+            >
+                <div className="h-5/6 mt-1">
+                <Image
+                  alt="background-slider"
+                  src={item}
+                  width={0}
+                  height={0}
+                  style={{
+                    width: "fit-content",
+                    height: "fit-content",
+                    margin: '0 auto', 
+                  }}
+                ></Image>
+                </div>
             </div>
           );
         })}

@@ -12,26 +12,21 @@ export const ProductInfo = ({ productId }) => {
     <div className="w-full ">
       {products
         .filter((product) => product.id == productId)
-        .map((item) => {
+        .map((product) => {
           return (
-            <div key={item.id} className="">
+            <div key={product.id} className="">
               <div className="w-full bg-snp-white border rounded my-8 pb-5 tablet:px-12 tablet:pb-12">
-                <BreadCrumb category={item.category.main} subCategory={item.category.sub} subCategoryBrand={item.brand}/> 
+                <BreadCrumb
+                  category={product.category.main}
+                  subCategory={product.category.sub}
+                  subCategoryBrand={product.brand}
+                />
                 <div className="tablet:flex tablet:items-center tablet:justify-center w-full h-full my-10">
-                  {/* <div className="w-full tablet:w-1/2 bg-black">1</div> */}
-                  <ProductImageCarousel images={item.images} />
-                  <ProductDetails
-                    name={item.name}
-                    category={item.category.sub}
-                    brand={item.brand}
-                    seller={item.seller}
-                    //   tags={item.tags}
-                    price={item.price}
-                    discount={item.discount}
-                  />
+                  <ProductImageCarousel images={product.images} />
+                  <ProductDetails product={product} />
                 </div>
               </div>
-              <CategoryCarousel item={item.category.sub} seeMore={false} />
+              <CategoryCarousel item={product.category.sub} seeMore={false} />
             </div>
           );
         })}
