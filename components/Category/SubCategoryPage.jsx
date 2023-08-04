@@ -49,7 +49,7 @@ export const SubCategoryPage = ({mainFilterParam}) => {
         .filter((item)=>(item.category.sub == `${categories.filter((item)=>item.main==mainFilterParam)[0].mainFA}`))    
         .map((product) => {
           return (
-            <div className="flex w-full mobile:w-1/2 tablet:w-1/3 desktop:w-1/4" key={name}>
+            <div className="flex w-full mobile:w-1/2 tablet:w-1/3 desktop:w-1/4" key={product.id}>
               <ProductItemCard
                 product={product}
                 cartClassName={"border-l hover:shadow-lg hover:-translate-y-1"}
