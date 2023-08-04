@@ -5,12 +5,30 @@ import { useDispatch, useSelector } from "react-redux";
 import { ShoppingItem } from "../ShoppinItem";
 import { add, decrement } from "@/redux/cartSlice";
 import Button from "../button/Button";
+import { useEffect } from "react";
 
 export const ShoppingCard = ({cartHandler , showCart}) => {
 
-  const modalWrapperRef = useRef();
+  const modal = useRef(null);
   const cart = useSelector((store) => store.cart);
   const dispatch = useDispatch();
+
+
+  useEffect(() => {
+    // Applying on mount
+    if(showCart) {
+           modal.current.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.style.overflow = "hidden";
+            console.log('makhfi');
+
+          } else {
+            modal.current.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.style.overflow = "visible";
+          console.log('ashkara');
+
+        }
+    // Applying on unmount    
+            return () => {
+                          }
+          }, [cartHandler])
   
   // const handleDecrement = (id) => {
   //   dispatch(decrement(id))
@@ -19,19 +37,19 @@ export const ShoppingCard = ({cartHandler , showCart}) => {
   //   dispatch(add({id, name, price, discount, images }))
   // }
 
-  ("fixed z-50 w-full max-w-md h-full max-h-full overflow-x-hidden overflow-y-auto md:inset-0 text-gray-900 bg-white flex flex-col");
+  // ("fixed z-50 w-full max-w-md h-full max-h-full overflow-x-hidden overflow-y-auto md:inset-0 text-gray-900 bg-white flex flex-col");
   return ( 
     <>
-    <div onClick={cartHandler}>
+    <div onClick={cartHandler} ref={modal} >
       <Button btnStyleparam={"cart"}>سبد خرید</Button>
       </div>
     {showCart && (
-       <div className="fixed flex justify-end top-0 left-0 right-0 bottom-0 bg-[#0000006e]  z-[201] h-screen " onClick={cartHandler}>
+       <div className="fixed flex justify-end top-0 left-0 right-0 bottom-0 bg-[#0000006e]  z-[201] h-screen "   onClick={cartHandler}>
         
       <div className=" relative left-0 top-0 bg-snp-white h-full max-h-full w-full max-w-md  flex flex-col z-[202]">
         <div
           className="flex items-start justify-between py-2 pr-3 h-96 shadow border-b border-b-snp-lightgray font-iransans"
-          ref={modalWrapperRef}
+          
         >
           <p>سبد خرید من</p>
           <button

@@ -8,7 +8,7 @@ import delivery from "../../public/assets/images/delivery-icon.svg";
 import { SearchBar } from "./SearchBar";
 import { UserProfile } from "./UserProfile";
 import Button from "../button/Button";
-import { CategoriesMenu } from '../CategoriesMenu';
+import { CategoriesMenu } from './CategoriesMenu';
 import Link from "next/link";
 import { ShoppingCard } from "./ShoppingCard";
 
