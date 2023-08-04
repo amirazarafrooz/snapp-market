@@ -42,7 +42,7 @@ export const ShoppingItem = ({ details , handleDecrement , handleAdd }) => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-3 items-center h-full mt-auto py-3 px-6">
+          <div className="flex justify-between items-center w-1/2 h-full mt-auto py-3 px-6">
             {count == 1 ? (
               <Button btnStyleparam={"bin_addtoCartR"} product={details}></Button>
             ) : (
