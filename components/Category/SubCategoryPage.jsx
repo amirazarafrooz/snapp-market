@@ -47,16 +47,11 @@ export const SubCategoryPage = ({mainFilterParam}) => {
         
         {products    
         .filter((item)=>(item.category.sub == `${categories.filter((item)=>item.main==mainFilterParam)[0].mainFA}`))    
-        .map(({ images, name, quantity, discount, price, id }) => {
+        .map((product) => {
           return (
             <div className="flex w-full mobile:w-1/2 tablet:w-1/3 desktop:w-1/4" key={name}>
               <ProductItemCard
-                id={id}
-                name={name}
-                quantity={quantity}
-                discount={discount}
-                price={price}
-                images={images}
+                product={product}
                 cartClassName={"border-l hover:shadow-lg hover:-translate-y-1"}
 
                 imageClass={"-translate-y-1"}
