@@ -8,12 +8,12 @@ import delivery from "../../public/assets/images/delivery-icon.svg";
 import { SearchBar } from "./SearchBar";
 import { UserProfile } from "./UserProfile";
 import Button from "../button/Button";
-import { CategoriesMenu } from '../CategoriesMenu';
+import { CategoriesMenu } from './CategoriesMenu';
 import Link from "next/link";
 import { ShoppingCard } from "./ShoppingCard";
 
 
-export const HeaderEx =  ({categoryItems }) => {
+export const HeaderEx =  ({categoryItems ,searchItem}) => {
   
   const [showUserProfile, setShowUserProfile] = useState(false);
   const userProfileHandler = useCallback(() => {
@@ -29,6 +29,7 @@ export const HeaderEx =  ({categoryItems }) => {
   const cartHandler = useCallback(() => {
     setShowCart(!showCart);
   }, [showCart]);
+
 
 
   
@@ -147,7 +148,7 @@ export const HeaderEx =  ({categoryItems }) => {
 
         {/* Lower row container */}
         <div className=" flex justify-center tablet:w-full ">
-          <div className="flex  items-center  p-2 w-144 tablet:justify-start  tablet:w-192 laptop:w-248 desktop:w-300">
+          <div className="flex  items-start  p-2 w-144 tablet:justify-start  tablet:w-192 laptop:w-248 desktop:w-300">
             {/* Category btn */}
             <div className="hidden tablet:block">
               {/* <Button btnStyleparam={"categories"}>دسته‌بندی‌ها</Button> */}
@@ -155,7 +156,7 @@ export const HeaderEx =  ({categoryItems }) => {
 
             </div>
             {/* Search box */}
-            <SearchBar device={"mobile"} />
+            <SearchBar device={"mobile"} searchItem={searchItem} categoryItems={categoryItems} />
           </div>
         </div>
       </div>

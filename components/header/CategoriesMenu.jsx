@@ -2,19 +2,36 @@
 // import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import megamenu from '../public/assets/images/MegaMenuBg.png'
-import Button from './button/Button';
+import megamenu from '../../public/assets/images/MegaMenuBg.png'
+import Button from '../button/Button';
+import { useRef, useEffect } from 'react';
 
 
 
 export const CategoriesMenu =  ({showToggle, categoryItems, clickHandler}) => {
   
+  const modal = useRef(null);
 
+  useEffect(() => {
+    // Applying on mount
+    if(showToggle) {
+      // document.body.style.overflow = "hidden";
+      console.log('makhfi');
+
+          } else {
+            document.body.style.overflow = "visible";
+            console.log('ashkara');
+
+        }
+    // Applying on unmount    
+            return () => {
+                          }
+          }, [clickHandler])
 
 
     return (
         
-      <>
+      <div >
    {(categoryItems) && (   <div className=' hidden tablet:block' onClick={clickHandler}>
 <Button btnStyleparam={'categories'} >دسته‌بندی‌ها</Button>
 </div>)}
@@ -74,7 +91,7 @@ export const CategoriesMenu =  ({showToggle, categoryItems, clickHandler}) => {
         )}
         </div>
         )}
-</>        
+</div>        
     );
 };
 

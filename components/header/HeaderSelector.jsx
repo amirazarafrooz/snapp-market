@@ -8,7 +8,7 @@ import { ShoppingCard } from './ShoppingCard';
 
 
 
-export const HeaderSelector =  ({categoryItems}) => {
+export const HeaderSelector =  ({categoryItems , searchItem}) => {
 
 
 
@@ -40,7 +40,7 @@ export const HeaderSelector =  ({categoryItems}) => {
         <>
 
 
-                <div className={`relative z-20`}><HeaderEx categoryItems={categoryItems}/>
+                <div className={`relative z-20`}><HeaderEx searchItem={searchItem} categoryItems={categoryItems}/>
                 </div>
                 
 

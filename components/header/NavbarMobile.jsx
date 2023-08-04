@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useState, useCallback } from 'react';
-import { CategoriesMenu } from '../CategoriesMenu';
+import { CategoriesMenu } from './CategoriesMenu';
 
 export const NavbarMobile = ({categoryItems}) => {
 

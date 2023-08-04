@@ -1,13 +1,29 @@
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
 
 export const UserProfile = ({ headerId, clickHandler, showUserProfile }) => {
 
+  const modal = useRef(null);
 
+  useEffect(() => {
+    // Applying on mount
+    if(showUserProfile) {
+      // document.body.style.overflow = "hidden";
+            console.log('makhfi');
+
+          } else {
+            document.body.style.overflow = "visible";
+            console.log('ashkara');
+
+        }
+    // Applying on unmount    
+            return () => {
+                          }
+          }, [clickHandler])
 
   return (
     <>
-      <div className="relative ">
+      <div className="relative " ref={modal}>
         {headerId === "HeaderSc" ? (
           <div
             onClick={clickHandler}
