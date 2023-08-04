@@ -15,7 +15,7 @@ export const NavbarMobile = ({categoryItems}) => {
         <div>
 {/* navbar menu-mobile */}
 
-<div className="flex justify-center w-full bg-snp-light fixed bottom-0  tablet:hidden laptop:hidden desktop:hidden">
+<div className="flex justify-center w-full bg-snp-white fixed bottom-0  tablet:hidden laptop:hidden desktop:hidden z-[500]">
 <div className="flex justify-around w-144 h-22 px-2 pt-4 pb-5">
   <div className="w-14  flex flex-col justify-center items-center font-iransansl cursor-pointer">
     <svg
