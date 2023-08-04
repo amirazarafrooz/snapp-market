@@ -51,6 +51,7 @@ const Button = ({ btnStyleparam, children, product }) => {
       {btnStyleparam === "addtoCart" ? (
         <button
           className={`${theme} bg-snp-primary text-white w-60 h-12 p-4 hover:bg-snp-primaryh text-[13px]`}
+          onClick={handleAdd}
         >
           {children}
         </button>
