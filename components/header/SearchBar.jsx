@@ -36,7 +36,7 @@ export const SearchBar = ({ device, searchItem, categoryItems, subDevice }) => {
   return (
     <>
       {device === "mobile" ? (
-      <div className="flex flex-col items-start justify-start  px-2 w-full ">
+      <div className="flex flex-col items-start justify-start  w-full ">
           {subDevice === "mobiledown" ? (
                   <div className="flex flex-col items-start justify-start  px-2 w-full ">
                     <form className="relative flex  items-center w-full z-[202]">
