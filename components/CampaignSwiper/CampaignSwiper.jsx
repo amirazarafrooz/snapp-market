@@ -5,12 +5,15 @@ import { Carousel } from "../Carousel/Carousel";
 
 const data = await getLocalData();
 const products = data.products;
-const campaigns = data.campaigns;
+const category = data.categories;
 
-export const CampaignSwiper = ({ CampaignTitle}) => {
+export const CampaignSwiper = ({ CampaignTitle }) => {
   const campaignProducts = products.filter(
     (item) => item.category.sub === CampaignTitle
-  )
+  );
+  const filterCategory = category.filter(
+    (item) => item.mainFA === CampaignTitle
+  )[0].main;
   return (
     <>
       <div
@@ -30,6 +33,7 @@ export const CampaignSwiper = ({ CampaignTitle}) => {
           ))} */}
         <div className="w-full mx-auto px-1.5 sm:px-0 sm:w-[80%]  md:w-[90%]">
           <Carousel
+            link={filterCategory}
             space={"ml-4"}
             cartClassName={"rounded-md"}
             products={campaignProducts}

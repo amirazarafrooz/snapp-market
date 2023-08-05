@@ -16,7 +16,7 @@ export const ShoppingItem = ({ details , handleDecrement , handleAdd }) => {
           src={images[0]}
         ></Image>
       </div>
-      <div className="w-full h-full">
+      <div className="w-full h-full mr-3">
         <p className="text-sm tracking-tight">{name}</p>
         <div className="flex justify-between items-center mt-5">
           <div>
@@ -42,17 +42,17 @@ export const ShoppingItem = ({ details , handleDecrement , handleAdd }) => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center  h-full mt-auto py-3 px-6">
+          <div className="flex justify-between items-center w-1/2 h-full mt-auto py-3 px-6">
             {count == 1 ? (
-              <Button btnStyleparam={"bin_addtoCartR"} ></Button>
+              <Button btnStyleparam={"bin_addtoCartR"} product={details}></Button>
             ) : (
-              <Button btnStyleparam={"minus_addtoCartR"} ></Button>
+              <Button btnStyleparam={"minus_addtoCartR"} product={details}></Button>
             )}
 
-            <p className="mx-3 text-snp-primaryh font-iransansb text-lg">
+            <p className="mx-auto text-snp-primaryh font-iransansb text-lg">
               {count}
             </p>
-            <Button btnStyleparam={"plus_addtoCartR"} ></Button>
+            <Button btnStyleparam={"plus_addtoCartR"} product={details}></Button>
           </div>
         </div>
       </div>

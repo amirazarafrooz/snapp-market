@@ -17,7 +17,7 @@ export const DiscountSwiper = () => {
       }}
     >
       <DiscountTittle />
-      <div className="w-[45%] md:w-[65%] lg:w-[70%]">
+      <div className="w-[50%] md:w-[65%] lg:w-[70%]">
         <Carousel
           space={"ml-4"}
           cartClassName={"rounded-md"}

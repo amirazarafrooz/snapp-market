@@ -26,7 +26,7 @@ export const ProductInfo = ({ productId }) => {
                   <ProductDetails product={product} />
                 </div>
               </div>
-              <CategoryCarousel item={product.category.sub} seeMore={false} />
+              <CategoryCarousel title={product.category.sub} seeMore={false} />
             </div>
           );
         })}

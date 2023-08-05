@@ -13,7 +13,7 @@ export const ProductsDetailsButton = ({ product }) => {
             .filter((item) => item.id == product.id)
             .map((item) => {
               return (
-                <div className="flex items-center">
+                <div className="w-full flex items-center justify-between">
                   {item.count == 1 ? (
                     <Button
                       btnStyleparam={"bin_addtoCart"}
@@ -26,7 +26,7 @@ export const ProductsDetailsButton = ({ product }) => {
                     ></Button>
                   )}
 
-                  <p className="mx-2 laptop:mx-8 desktop:mx-16 text-snp-primaryh font-iransansb text-lg">
+                  <p className="text-snp-primaryh font-iransansb text-lg">
                     {item.count}
                   </p>
                   <Button

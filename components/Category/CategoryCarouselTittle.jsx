@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaAngleLeft } from "react-icons/fa6";
 
-export const CategoryCarouselTittle = ({ title, seeMore }) => {
+export const CategoryCarouselTittle = ({ title, seeMore ,link}) => {
   return (
     <>
       {seeMore && title ? (
@@ -9,7 +9,7 @@ export const CategoryCarouselTittle = ({ title, seeMore }) => {
           <p className="text-md font-iransans relative after:border after:border-blue-700 after:rounded-t-md after:absolute after:-bottom-3 after:left-0 after:w-full after:z-10">
             {title}
           </p>
-          <Link href={"/"}>
+          <Link href={`/categories/${link}`}>
             <div className="flex items-center">
               <p className=" text-sm text-snp-primary font-iransansl">
                 مشاهده بیشتر

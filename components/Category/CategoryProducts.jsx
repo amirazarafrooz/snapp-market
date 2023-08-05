@@ -16,7 +16,7 @@ export const CategoryProducts = ({ lists, breadCategory }) => {
           products.filter((product) => product.category.sub == item)[0] ? item : null
         )
         .map((item) => {
-          return <CategoryCarousel item={item} seeMore={true} />;
+          return <CategoryCarousel title={item} seeMore={true} />;
         })}
     </div>
   );
