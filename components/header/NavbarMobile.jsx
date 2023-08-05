@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useState, useCallback } from "react";
 import { CategoriesMenu } from "./CategoriesMenu";
 import { useSelector } from "react-redux";
 
 export const NavbarMobile = ({ categoryItems }) => {
   const cart = useSelector((store) => store.cart);
-  const cartCount = cart.reduce((init, cur) => (init += cur.count), 0);
+  const cartCount = useMemo(
+    () => cart.reduce((init, cur) => (init += cur.count), 0),
+    [cart]
+  );
   const [showcategory, setShowCategory] = useState(false);
   const categoryleHandler = useCallback(() => {
     setShowCategory(!showcategory);
