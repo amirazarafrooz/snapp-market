@@ -109,6 +109,7 @@ const Button = ({ btnStyleparam, children, product, finalPrice }) => {
       {btnStyleparam === "finalizeorder" ? (
         <button
           className={`${theme} relative bg-snp-lowdiscount w-full h-11 pr-4 pl-3 text-xl text-snp-white hover:bg-snp-finalizeBytnh`}
+          onClick={handleReset}
         >
           {children}
           {finalPrice != 0 && (

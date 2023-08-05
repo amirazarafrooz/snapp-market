@@ -6,6 +6,7 @@ import { ShoppingItem } from "../ShoppinItem";
 import Button from "../button/Button";
 import { useEffect } from "react";
 import { IoCloseOutline } from "react-icons/io5";
+import freeBasket from "../../public/assets/images/freeBasket.svg";
 
 export const ShoppingCard = ({ cartHandler, showCart }) => {
   const cart = useSelector((store) => store.cart);
@@ -86,34 +87,58 @@ export const ShoppingCard = ({ cartHandler, showCart }) => {
                 <IoCloseOutline className=" text-snp-secondary w-full h-full" />
               </button>
             </div>
-            <div className="overflow-y-auto overflow-x-hidden scroll-smooth scrollbar-hide">
-              <div className=" font-iransansl ">
-                {cart.map((c) => {
-                  return <ShoppingItem details={c} />;
-                })}
-              </div>
-            </div>
-            <div className="flex items-center flex-col border-t p-2 gap-1 mt-auto">
-              {finalPrice < 100 ? (
-                <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
-                  <p className=" font-iransansl"> حداقل سفارش 100٬000 تومان</p>
+            {cart.length > 0 ? (
+              <>
+                <div className="overflow-y-auto overflow-x-hidden scroll-smooth scrollbar-hide">
+                  <div className=" font-iransansl ">
+                    {cart.map((c) => {
+                      return <ShoppingItem details={c} />;
+                    })}
+                  </div>
                 </div>
-              ) : (
-                <>
-                  {cart.filter((c) => c.discount > 0 && c)[0]?.discount > 0 ? (
+                <div className="flex items-center flex-col border-t p-2 gap-1 mt-auto">
+                  {finalPrice < 100 ? (
+                    <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
+                      <p className=" font-iransansl">
+                        {" "}
+                        حداقل سفارش 100٬000 تومان
+                      </p>
+                    </div>
+                  ) : (
                     <>
-                      <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
-                        <span>{finalProfitPrice}</span>
-                        <span className="mr-1">تومان سود خرید</span>
-                      </div>
+                      {cart.filter((c) => c.discount > 0 && c)[0]?.discount >
+                      0 ? (
+                        <>
+                          <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
+                            <span>{finalProfitPrice}</span>
+                            <span className="mr-1">تومان سود خرید</span>
+                          </div>
+                        </>
+                      ) : null}
                     </>
-                  ) : null}
-                </>
-              )}
-              <Button btnStyleparam={"finalizeorder"} finalPrice={finalPrice}>
-                نهایی کردن خرید
-              </Button>
-            </div>
+                  )}
+                  <Button
+                    btnStyleparam={"finalizeorder"}
+                    finalPrice={finalPrice}
+                  >
+                    نهایی کردن خرید
+                  </Button>
+                </div>
+              </>
+            ) : (
+              <div className="h-full flex flex-col justify-center items-center text-center">
+                <div className="w-3/5 mx-auto">
+                  <Image
+                    src={freeBasket}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "fit-content", height: "fit-coontent" }}
+                  ></Image>
+                </div>
+                <p className=" font-iransansl text-gray-500 mt-4">سبد خرید شما خالی است :(</p>
+              </div>
+            )}
           </div>
         </div>
       )}
