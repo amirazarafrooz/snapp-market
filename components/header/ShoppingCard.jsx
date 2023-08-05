@@ -5,10 +5,26 @@ import { useSelector } from "react-redux";
 import { ShoppingItem } from "../ShoppinItem";
 import Button from "../button/Button";
 import { useEffect } from "react";
+import { IoCloseOutline } from "react-icons/io5";
+import { RiDeleteBinLine } from "react-icons/ri";
 
 export const ShoppingCard = ({ cartHandler, showCart }) => {
-  const modal = useRef(null);
   const cart = useSelector((store) => store.cart);
+  const totalPrice = cart.reduce(
+    (init, cur) =>
+      (init += cur.discount
+        ? cur.count * (cur.price * ((100 - cur.discount) / 100))
+        : cur.count * cur.price),
+    0
+  );
+  const finalPrice = totalPrice.toFixed(3);
+  const profitPrice = cart.reduce(
+    (init, cur) => (init += cur.count * ((cur.price * cur.discount) / 100)),
+    0
+  );
+  const finalProfitPrice = profitPrice.toFixed(3);
+  const amount = cart.reduce((init, cur) => (init += cur.count), 0);
+  const modal = useRef(null);
 
   useEffect(() => {
     // Applying on mount
@@ -37,34 +53,29 @@ export const ShoppingCard = ({ cartHandler, showCart }) => {
         <Button btnStyleparam={"cart"}>سبد خرید</Button>
       </div>
       {showCart && (
-        <div
-          className="fixed flex justify-end top-0 left-0 right-0 bottom-0 bg-[#0000006e]  z-[201] h-screen "
-        >
+        <div className="fixed flex justify-end top-0 left-0 right-0 bottom-0 bg-[#0000006e]  z-[201] h-screen ">
           <div className=" relative left-0 top-0 bg-snp-white h-full max-h-full w-full max-w-md  flex flex-col z-[202]">
-            <div className="flex items-start justify-between py-2 pr-3 shadow border-b border-b-snp-lightgray font-iransans">
-              <p>سبد خرید من</p>
+            <div className="flex items-start justify-between py-3 pr-3 shadow border-b border-b-snp-lightgray font-iransans">
+              <div className="flex items-center">
+                <p>سبد خرید من</p>
+                {cart.length > 0 ? (
+                  <>
+                    <span className="text-xs text-snp-lightblack mt-0.5 mx-2.5">
+                      <span className="mx-0.5">{amount}</span>
+                      <span>کالا</span>
+                    </span>
+                    <button className=" bg-snp-lightgray hover:bg-snp-gray text-snp-lightblack p-1.5 rounded-full">
+                      <RiDeleteBinLine/>
+                    </button>
+                  </>
+                ) : null}
+              </div>
               <button
                 type="button"
-                className=" text-snp-primary bg-transparent rounded-lg font-thin text-[2px] w-7 h-7 inline-flex justify-center items-center ml-2"
-                data-modal-hide="defaultModal"
+                className="  bg-transparent  w-6 h-6 inline-flex justify-center items-center ml-2"
                 onClick={cartHandler}
               >
-                <svg
-                  className="w-3.5 h-3.5 "
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                  />
-                </svg>
-                <span className="sr-only">Close modal</span>
+                <IoCloseOutline className=" text-snp-secondary w-full h-full" />
               </button>
             </div>
             <div className="overflow-y-auto overflow-x-hidden scroll-smooth scrollbar-hide">
@@ -74,15 +85,20 @@ export const ShoppingCard = ({ cartHandler, showCart }) => {
                 })}
               </div>
             </div>
-            <div className="flex items-center flex-col border-t p-1 mt-auto">
-              <div className="w-full text-center bg-snp-lightgray rounded py-1 text-sm mb-1">
-                <p className=" font-iransansl"> حداقل سفارش 100٬000 تومان</p>
-              </div>
-              <div className="w-full text-center bg-snp-lowdiscount rounded py-2">
-                <button className="w-full font-iransans text-snp-white">
-                  خرید
-                </button>
-              </div>
+            <div className="flex items-center flex-col border-t p-2 gap-1 mt-auto">
+              {finalPrice < 100 ? (
+                <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
+                  <p className=" font-iransansl"> حداقل سفارش 100٬000 تومان</p>
+                </div>
+              ) : (
+                <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
+                  <span>{finalProfitPrice}</span>
+                  <span className="mr-1">تومان سود خرید</span>
+                </div>
+              )}
+              <Button btnStyleparam={"finalizeorder"} finalPrice={finalPrice}>
+                نهایی کردن خرید
+              </Button>
             </div>
           </div>
         </div>

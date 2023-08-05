@@ -7,9 +7,9 @@ import arrowIcon from "../../public/assets/images/arrow-icon.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { add, decrement, removeItem, reset } from "@/redux/cartSlice";
 
-const Button = ({ btnStyleparam, children, product }) => {
-  const cart = useSelector(store => store.cart);
-  const cartCounts = cart.reduce((init , cur) => init += cur.count , 0)
+const Button = ({ btnStyleparam, children, product, finalPrice }) => {
+  const cart = useSelector((store) => store.cart);
+  const cartCounts = cart.reduce((init, cur) => (init += cur.count), 0);
   const dispath = useDispatch();
   const handleAdd = useCallback(() => {
     dispath(add({ ...product, count: 0 }));
@@ -100,25 +100,33 @@ const Button = ({ btnStyleparam, children, product }) => {
 
       {btnStyleparam === "finalizeorder" ? (
         <button
-          className={`${theme} relative bg-snp-lowdiscount w-96 h-11 pr-4 pl-3 text-xl text-snp-white hover:bg-snp-finalizeBytnh`}
+          className={`${theme} relative bg-snp-lowdiscount w-full h-11 pr-4 pl-3 text-xl text-snp-white hover:bg-snp-finalizeBytnh`}
         >
           {children}
-          <div className="absolute top-2 left-2 items-center font-iransans text-md text-sm text-snp-white rounded-md bg-gray-700 bg-opacity-30  mr-3 py-1 px-2">
-            8.900 تومان
-          </div>
+          {finalPrice != 0 && (
+            <span className="absolute left-2 items-center font-iransans text-md text-sm text-snp-white rounded-md bg-gray-700 bg-opacity-30  mr-3 py-1 px-2">
+              <span>{finalPrice}</span>
+              <span className="mr-1">تومان</span>
+            </span>
+          )}
         </button>
       ) : null}
 
       {/* ------------------------------------ add to cart fully rounded button -----------------------------------------*/}
 
       {btnStyleparam === "addtoCartR" ? (
-        <button className={`${themeR}    h-9 px-4 `} onClick={handleAdd}>{children}</button>
+        <button className={`${themeR}    h-9 px-4 `} onClick={handleAdd}>
+          {children}
+        </button>
       ) : null}
 
       {/* ------------------------------------ addtocart in product items sub button -----------------------------------------*/}
 
       {btnStyleparam === "minus_addtoCartR" ? (
-        <button className={`${themeR}    h-9 w-9 px-1 `} onClick={handleDecrement}>
+        <button
+          className={`${themeR}    h-9 w-9 px-1 `}
+          onClick={handleDecrement}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -216,7 +224,10 @@ const Button = ({ btnStyleparam, children, product }) => {
       {/* ------------------------------------ addtocart in product details sub button -----------------------------------------*/}
 
       {btnStyleparam === "minus_addtoCart" ? (
-        <button className={`${themeRplus}    h-11 w-11  `} onClick={handleDecrement}>
+        <button
+          className={`${themeRplus}    h-11 w-11  `}
+          onClick={handleDecrement}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -279,7 +290,10 @@ const Button = ({ btnStyleparam, children, product }) => {
         </button>
       ) : null}
       {btnStyleparam === "bin_addtoCart" ? (
-        <button className={`${themeRplus}   h-11 w-11  `} onClick={handleDelete}>
+        <button
+          className={`${themeRplus}   h-11 w-11  `}
+          onClick={handleDelete}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
