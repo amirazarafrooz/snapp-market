@@ -6,7 +6,6 @@ import { ShoppingItem } from "../ShoppinItem";
 import Button from "../button/Button";
 import { useEffect } from "react";
 import { IoCloseOutline } from "react-icons/io5";
-import { RiDeleteBinLine } from "react-icons/ri";
 
 export const ShoppingCard = ({ cartHandler, showCart }) => {
   const cart = useSelector((store) => store.cart);
@@ -75,9 +74,7 @@ export const ShoppingCard = ({ cartHandler, showCart }) => {
                       <span className="mx-0.5">{amount}</span>
                       <span>کالا</span>
                     </span>
-                    <button className=" bg-snp-lightgray hover:bg-snp-gray text-snp-lightblack p-1.5 rounded-full">
-                      <RiDeleteBinLine />
-                    </button>
+                    <Button btnStyleparam={"deleteAll"}></Button>
                   </>
                 ) : null}
               </div>
