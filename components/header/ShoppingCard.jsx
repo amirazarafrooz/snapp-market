@@ -102,10 +102,16 @@ export const ShoppingCard = ({ cartHandler, showCart }) => {
                   <p className=" font-iransansl"> حداقل سفارش 100٬000 تومان</p>
                 </div>
               ) : (
-                <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
-                  <span>{finalProfitPrice}</span>
-                  <span className="mr-1">تومان سود خرید</span>
-                </div>
+                <>
+                  {cart.filter((c) => c.discount > 0 && c)[0]?.discount > 0 ? (
+                    <>
+                      <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
+                        <span>{finalProfitPrice}</span>
+                        <span className="mr-1">تومان سود خرید</span>
+                      </div>
+                    </>
+                  ) : null}
+                </>
               )}
               <Button btnStyleparam={"finalizeorder"} finalPrice={finalPrice}>
                 نهایی کردن خرید
