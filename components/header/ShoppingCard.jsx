@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useRef } from "react";
+import { useMemo, useRef } from "react";
 import { useSelector } from "react-redux";
 import { ShoppingItem } from "../ShoppinItem";
 import Button from "../button/Button";
@@ -10,20 +10,31 @@ import { RiDeleteBinLine } from "react-icons/ri";
 
 export const ShoppingCard = ({ cartHandler, showCart }) => {
   const cart = useSelector((store) => store.cart);
-  const totalPrice = cart.reduce(
-    (init, cur) =>
-      (init += cur.discount
-        ? cur.count * (cur.price * ((100 - cur.discount) / 100))
-        : cur.count * cur.price),
-    0
+  const totalPrice = useMemo(
+    () =>
+      cart.reduce(
+        (init, cur) =>
+          (init += cur.discount
+            ? cur.count * (cur.price * ((100 - cur.discount) / 100))
+            : cur.count * cur.price),
+        0
+      ),
+    [cart]
   );
-  const finalPrice = totalPrice.toFixed(3);
-  const profitPrice = cart.reduce(
-    (init, cur) => (init += cur.count * ((cur.price * cur.discount) / 100)),
-    0
+  const finalPrice = useMemo(() => totalPrice.toFixed(3), [cart]);
+  const profitPrice = useMemo(
+    () =>
+      cart.reduce(
+        (init, cur) => (init += cur.count * ((cur.price * cur.discount) / 100)),
+        0
+      ),
+    [cart]
   );
-  const finalProfitPrice = profitPrice.toFixed(3);
-  const amount = cart.reduce((init, cur) => (init += cur.count), 0);
+  const finalProfitPrice = useMemo(() => profitPrice.toFixed(3), [cart]);
+  const amount = useMemo(
+    () => cart.reduce((init, cur) => (init += cur.count), 0),
+    [cart]
+  );
   const modal = useRef(null);
 
   useEffect(() => {
@@ -65,7 +76,7 @@ export const ShoppingCard = ({ cartHandler, showCart }) => {
                       <span>کالا</span>
                     </span>
                     <button className=" bg-snp-lightgray hover:bg-snp-gray text-snp-lightblack p-1.5 rounded-full">
-                      <RiDeleteBinLine/>
+                      <RiDeleteBinLine />
                     </button>
                   </>
                 ) : null}
