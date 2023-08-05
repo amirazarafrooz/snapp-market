@@ -46,7 +46,7 @@ export const Carousel = ({
           <div className="bg-white text-black w-48 h-[356px] rounded ">
             <div className="w-full h-full flex items-center justify-center">
               <p className="text-sm text-snp-secondary font-iransans underline">
-                لینک های بیشتر
+                مشاهده بیشتر
               </p>
             </div>
           </div>

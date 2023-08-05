@@ -83,7 +83,7 @@ const Button = ({ btnStyleparam, children, product, finalPrice }) => {
 
       {btnStyleparam === "allProduct" ? (
         <button
-          className={`${theme} text-xs rounded-md border-snp-white border-2 text-snp-white w-48 h-9 py-2 px-7 text-[13px]`}
+          className={`${theme} text-xs rounded-md border-snp-white border-2 text-snp-white h-9 py-2 px-7 text-[8px] mobile:text-[13px] w-5/6 mobile:w-48`}
         >
           {children}
           <Image
