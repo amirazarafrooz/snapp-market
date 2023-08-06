@@ -2302,140 +2302,146 @@
       "main": "dairy-product",
       "mainFA": "لبنیات",
       "subs": ["شیر", "پنیر", "ماست", "دوغ", "کره", "خامه", "کشک"],
-      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d501d34d337.png"
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d501d34d337.png"
     },
-    {"id": 330020, "main": 3300201, "mainFA": "شیر", "subs": [] , "parent": "dairy-product" , "parentFA" :"لبنیات" },
-    {"id": 330021, "main": 3300202, "mainFA": "پنیر", "subs": [] , "parent": "dairy-product" , "parentFA" :"لبنیات" },
-    {"id": 330022, "main": 3300203, "mainFA": "ماست", "subs": [] , "parent": "dairy-product", "parentFA" :"لبنیات" },
-    {"id": 330023, "main": 3300204, "mainFA": "دوغ", "subs": [] , "parent": "dairy-product", "parentFA" :"لبنیات" },
-    {"id": 330024, "main": 3300205, "mainFA": "کره", "subs": [] , "parent": "dairy-product", "parentFA" :"لبنیات" },
-    {"id": 330025, "main": 3300206, "mainFA": "خامه", "subs": [] , "parent": "dairy-product", "parentFA" :"لبنیات" },
-    {"id": 330026, "main": 3300207, "mainFA": "کشک", "subs": [] , "parent": "dairy-product" , "parentFA" :"لبنیات" },
-    
     {
       "id": 330002,
       "main": "drinks",
       "mainFA": "نوشیدنی",
-      "subs": ["نوشابه","ماءالشعیر","آبمیوه","چای و دمنوش","آب","قهوه و هات چاکلت","نوشیدنی انرژی زا","شربت","عرقیجات"],
-      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d52f2859f0a.png"
+      "subs": [
+        "نوشابه",
+        "ماءالشعیر",
+        "آبمیوه",
+        "چای و دمنوش",
+        "آب",
+        "قهوه و هات چاکلت",
+        "نوشیدنی انرژی زا",
+        "شربت",
+        "عرقیجات"
+      ],
+
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d52f2859f0a.png"
     },
-    {"id": 330027, "main": 3300208, "mainFA": "نوشابه", "subs": [] , "parent": "drinks"},
-    {"id": 330028, "main": 3300209, "mainFA": "ماءالشعیر", "subs": [] , "parent": "drinks"},
-    {"id": 330029, "main": 33002010, "mainFA": "آبمیوه", "subs": [] , "parent": "drinks"},
-    {"id": 330030, "main": 33002011, "mainFA": "چای و دمنوش", "subs": [] , "parent": "drinks"},
-    {"id": 330031, "main": 33002012, "mainFA": "آب", "subs": [] , "parent": "drinks"},
-    {"id": 330032, "main": 33002013, "mainFA": "قهوه و هات چاکلت", "subs": [] , "parent": "drinks"},
-    {"id": 330033, "main": 33002014, "mainFA": "نوشیدنی انرژی زا", "subs": [] ,"parent": "drinks"},
-    {"id": 330034, "main": 33002015, "mainFA": "شربت", "subs": [] , "parent": "drinks"},
-    {"id": 330035, "main": 33002016, "mainFA": "عرقیجات", "subs": [] , "parent": "drinks"},
-    
     {
       "id": 330003,
       "main": "fruit-and-vegetables",
       "mainFA": "میوه و سبزیجات تازه",
-       "subs": ["میوه تازه", "سبزیجات و صیفی جات"],
-      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d632e6ce1c6.png"
+      "subs": ["میوه تازه", "سبزیجات و صیفی جات"],
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d632e6ce1c6.png"
     },
-    {"id": 330036, "main": 33002017, "mainFA": "میوه تازه", "subs": [] , "parent": "fruit-and-vegetables"},
-    {"id": 330037, "main": 33002018, "mainFA": "سبزیجات و صیفی جات", "subs": [] , "parent": "fruit-and-vegetables"},
+
     {
       "id": 330004,
       "main": "nuts",
       "mainFA": "خشکبار، دسر و شیرینی",
-      "subs": ["دسر","آجیل","خرما","ژله","خشکبار","پودر کیک و پنکیک","انواع شیرینی"],
-      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d5103134c9d.png"
+      "subs": [
+        "دسر",
+        "آجیل",
+        "خرما",
+        "ژله",
+        "خشکبار",
+        "پودر کیک و پنکیک",
+        "انواع شیرینی"
+      ],
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d5103134c9d.png"
     },
-    {"id": 330038, "main": 33002019, "mainFA": "دسر", "subs": [] , "parent": "nuts"},
-    {"id": 330039, "main": 33002020, "mainFA": "آجیل", "subs": [] , "parent": "nuts"},
-    {"id": 330040, "main": 33002021, "mainFA": "خرما", "subs": [] , "parent": "nuts"},
-    {"id": 330041, "main": 33002022, "mainFA": "ژله", "subs": [] , "parent": "nuts"},
-    {"id": 330042, "main": 33002023, "mainFA": "خشکبار", "subs": [] , "parent": "nuts"},
-    {"id": 330043, "main": 33002024, "mainFA": "پودر کیک و پنکیک", "subs": [] , "parent": "nuts"},
-    {"id": 330044, "main": 33002025, "mainFA": "انواع شیرینی", "subs": [] , "parent": "nuts"},
+
     {
       "id": 330006,
       "main": "grocery-bread",
       "mainFA": "خواربار و نان",
-      "subs": ["روغن","ماکارونی و لازانیا و رشته","برنج","رب","حبوبات و سویا","انواع نان","قند و شکر و نبات","پودر سوخاری و آرد","غلات"],
-      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50eca58e99.png"
+      "subs": [
+        "ماکارونی و لازانیا و رشته",
+        "روغن",
+        "برنج",
+        "رب",
+        "حبوبات و سویا",
+        "انواع نان",
+        "قند و شکر و نبات",
+        "پودر سوخاری و آرد",
+        "غلات"
+      ],
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d50eca58e99.png"
     },
-    {"id": 330045, "main": 33002026, "mainFA": "روغن", "subs": [] , "parent": "grocery-bread"},
-    {"id": 330046, "main": 33002027, "mainFA": "ماکارونی و لازانیا و رشته", "subs": [] , "parent": "grocery-bread"},
-    {"id": 330047, "main": 33002028, "mainFA": "برنج", "subs": [] , "parent": "grocery-bread"},
-    {"id": 330048, "main": 33002029, "mainFA": "رب", "subs": [] , "parent": "grocery-bread"},
-    {"id": 330049, "main": 33002030, "mainFA": "حبوبات و سویا", "subs": [] , "parent": "grocery-bread"},
-    {"id": 330050, "main": 33002031, "mainFA": "انواع نان", "subs": [] , "parent": "grocery-bread"},
-    {"id": 330051, "main": 33002032, "mainFA": "قند و شکر و نبات", "subs": [] , "parent": "grocery-bread"},
-    {"id": 330052, "main": 33002033, "mainFA": "پودر سوخاری و آرد", "subs": [] , "parent": "grocery-bread"},
-    {"id": 330053, "main": 33002034, "mainFA": "غلات", "subs": [] , "parent": "grocery-bread"},
+
     {
       "id": 330007,
       "main": "proteins",
       "mainFA": "مواد پروتئینی",
-       "subs": ["تخم مرغ و ماکیان","مرغ","گوشت قرمز","ماهی و میگو","سوسیس و کالباس"],
-      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50f5f2fe4d.png"
+      "subs": [
+        "تخم مرغ و ماکیان",
+        "مرغ",
+        "گوشت قرمز",
+        "ماهی و میگو",
+        "سوسیس و کالباس"
+      ],
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d50f5f2fe4d.png"
     },
-    {"id": 330054, "main": 33002035, "mainFA": "تخم مرغ و ماکیان", "subs": [] , "parent": "proteins"},
-    {"id": 330055, "main": 33002036, "mainFA": "مرغ", "subs": [] , "parent": "proteins"},
-    {"id": 330056, "main": 33002037, "mainFA": "گوشت قرمز", "subs": [] , "parent": "proteins"},
-    {"id": 330057, "main": 33002038, "mainFA": "ماهی و میگو", "subs": [] , "parent": "proteins"},
-    {"id": 330058, "main": 33002039, "mainFA": "سوسیس و کالباس", "subs": [] , "parent": "proteins"},
+
     {
       "id": 330008,
       "main": "canned-food",
       "mainFA": "کنسرو و غذای آماده",
-      "subs": ["تن ماهی","غذای آماده مصرف","غذای نیمه آماده","کنسرو و کمپوت","فرآورده های منجمد یخچالی","انواع خمیر"],
-      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50ff5a3258.png"
+      "subs": [
+        "تن ماهی",
+        "غذای آماده مصرف",
+        "غذای نیمه آماده",
+        "کنسرو و کمپوت",
+        "فرآورده های منجمد یخچالی",
+        "انواع خمیر"
+      ],
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d50ff5a3258.png"
     },
-    {"id": 330059, "main": 33002040, "mainFA": "تن ماهی", "subs": [] , "parent": "canned-food"},
-    {"id": 330060, "main": 33002041, "mainFA": "غذای آماده مصرف", "subs": [] , "parent": "canned-food"},
-    {"id": 330061, "main": 33002042, "mainFA": "غذای نیمه آماده", "subs": [] , "parent": "canned-food"},
-    {"id": 330062, "main": 33002043, "mainFA": "کنسرو و کمپوت", "subs": [] , "parent": "canned-food"},
-    {"id": 330063, "main": 33002044, "mainFA": "فرآورده های منجمد یخچالی", "subs": [] , "parent": "canned-food"},
-    {"id": 330064, "main": 33002045, "mainFA": "انواع خمیر", "subs": [] , "parent": "canned-food"},
+
     {
       "id": 330009,
       "main": "home-and-lifestyle",
       "mainFA": "خانه و سبک زندگی",
-      "subs": ["لوازم آشپزخانه","لوازم یکبارمصرف","لوازم خانه","کالای حمام و سرویس بهداشتی","ابزار آلات و یراق آلات","باغبانی","گردش و سفر","ورزش و بازی","خودرو، موتور سیکلت و دوچرخه"],
-      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d51055c5511.png"
-     },
-     {"id": 330065, "main": 33002046, "mainFA": "لوازم آشپزخانه", "subs": [] , "parent": "home-and-lifestyle"},
-     {"id": 330066, "main": 33002047, "mainFA": "لوازم یکبارمصرف", "subs": [] , "parent": "home-and-lifestyle"},
-     {"id": 330067, "main": 33002048, "mainFA": "لوازم خانه", "subs": [] , "parent": "home-and-lifestyle"},
-     {"id": 330068, "main": 33002049, "mainFA": "کالای حمام و سرویس بهداشتی", "subs": [] , "parent": "home-and-lifestyle"},
-     {"id": 330069, "main": 33002050, "mainFA": "ابزار آلات و یراق آلات", "subs": [] , "parent": "home-and-lifestyle"},
-     {"id": 330070, "main": 33002051, "mainFA": "باغبانی", "subs": [] , "parent": "home-and-lifestyle"},
-     {"id": 330071, "main": 33002052, "mainFA": "گردش و سفر", "subs": [] , "parent": "home-and-lifestyle"},
-     {"id": 330072, "main": 33002053, "mainFA": "ورزش و بازی", "subs": [] , "parent": "home-and-lifestyle"},
-     {"id": 330073, "main": 33002054, "mainFA": "خودرو، موتور سیکلت و دوچرخه", "subs": [] , "parent": "home-and-lifestyle"},
+      "subs": [
+        "لوازم آشپزخانه",
+        "لوازم یکبارمصرف",
+        "لوازم خانه",
+        "کالای حمام و سرویس بهداشتی",
+        "ابزار آلات و یراق آلات",
+        "باغبانی",
+        "گردش و سفر",
+        "ورزش و بازی",
+        "خودرو، موتور سیکلت و دوچرخه"
+      ],
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d51055c5511.png"
+    },
+
     {
       "id": 330010,
       "main": "digital-appliances",
       "mainFA": "لوازم برقی و دیجیتال",
-      "subs": ["باتری، محافظ و رابط","نور و روشنایی","لوازم برقی خانه","لوازم برقی آشپزخانه","لوازم برقی شخصی"],
-      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d52f7cb9980.png"
+      "subs": [
+        "باتری، محافظ و رابط",
+        "نور و روشنایی",
+        "لوازم برقی خانه",
+        "لوازم برقی آشپزخانه",
+        "لوازم برقی شخصی"
+      ],
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d52f7cb9980.png"
     },
-    {"id": 330074, "main": 33002055, "mainFA": "باتری، محافظ و رابط", "subs": [] , "parent": "digital-appliances"},
-    {"id": 330075, "main": 33002056, "mainFA": "نور و روشنایی", "subs": [] , "parent": "digital-appliances"},
-    {"id": 330076, "main": 33002057, "mainFA": "لوازم برقی خانه", "subs": [] , "parent": "digital-appliances"},
-    {"id": 330077, "main": 33002058, "mainFA": "لوازم برقی آشپزخانه", "subs": [] , "parent": "digital-appliances"},
-    {"id": 330078, "main": 33002059, "mainFA": "لوازم برقی شخصی", "subs": [] , "parent": "digital-appliances"},
+
     {
       "id": 330011,
       "main": "detergent",
       "mainFA": "دستمال و شوینده",
-      "subs": ["دستمال کاغذی","دستمال حوله ای و آشپزخانه","دستمال توالت","نظافت خانه و آشپزخانه","پاک کننده و ضدعفونی کننده سرویس بهداشتی","شستشوی ظروف","شستشوی لباس","فوم و مایع دستشویی"],
+      "subs": [
+        "دستمال کاغذی",
+        "دستمال حوله ای و آشپزخانه",
+        "دستمال توالت",
+        "نظافت خانه و آشپزخانه",
+        "پاک کننده و ضدعفونی کننده سرویس بهداشتی",
+        "شستشوی ظروف",
+        "شستشوی لباس",
+        "فوم و مایع دستشویی"
+      ],
       "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d636d2a3219.png"
     },
-    {"id": 330079, "main": 33002060, "mainFA": "دستمال کاغذی", "subs": [] , "parent": "detergent"},
-    {"id": 330080, "main": 33002061, "mainFA": "دستمال حوله ای و آشپزخانه", "subs": [] , "parent": "detergent"},
-    {"id": 330081, "main": 33002062, "mainFA": "دستمال توالت", "subs": [] , "parent": "detergent"},
-    {"id": 330082, "main": 33002063, "mainFA": "نظافت خانه و آشپزخانه", "subs": [] , "parent": "detergent"},
-    {"id": 330083, "main": 33002064, "mainFA": "پاک کننده و ضدعفونی کننده سرویس بهداشتی", "subs": [] , "parent": "detergent"},
-    {"id": 330084, "main": 33002065, "mainFA": "شستشوی ظروف", "subs": [] , "parent": "detergent"},
-    {"id": 330085, "main": 33002066, "mainFA": "شستشوی لباس", "subs": [] , "parent": "detergent"},
-    {"id": 330086, "main": 33002067, "mainFA": "فوم و مایع دستشویی", "subs": [] , "parent": "detergent"},
+
     {
       "id": 330012,
       "main": "health-and-beauty",
@@ -2453,19 +2459,9 @@
         "اسپری و ضدتعریق",
         "بهداشت زنان"
       ],
-      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50ef7e6845.png"
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d50ef7e6845.png"
     },
-    {"id": 330087, "main": 33002068, "mainFA": "محصولات آرایشی", "subs": [] , "parent": "health-and-beauty"},
-    {"id": 330088, "main": 33002069, "mainFA": "بهداشت و مراقبت صورت", "subs": [] , "parent": "health-and-beauty"},
-    {"id": 330089, "main": 33002070, "mainFA": "شامپو و مراقبت مو", "subs": [] , "parent": "health-and-beauty"},
-    {"id": 330090, "main": 33002071, "mainFA": "آرایش مو", "subs": [] , "parent": "health-and-beauty"},
-    {"id": 330091, "main": 33002072, "mainFA": "بهداشت و مراقبت بدن", "subs": [] , "parent": "health-and-beauty"},
-    {"id": 330092, "main": 33002073, "mainFA": "بهداشت دهان", "subs": [] , "parent": "health-and-beauty"},
-    {"id": 330093, "main": 33002074, "mainFA": "عطر و ادکلن", "subs": [] , "parent": "health-and-beauty"},
-    {"id": 330094, "main": 33002075, "mainFA": "اصلاح صورت و بدن", "subs": [] , "parent": "health-and-beauty"},
-    {"id": 330095, "main": 33002076, "mainFA": "بهداشت جنسی", "subs": [] , "parent": "health-and-beauty"},
-    {"id": 330096, "main": 33002077, "mainFA": "اسپری و ضدتعریق", "subs": [] , "parent": "health-and-beauty"},
-    {"id": 330097, "main": 33002078, "mainFA": "بهداشت زنان", "subs": [] , "parent": "health-and-beauty"},
+
     {
       "id": 330013,
       "main": "breakfast",
@@ -2478,14 +2474,9 @@
         "غلات صبحانه",
         "کره بادام زمینی"
       ],
-      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d50fc8ee595.png"
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d50fc8ee595.png"
     },
-    {"id": 330098, "main": 33002079, "mainFA": "عسل", "subs": [] , "parent": "breakfast"},
-    {"id": 330099, "main": 33002080, "mainFA": "مربا", "subs": [] , "parent": "breakfast"},
-    {"id": 330100, "main": 33002081, "mainFA": "حلوا ارده و شیره", "subs": [] , "parent": "breakfast"},
-    {"id": 330101, "main": 33002082, "mainFA": "شکلات صبحانه", "subs": [] , "parent": "breakfast"},
-    {"id": 330102, "main": 33002083, "mainFA": "غلات صبحانه", "subs": [] , "parent": "breakfast"},
-    {"id": 330103, "main": 33002084, "mainFA": "کره بادام زمینی", "subs": [] , "parent": "breakfast"},
+
     {
       "id": 330014,
       "main": "kids",
@@ -2497,13 +2488,9 @@
         "لوازم کودک و نوزاد",
         "اسباب بازی کودک"
       ],
-      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d5100e30e59.png"
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d5100e30e59.png"
     },
-    {"id": 330104, "main": 33002081, "mainFA": "پوشک کودک", "subs": [] , "parent": "kids"},
-    {"id": 330105, "main": 33002082, "mainFA": "مواد غذایی کودک", "subs": [] , "parent": "kids"},
-    {"id": 330106, "main": 33002083, "mainFA": "بهداشت کودک", "subs": [] , "parent": "kids"},
-    {"id": 330107, "main": 33002084, "mainFA": "لوازم کودک و نوزاد", "subs": [] , "parent": "kids"},
-    {"id": 330108, "main": 33002085, "mainFA": "اسباب بازی کودک", "subs": [] , "parent": "kids"},
+
     {
       "id": 330015,
       "main": "junk-food",
@@ -2520,18 +2507,9 @@
         "آلوچه و لواشک",
         "نی شیر"
       ],
-      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d52f484a444.png"
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/63d52f484a444.png"
     },
-    {"id": 330105, "main": 33002086, "mainFA": "بیسکویت و ویفر", "subs": [] , "parent": "junk-food"},
-    {"id": 330106, "main": 33002087, "mainFA": "چیپس", "subs": [] , "parent": "junk-food"},
-    {"id": 330107, "main": 33002088, "mainFA": "کیک و کلوچه", "subs": [] , "parent": "junk-food"},
-    {"id": 330108, "main": 33002089, "mainFA": "پفک و اسنک", "subs": [] , "parent": "junk-food"},
-    {"id": 330109, "main": 33002090, "mainFA": "شکلات و آبنبات", "subs": [] , "parent": "junk-food"},
-    {"id": 330110, "main": 33002091, "mainFA": "پاستیل و آدامس", "subs": [] , "parent": "junk-food"},
-    {"id": 330111, "main": 33002092, "mainFA": "آجیل تک و مغز آجیل", "subs": [] , "parent": "junk-food"},
-    {"id": 330112, "main": 33002093, "mainFA": "پاپ کورن و گندمک", "subs": [] , "parent": "junk-food"},
-    {"id": 330113, "main": 33002094, "mainFA": "آلوچه و لواشک", "subs": [] , "parent": "junk-food"},
-    {"id": 330114, "main": 33002095, "mainFA": "نی شیر", "subs": [] , "parent": "junk-food"},
+
     {
       "id": 330016,
       "main": "condiment",
@@ -2547,16 +2525,769 @@
         "سبزیجات خشک و سرخ شده",
         "سایر افزودنی ها"
       ],
-      "image" : "https://api.snapp.market/uploads/images/mobile-sliders/649fc64a53159.png"
+      "image": "https://api.snapp.market/uploads/images/mobile-sliders/649fc64a53159.png"
+    }
+  ],
+  "subcategories": [
+    {
+      "id": 330020,
+      "main": 3300201,
+      "mainFA": "شیر",
+      "parent": "dairy-product",
+      "parentFA": "لبنیات"
     },
-    {"id": 330115, "main": 33002096, "mainFA": "سس", "subs": [] , "parent": "condiment"},
-    {"id": 330116, "main": 33002097, "mainFA": "ادویه", "subs": [] , "parent": "condiment"},
-    {"id": 330117, "main": 33002098, "mainFA": "خیارشور و زیتون", "subs": [] , "parent": "condiment"},
-    {"id": 330118, "main": 33002099, "mainFA": "آبلیمو و سرکه و آبغوره", "subs": [] , "parent": "condiment"},
-    {"id": 330119, "main": 330020100, "mainFA": "ترشی و شور", "subs": [] , "parent": "condiment"},
-    {"id": 330120, "main": 330020101, "mainFA": "افزودنی های شیرینی پزی", "subs": [] , "parent": "condiment"},
-    {"id": 330121, "main": 330020102, "mainFA": "زعفران", "subs": [] , "parent": "condiment"},
-    {"id": 330122, "main": 330020103, "mainFA": "سبزیجات خشک و سرخ شده", "subs": [] , "parent": "condiment"},
-    {"id": 330123, "main": 330020104, "mainFA": "سایر افزودنی ها", "subs": [] , "parent": "condiment"}
+    {
+      "id": 330021,
+      "main": 3300202,
+      "mainFA": "پنیر",
+      "parent": "dairy-product",
+      "parentFA": "لبنیات"
+    },
+    {
+      "id": 330022,
+      "main": 3300203,
+      "mainFA": "ماست",
+      "parent": "dairy-product",
+      "parentFA": "لبنیات"
+    },
+    {
+      "id": 330023,
+      "main": 3300204,
+      "mainFA": "دوغ",
+      "parent": "dairy-product",
+      "parentFA": "لبنیات"
+    },
+    {
+      "id": 330024,
+      "main": 3300205,
+      "mainFA": "کره",
+      "parent": "dairy-product",
+      "parentFA": "لبنیات"
+    },
+    {
+      "id": 330025,
+      "main": 3300206,
+      "mainFA": "خامه",
+      "parent": "dairy-product",
+      "parentFA": "لبنیات"
+    },
+    {
+      "id": 330026,
+      "main": 3300207,
+      "mainFA": "کشک",
+      "parent": "dairy-product",
+      "parentFA": "لبنیات"
+    },
+    {
+      "id": 330027,
+      "main": 3300208,
+      "mainFA": "نوشابه",
+      "parent": "drinks",
+      "parentFA": "نوشیدنی"
+    },
+    {
+      "id": 330028,
+      "main": 3300209,
+      "mainFA": "ماءالشعیر",
+      "parent": "drinks",
+      "parentFA": "نوشیدنی"
+    },
+    {
+      "id": 330029,
+      "main": 33002010,
+      "mainFA": "آبمیوه",
+      "parent": "drinks",
+      "parentFA": "نوشیدنی"
+    },
+    {
+      "id": 330030,
+      "main": 33002011,
+      "mainFA": "چای و دمنوش",
+      "parent": "drinks",
+      "parentFA": "نوشیدنی"
+    },
+    {
+      "id": 330031,
+      "main": 33002012,
+      "mainFA": "آب",
+      "parent": "drinks",
+      "parentFA": "نوشیدنی"
+    },
+    {
+      "id": 330032,
+      "main": 33002013,
+      "mainFA": "قهوه و هات چاکلت",
+      "parent": "drinks",
+      "parentFA": "نوشیدنی"
+    },
+    {
+      "id": 330033,
+      "main": 33002014,
+      "mainFA": "نوشیدنی انرژی زا",
+      "parent": "drinks",
+      "parentFA": "نوشیدنی"
+    },
+    {
+      "id": 330034,
+      "main": 33002015,
+      "mainFA": "شربت",
+      "parent": "drinks",
+      "parentFA": "نوشیدنی"
+    },
+    {
+      "id": 330035,
+      "main": 33002016,
+      "mainFA": "عرقیجات",
+      "parent": "drinks",
+      "parentFA": "نوشیدنی"
+    },
+    {
+      "id": 330036,
+      "main": 33002017,
+      "mainFA": "میوه تازه",
+      "parent": "fruit-and-vegetables",
+      "parentFA": "میوه و سبزیجات تازه"
+    },
+    {
+      "id": 330037,
+      "main": 33002018,
+      "mainFA": "سبزیجات و صیفی جات",
+      "parent": "fruit-and-vegetables",
+      "parentFA": "میوه و سبزیجات تازه"
+    },
+    {
+      "id": 330038,
+      "main": 33002019,
+      "mainFA": "دسر",
+      "parent": "nuts",
+      "parentFA": "خشکبار، دسر و شیرینی"
+    },
+    {
+      "id": 330039,
+      "main": 33002020,
+      "mainFA": "آجیل",
+      "parent": "nuts",
+      "parentFA": "خشکبار، دسر و شیرینی"
+    },
+    {
+      "id": 330040,
+      "main": 33002021,
+      "mainFA": "خرما",
+      "parent": "nuts",
+      "parentFA": "خشکبار، دسر و شیرینی"
+    },
+    {
+      "id": 330041,
+      "main": 33002022,
+      "mainFA": "ژله",
+      "parent": "nuts",
+      "parentFA": "خشکبار، دسر و شیرینی"
+    },
+    {
+      "id": 330042,
+      "main": 33002023,
+      "mainFA": "خشکبار",
+      "parent": "nuts",
+      "parentFA": "خشکبار، دسر و شیرینی"
+    },
+    {
+      "id": 330043,
+      "main": 33002024,
+      "mainFA": "پودر کیک و پنکیک",
+      "parent": "nuts",
+      "parentFA": "خشکبار، دسر و شیرینی"
+    },
+    {
+      "id": 330044,
+      "main": 33002025,
+      "mainFA": "انواع شیرینی",
+      "parent": "nuts",
+      "parentFA": "خشکبار، دسر و شیرینی"
+    },
+    { "id": 330046, "main": 33002027, "mainFA": "ماکارونی و لازانیا و رشته" },
+    {
+      "id": 330045,
+      "main": 33002026,
+      "mainFA": "روغن",
+      "parent": "grocery-bread",
+      "parentFA": "خواربار و نان"
+    },
+    {
+      "id": 330047,
+      "main": 33002028,
+      "mainFA": "برنج",
+      "parent": "grocery-bread",
+      "parentFA": "خواربار و نان"
+    },
+    {
+      "id": 330048,
+      "main": 33002029,
+      "mainFA": "رب",
+      "parent": "grocery-bread",
+      "parentFA": "خواربار و نان"
+    },
+    {
+      "id": 330049,
+      "main": 33002030,
+      "mainFA": "حبوبات و سویا",
+      "parent": "grocery-bread",
+      "parentFA": "خواربار و نان"
+    },
+    {
+      "id": 330050,
+      "main": 33002031,
+      "mainFA": "انواع نان",
+      "parent": "grocery-bread",
+      "parentFA": "خواربار و نان"
+    },
+    {
+      "id": 330051,
+      "main": 33002032,
+      "mainFA": "قند و شکر و نبات",
+      "parent": "grocery-bread",
+      "parentFA": "خواربار و نان"
+    },
+    {
+      "id": 330052,
+      "main": 33002033,
+      "mainFA": "پودر سوخاری و آرد",
+      "parent": "grocery-bread",
+      "parentFA": "خواربار و نان"
+    },
+    {
+      "id": 330053,
+      "main": 33002034,
+      "mainFA": "غلات",
+      "parent": "grocery-bread",
+      "parentFA": "خواربار و نان"
+    },
+
+    {
+      "id": 330054,
+      "main": 33002035,
+      "mainFA": "تخم مرغ و ماکیان",
+      "parent": "proteins",
+      "parentFA": "مواد پروتئینی"
+    },
+    {
+      "id": 330055,
+      "main": 33002036,
+      "mainFA": "مرغ",
+      "parent": "proteins",
+      "parentFA": "مواد پروتئینی"
+    },
+    {
+      "id": 330056,
+      "main": 33002037,
+      "mainFA": "گوشت قرمز",
+      "parent": "proteins",
+      "parentFA": "مواد پروتئینی"
+    },
+    {
+      "id": 330057,
+      "main": 33002038,
+      "mainFA": "ماهی و میگو",
+      "parent": "proteins",
+      "parentFA": "مواد پروتئینی"
+    },
+    {
+      "id": 330058,
+      "main": 33002039,
+      "mainFA": "سوسیس و کالباس",
+      "parent": "proteins",
+      "parentFA": "مواد پروتئینی"
+    },
+
+    {
+      "id": 330059,
+      "main": 33002040,
+      "mainFA": "تن ماهی",
+      "parent": "canned-food",
+      "parentFA": "کنسرو و غذای آماده"
+    },
+    {
+      "id": 330060,
+      "main": 33002041,
+      "mainFA": "غذای آماده مصرف",
+      "parent": "canned-food",
+      "parentFA": "کنسرو و غذای آماده"
+    },
+    {
+      "id": 330061,
+      "main": 33002042,
+      "mainFA": "غذای نیمه آماده",
+      "parent": "canned-food",
+      "parentFA": "کنسرو و غذای آماده"
+    },
+    {
+      "id": 330062,
+      "main": 33002043,
+      "mainFA": "کنسرو و کمپوت",
+      "parent": "canned-food",
+      "parentFA": "کنسرو و غذای آماده"
+    },
+    {
+      "id": 330063,
+      "main": 33002044,
+      "mainFA": "فرآورده های منجمد یخچالی",
+      "parent": "canned-food",
+      "parentFA": "کنسرو و غذای آماده"
+    },
+    {
+      "id": 330064,
+      "main": 33002045,
+      "mainFA": "انواع خمیر",
+      "parent": "canned-food",
+      "parentFA": "کنسرو و غذای آماده"
+    },
+
+    {
+      "id": 330065,
+      "main": 33002046,
+      "mainFA": "لوازم آشپزخانه",
+      "parent": "home-and-lifestyle",
+      "parentFA": "خانه و سبک زندگی"
+    },
+    {
+      "id": 330066,
+      "main": 33002047,
+      "mainFA": "لوازم یکبارمصرف",
+      "parent": "home-and-lifestyle",
+      "parentFA": "خانه و سبک زندگی"
+    },
+    {
+      "id": 330067,
+      "main": 33002048,
+      "mainFA": "لوازم خانه",
+      "parent": "home-and-lifestyle",
+      "parentFA": "خانه و سبک زندگی"
+    },
+    {
+      "id": 330068,
+      "main": 33002049,
+      "mainFA": "کالای حمام و سرویس بهداشتی",
+      "parent": "home-and-lifestyle",
+      "parentFA": "خانه و سبک زندگی"
+    },
+    {
+      "id": 330069,
+      "main": 33002050,
+      "mainFA": "ابزار آلات و یراق آلات",
+      "parent": "home-and-lifestyle",
+      "parentFA": "خانه و سبک زندگی"
+    },
+    {
+      "id": 330070,
+      "main": 33002051,
+      "mainFA": "باغبانی",
+      "parent": "home-and-lifestyle",
+      "parentFA": "خانه و سبک زندگی"
+    },
+    {
+      "id": 330071,
+      "main": 33002052,
+      "mainFA": "گردش و سفر",
+      "parent": "home-and-lifestyle",
+      "parentFA": "خانه و سبک زندگی"
+    },
+    {
+      "id": 330072,
+      "main": 33002053,
+      "mainFA": "ورزش و بازی",
+      "parent": "home-and-lifestyle",
+      "parentFA": "خانه و سبک زندگی"
+    },
+    {
+      "id": 330073,
+      "main": 33002054,
+      "mainFA": "خودرو، موتور سیکلت و دوچرخه",
+      "parent": "home-and-lifestyle",
+      "parentFA": "خانه و سبک زندگی"
+    },
+
+    {
+      "id": 330074,
+      "main": 33002055,
+      "mainFA": "باتری، محافظ و رابط",
+      "parent": "digital-appliances",
+      "parentFA": "لوازم برقی و دیجیتال"
+    },
+    {
+      "id": 330075,
+      "main": 33002056,
+      "mainFA": "نور و روشنایی",
+      "parent": "digital-appliances",
+      "parentFA": "لوازم برقی و دیجیتال"
+    },
+    {
+      "id": 330076,
+      "main": 33002057,
+      "mainFA": "لوازم برقی خانه",
+      "parent": "digital-appliances",
+      "parentFA": "لوازم برقی و دیجیتال"
+    },
+    {
+      "id": 330077,
+      "main": 33002058,
+      "mainFA": "لوازم برقی آشپزخانه",
+      "parent": "digital-appliances",
+      "parentFA": "لوازم برقی و دیجیتال"
+    },
+    {
+      "id": 330078,
+      "main": 33002059,
+      "mainFA": "لوازم برقی شخصی",
+      "parent": "digital-appliances",
+      "parentFA": "لوازم برقی و دیجیتال"
+    },
+
+    {
+      "id": 330079,
+      "main": 33002060,
+      "mainFA": "دستمال کاغذی",
+      "parent": "detergent",
+      "parentFA": "دستمال و شوینده"
+    },
+    {
+      "id": 330080,
+      "main": 33002061,
+      "mainFA": "دستمال حوله ای و آشپزخانه",
+      "parent": "detergent",
+      "parentFA": "دستمال و شوینده"
+    },
+    {
+      "id": 330081,
+      "main": 33002062,
+      "mainFA": "دستمال توالت",
+      "parent": "detergent",
+      "parentFA": "دستمال و شوینده"
+    },
+    {
+      "id": 330082,
+      "main": 33002063,
+      "mainFA": "نظافت خانه و آشپزخانه",
+      "parent": "detergent",
+      "parentFA": "دستمال و شوینده"
+    },
+    {
+      "id": 330083,
+      "main": 33002064,
+      "mainFA": "پاک کننده و ضدعفونی کننده سرویس بهداشتی",
+      "parent": "detergent",
+      "parentFA": "دستمال و شوینده"
+    },
+    {
+      "id": 330084,
+      "main": 33002065,
+      "mainFA": "شستشوی ظروف",
+      "parent": "detergent",
+      "parentFA": "دستمال و شوینده"
+    },
+    {
+      "id": 330085,
+      "main": 33002066,
+      "mainFA": "شستشوی لباس",
+      "parent": "detergent",
+      "parentFA": "دستمال و شوینده"
+    },
+    {
+      "id": 330086,
+      "main": 33002067,
+      "mainFA": "فوم و مایع دستشویی",
+      "parent": "detergent",
+      "parentFA": "دستمال و شوینده"
+    },
+
+    {
+      "id": 330087,
+      "main": 33002068,
+      "mainFA": "محصولات آرایشی",
+      "parent": "health-and-beauty",
+      "parentFA": "آرایشی و بهداشتی"
+    },
+    {
+      "id": 330088,
+      "main": 33002069,
+      "mainFA": "بهداشت و مراقبت صورت",
+      "parent": "health-and-beauty",
+      "parentFA": "آرایشی و بهداشتی"
+    },
+    {
+      "id": 330089,
+      "main": 33002070,
+      "mainFA": "شامپو و مراقبت مو",
+      "parent": "health-and-beauty",
+      "parentFA": "آرایشی و بهداشتی"
+    },
+    {
+      "id": 330090,
+      "main": 33002071,
+      "mainFA": "آرایش مو",
+      "parent": "health-and-beauty",
+      "parentFA": "آرایشی و بهداشتی"
+    },
+    {
+      "id": 330091,
+      "main": 33002072,
+      "mainFA": "بهداشت و مراقبت بدن",
+      "parent": "health-and-beauty",
+      "parentFA": "آرایشی و بهداشتی"
+    },
+    {
+      "id": 330092,
+      "main": 33002073,
+      "mainFA": "بهداشت دهان",
+      "parent": "health-and-beauty",
+      "parentFA": "آرایشی و بهداشتی"
+    },
+    {
+      "id": 330093,
+      "main": 33002074,
+      "mainFA": "عطر و ادکلن",
+      "parent": "health-and-beauty",
+      "parentFA": "آرایشی و بهداشتی"
+    },
+    {
+      "id": 330094,
+      "main": 33002075,
+      "mainFA": "اصلاح صورت و بدن",
+      "parent": "health-and-beauty",
+      "parentFA": "آرایشی و بهداشتی"
+    },
+    {
+      "id": 330095,
+      "main": 33002076,
+      "mainFA": "بهداشت جنسی",
+      "parent": "health-and-beauty",
+      "parentFA": "آرایشی و بهداشتی"
+    },
+    {
+      "id": 330096,
+      "main": 33002077,
+      "mainFA": "اسپری و ضدتعریق",
+      "parent": "health-and-beauty",
+      "parentFA": "آرایشی و بهداشتی"
+    },
+    {
+      "id": 330097,
+      "main": 33002078,
+      "mainFA": "بهداشت زنان",
+      "parent": "health-and-beauty",
+      "parentFA": "آرایشی و بهداشتی"
+    },
+
+    {
+      "id": 330098,
+      "main": 33002079,
+      "mainFA": "عسل",
+      "parent": "breakfast",
+      "parentFA": "صبحانه"
+    },
+    {
+      "id": 330099,
+      "main": 33002080,
+      "mainFA": "مربا",
+      "parent": "breakfast",
+      "parentFA": "صبحانه"
+    },
+    {
+      "id": 330100,
+      "main": 33002081,
+      "mainFA": "حلوا ارده و شیره",
+      "parent": "breakfast",
+      "parentFA": "صبحانه"
+    },
+    {
+      "id": 330101,
+      "main": 33002082,
+      "mainFA": "شکلات صبحانه",
+      "parent": "breakfast",
+      "parentFA": "صبحانه"
+    },
+    {
+      "id": 330102,
+      "main": 33002083,
+      "mainFA": "غلات صبحانه",
+      "parent": "breakfast",
+      "parentFA": "صبحانه"
+    },
+    {
+      "id": 330103,
+      "main": 33002084,
+      "mainFA": "کره بادام زمینی",
+      "parent": "breakfast",
+      "parentFA": "صبحانه"
+    },
+
+    {
+      "id": 330104,
+      "main": 33002081,
+      "mainFA": "پوشک کودک",
+      "parent": "kids",
+      "parentFA": "کودک و نوزاد"
+    },
+    {
+      "id": 330105,
+      "main": 33002082,
+      "mainFA": "مواد غذایی کودک",
+      "parent": "kids",
+      "parentFA": "کودک و نوزاد"
+    },
+    {
+      "id": 330106,
+      "main": 33002083,
+      "mainFA": "بهداشت کودک",
+      "parent": "kids",
+      "parentFA": "کودک و نوزاد"
+    },
+    {
+      "id": 330107,
+      "main": 33002084,
+      "mainFA": "لوازم کودک و نوزاد",
+      "parent": "kids",
+      "parentFA": "کودک و نوزاد"
+    },
+    {
+      "id": 330108,
+      "main": 33002085,
+      "mainFA": "اسباب بازی کودک",
+      "parent": "kids",
+      "parentFA": "کودک و نوزاد"
+    },
+
+    {
+      "id": 330105,
+      "main": 33002086,
+      "mainFA": "بیسکویت و ویفر",
+      "parent": "junk-food",
+      "parentFA": "تنقلات"
+    },
+    {
+      "id": 330106,
+      "main": 33002087,
+      "mainFA": "چیپس",
+      "parent": "junk-food",
+      "parentFA": "تنقلات"
+    },
+    {
+      "id": 330107,
+      "main": 33002088,
+      "mainFA": "کیک و کلوچه",
+      "parent": "junk-food",
+      "parentFA": "تنقلات"
+    },
+    {
+      "id": 330108,
+      "main": 33002089,
+      "mainFA": "پفک و اسنک",
+      "parent": "junk-food",
+      "parentFA": "تنقلات"
+    },
+    {
+      "id": 330109,
+      "main": 33002090,
+      "mainFA": "شکلات و آبنبات",
+      "parent": "junk-food",
+      "parentFA": "تنقلات"
+    },
+    {
+      "id": 330110,
+      "main": 33002091,
+      "mainFA": "پاستیل و آدامس",
+      "parent": "junk-food",
+      "parentFA": "تنقلات"
+    },
+    {
+      "id": 330111,
+      "main": 33002092,
+      "mainFA": "آجیل تک و مغز آجیل",
+      "parent": "junk-food",
+      "parentFA": "تنقلات"
+    },
+    {
+      "id": 330112,
+      "main": 33002093,
+      "mainFA": "پاپ کورن و گندمک",
+      "parent": "junk-food",
+      "parentFA": "تنقلات"
+    },
+    {
+      "id": 330113,
+      "main": 33002094,
+      "mainFA": "آلوچه و لواشک",
+      "parent": "junk-food",
+      "parentFA": "تنقلات"
+    },
+    {
+      "id": 330114,
+      "main": 33002095,
+      "mainFA": "نی شیر",
+      "parent": "junk-food",
+      "parentFA": "تنقلات"
+    },
+
+    {
+      "id": 330115,
+      "main": 33002096,
+      "mainFA": "سس",
+      "parent": "condiment",
+      "parentFA": "چاشنی و افزودنی"
+    },
+    {
+      "id": 330116,
+      "main": 33002097,
+      "mainFA": "ادویه",
+      "parent": "condiment",
+      "parentFA": "چاشنی و افزودنی"
+    },
+    {
+      "id": 330117,
+      "main": 33002098,
+      "mainFA": "خیارشور و زیتون",
+      "parent": "condiment",
+      "parentFA": "چاشنی و افزودنی"
+    },
+    {
+      "id": 330118,
+      "main": 33002099,
+      "mainFA": "آبلیمو و سرکه و آبغوره",
+      "parent": "condiment",
+      "parentFA": "چاشنی و افزودنی"
+    },
+    {
+      "id": 330119,
+      "main": 330020100,
+      "mainFA": "ترشی و شور",
+      "parent": "condiment",
+      "parentFA": "چاشنی و افزودنی"
+    },
+    {
+      "id": 330120,
+      "main": 330020101,
+      "mainFA": "افزودنی های شیرینی پزی",
+      "parent": "condiment",
+      "parentFA": "چاشنی و افزودنی"
+    },
+    {
+      "id": 330121,
+      "main": 330020102,
+      "mainFA": "زعفران",
+      "parent": "condiment",
+      "parentFA": "چاشنی و افزودنی"
+    },
+    {
+      "id": 330122,
+      "main": 330020103,
+      "mainFA": "سبزیجات خشک و سرخ شده",
+      "parent": "condiment",
+      "parentFA": "چاشنی و افزودنی"
+    },
+    {
+      "id": 330123,
+      "main": 330020104,
+      "mainFA": "سایر افزودنی ها",
+      "parent": "condiment",
+      "parentFA": "چاشنی و افزودنی"
+    }
   ]
 }

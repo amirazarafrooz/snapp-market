@@ -5,9 +5,11 @@ import { CategoryCarouselTittle } from "./CategoryCarouselTittle";
 const data = await getLocalData();
 const products = data.products;
 const category = data.categories;
+const subCategory = data.subcategories;
+
 
 export const CategoryCarousel = ({ title, seeMore }) => {
-  const filterCategory = category.filter((cat) => cat.mainFA == title)[0].main;
+  const filterCategory = subCategory.filter((cat) => cat.mainFA == title)[0].main;
   return (
     <div className="my-8 border rounded overflow-hidden ">
       <CategoryCarouselTittle
