@@ -119,7 +119,9 @@ export const ShoppingCard = ({ cartHandler, showCart }) => {
                   )}
                   <Button
                     btnStyleparam={"finalizeorder"}
+                    product={cart}
                     finalPrice={finalPrice}
+                    finalProfitPrice={finalProfitPrice}
                   >
                     نهایی کردن خرید
                   </Button>
