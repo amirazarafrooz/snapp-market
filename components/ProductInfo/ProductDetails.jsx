@@ -52,7 +52,7 @@ export const ProductDetails = ({ product }) => {
             <p>تومان</p>
           </div>
         </div>
-        <div className="w-1/2 mr-auto mt-4">
+        <div className="w-full tablet:w-1/2 mr-auto mt-4">
           <ProductsDetailsButton product={product} />
         </div>
       </div>

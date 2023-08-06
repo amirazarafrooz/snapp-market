@@ -68,7 +68,7 @@ const Button = ({ btnStyleparam, children, product, finalPrice , finalProfitPric
 
       {btnStyleparam === "addtoCart" ? (
         <button
-          className={`${theme} bg-snp-primary text-white w-60 h-12 p-4 hover:bg-snp-primaryh text-[13px]`}
+          className={`${theme} bg-snp-primary text-white w-full h-12 p-4 hover:bg-snp-primaryh text-[13px]`}
           onClick={handleAdd}
         >
           {children}
