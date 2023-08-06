@@ -7,8 +7,9 @@ import arrowIcon from "../../public/assets/images/arrow-icon.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { add, decrement, removeItem, reset } from "@/redux/cartSlice";
 import { RiDeleteBinLine } from "react-icons/ri";
+import { addToHistory } from "@/redux/historySlice";
 
-const Button = ({ btnStyleparam, children, product, finalPrice }) => {
+const Button = ({ btnStyleparam, children, product, finalPrice , finalProfitPrice }) => {
   const cart = useSelector((store) => store.cart);
   const cartCounts = cart.reduce((init, cur) => (init += cur.count), 0);
   const dispath = useDispatch();
@@ -24,6 +25,10 @@ const Button = ({ btnStyleparam, children, product, finalPrice }) => {
   const handleReset = useCallback(() => {
     dispath(reset());
   }, []);
+  const handleAddToHistory = useCallback(() => {
+    dispath(addToHistory({ items: product, finalPrice: finalPrice , finalProfitPrice: finalProfitPrice}));
+    dispath(reset());
+  }, [finalPrice, cart]);
   const theme =
     "flex justify-center items-center rounded-md whitespace-nowrap font-iransans ";
   const themeR =
@@ -36,7 +41,10 @@ const Button = ({ btnStyleparam, children, product, finalPrice }) => {
     <>
       {/* ------------ deleteALL ----------- */}
       {btnStyleparam === "deleteAll" ? (
-        <button className=" bg-snp-lightgray hover:bg-snp-gray text-snp-lightblack p-1.5 rounded-full" onClick={handleReset}>
+        <button
+          className=" bg-snp-lightgray hover:bg-snp-gray text-snp-lightblack p-1.5 rounded-full"
+          onClick={handleReset}
+        >
           <RiDeleteBinLine />
         </button>
       ) : null}
@@ -109,7 +117,7 @@ const Button = ({ btnStyleparam, children, product, finalPrice }) => {
       {btnStyleparam === "finalizeorder" ? (
         <button
           className={`${theme} relative bg-snp-lowdiscount w-full h-11 pr-4 pl-3 text-xl text-snp-white hover:bg-snp-finalizeBytnh`}
-          onClick={handleReset}
+          onClick={handleAddToHistory}
         >
           {children}
           {finalPrice != 0 && (
@@ -341,8 +349,8 @@ export default Button;
 
 // --------------------------------- Btns Template ------------------------------
 
-
-{/* <Button btnStyleparam={'allProduct'} >مشاهده همه محصولات</Button>
+{
+  /* <Button btnStyleparam={'allProduct'} >مشاهده همه محصولات</Button>
 <Button btnStyleparam={'addtoCartR'} >افزودن به سبد</Button>
 <Button btnStyleparam={'minus_addtoCartR'}></Button>
 <Button btnStyleparam={'plus_addtoCartR'}></Button>
@@ -353,5 +361,5 @@ export default Button;
 <Button btnStyleparam={'plus_addtoCart'}></Button>
 <Button btnStyleparam={'bin_addtoCart'}></Button>
 <Button btnStyleparam={'finalizeorder'} >نهایی کردن خرید</Button>
-<Button btnStyleparam={'deleteAll'} ></Button> */}
-
+<Button btnStyleparam={'deleteAll'} ></Button> */
+}
