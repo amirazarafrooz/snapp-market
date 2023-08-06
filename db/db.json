@@ -2304,13 +2304,13 @@
       "subs": ["شیر", "پنیر", "ماست", "دوغ", "کره", "خامه", "کشک"],
       "image" : "https://api.snapp.market/uploads/images/mobile-sliders/63d501d34d337.png"
     },
-    {"id": 330020, "main": 3300201, "mainFA": "شیر", "subs": [] , "parent": "dairy-product"},
-    {"id": 330021, "main": 3300202, "mainFA": "پنیر", "subs": [] , "parent": "dairy-product"},
-    {"id": 330022, "main": 3300203, "mainFA": "ماست", "subs": [] , "parent": "dairy-product"},
-    {"id": 330023, "main": 3300204, "mainFA": "دوغ", "subs": [] , "parent": "dairy-product"},
-    {"id": 330024, "main": 3300205, "mainFA": "کره", "subs": [] , "parent": "dairy-product"},
-    {"id": 330025, "main": 3300206, "mainFA": "خامه", "subs": [] , "parent": "dairy-product"},
-    {"id": 330026, "main": 3300207, "mainFA": "کشک", "subs": [] , "parent": "dairy-product"},
+    {"id": 330020, "main": 3300201, "mainFA": "شیر", "subs": [] , "parent": "dairy-product" , "parentFA" :"لبنیات" },
+    {"id": 330021, "main": 3300202, "mainFA": "پنیر", "subs": [] , "parent": "dairy-product" , "parentFA" :"لبنیات" },
+    {"id": 330022, "main": 3300203, "mainFA": "ماست", "subs": [] , "parent": "dairy-product", "parentFA" :"لبنیات" },
+    {"id": 330023, "main": 3300204, "mainFA": "دوغ", "subs": [] , "parent": "dairy-product", "parentFA" :"لبنیات" },
+    {"id": 330024, "main": 3300205, "mainFA": "کره", "subs": [] , "parent": "dairy-product", "parentFA" :"لبنیات" },
+    {"id": 330025, "main": 3300206, "mainFA": "خامه", "subs": [] , "parent": "dairy-product", "parentFA" :"لبنیات" },
+    {"id": 330026, "main": 3300207, "mainFA": "کشک", "subs": [] , "parent": "dairy-product" , "parentFA" :"لبنیات" },
     
     {
       "id": 330002,

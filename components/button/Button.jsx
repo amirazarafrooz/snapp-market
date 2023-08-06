@@ -6,6 +6,7 @@ import cartIcon from "../../public/assets/images/cartbtn-icon.svg";
 import arrowIcon from "../../public/assets/images/arrow-icon.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { add, decrement, removeItem, reset } from "@/redux/cartSlice";
+import { RiDeleteBinLine } from "react-icons/ri";
 
 const Button = ({ btnStyleparam, children, product, finalPrice }) => {
   const cart = useSelector((store) => store.cart);
@@ -33,6 +34,13 @@ const Button = ({ btnStyleparam, children, product, finalPrice }) => {
 
   return (
     <>
+      {/* ------------ deleteALL ----------- */}
+      {btnStyleparam === "deleteAll" ? (
+        <button className=" bg-snp-lightgray hover:bg-snp-gray text-snp-lightblack p-1.5 rounded-full" onClick={handleReset}>
+          <RiDeleteBinLine />
+        </button>
+      ) : null}
+
       {/* ------------------------------------ categories button -----------------------------------------*/}
 
       {btnStyleparam === "categories" ? (
@@ -101,6 +109,7 @@ const Button = ({ btnStyleparam, children, product, finalPrice }) => {
       {btnStyleparam === "finalizeorder" ? (
         <button
           className={`${theme} relative bg-snp-lowdiscount w-full h-11 pr-4 pl-3 text-xl text-snp-white hover:bg-snp-finalizeBytnh`}
+          onClick={handleReset}
         >
           {children}
           {finalPrice != 0 && (
@@ -332,15 +341,17 @@ export default Button;
 
 // --------------------------------- Btns Template ------------------------------
 
-/* <Button btnStyleparam={'allProduct'} >مشاهده همه محصولات</Button>
+
+{/* <Button btnStyleparam={'allProduct'} >مشاهده همه محصولات</Button>
 <Button btnStyleparam={'addtoCartR'} >افزودن به سبد</Button>
 <Button btnStyleparam={'minus_addtoCartR'}></Button>
 <Button btnStyleparam={'plus_addtoCartR'}></Button>
 <Button btnStyleparam={'bin_addtoCartR'}></Button> 
 
 <Button btnStyleparam={'addtoCart'} >افزودن به سبد</Button>   
-  <Button btnStyleparam={'minus_addtoCart'}></Button>
-      <Button btnStyleparam={'plus_addtoCart'}></Button>
-      <Button btnStyleparam={'bin_addtoCart'}></Button>
-      <Button btnStyleparam={'finalizeorder'} >نهایی کردن خرید</Button>
-*/
+<Button btnStyleparam={'minus_addtoCart'}></Button>
+<Button btnStyleparam={'plus_addtoCart'}></Button>
+<Button btnStyleparam={'bin_addtoCart'}></Button>
+<Button btnStyleparam={'finalizeorder'} >نهایی کردن خرید</Button>
+<Button btnStyleparam={'deleteAll'} ></Button> */}
+
