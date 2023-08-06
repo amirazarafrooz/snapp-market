@@ -7,9 +7,10 @@ import { BreadCrumb } from "../BreadCrumbs";
 const data = await getLocalData();
 const products = data.products;
 const category = data.categories;
+const subCategory = data.subcategories;
 
 export const ProductInfo = ({ productId }) => {
-  const filterCategory = category.filter(cat =>cat.mainFA ==  products.filter(prod => prod.id == productId)[0].category.sub )[0]
+  const filterCategory = subCategory.filter(cat =>cat.mainFA ==  products.filter(prod => prod.id == productId)[0].category.sub )[0]
   return (
     <div className="w-full ">
       {products
