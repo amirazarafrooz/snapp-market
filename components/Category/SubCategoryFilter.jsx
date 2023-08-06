@@ -3,7 +3,7 @@ export const SubCategoryFilter
     return (
 <>
 <div className="flex-col h-screen px-2 font-iransans text-sm  hidden laptop:flex ">
-<div className="w-56 px-6 py-4 h-28 mt-1 mb-4 bg-snp-white rounded-md border-[1px]">
+<div className="w-56 px-6 py-4 h-28 mb-4 bg-snp-white rounded-md border-[1px]">
    <div className="flex items-center justify-between mb-4"> <h3>فیلتر‌های اعمال شده</h3>
     <span className="text-snp-highdiscount text-xs">حذف</span>
     </div>

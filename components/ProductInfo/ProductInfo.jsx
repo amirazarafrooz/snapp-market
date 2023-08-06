@@ -6,8 +6,10 @@ import { BreadCrumb } from "../BreadCrumbs";
 
 const data = await getLocalData();
 const products = data.products;
+const category = data.categories;
 
 export const ProductInfo = ({ productId }) => {
+  const filterCategory = category.filter(cat =>cat.mainFA ==  products.filter(prod => prod.id == productId)[0].category.sub )[0]
   return (
     <div className="w-full ">
       {products
@@ -18,7 +20,9 @@ export const ProductInfo = ({ productId }) => {
               <div className="w-full bg-snp-white border rounded my-8 pb-5 tablet:px-12 tablet:pb-12">
                 <BreadCrumb
                   category={product.category.main}
+                  linkCategory={filterCategory.parent}
                   subCategory={product.category.sub}
+                  linkSubCategory={filterCategory.main}
                   subCategoryBrand={product.brand}
                 />
                 <div className="tablet:flex tablet:items-center tablet:justify-center w-full h-full my-10">

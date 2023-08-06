@@ -2,9 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineHome, AiOutlineLeft } from "react-icons/ai";
 
-export const BreadCrumb = ({ category, subCategory, subCategoryBrand }) => {
+export const BreadCrumb = ({
+  category,
+  linkCategory,
+  subCategory,
+  linkSubCategory,
+  subCategoryBrand,
+}) => {
   return (
-    <div className="flex items-center w-full font-iransansl text-sm py-4 ">
+    <div className="flex items-center w-full font-iransansl text-sm py-3 ">
       <Link href={"/"} className="flex items-center">
         <AiOutlineHome className="text-lg" />
         <p className="mr-1">اسنپ مارکت</p>
@@ -12,25 +18,40 @@ export const BreadCrumb = ({ category, subCategory, subCategoryBrand }) => {
       <span className="mx-1.5">
         <AiOutlineLeft className="text-gray-500" />
       </span>
-      {category && subCategory && subCategoryBrand ? (
-        <div className="flex items-center">
-          <p>{category}</p>
-          <span className="mx-1.5">
-            <AiOutlineLeft className="text-gray-500" />
-          </span>
-          <p>{subCategory}</p>
-          <span className="mx-1.5">
-            <AiOutlineLeft className="text-gray-500" />
-          </span>
-          <div className="flex items-center gap-1">
-            <p>{subCategory}</p>
-            <p>{subCategoryBrand}</p>
-          </div>
-        </div>
-      ) : null}
       {!subCategory && !subCategoryBrand ? (
         <div>
           <p className="font-iransansb">{category}</p>
+        </div>
+      ) : null}
+      {category && subCategory && !subCategoryBrand ? (
+        <div className="flex items-center">
+          <Link href={`/categories/${linkCategory}`}>
+            <p>{category}</p>
+          </Link>
+          <span className="mx-1.5">
+            <AiOutlineLeft className="text-gray-500" />
+          </span>
+          <p className=" font-iransansb">{subCategory}</p>
+        </div>
+      ) : null}
+      {category && subCategory && subCategoryBrand ? (
+        <div className="flex items-center">
+          <Link href={`/categories/${linkCategory}`}>
+            <p>{category}</p>
+          </Link>
+          <span className="mx-1.5">
+            <AiOutlineLeft className="text-gray-500" />
+          </span>
+          <Link href={`/categories/${linkSubCategory}`}>
+            <p>{subCategory}</p>
+          </Link>
+          <span className="mx-1.5">
+            <AiOutlineLeft className="text-gray-500" />
+          </span>
+          <div className="flex items-center gap-1 font-iransansb">
+            <p>{subCategory}</p>
+            <p>{subCategoryBrand}</p>
+          </div>
         </div>
       ) : null}
     </div>
