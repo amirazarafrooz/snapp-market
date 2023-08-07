@@ -224,8 +224,8 @@ export const SearchBar = ({ device, searchItem, categoryItems, subDevice , subCa
                                       src={categoruIcon}
                                     />
                                     <Link
-                                      href={`/categories/${
-                                        categoryItems.filter(
+                                      href={`/subcategories/${
+                                        subCategory.filter(
                                           (subitem) => subitem.mainFA == item
                                         )[0].main
                                       }`}
