@@ -66,7 +66,7 @@ export const SubCategoryPageMain = ({ products }) => {
       </div>
 
       {/* items load here */}
-      <div className="flex justify-start items-start flex-wrap border-l-[1px] border-r-[1px] bg-blue-200">
+      <div className="flex justify-center mobile:justify-start w-full items-start flex-wrap border-l-[1px] border-r-[1px]">
         <SubCategoryPageProduct products={sortedProducts} />
       </div>
 

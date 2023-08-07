@@ -1,7 +1,7 @@
 export const SubCategoryFilter = () => {
   return (
     <>
-      <div className="flex-col h-fit px-2 font-iransans text-sm  hidden laptop:flex sticky top-[130px]">
+      <div className="flex-col h-fit px-2 font-iransans text-sm  hidden laptop:hidden sticky top-[130px]">
         <div className="w-56 px-6 py-4 h-28 mb-4 bg-snp-white rounded-md border-[1px]">
           <div className="flex items-center justify-between mb-4">
             {" "}
