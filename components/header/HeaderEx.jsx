@@ -13,7 +13,7 @@ import Link from "next/link";
 import { ShoppingCard } from "./ShoppingCard";
 
 
-export const HeaderEx =  ({categoryItems ,searchItem}) => {
+export const HeaderEx =  ({categoryItems ,searchItem, subCategory}) => {
   
   const [showUserProfile, setShowUserProfile] = useState(false);
   const userProfileHandler = useCallback(() => {
@@ -156,7 +156,7 @@ export const HeaderEx =  ({categoryItems ,searchItem}) => {
 
             </div>
             {/* Search box */}
-            <SearchBar device={"mobile"} searchItem={searchItem} categoryItems={categoryItems} />
+            <SearchBar device={"mobile"} searchItem={searchItem} categoryItems={categoryItems} subCategory={subCategory}/>
           </div>
         </div>
       </div>
