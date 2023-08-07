@@ -4,9 +4,9 @@ const data = await getLocalData();
 const caption = data.captions;
 
 export const AboutMainCategory = async ({ main }) => {
-
-  const hasCaption=caption.filter((item) => item.main == main)
-  .map((item) =>item.text.map((captions) =>{captions.title}))[0].length
+ 
+  const hasCaption=isNaN(caption.filter((item) => item.main == main)
+  ?.map((item) =>item.text?.map((captions) =>{captions.title}))[0])
 
   return (
     <>
