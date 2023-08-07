@@ -37,7 +37,7 @@ export const HeaderNav = ({categoryItems}) => {
                 <use href="#GridOutlineIcon" xlinkHref="#GridOutlineIcon"></use>
               </svg> */}
               {/* <Button btnStyleparam={'categories'}>دسته‌بندی‌ها</Button> */}
-              <CategoriesMenu showToggle={showcategory} categoryItems={categoryItems} clickHandler={categoryleHandler}/>
+              {/* <CategoriesMenu showToggle={showcategory} categoryItems={categoryItems} clickHandler={categoryleHandler}/> */}
               {/* <span>دسته بندی ها</span> */}
             </div>
 

@@ -17,6 +17,8 @@ export default function RootLayout({ children }) {
         {children}
         <Footer/>
         </Providers>
+        <div id="root" />
+        <div id="portal-root" />
         </body>
     </html>
   )
