@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function ProfileLayout({ children }) {
   return (
-    <section className="flex justify-center items-center flex-col my-4 laptop:flex-row laptop:p-8 laptop:items-start laptop:justify-center">
-      <div className="w-144 tablet:w-192 laptop:w-64 desktop:w-80 flex justify-center border-[1px] rounded-sm px-4 my-4 bg-snp-white">
+    <section className="flex justify-center items-center flex-col my-4 laptop:flex-row laptop:p-8 laptop:items-start laptop:justify-center p-2">
+      <div className="w-full tablet:w-192 laptop:w-64 desktop:w-80 flex justify-center border-[1px] rounded-sm px-4 my-4 bg-snp-white">
         <div className="w-full flex flex-col font-iransans text-sm h-40 tablet:h-52 laptop:h-64 ">
           <h3 className=" font-iransans text-base pt-2 pb-3 pr-4">پروفایل</h3>
           <div className="flex justify-evenly h-full border-t-[1px] laptop:flex-col ">
