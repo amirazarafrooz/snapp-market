@@ -8,7 +8,7 @@ import { ShoppingCard } from './ShoppingCard';
 
 
 
-export const HeaderSelector =  ({categoryItems , searchItem}) => {
+export const HeaderSelector =  ({categoryItems , searchItem, subCategory}) => {
 
 
 
@@ -40,14 +40,14 @@ export const HeaderSelector =  ({categoryItems , searchItem}) => {
         <>
 
 
-                <div className={`relative z-20`}><HeaderEx searchItem={searchItem} categoryItems={categoryItems}/>
+                <div className={`relative z-20`}><HeaderEx searchItem={searchItem} categoryItems={categoryItems} subCategory={subCategory}/>
                 </div>
                 
 
         <div className={stickyClass==='hidden'?
            ` fixed left-0 top-0 w-full -translate-y-28 transition-all duration-0 z-10` :
            ` fixed left-0 top-0 w-full translate-y-0 transition-all duration-0 z-10` }>
-            <HeaderSc searchItem={searchItem} categoryItems={categoryItems} />
+            <HeaderSc searchItem={searchItem} categoryItems={categoryItems} subCategory={subCategory}/>
         </div>
             <NavbarMobile categoryItems={categoryItems}/>
         </>

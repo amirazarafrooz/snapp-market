@@ -5,7 +5,7 @@ import search from "../../public/assets/images/search-icon.svg";
 import categoruIcon from "../../public/assets/images/category-icon.svg";
 import Link from "next/link";
 
-export const SearchBar = ({ device, searchItem, categoryItems, subDevice }) => {
+export const SearchBar = ({ device, searchItem, categoryItems, subDevice , subCategory }) => {
   const [searchterm, setSearchterm] = useState("");
   const [searchResult, setSearchResult] = useState([]);
 
@@ -151,8 +151,8 @@ export const SearchBar = ({ device, searchItem, categoryItems, subDevice }) => {
                                     src={categoruIcon}
                                   />
                                   <Link
-                                    href={`/categories/${
-                                      categoryItems.filter(
+                                    href={`/subcategories/${
+                                      subCategory.filter(
                                         (subitem) => subitem.mainFA == item
                                       )[0].main
                                     }`}

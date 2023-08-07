@@ -12,7 +12,7 @@ import { useState , useCallback } from "react";
 import { ShoppingCard } from "./ShoppingCard";
 
 
-export const HeaderSc = ({categoryItems , searchItem }) => {
+export const HeaderSc = ({categoryItems , searchItem , subCategory}) => {
 
   const [showUserProfile, setShowUserProfile] = useState(false);
 
@@ -91,7 +91,7 @@ export const HeaderSc = ({categoryItems , searchItem }) => {
             {/* left container */}
             <div className="tablet:flex  tablet:justify-around tablet:items-center tablet:w-full  ">
               {/* Search box */}
-               <SearchBar device={'tablet+'}  searchItem={searchItem} categoryItems={categoryItems}/> 
+               <SearchBar device={'tablet+'}  searchItem={searchItem} categoryItems={categoryItems} subCategory={subCategory}/> 
               
               {/* user info */}
                 <UserProfile headerId={"HeaderSc"}  clickHandler={userProfileHandler} showUserProfile={showUserProfile}/>
