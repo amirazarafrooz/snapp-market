@@ -1,32 +1,30 @@
 "use client";
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import { SubCategoryPageProduct } from "./SubCategoryPageProduct";
 
 export const SubCategoryPageMain = ({ products }) => {
-  const [isExpensive, setIsExpensive] = useState(false);
-  const [isCheap, setIsCheap] = useState(false);
-  const [isDetault, setIsDefault] = useState(false);
-  const handleExpensive = useCallback(() => {
-    setIsExpensive(true);
-    setIsCheap(false);
-    setIsDefault(true);
-  }, [isExpensive]);
+  const [sortedProducts, setSortedProducts] = useState(products);
 
-  const handleCheap = useCallback(() => {
-    setIsCheap(true);
-    setIsExpensive(false);
-    setIsDefault(true);
-    console.log(isDetault);
-  }, [isCheap]);
-
-  const handleDefault = useCallback(() => {
-    setIsCheap(false);
-    setIsExpensive(false);
-  }, [isCheap , isExpensive]);
+  const sortProductHandler = (type) => {
+    switch (type) {
+      case "exp":
+        const expensiveProducts = [...products];
+        expensiveProducts.sort((a, b) => b.price - a.price);
+        setSortedProducts(expensiveProducts);
+        break;
+      case "cheap":
+        const cheapProducts = [...products];
+        cheapProducts.sort((a, b) => a.price - b.price);
+        setSortedProducts(cheapProducts);
+        break;
+      default:
+        setSortedProducts(products);
+        break;
+    }
+  };
 
   return (
     <>
-      {/* filters btns here */}
       <div className="flex items-center h-[62px] p-4 border-[1px] rounded-t mobile:text-xs mt-8 bg-snp-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -48,19 +46,19 @@ export const SubCategoryPageMain = ({ products }) => {
         <ul className="flex justify-evenly items-center font-iransans ">
           <li
             className="px-3 py-2 rounded-full cursor-pointer mx-1 active:bg-snp-secondary active:text-snp-white hover:bg-snp-lightgray hover:text-snp-secondary"
-            onClick={handleDefault}
+            onClick={() => sortProductHandler("default")}
           >
             پیش فرض
           </li>
           <li
             className="px-3 py-2 rounded-full cursor-pointer active:bg-snp-secondary active:text-snp-white hover:bg-snp-lightgray hover:text-snp-secondary mx-1"
-            onClick={handleExpensive}
+            onClick={() => sortProductHandler("exp")}
           >
             گران‌ترین
           </li>
           <li
             className="px-3 py-2 rounded-full cursor-pointer mx-1 active:bg-snp-secondary active:text-snp-white hover:bg-snp-lightgray hover:text-snp-secondary"
-            onClick={handleCheap}
+            onClick={() => sortProductHandler("cheap")}
           >
             ارزان‌ترین
           </li>
@@ -69,17 +67,7 @@ export const SubCategoryPageMain = ({ products }) => {
 
       {/* items load here */}
       <div className="flex justify-start items-start flex-wrap border-l-[1px] border-r-[1px] bg-blue-200">
-        {!isCheap && !isExpensive ? <SubCategoryPageProduct products={products} /> : null}
-        {isCheap && (
-          <SubCategoryPageProduct
-            products={products.sort((a, b) => a.price - b.price)}
-          />
-        )}
-        {isExpensive && (
-          <SubCategoryPageProduct
-            products={products.sort((a, b) => b.price - a.price)}
-          />
-        )}
+        <SubCategoryPageProduct products={sortedProducts} />
       </div>
 
       {/* pagination btns here */}
