@@ -6,12 +6,13 @@ import { Carousel } from "../Carousel/Carousel";
 const data = await getLocalData();
 const products = data.products;
 const category = data.categories;
+const subCategory = data.subcategories;
 
 export const CampaignSwiper = ({ CampaignTitle }) => {
   const campaignProducts = products.filter(
     (item) => item.category.sub === CampaignTitle
   );
-  const filterCategory = category.filter(
+  const filterCategory = subCategory.filter(
     (item) => item.mainFA === CampaignTitle
   )[0].main;
   return (

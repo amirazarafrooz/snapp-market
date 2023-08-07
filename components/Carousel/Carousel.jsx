@@ -43,7 +43,7 @@ export const Carousel = ({
             </div>
           );
         })}
-        <Link href={`/categories/${link}`}>
+        <Link href={`/subcategories/${link}`}>
           <div className="bg-white text-black w-48 h-[356px] rounded ">
             <div className="w-full h-full flex items-center justify-center">
               <p className="text-sm text-snp-secondary font-iransans underline">

@@ -42,7 +42,7 @@ export const BreadCrumb = ({
           <span className="mx-1.5">
             <AiOutlineLeft className="text-gray-500" />
           </span>
-          <Link href={`/categories/${linkSubCategory}`}>
+          <Link href={`/subcategories/${linkSubCategory}`}>
             <p>{subCategory}</p>
           </Link>
           <span className="mx-1.5">

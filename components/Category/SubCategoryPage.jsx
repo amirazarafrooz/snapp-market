@@ -9,17 +9,18 @@ import { SubCategoryPageMain } from "./SubCategoryPageMain";
 const data = await getLocalData();
 const products = data.products;
 const categories = data.categories;
+const subCategory = data.subcategories
 
 export const SubCategoryPage = ({ mainFilterParam }) => {
   const filterProducts = products.filter(
     (item) =>
       item.category.sub ==
       `${
-        categories.filter((item) => item.main == mainFilterParam)[0]
+        subCategory.filter((item) => item.main == mainFilterParam)[0]
           .mainFA
       }`
   )
-  const filterCategories = categories.filter(
+  const filterCategories = subCategory.filter(
     (cat) => cat.main == mainFilterParam
   )[0];
   return (
