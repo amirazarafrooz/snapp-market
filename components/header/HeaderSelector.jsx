@@ -8,10 +8,18 @@ import { ShoppingCard } from './ShoppingCard';
 
 
 
-export const HeaderSelector =  ({categoryItems , searchItem, subCategory}) => {
+export const HeaderSelector =  ({categoryItems , searchItem, subCategory, layout}) => {
 
-
-
+if(layout =='sublayout'){
+  return (
+    <>
+    <div className='sticky left-0 top-0 h-[112px] w-full z-20'>
+<HeaderSc searchItem={searchItem} categoryItems={categoryItems} subCategory={subCategory}/>
+</div>
+<NavbarMobile categoryItems={categoryItems}/>
+</>
+)}
+else {
 
 
 
@@ -52,6 +60,7 @@ export const HeaderSelector =  ({categoryItems , searchItem, subCategory}) => {
             <NavbarMobile categoryItems={categoryItems}/>
         </>
     );
+    }
 };
   
  
