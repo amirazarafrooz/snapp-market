@@ -10,9 +10,9 @@ export const BreadCrumb = ({
   subCategoryBrand,
 }) => {
   return (
-    <div className="flex items-center w-full font-iransansl text-sm py-3 ">
+    <div className="flex items-center w-full font-iransansl text-sm py-3 px-1">
       <Link href={"/"} className="flex items-center">
-        <AiOutlineHome className="text-lg" />
+        <AiOutlineHome className="text-lg pb-0.5" />
         <p className="mr-1">اسنپ مارکت</p>
       </Link>
       <span className="mx-1.5">

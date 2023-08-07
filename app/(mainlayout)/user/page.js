@@ -3,7 +3,7 @@ import React from "react";
 
 export default function User() {
   return (
-    <div className="flex flex-col items-center rounded-md border-[1px] font-iransans my-4 w-[512px] p-4 laptop:w-[700px] desktop:w-[850px]  laptop:mr-8  ">
+    <div className="flex flex-col items-center rounded-md border-[1px] font-iransans my-4 w-full p-4 laptop:w-[700px] desktop:w-[850px]  laptop:mr-8  ">
       <div className="flex flex-col items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
