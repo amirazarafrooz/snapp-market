@@ -1,6 +1,7 @@
 import { CategoryPage } from "@/components/Category/CategoryPage";
 import { getLocalData } from "@/lib/localdata";
 import { SubCategoryPage} from "@/components/Category/SubCategoryPage";
+import { AboutMainCategory } from "@/components/captions/AboutMainCategory";
 
 const data = await getLocalData();
 const category = data.categories;
@@ -28,6 +29,7 @@ export default function CategoriesDetail({ params }) {
         <div className="mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300">
 
           <CategoryPage categoryName={params.categoriesId} />
+          <AboutMainCategory main={params.categoriesId}/>
         </div>
       </main>
     );
