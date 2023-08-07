@@ -9,13 +9,15 @@ import Button from '@/components/button/Button'
 import { CategoriesMenu } from '@/components/header/CategoriesMenu'
 import { Carousel } from '@/components/Carousel/Carousel'
 import { DiscountSwiper } from '@/components/DiscountSwiper/DiscountSwiper'
-
+import { Header } from '@/components/header/Header'
+import { Footer } from '@/components/footer/Footer'
 
 
 export default function Home() {
   return (
-
+<>         <Header/>
     <main className='bg-snp-bg-body w-full  flex justify-center'>
+
         {/* main layout  */}
       <div className='mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300 '>
       <CategoriesMenu showToggle={true}/>
@@ -33,11 +35,13 @@ export default function Home() {
       <AboutSnappmarket/>
 
 
- 
- 
+      
+
 
       </div>
     </main>
+      <Footer/>
+      </>
 
 
 

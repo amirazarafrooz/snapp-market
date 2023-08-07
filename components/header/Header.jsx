@@ -9,13 +9,13 @@ const search = data.products
 const subCategory = data.subcategories
 
 
-export const Header =  () => {
+export const Header =  ({layout}) => {
     
 
 
     return (
         <> 
-        <HeaderSelector categoryItems={menu} searchItem={search} subCategory={subCategory}/>
+        <HeaderSelector layout={layout} categoryItems={menu} searchItem={search} subCategory={subCategory}/>
         </>
         
     );
