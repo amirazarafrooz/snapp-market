@@ -1,5 +1,5 @@
 import Image from "next/image";
-import snappmarketlogo from "../../../public/assets/images/snappmarket-logo.svg";
+import snappmarketlogo from "../../../../public/assets/images/snappmarket-logo.svg";
 import { ProductInfo } from "@/components/ProductInfo/ProductInfo";
 import { getLocalData } from '@/lib/localdata'
 

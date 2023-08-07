@@ -13,9 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="fa" dir="rtl">
       <body>
         <Providers>
-         <Header/>
         {children}
-        <Footer/>
         </Providers>
         </body>
     </html>
