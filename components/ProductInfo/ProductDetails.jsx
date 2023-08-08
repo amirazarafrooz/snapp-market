@@ -1,9 +1,10 @@
+import { useMemo } from "react";
 import { ProductsDetailsButton } from "./ProductDetailsButton";
+import { itemCalculatePrice } from "@/utils/itemCalculatePrice";
 
 export const ProductDetails = ({ product }) => {
   const { name, category, brand, seller, tags, price, discount } = product;
-  const Price = (price * (100 - discount)) / 100;
-  const totalPrice = Price.toFixed(3);
+  const totalPrice = useMemo(() => itemCalculatePrice(price, discount));
   return (
     <div className="w-full tablet:w-1/2 px-4 mt-10 tablet:mt-0 tablet:px-12">
       <p className=" font-iransansb text-xl tracking-wide">{name}</p>

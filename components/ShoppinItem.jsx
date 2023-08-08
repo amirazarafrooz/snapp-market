@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Button from "./button/Button";
+import { useMemo } from "react";
+import { itemCalculatePrice } from "@/utils/itemCalculatePrice";
 
-export const ShoppingItem = ({ details , handleDecrement , handleAdd }) => {
+export const ShoppingItem = ({ details, handleDecrement, handleAdd }) => {
   const { images, name, discount, price, count } = details;
-  const Price = (price * (100 - discount)) / 100;
-  const prodPrice = Price.toFixed(3);
+  const prodPrice = useMemo(() => itemCalculatePrice(price, discount));
   return (
     <div className="w-full h-full flex py-3 border-b border-b-gray-50 hover:border-b-gray-200">
       <div className=" w-28 h-full">
-        <Image alt="shopicon-image"
+        <Image
+          alt="shopicon-image"
           width={0}
           height={0}
           sizes="100vw"
@@ -35,7 +37,9 @@ export const ShoppingItem = ({ details , handleDecrement , handleAdd }) => {
             ) : null}
             <div className="w-full mt-auto">
               <div className="flex items-center">
-                <p className="text-snp-black font-iransans text-md">{prodPrice}</p>
+                <p className="text-snp-black font-iransans text-md">
+                  {prodPrice}
+                </p>
                 <p className=" text-gray-700 mr-1 text-sm font-iransansl">
                   تومان
                 </p>
@@ -44,15 +48,24 @@ export const ShoppingItem = ({ details , handleDecrement , handleAdd }) => {
           </div>
           <div className="flex justify-between items-center w-1/2 h-full mt-auto py-3 px-6">
             {count == 1 ? (
-              <Button btnStyleparam={"bin_addtoCartR"} product={details}></Button>
+              <Button
+                btnStyleparam={"bin_addtoCartR"}
+                product={details}
+              ></Button>
             ) : (
-              <Button btnStyleparam={"minus_addtoCartR"} product={details}></Button>
+              <Button
+                btnStyleparam={"minus_addtoCartR"}
+                product={details}
+              ></Button>
             )}
 
             <p className="mx-auto text-snp-primaryh font-iransansb text-lg">
               {count}
             </p>
-            <Button btnStyleparam={"plus_addtoCartR"} product={details}></Button>
+            <Button
+              btnStyleparam={"plus_addtoCartR"}
+              product={details}
+            ></Button>
           </div>
         </div>
       </div>
