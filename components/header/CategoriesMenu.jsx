@@ -4,13 +4,13 @@ import Link from "next/link";
 import megamenu from "../../public/assets/images/MegaMenuBg.png";
 import { useRef, useEffect } from "react";
 
-export const CategoriesMenu = ({ showToggle, categoryItems, clickHandler }) => {
+export const CategoriesMenu = ({ categoryItems, handlemodal }) => {
   const modal = useRef(null);
 
   return (
     <div>
       {categoryItems && (
-        <div className=" w-full flex justify-center items-start -mt-4  ">
+        <div className=" w-full flex justify-center items-start -mt-4  " onClick={handlemodal}>
           <div
             className="fixed right-0 top-0 z-50 flex flex-col   laptop:flex  laptop:justify-start laptop:items-center laptop: laptop:flex-wrap laptop:gap-0 w-72 h-full bg-snp-white px-6 pt-6 pb-2
                         laptop:relative laptop:w-248 laptop:shadow-md laptop:h-96 laptop:px-6 laptop:pt-5 laptop:pb-2 laptop:mx-auto laptop:rounded-b-lg laptop:rounded-tl-lg desktop:w-300"

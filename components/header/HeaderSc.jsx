@@ -9,10 +9,20 @@ import { SearchBar } from "./SearchBar";
 import { UserProfile } from "./UserProfile";
 import Button from "../button/Button";
 import { useState , useCallback } from "react";
-import { ShoppingCard } from "./ShoppingCard";
+import { ShoppingCard } from "./ShoppingCart";
+import { ShoppingCartModal } from "./modal/ShoppingCartModal";
 
 
 export const HeaderSc = ({categoryItems , searchItem , subCategory}) => {
+
+
+  const [shopOpen, setShopOpen] = useState(false);
+  const handlemodalShop = (event) => {
+    event.stopPropagation();
+  };
+  const handleCloseShop = () => {
+    setShopOpen(false);
+  };
 
   const [showUserProfile, setShowUserProfile] = useState(false);
 
@@ -100,8 +110,16 @@ export const HeaderSc = ({categoryItems , searchItem , subCategory}) => {
               <div className="hidden tablet:block">
               
                 {/* <Button btnStyleparam={'cart'} >سبد خرید</Button> */}
-                <ShoppingCard cartHandler={cartHandler} showCart={showCart}/>
-
+                {/* <ShoppingCard cartHandler={cartHandler} showCart={showCart}/> */}
+                <ShoppingCartModal handleCloseShop={handleCloseShop} shopOpen={shopOpen}>
+                <ShoppingCard cartHandler={cartHandler} showCart={showCart}  handlemodalShop={handlemodalShop} />
+                </ShoppingCartModal>
+                <div
+              className=" hidden tablet:block"
+              onClick={() => setShopOpen(true)}
+            >
+              <Button btnStyleparam={"cart"}>سبد خرید</Button>
+            </div>
 
               </div>
             </div>
