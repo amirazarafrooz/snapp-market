@@ -8,54 +8,65 @@ import delivery from "../../public/assets/images/delivery-icon.svg";
 import { SearchBar } from "./SearchBar";
 import { UserProfile } from "./UserProfile";
 import Button from "../button/Button";
-import { CategoriesMenu } from './CategoriesMenu';
+import { CategoriesMenu } from "./CategoriesMenu";
 import Link from "next/link";
 import { ShoppingCard } from "./ShoppingCard";
+import { Modal } from "./modal/Modal";
+import {CategoriesMenuModal} from './modal/CategoriesMenuModal'
+
+export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const handlemodal = (event) => {
+    event.stopPropagation();
+  } 
+  const handleClose = () => {
+    setIsOpen(false)
+  }
 
 
-export const HeaderEx =  ({categoryItems ,searchItem, subCategory}) => {
-  
   const [showUserProfile, setShowUserProfile] = useState(false);
   const userProfileHandler = useCallback(() => {
     setShowUserProfile(!showUserProfile);
   }, [showUserProfile]);
 
-  const [showcategory, setShowCategory] = useState(false);
-  const categoryleHandler = useCallback(() => {
-    setShowCategory(!showcategory);
-  }, [showcategory]);
+  // const [showcategory, setShowCategory] = useState(false);
+  // const categoryleHandler = useCallback(() => {
+  //   setShowCategory(!showcategory);
+  // }, [showcategory]);
 
   const [showCart, setShowCart] = useState(false);
   const cartHandler = useCallback(() => {
     setShowCart(!showCart);
   }, [showCart]);
 
-
-
-  
   return (
     <div>
       {/* main container */}
       {/* overflow-hidden */}
-   
+
       <div
-        className="w-full h-64 p-2 tablet:h-56"  
+        className="w-full h-64 p-2 tablet:h-56"
         style={{
           backgroundRepeat: "no-repeat",
           objectFit: "cover",
           backgroundSize: "cover",
           backgroundImage: `url(${headerbanner.src})`,
-          
         }}
-          > 
-      
+      >
         {/*  upper row container  */}
         <div className="flex justify-center ">
           <div className="w-144 h-12 flex  border-b border-snp-lightgray border-opacity-25 justify-between px-2 pt-[2px] pb-[10px] tablet:w-192 laptop:w-248 desktop:w-300">
             {/* right column */}
             <div className="flex">
               {/* logo */}
-              <Link href={'/'}><Image alt="snappmarket-logo" className="h-full w-12 tablet:w-14" src={logo}></Image></Link>
+              <Link href={"/"}>
+                <Image
+                  alt="snappmarket-logo"
+                  className="h-full w-12 tablet:w-14"
+                  src={logo}
+                ></Image>
+              </Link>
 
               {/* location container */}
               <div className="flex w-[70%] items-center p-2 tablet:mr-3">
@@ -88,10 +99,14 @@ export const HeaderEx =  ({categoryItems ,searchItem, subCategory}) => {
             {/* userProfile and cartBtn container */}
             <div className="flex items-center">
               {/* user info  */}
-              <UserProfile headerId={"HeaderEx"} clickHandler={userProfileHandler} showUserProfile={showUserProfile}  />
+              <UserProfile
+                headerId={"HeaderEx"}
+                clickHandler={userProfileHandler}
+                showUserProfile={showUserProfile}
+              />
               <div className="hidden tablet:block">
                 {/* <Button btnStyleparam={"cart"} >سبد خرید</Button> */}
-                <ShoppingCard cartHandler={cartHandler} showCart={showCart}/>
+                <ShoppingCard cartHandler={cartHandler} showCart={showCart} />
               </div>
             </div>
           </div>
@@ -102,7 +117,8 @@ export const HeaderEx =  ({categoryItems ,searchItem, subCategory}) => {
           <div className="flex  flex-col items-start  p-2 w-144 h-32 border-b border-snp-lightgray border-opacity-25 tablet:w-192 tablet:flex-row tablet:justify-between tablet:border-none tablet:h-24 laptop:w-248 desktop:w-300">
             {/* market detail */}
             <div className="flex items-center justify-center mt-4 ">
-              <Image alt="market-logo"
+              <Image
+                alt="market-logo"
                 className="w-8 h-8 rounded-full ml-2 p-1 tablet:w-14 tablet:h-14 laptop:w-16 laptop:h-16 "
                 src={marketlogo}
               ></Image>
@@ -114,7 +130,8 @@ export const HeaderEx =  ({categoryItems ,searchItem, subCategory}) => {
             {/* market caption */}
             <div className="flex justify-between  w-72 mt-4 tablet:flex-col tablet:w-40 tablet:mt-12 laptop:w-64">
               <div className="tablet:flex tablet:mb-4">
-                <Image alt="clock-icon"
+                <Image
+                  alt="clock-icon"
                   width={17}
                   height={17}
                   src={clock}
@@ -126,7 +143,8 @@ export const HeaderEx =  ({categoryItems ,searchItem, subCategory}) => {
               </div>
               <div className="flex flex-col">
                 <div className="tablet:flex tablet:items-start ">
-                  <Image alt="delivery-icon"
+                  <Image
+                    alt="delivery-icon"
                     width={17}
                     height={17}
                     src={delivery}
@@ -152,11 +170,48 @@ export const HeaderEx =  ({categoryItems ,searchItem, subCategory}) => {
             {/* Category btn */}
             <div className="hidden tablet:block">
               {/* <Button btnStyleparam={"categories"}>دسته‌بندی‌ها</Button> */}
-              <CategoriesMenu showToggle={showcategory} categoryItems={categoryItems} clickHandler={categoryleHandler}/>
-
+              {/* <CategoriesMenu
+                showToggle={showcategory}
+                categoryItems={categoryItems}
+                clickHandler={categoryleHandler}
+              /> */}
             </div>
+
+            <CategoriesMenuModal handleClose={handleClose} isOpen={isOpen}>
+            <CategoriesMenu
+                // showToggle={showcategory}
+                categoryItems={categoryItems}
+                // clickHandler={categoryleHandler}
+              />
+              
+              </CategoriesMenuModal>
+              <div className=' hidden tablet:block' onClick={() => setIsOpen(true)}>
+                <Button btnStyleparam={'categories'} >دسته‌بندی‌ها</Button>
+              </div>
+                
+            {/* modal */}
+            {/* <div className="App">
+              <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                <button onClick={() => setIsOpen(true)}>
+                  Click to Open Modal
+                </button>
+
+                <Modal handleClose={handleClose} isOpen={isOpen}>
+                  <div className="w-96 bg-orange-200 h-96 " onClick={handlemodal}>
+                  This is Modal Content!
+                  </div>
+                </Modal>
+
+              </header>
+            </div> */}
             {/* Search box */}
-            <SearchBar device={"mobile"} searchItem={searchItem} categoryItems={categoryItems} subCategory={subCategory}/>
+            <SearchBar
+              device={"mobile"}
+              searchItem={searchItem}
+              categoryItems={categoryItems}
+              subCategory={subCategory}
+            />
           </div>
         </div>
       </div>

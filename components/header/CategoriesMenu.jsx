@@ -12,38 +12,40 @@ export const CategoriesMenu =  ({showToggle, categoryItems, clickHandler}) => {
   
   const modal = useRef(null);
 
-  useEffect(() => {
-    // Applying on mount
-    if(showToggle) {
-      // document.body.style.overflow = "hidden";
-      console.log('makhfi');
+  // useEffect(() => {
+  //   // Applying on mount
+  //   if(showToggle) {
+  //     // document.body.style.overflow = "hidden";
+  //     console.log('makhfi');
 
-          } else {
-            document.body.style.overflow = "visible";
-            console.log('ashkara');
+  //         } else {
+  //           document.body.style.overflow = "visible";
+  //           console.log('ashkara');
 
-        }
-    // Applying on unmount    
-            return () => {
-                          }
-          }, [clickHandler])
+  //       }
+  //   // Applying on unmount    
+  //           return () => {
+  //                         }
+  //         }, [clickHandler])
 
 
     return (
         
       <div >
-   {(categoryItems) && (   <div className=' hidden tablet:block' onClick={clickHandler}>
+   {/* {(categoryItems) && (  
+     <div className=' hidden tablet:block' onClick={clickHandler}>
 <Button btnStyleparam={'categories'} >دسته‌بندی‌ها</Button>
-</div>)}
+</div>
+)} */}
 
 {/* {(categoryItems) && (<div>{categoryItems?.map((item) => (<div className='bg-red-500'>{item.main}</div>)) }</div>)} */}
         
-        {(showToggle) && (
-          <div>
+        {/* {(!showToggle) && ( */}
+          {/* <div> */}
      {(categoryItems) && (
       
-           <div className="fixed flex justify-center top-0 left-0 right-0 bottom-0 bg-[#0000006e]  z-[201] h-screen overflow-hidden" onClick={clickHandler}>
-            <div className="relative flex justify-end top-56 w-144 tablet:w-192 laptop:w-248 desktop:w-300 h-full z-[202]  ">
+          //  <div className="fixed flex justify-center top-0 left-0 right-0 bottom-0 bg-[#0000006e]  z-[201] h-screen overflow-hidden" onClick={clickHandler}>
+          //   <div className="relative flex justify-end top-56 w-144 tablet:w-192 laptop:w-248 desktop:w-300 h-full z-[202]  ">
           <div className='w-full flex justify-center items-start -mt-4 laptop:px-2 '>
         <div className='fixed right-0 top-0 z-50 flex flex-col   laptop:flex  laptop:justify-start laptop:items-center laptop: laptop:flex-wrap laptop:gap-0 w-72 h-full bg-snp-white px-6 pt-6 pb-2
                         laptop:relative laptop:w-248 laptop:shadow-md laptop:h-96 laptop:px-6 laptop:pt-5 laptop:pb-2 laptop:mx-auto laptop:rounded-b-lg laptop:rounded-tl-lg desktop:w-300'>
@@ -86,12 +88,12 @@ export const CategoriesMenu =  ({showToggle, categoryItems, clickHandler}) => {
              <div className='flex items-end justify-end  h-full'><Image alt='mega-menu' width={201} height={143} src={megamenu}></Image></div>
         </div>
         </div>
-        </div>
-        </div>
+        // </div>
+        // </div>
         )}
         </div>
-        )}
-</div>        
+        // )}
+// </div>        
     );
 };
 
