@@ -46,7 +46,7 @@ export const CategoriesMenu =  ({showToggle, categoryItems, clickHandler}) => {
       
           //  <div className="fixed flex justify-center top-0 left-0 right-0 bottom-0 bg-[#0000006e]  z-[201] h-screen overflow-hidden" onClick={clickHandler}>
           //   <div className="relative flex justify-end top-56 w-144 tablet:w-192 laptop:w-248 desktop:w-300 h-full z-[202]  ">
-          <div className='w-full flex justify-center items-start -mt-4 laptop:px-2 '>
+          <div className=' w-full flex justify-center items-start -mt-4  '>
         <div className='fixed right-0 top-0 z-50 flex flex-col   laptop:flex  laptop:justify-start laptop:items-center laptop: laptop:flex-wrap laptop:gap-0 w-72 h-full bg-snp-white px-6 pt-6 pb-2
                         laptop:relative laptop:w-248 laptop:shadow-md laptop:h-96 laptop:px-6 laptop:pt-5 laptop:pb-2 laptop:mx-auto laptop:rounded-b-lg laptop:rounded-tl-lg desktop:w-300'>
             <div className='flex justify-between items-center mb-6  font-iransansb laptop:hidden'> 
