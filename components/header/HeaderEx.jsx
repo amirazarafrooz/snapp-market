@@ -206,6 +206,7 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
               <CategoriesMenu
                 categoryItems={categoryItems}
                 handlemodal={handlemodal}
+                handleClose={handleClose}
               />
             </CategoriesMenuModal>
             <div

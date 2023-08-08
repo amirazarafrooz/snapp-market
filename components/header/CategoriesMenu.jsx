@@ -4,7 +4,7 @@ import Link from "next/link";
 import megamenu from "../../public/assets/images/MegaMenuBg.png";
 import { useRef, useEffect } from "react";
 
-export const CategoriesMenu = ({ categoryItems, handlemodal }) => {
+export const CategoriesMenu = ({ categoryItems, handlemodal,handleClose }) => {
   const modal = useRef(null);
 
   return (
@@ -17,14 +17,14 @@ export const CategoriesMenu = ({ categoryItems, handlemodal }) => {
           >
             <div className="flex justify-between items-center mb-6  font-iransansb laptop:hidden">
               <h1>دسته‌بندی‌ها</h1>
-              <span>
+              <span onClick={handleClose} >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                   width="32"
                   height="32"
                   fill="currentColor"
-                  className="close-icon"
+                  className="close-icon cursor-pointer"
                   viewBox="0 0 32 32"
                   style={{ width: 12, height: 12 }}
                 >
@@ -45,6 +45,7 @@ export const CategoriesMenu = ({ categoryItems, handlemodal }) => {
               .filter((item) => item.subs.length > 0)
               ?.map((item) => (
                 <Link
+                onClick={handleClose}
                   className=" group hover:bg-white laptop:h-1/6   laptop:my-1"
                   href={`/categories/${item.main}`}
                 >
@@ -64,7 +65,7 @@ export const CategoriesMenu = ({ categoryItems, handlemodal }) => {
                   </div>
                 </Link>
               ))}
-            <div className="flex items-end justify-end  h-full">
+            <div className="hidden  laptop:flex items-end justify-end  h-full">
               <Image
                 alt="mega-menu"
                 width={201}
