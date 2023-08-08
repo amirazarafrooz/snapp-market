@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function User() {
   return (
     <>
-      <div className="flex justify-center border-[1px] rounded-sm px-4 my-4 w-full laptop:w-[30%]  bg-snp-white">
+      <div className="flex justify-center border-[1px] rounded-sm px-4 my-4 w-full laptop:w-[30%]">
         <div className="w-full flex flex-col font-iransans text-sm h-40 tablet:h-52 laptop:h-64 ">
           <h3 className=" font-iransans text-base pt-2 pb-3 pr-4">پروفایل</h3>
           <div className="flex justify-evenly h-full border-t-[1px] laptop:flex-col ">
@@ -232,7 +232,7 @@ export default function User() {
         </div>
       </div>
       <div className="flex flex-col items-center rounded-md border-[1px] font-iransans my-4 w-full laptop:w-[68%] mr-auto">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center py-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
