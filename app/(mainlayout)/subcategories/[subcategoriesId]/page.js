@@ -2,9 +2,11 @@ import { CategoryPage } from "@/components/Category/CategoryPage";
 import { getLocalData } from "@/lib/localdata";
 import { SubCategoryPage} from "@/components/Category/SubCategoryPage";
 import { AboutSubCategory } from "@/components/captions/AboutSubCategory";
+import { Tags } from "@/components/captions/Tags";
 
 const data = await getLocalData();
 const category = data.subcategories;
+const product = data.products;
 
 
   export async function getStaticPaths(){
@@ -30,6 +32,7 @@ export default function subCategoriesDetail({ params }) {
 
         <SubCategoryPage mainFilterParam={params.subcategoriesId} />
         <AboutSubCategory subId={params.subcategoriesId}/>
+        <Tags subId={params.subcategoriesId} subcategory={category} product={product} />
         </div>
       </main>
     );
