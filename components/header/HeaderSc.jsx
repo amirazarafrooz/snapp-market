@@ -108,9 +108,6 @@ export const HeaderSc = ({categoryItems , searchItem , subCategory}) => {
              
               {/* button cart  */}
               <div className="hidden tablet:block">
-              
-                {/* <Button btnStyleparam={'cart'} >سبد خرید</Button> */}
-                {/* <ShoppingCard cartHandler={cartHandler} showCart={showCart}/> */}
                 <ShoppingCartModal handleCloseShop={handleCloseShop} shopOpen={shopOpen}>
                 <ShoppingCard cartHandler={cartHandler} showCart={showCart}  handlemodalShop={handlemodalShop} />
                 </ShoppingCartModal>
