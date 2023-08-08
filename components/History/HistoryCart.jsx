@@ -5,10 +5,10 @@ import { MdOutlinePendingActions } from "react-icons/md";
 export const HistoryCart = ({ details }) => {
   const { id, finalPrice, finalProfitPrice, status, items } = details;
   return (
-    <div className="w-[95%] mx-auto  border rounded py-2 mb-5">
+    <div className="w-full border rounded py-2 mb-5">
       <div className="flex items-center justify-between mb-4 px-4">
         <div className="flex items-center ">
-          <MdOutlinePendingActions className=" text-snp-yellow"/>
+          <MdOutlinePendingActions className=" text-snp-yellow" />
           <p className="mr-2 text-snp-black text-sm">{`${status} ...`}</p>
         </div>
         <BsArrowLeft className="text-snp-black" />
@@ -31,11 +31,20 @@ export const HistoryCart = ({ details }) => {
           </div>
         )}
       </div>
-      <div className="flex items-center my-5 py-5 border-y ">
+      <div className="w-full h-[104px] flex items-center my-5 py-5 border-y justify-start overflow-x-auto scroll-smooth  scrollbar-hide ">
         {items.map((item) => {
           return (
-            <div className="mx-2">
-              <Image src={item.images[0]} width={100} height={100}></Image>
+            <div className=" w-24 h-full mx-2 relative">
+              <Image
+                className="w-full h-full"
+                alt="buying item"
+                src={item.images[0]}
+                width={0}
+                height={0}
+              ></Image>
+              <span className="w-4 h-4 absolute top-0 right-0 bg-snp-secondary text-snp-white text-sm flex justify-center items-center rounded-full pt-0.5">
+                {item.count}
+              </span>
             </div>
           );
         })}
