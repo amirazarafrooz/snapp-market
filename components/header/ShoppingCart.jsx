@@ -11,7 +11,7 @@ import { finalShoppingCardPrice } from "@/utils/finalShoppingCardPrice";
 import { profitShoppingCardPrice } from "@/utils/profitShoppingCardPrice";
 import { amountProducts } from "@/utils/amountProducts";
 
-export const ShoppingCard = ({ cartHandler, showCart }) => {
+export const ShoppingCard = ({ cartHandler, showCart, handlemodalShop }) => {
   const cart = useSelector((store) => store.cart);
 
   const finalPrice = useMemo(() => finalShoppingCardPrice(cart), [cart]);
@@ -47,14 +47,8 @@ export const ShoppingCard = ({ cartHandler, showCart }) => {
   // ("fixed z-50 w-full max-w-md h-full max-h-full overflow-x-hidden overflow-y-auto md:inset-0 text-gray-900 bg-white flex flex-col");
   return (
     <>
-      <div onClick={cartHandler} ref={modal}>
-        <Button btnStyleparam={"cart"}>سبد خرید</Button>
-      </div>
-      {showCart && (
-        <div className="fixed flex justify-end top-0 left-0 right-0 bottom-0 bg-[#0000006e]  z-[201] h-screen ">
-          <div className=" relative left-0 top-0 bg-snp-white h-full max-h-full w-full max-w-md  flex flex-col z-[202]">
-            <div className="flex items-start justify-between py-3 pr-3 shadow border-b border-b-snp-lightgray font-iransans">
-              <div className="flex items-center">
+             <div className="flex items-start justify-between py-3 pr-3 shadow border-b border-b-snp-lightgray font-iransans" >
+              <div className="flex items-center" >
                 <p>سبد خرید من</p>
                 {cart.length > 0 ? (
                   <>
@@ -148,9 +142,9 @@ export const ShoppingCard = ({ cartHandler, showCart }) => {
                 </p>
               </div>
             )}
-          </div>
-        </div>
-      )}
+         
+        
+      
     </>
   );
 };

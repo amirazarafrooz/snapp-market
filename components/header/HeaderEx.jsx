@@ -10,16 +10,27 @@ import { UserProfile } from "./UserProfile";
 import Button from "../button/Button";
 import { CategoriesMenu } from "./CategoriesMenu";
 import Link from "next/link";
-import { ShoppingCard } from "./ShoppingCard";
+import { ShoppingCard } from "./ShoppingCart";
 import { CategoriesMenuModal } from "./modal/CategoriesMenuModal";
+import { ShoppingCartModal } from "./modal/ShoppingCartModal";
 
 export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
+
   const [isOpen, setIsOpen] = useState(false);
   const handlemodal = (event) => {
     event.stopPropagation();
   };
   const handleClose = () => {
     setIsOpen(false);
+  };
+
+
+  const [shopOpen, setShopOpen] = useState(false);
+  const handlemodalShop = (event) => {
+    event.stopPropagation();
+  };
+  const handleCloseShop = () => {
+    setShopOpen(false);
   };
 
   const [showUserProfile, setShowUserProfile] = useState(false);
@@ -98,7 +109,15 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
               />
               <div className="hidden tablet:block">
                 {/* <Button btnStyleparam={"cart"} >سبد خرید</Button> */}
-                <ShoppingCard cartHandler={cartHandler} showCart={showCart} />
+                <ShoppingCartModal handleCloseShop={handleCloseShop} shopOpen={shopOpen}>
+                <ShoppingCard cartHandler={cartHandler} showCart={showCart}  handlemodalShop={handlemodalShop} />
+                </ShoppingCartModal>
+                <div
+              className=" hidden tablet:block"
+              onClick={() => setShopOpen(true)}
+            >
+              <Button btnStyleparam={"cart"}>سبد خرید</Button>
+            </div>
               </div>
             </div>
           </div>
@@ -163,7 +182,7 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
             <div className="hidden tablet:block"></div>
 
             <CategoriesMenuModal handleClose={handleClose} isOpen={isOpen}>
-              <CategoriesMenu categoryItems={categoryItems} />
+              <CategoriesMenu categoryItems={categoryItems} handlemodal={handlemodal} />
             </CategoriesMenuModal>
             <div
               className=" hidden tablet:block"

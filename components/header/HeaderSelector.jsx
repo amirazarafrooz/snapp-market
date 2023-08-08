@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { HeaderEx } from '../header/HeaderEx';
 import { HeaderSc } from '../header/HeaderSc';
 import { NavbarMobile } from './NavbarMobile';
-import { ShoppingCard } from './ShoppingCard';
+import { ShoppingCard } from './ShoppingCart';
 
 
 
