@@ -57,7 +57,9 @@ else {
            ` fixed left-0 top-0 w-full translate-y-0 transition-all duration-0 z-10` }>
             <HeaderSc searchItem={searchItem} categoryItems={categoryItems} subCategory={subCategory}/>
         </div>
+            
             <NavbarMobile categoryItems={categoryItems}/>
+          
         </>
     );
     }
