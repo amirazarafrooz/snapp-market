@@ -2,8 +2,17 @@ import React, { useMemo } from "react";
 import { useState, useCallback } from "react";
 import { CategoriesMenu } from "./CategoriesMenu";
 import { useSelector } from "react-redux";
+import { CategoriesMenuModal } from "./modal/CategoriesMenuModal";
 
 export const NavbarMobile = ({ categoryItems }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handlemodal = (event) => {
+    event.stopPropagation();
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   const cart = useSelector((store) => store.cart);
   const cartCount = useMemo(
     () => cart.reduce((init, cur) => (init += cur.count), 0),
@@ -36,9 +45,16 @@ export const NavbarMobile = ({ categoryItems }) => {
             </svg>
             <span>خانه</span>
           </div>
+          <CategoriesMenuModal handleClose={handleClose} isOpen={isOpen}>
+            <CategoriesMenu
+              handleClose={handleClose}
+              categoryItems={categoryItems}
+              handlemodal={handlemodal}
+            />
+          </CategoriesMenuModal>
           <div
             className="w-18 flex flex-col justify-center items-center font-iransansl cursor-pointer"
-            onClick={categoryleHandler}
+            onClick={() => setIsOpen(true)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -56,13 +72,22 @@ export const NavbarMobile = ({ categoryItems }) => {
               </defs>
               <use href="#GridOutlineIcon" xlinkHref="#GridOutlineIcon"></use>
             </svg>
-            <CategoriesMenu
-              showToggle={showcategory}
-              categoryItems={categoryItems}
-              clickHandler={categoryleHandler}
-            />
+
             <span>دسته بندی ها</span>
           </div>
+
+          {/* <CategoriesMenuModal handleClose={handleClose} isOpen={isOpen}>
+              <CategoriesMenu
+                categoryItems={categoryItems}
+                handlemodal={handlemodal}
+                handleClose={handleClose}
+              />
+            </CategoriesMenuModal> */}
+          {/* <div
+              className=" hidden tablet:block"
+              onClick={() => setIsOpen(true)}
+            >
+            </div> */}
 
           <div className="w-16 flex flex-col justify-center items-center font-iransansl cursor-pointer relative">
             <svg
