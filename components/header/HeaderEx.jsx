@@ -13,9 +13,9 @@ import Link from "next/link";
 import { ShoppingCard } from "./ShoppingCart";
 import { CategoriesMenuModal } from "./modal/CategoriesMenuModal";
 import { ShoppingCartModal } from "./modal/ShoppingCartModal";
+import { UserProfileModal } from "./modal/UserProfileModal";
 
 export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
-
   const [isOpen, setIsOpen] = useState(false);
   const handlemodal = (event) => {
     event.stopPropagation();
@@ -24,13 +24,20 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
     setIsOpen(false);
   };
 
-
   const [shopOpen, setShopOpen] = useState(false);
   const handlemodalShop = (event) => {
     event.stopPropagation();
   };
   const handleCloseShop = () => {
     setShopOpen(false);
+  };
+
+  const [userOpen, setUserOpen] = useState(false);
+  const handlemodalUser = (event) => {
+    event.stopPropagation();
+  };
+  const handleCloseUser = () => {
+    setUserOpen(false);
   };
 
   const [showUserProfile, setShowUserProfile] = useState(false);
@@ -102,22 +109,36 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
             {/* userProfile and cartBtn container */}
             <div className="flex items-center">
               {/* user info  */}
-              <UserProfile
-                headerId={"HeaderEx"}
-                clickHandler={userProfileHandler}
-                showUserProfile={showUserProfile}
-              />
+              <UserProfileModal
+                handleCloseUser={handleCloseUser}
+                userOpen={userOpen}
+              >
+                <UserProfile handlemodalUser={handlemodalUser} />
+              </UserProfileModal>
+              <div
+                className=" hidden tablet:block"
+                onClick={() => setUserOpen(true)}
+              >
+                <Button btnStyleparam={"HeaderEx"} />
+              </div>
+
               <div className="hidden tablet:block">
-                {/* <Button btnStyleparam={"cart"} >سبد خرید</Button> */}
-                <ShoppingCartModal handleCloseShop={handleCloseShop} shopOpen={shopOpen}>
-                <ShoppingCard cartHandler={cartHandler} showCart={showCart}  handlemodalShop={handlemodalShop} />
+                <ShoppingCartModal
+                  handleCloseShop={handleCloseShop}
+                  shopOpen={shopOpen}
+                >
+                  <ShoppingCard
+                    cartHandler={cartHandler}
+                    showCart={showCart}
+                    handlemodalShop={handlemodalShop}
+                  />
                 </ShoppingCartModal>
                 <div
-              className=" hidden tablet:block"
-              onClick={() => setShopOpen(true)}
-            >
-              <Button btnStyleparam={"cart"}>سبد خرید</Button>
-            </div>
+                  className=" hidden tablet:block"
+                  onClick={() => setShopOpen(true)}
+                >
+                  <Button btnStyleparam={"cart"}>سبد خرید</Button>
+                </div>
               </div>
             </div>
           </div>
@@ -182,7 +203,10 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
             <div className="hidden tablet:block"></div>
 
             <CategoriesMenuModal handleClose={handleClose} isOpen={isOpen}>
-              <CategoriesMenu categoryItems={categoryItems} handlemodal={handlemodal} />
+              <CategoriesMenu
+                categoryItems={categoryItems}
+                handlemodal={handlemodal}
+              />
             </CategoriesMenuModal>
             <div
               className=" hidden tablet:block"

@@ -8,20 +8,26 @@ import { HeaderNav } from "./HeaderNav";
 import { SearchBar } from "./SearchBar";
 import { UserProfile } from "./UserProfile";
 import Button from "../button/Button";
-import { useState , useCallback } from "react";
+import { useState, useCallback } from "react";
 import { ShoppingCard } from "./ShoppingCart";
 import { ShoppingCartModal } from "./modal/ShoppingCartModal";
+import { UserProfileModal } from "./modal/UserProfileModal";
 
-
-export const HeaderSc = ({categoryItems , searchItem , subCategory}) => {
-
-
+export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
   const [shopOpen, setShopOpen] = useState(false);
   const handlemodalShop = (event) => {
     event.stopPropagation();
   };
   const handleCloseShop = () => {
     setShopOpen(false);
+  };
+
+  const [userOpen, setUserOpen] = useState(false);
+  const handlemodalUser = (event) => {
+    event.stopPropagation();
+  };
+  const handleCloseUser = () => {
+    setUserOpen(false);
   };
 
   const [showUserProfile, setShowUserProfile] = useState(false);
@@ -53,7 +59,13 @@ export const HeaderSc = ({categoryItems , searchItem , subCategory}) => {
             {/* right container */}
             <div className="flex  tablet:justify-start tablet:w-full desktop:justify-between ">
               {/* logo */}
-              <Link href={'/'}><Image alt="snappmarket-logo" className="h-full w-12 tablet:w-14  " src={logo}></Image></Link>
+              <Link href={"/"}>
+                <Image
+                  alt="snappmarket-logo"
+                  className="h-full w-12 tablet:w-14  "
+                  src={logo}
+                ></Image>
+              </Link>
 
               {/* location container */}
               <div className="desktop:flex items-center p-2 hidden tablet:hidden">
@@ -85,7 +97,8 @@ export const HeaderSc = ({categoryItems , searchItem , subCategory}) => {
 
               {/* market detail */}
               <div className="flex items-center justify-center mr-2 tablet:w-48 ">
-                <Image alt="market-logo"
+                <Image
+                  alt="market-logo"
                   className="w-6 h-6 rounded-full ml-2 p-1 tablet:w-10 tablet:h-10 laptop:w-11 laptop:h-11 "
                   src={marketlogo}
                 ></Image>
@@ -101,23 +114,45 @@ export const HeaderSc = ({categoryItems , searchItem , subCategory}) => {
             {/* left container */}
             <div className="tablet:flex  tablet:justify-around tablet:items-center tablet:w-full  ">
               {/* Search box */}
-               <SearchBar device={'tablet+'}  searchItem={searchItem} categoryItems={categoryItems} subCategory={subCategory}/> 
-              
+              <SearchBar
+                device={"tablet+"}
+                searchItem={searchItem}
+                categoryItems={categoryItems}
+                subCategory={subCategory}
+              />
+
               {/* user info */}
-                <UserProfile headerId={"HeaderSc"}  clickHandler={userProfileHandler} showUserProfile={showUserProfile}/>
-             
+              <UserProfileModal
+                handleCloseUser={handleCloseUser}
+                userOpen={userOpen}
+              >
+                <UserProfile handlemodalUser={handlemodalUser} />
+              </UserProfileModal>
+              <div
+                className=" hidden tablet:block"
+                onClick={() => setUserOpen(true)}
+              >
+                <Button btnStyleparam={"HeaderSc"} />
+              </div>
+
               {/* button cart  */}
               <div className="hidden tablet:block">
-                <ShoppingCartModal handleCloseShop={handleCloseShop} shopOpen={shopOpen}>
-                <ShoppingCard cartHandler={cartHandler} showCart={showCart}  handlemodalShop={handlemodalShop} />
+                <ShoppingCartModal
+                  handleCloseShop={handleCloseShop}
+                  shopOpen={shopOpen}
+                >
+                  <ShoppingCard
+                    cartHandler={cartHandler}
+                    showCart={showCart}
+                    handlemodalShop={handlemodalShop}
+                  />
                 </ShoppingCartModal>
                 <div
-              className=" hidden tablet:block"
-              onClick={() => setShopOpen(true)}
-            >
-              <Button btnStyleparam={"cart"}>سبد خرید</Button>
-            </div>
-
+                  className=" hidden tablet:block"
+                  onClick={() => setShopOpen(true)}
+                >
+                  <Button btnStyleparam={"cart"}>سبد خرید</Button>
+                </div>
               </div>
             </div>
           </div>
@@ -126,28 +161,19 @@ export const HeaderSc = ({categoryItems , searchItem , subCategory}) => {
         {/* Lower row container */}
         <div className=" flex justify-center items-center h-14 tablet:w-full tablet:hidden laptop:hidden desktop:hidden ">
           <div className="flex  items-center   w-144 tablet:justify-start  tablet:w-192 laptop:w-248 desktop:w-300">
-            
             {/* Search box */}
-            <SearchBar device={'mobile'} subDevice={'mobiledown'} searchItem={searchItem} categoryItems={categoryItems} />
+            <SearchBar
+              device={"mobile"}
+              subDevice={"mobiledown"}
+              searchItem={searchItem}
+              categoryItems={categoryItems}
+            />
           </div>
         </div>
       </div>
 
-    
-
-
-
-
-
-
-
-    {/* navbar menu-scrolled */}
-      <HeaderNav categoryItems={categoryItems}/>
-
-
-
-
-      
+      {/* navbar menu-scrolled */}
+      <HeaderNav categoryItems={categoryItems} />
     </div>
   );
 };
