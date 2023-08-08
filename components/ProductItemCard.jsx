@@ -2,11 +2,12 @@ import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import { ProductItemCardButton } from "./ProductItemCardButton";
+import { useMemo } from "react";
+import { itemCalculatePrice } from "@/utils/itemCalculatePrice";
 
 export const ProductItemCard = ({ product, cartClassName, imageClass }) => {
   const { id, images, name, quantity, discount, price } = product;
-  const Price = (price * (100 - discount)) / 100;
-  const prodPrice = Price.toFixed(3);
+  const prodPrice = useMemo(() => itemCalculatePrice(price, discount));
   return (
     <div
       className={clsx(
@@ -56,7 +57,7 @@ export const ProductItemCard = ({ product, cartClassName, imageClass }) => {
           </div>
         </div>
         <div className="w-1/2 mx-auto mt-auto">
-          <ProductItemCardButton product={product}/>
+          <ProductItemCardButton product={product} />
         </div>
       </div>
     </div>
