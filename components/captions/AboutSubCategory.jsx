@@ -3,7 +3,7 @@ import { getLocalData } from "@/lib/localdata";
 const data = await getLocalData();
 const caption = data.captions;
 
-export const AboutSubCategory = async ({ subId }) => {
+export const AboutSubCategory =  ({ subId }) => {
 
   const hasCaption=isNaN(caption.filter((item) => item.main == subId)
   ?.map((item) =>item.text?.map((captions) =>{captions.title}))[0])?0:1
