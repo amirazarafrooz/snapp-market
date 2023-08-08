@@ -9,7 +9,14 @@ import { add, decrement, removeItem, reset } from "@/redux/cartSlice";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { addToHistory } from "@/redux/historySlice";
 
-const Button = ({ btnStyleparam, children, product, finalPrice , finalProfitPrice }) => {
+const Button = ({
+  btnStyleparam,
+  children,
+  product,
+  finalPrice,
+  finalProfitPrice,
+  disable,
+}) => {
   const cart = useSelector((store) => store.cart);
   const cartCounts = cart.reduce((init, cur) => (init += cur.count), 0);
   const dispath = useDispatch();
@@ -26,7 +33,13 @@ const Button = ({ btnStyleparam, children, product, finalPrice , finalProfitPric
     dispath(reset());
   }, []);
   const handleAddToHistory = useCallback(() => {
-    dispath(addToHistory({ items: product, finalPrice: finalPrice , finalProfitPrice: finalProfitPrice}));
+    dispath(
+      addToHistory({
+        items: product,
+        finalPrice: finalPrice,
+        finalProfitPrice: finalProfitPrice,
+      })
+    );
     dispath(reset());
   }, [finalPrice, cart]);
   const theme =
@@ -113,21 +126,57 @@ const Button = ({ btnStyleparam, children, product, finalPrice , finalProfitPric
       ) : null}
 
       {/* ------------------------------------ Finalize the purchase button -----------------------------------------*/}
-
-      {btnStyleparam === "finalizeorder" ? (
-        <button
-          className={`${theme} relative bg-snp-lowdiscount w-full h-11 pr-4 pl-3 text-xl text-snp-white hover:bg-snp-finalizeBytnh`}
-          onClick={handleAddToHistory}
-        >
-          {children}
-          {finalPrice != 0 && (
-            <span className="absolute left-2 items-center font-iransans text-md text-sm text-snp-white rounded-md bg-gray-700 bg-opacity-30  mr-3 py-1 px-2">
-              <span>{finalPrice}</span>
-              <span className="mr-1">تومان</span>
-            </span>
-          )}
-        </button>
-      ) : null}
+      {disable ? (
+        <>
+          {btnStyleparam === "finalizeorder" ? (
+            <button
+              disabled
+              className={`${theme} relative bg-green-300 w-full h-11 pr-4 pl-3 text-xl text-snp-white cursor-not-allowed`}
+              onClick={handleAddToHistory}
+            >
+              {children}
+              {finalPrice != 0 && (
+                <span className="absolute left-2 items-center font-iransans text-md text-sm text-snp-white rounded-md bg-gray-700 bg-opacity-30  mr-3 py-1 px-2">
+                  <span>{finalPrice}</span>
+                  <span className="mr-1">تومان</span>
+                </span>
+              )}
+            </button>
+          ) : null}
+        </>
+      ) : (
+        <>
+          {" "}
+          {btnStyleparam === "finalizeorder" ? (
+            <button
+              className={`${theme} relative bg-snp-lowdiscount w-full h-11 pr-4 pl-3 text-xl text-snp-white hover:bg-snp-finalizeBytnh`}
+              onClick={handleAddToHistory}
+            >
+              {children}
+              {finalPrice != 0 && (
+                <span className="absolute left-2 items-center font-iransans text-md text-sm text-snp-white rounded-md bg-gray-700 bg-opacity-30  mr-3 py-1 px-2">
+                  <span>{finalPrice}</span>
+                  <span className="mr-1">تومان</span>
+                </span>
+              )}
+            </button>
+          ) : null}
+        </>
+      )}
+      {/* // {btnStyleparam === "finalizeorder" ? (
+      //   <button
+      //     className={`${theme} relative bg-snp-lowdiscount w-full h-11 pr-4 pl-3 text-xl text-snp-white hover:bg-snp-finalizeBytnh`}
+      //     onClick={handleAddToHistory}
+      //   >
+      //     {children}
+      //     {finalPrice != 0 && (
+      //       <span className="absolute left-2 items-center font-iransans text-md text-sm text-snp-white rounded-md bg-gray-700 bg-opacity-30  mr-3 py-1 px-2">
+      //         <span>{finalPrice}</span>
+      //         <span className="mr-1">تومان</span>
+      //       </span>
+      //     )}
+      //   </button>
+      // ) : null} */}
 
       {/* ------------------------------------ add to cart fully rounded button -----------------------------------------*/}
 

@@ -7,34 +7,21 @@ import Button from "../button/Button";
 import { useEffect } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import freeBasket from "../../public/assets/images/freeBasket.svg";
+import { finalShoppingCardPrice } from "@/utils/finalShoppingCardPrice";
+import { profitShoppingCardPrice } from "@/utils/profitShoppingCardPrice";
+import { amountProducts } from "@/utils/amountProducts";
 
 export const ShoppingCard = ({ cartHandler, showCart }) => {
   const cart = useSelector((store) => store.cart);
-  const totalPrice = useMemo(
-    () =>
-      cart.reduce(
-        (init, cur) =>
-          (init += cur.discount
-            ? cur.count * (cur.price * ((100 - cur.discount) / 100))
-            : cur.count * cur.price),
-        0
-      ),
-    [cart]
-  );
-  const finalPrice = useMemo(() => totalPrice.toFixed(3), [cart]);
-  const profitPrice = useMemo(
-    () =>
-      cart.reduce(
-        (init, cur) => (init += cur.count * ((cur.price * cur.discount) / 100)),
-        0
-      ),
-    [cart]
-  );
-  const finalProfitPrice = useMemo(() => profitPrice.toFixed(3), [cart]);
-  const amount = useMemo(
-    () => cart.reduce((init, cur) => (init += cur.count), 0),
-    [cart]
-  );
+
+  const finalPrice = useMemo(() => finalShoppingCardPrice(cart), [cart]);
+  const finalProfitPrice = useMemo(() => profitShoppingCardPrice(cart), [cart]);
+  const amount = useMemo(() => amountProducts(cart), [cart]);
+
+  const isProfitProducts = cart.filter((c) => c.discount > 0 && c)[0]?.discount;
+
+  const atLeastPrice = finalPrice < 100;
+
   const modal = useRef(null);
 
   useEffect(() => {
@@ -97,34 +84,52 @@ export const ShoppingCard = ({ cartHandler, showCart }) => {
                   </div>
                 </div>
                 <div className="flex items-center flex-col border-t p-2 gap-1 mt-auto">
-                  {finalPrice < 100 ? (
-                    <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
-                      <p className=" font-iransansl">
-                        {" "}
-                        حداقل سفارش 100٬000 تومان
-                      </p>
-                    </div>
+                  {atLeastPrice ? (
+                    <>
+                      <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
+                        <p className=" font-iransansl">
+                          حداقل سفارش 100٬000 تومان
+                        </p>
+                      </div>
+                      <Button
+                        disable={true}
+                        btnStyleparam={"finalizeorder"}
+                        product={cart}
+                        finalPrice={finalPrice}
+                        finalProfitPrice={finalProfitPrice}
+                      >
+                        نهایی کردن خرید
+                      </Button>
+                    </>
                   ) : (
                     <>
-                      {cart.filter((c) => c.discount > 0 && c)[0]?.discount >
-                      0 ? (
+                      {isProfitProducts > 0 ? (
                         <>
                           <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
                             <span>{finalProfitPrice}</span>
                             <span className="mr-1">تومان سود خرید</span>
                           </div>
+                          <Button
+                            btnStyleparam={"finalizeorder"}
+                            product={cart}
+                            finalPrice={finalPrice}
+                            finalProfitPrice={finalProfitPrice}
+                          >
+                            نهایی کردن خرید
+                          </Button>
                         </>
-                      ) : null}
+                      ) : (
+                        <Button
+                          btnStyleparam={"finalizeorder"}
+                          product={cart}
+                          finalPrice={finalPrice}
+                          finalProfitPrice={finalProfitPrice}
+                        >
+                          نهایی کردن خرید
+                        </Button>
+                      )}
                     </>
                   )}
-                  <Button
-                    btnStyleparam={"finalizeorder"}
-                    product={cart}
-                    finalPrice={finalPrice}
-                    finalProfitPrice={finalProfitPrice}
-                  >
-                    نهایی کردن خرید
-                  </Button>
                 </div>
               </>
             ) : (
@@ -138,7 +143,9 @@ export const ShoppingCard = ({ cartHandler, showCart }) => {
                     style={{ width: "fit-content", height: "fit-coontent" }}
                   ></Image>
                 </div>
-                <p className=" font-iransansl text-gray-500 mt-4">سبد خرید شما خالی است :(</p>
+                <p className=" font-iransansl text-gray-500 mt-4">
+                  سبد خرید شما خالی است :(
+                </p>
               </div>
             )}
           </div>
