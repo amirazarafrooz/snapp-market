@@ -5,7 +5,7 @@ import logo from "../../public/assets/images/snappmarket-logo.svg";
 import marketlogo from "../../public/assets/images/market-logo.jpg";
 import clock from "../../public/assets/images/clock-icon.svg";
 import delivery from "../../public/assets/images/delivery-icon.svg";
-import { SearchBar } from "./SearchBar";
+import { SearchResult } from "./SearchResult";
 import { UserProfile } from "./UserProfile";
 import Button from "../button/Button";
 import { CategoriesMenu } from "./CategoriesMenu";
@@ -14,6 +14,8 @@ import { ShoppingCard } from "./ShoppingCart";
 import { CategoriesMenuModal } from "./modal/CategoriesMenuModal";
 import { ShoppingCartModal } from "./modal/ShoppingCartModal";
 import { UserProfileModal } from "./modal/UserProfileModal";
+import { SearchResultModal } from "./modal/SearchResultModal";
+import { SearchBar } from "./SearchBar";
 
 export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,6 +41,22 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
   const handleCloseUser = () => {
     setUserOpen(false);
   };
+
+
+  const [searchOpen, setSearchOpen] = useState(false);
+  const handlemodalSearch = (event) => {
+    event.stopPropagation();
+  };
+  const handleCloseSearch = () => {
+    setSearchOpen(false);
+  };
+
+  const [searchterm, setSearchterm] = useState("");
+  const handleChange = useCallback((e) => {
+    setSearchterm(e.target.value);
+    setSearchOpen(!searchOpen);
+  }, []);
+
 
   const [showUserProfile, setShowUserProfile] = useState(false);
   const userProfileHandler = useCallback(() => {
@@ -217,12 +235,21 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
             </div>
 
             {/* Search box */}
-            <SearchBar
+            <SearchResultModal searchOpen={searchOpen} handleCloseSearch={handleCloseSearch}>
+            <SearchResult
               device={"mobile"}
+              searchterm={searchterm}
               searchItem={searchItem}
               categoryItems={categoryItems}
               subCategory={subCategory}
             />
+          </SearchResultModal>
+          <div
+              className=" hidden tablet:block"
+              onClick={() => setSearchOpen(true)}
+            >
+              <SearchBar handleChange={handleChange}/>
+            </div>
           </div>
         </div>
       </div>
