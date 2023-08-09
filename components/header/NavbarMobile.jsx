@@ -4,16 +4,14 @@ import { useState, useCallback } from "react";
 import { CategoriesMenu } from "./CategoriesMenu";
 import { useSelector } from "react-redux";
 import { CategoriesMenuModal } from "./modal/CategoriesMenuModal";
-import { itemCalculatePrice } from "@/utils/itemCalculatePrice";
-import Button from "../button/Button";
+import { NavbarMobileProduct } from "./NavbarMobileProduct";
 
-
-export const NavbarMobile = ({ categoryItems, productId, kala }) => {
-
+export const NavbarMobile = ({ categoryItems, productId, products }) => {
   const [isOpen, setIsOpen] = useState(false);
   const handlemodal = (event) => {
     event.stopPropagation();
   };
+
   const handleClose = () => {
     setIsOpen(false);
   };
@@ -31,25 +29,7 @@ export const NavbarMobile = ({ categoryItems, productId, kala }) => {
         <div className="flex justify-center w-full bg-snp-white border-t-[1px] fixed bottom-0  tablet:hidden laptop:hidden desktop:hidden z-[500]">
           <div className="flex justify-around w-full h-22 px-6 pt-4 pb-5">
             <div className="w-full  flex flex-col justify-center items-center font-iransansl cursor-pointer">
-              {kala
-                .filter((item) => item.id == productId)
-                .map((item) => {
-                  return (
-                    <div className="flex w-full items-center justify-around">
-                    <div className="flex flex-col w-full">
-                     <div className="flex items-center"> 
-                        {item.discount!=0 && <div className=" flex w-fit text-white bg-snp-highdiscount text-base rounded-md px-1  font-iransans ml-2">٪{item.discount}</div>}
-                        <div className=" flex font-iransans line-through text-xs text-gray-400">{item.price}</div>
-                     </div>
-                      <div className="flex items-end">
-                        <div className="font-semibold">{(item.price*(100-item.discount))/100}</div>
-                        <span className="mr-2 text-xs text-gray-500">تومان</span>
-                        </div>
-                    </div>
-                        <Button btnStyleparam={'addtoCartR'}>افزودن به سبد</Button>
-                    </div>
-                  );
-                })}
+              <NavbarMobileProduct productId={productId} products={products} />
             </div>
           </div>
         </div>
