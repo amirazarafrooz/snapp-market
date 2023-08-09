@@ -5,7 +5,7 @@ import logo from "../../public/assets/images/snappmarket-logo.svg";
 import marketlogo from "../../public/assets/images/market-logo.jpg";
 import Link from "next/link";
 import { HeaderNav } from "./HeaderNav";
-import { SearchBar } from "./SearchBar";
+import { SearchResult } from "./SearchResult";
 import { UserProfile } from "./UserProfile";
 import Button from "../button/Button";
 import { useState, useCallback } from "react";
@@ -114,7 +114,7 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
             {/* left container */}
             <div className="tablet:flex  tablet:justify-around tablet:items-center tablet:w-full  ">
               {/* Search box */}
-              <SearchBar
+              <SearchResult
                 device={"tablet+"}
                 searchItem={searchItem}
                 categoryItems={categoryItems}
@@ -162,11 +162,13 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
         <div className=" flex justify-center items-center h-14 tablet:w-full tablet:hidden laptop:hidden desktop:hidden ">
           <div className="flex  items-center   w-144 tablet:justify-start  tablet:w-192 laptop:w-248 desktop:w-300">
             {/* Search box */}
-            <SearchBar
+            <SearchResult
               device={"mobile"}
               subDevice={"mobiledown"}
               searchItem={searchItem}
               categoryItems={categoryItems}
+              subCategory={subCategory}
+
             />
           </div>
         </div>
