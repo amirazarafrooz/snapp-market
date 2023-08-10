@@ -12,24 +12,26 @@ export const NavbarMobileProduct = ({ productId, products }) => {
 
   return (
     <div className="flex w-full items-center justify-between">
-      <div className="flex flex-col">
-        <div className="flex items-center">
-          {discount != 0 && (
-            <div className=" flex w-fit text-white bg-snp-highdiscount text-base rounded-md px-1  font-iransans ml-2">
-              ٪{discount}
+      <div className="flex flex-col items-center">
+        {discount ? (
+          <div className="flex items-center w-full mr-auto mb-1 h-1/2">
+            <div className=" bg-snp-highdiscount text-snp-white px-1 rounded-full font-iransans ">
+              <div className="flex items-center h-fit">
+                <p>٪</p>
+                <p>{discount}</p>
+              </div>
             </div>
-          )}
-          <div className=" flex font-iransans line-through text-xs text-gray-400">
-            {price}
+            <div className="line-through text-gray-500 font-iransans mr-2">
+              {price}
+            </div>
           </div>
-        </div>
-        <div className="flex items-end">
-          <div className="font-semibold">{prodPrice}</div>
-          <span className="mr-2 text-xs text-gray-500">تومان</span>
+        ) : null}
+        <div className="flex items-center gap-1 font-iransans text-gray-500 h-1/2 my-auto ">
+          <p className="text-snp-black">{prodPrice}</p>
+          <p>تومان</p>
         </div>
       </div>
       <NavbarMobileProductButton product={filterProduct} />
-      {/* <Button btnStyleparam={"navbar"}>افزودن به سبد</Button> */}
     </div>
   );
 };

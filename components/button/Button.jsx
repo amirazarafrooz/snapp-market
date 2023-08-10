@@ -16,6 +16,7 @@ const Button = ({
   finalPrice,
   finalProfitPrice,
   disable,
+  plusDisable,
 }) => {
   const cart = useSelector((store) => store.cart);
   const cartCounts = cart.reduce((init, cur) => (init += cur.count), 0);
@@ -155,7 +156,6 @@ const Button = ({
         </>
       ) : (
         <>
-          {" "}
           {btnStyleparam === "finalizeorder" ? (
             <button
               className={`${theme} relative bg-snp-lowdiscount w-full h-11 pr-4 pl-3 text-xl text-snp-white hover:bg-snp-finalizeBytnh`}
@@ -232,37 +232,83 @@ const Button = ({
           {children}
         </button>
       ) : null}
-      {btnStyleparam === "plus_addtoCartR" ? (
-        <button className={`${themeR}    h-9 w-9 px-1 `} onClick={handleAdd}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-            style={{ width: 24, height: 24 }}
-          >
-            <defs>
-              <symbol id="SnappCirclePlusNoBorderIcon" viewBox="0 0 24 24">
-                <g fillRule="evenodd">
-                  <path d="M0 0h24v24H0z"></path>
-                  <path
-                    fill="currentColor"
-                    d="M12 7a1 1 0 011 1v3h3a1 1 0 010 2h-3v3a1 1 0 01-2 0v-3H8a1 1 0 010-2h3V8a1 1 0 011-1z"
-                  ></path>
-                </g>
-              </symbol>
-            </defs>
-            <use
-              fill="bg-snp-primary"
-              href="#SnappCirclePlusNoBorderIcon"
-              xlinkHref="#SnappCirclePlusNoBorderIcon"
-            ></use>
-          </svg>
-          {children}
-        </button>
-      ) : null}
+      {plusDisable ? (
+        <>
+          {btnStyleparam === "plus_addtoCartR" ? (
+            <button
+              disabled
+              className={`${themeR}    h-9 w-9 px-1 bg-snp-gray hover:bg-gray-400 cursor-not-allowed`}
+              onClick={handleAdd}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+                style={{ width: 24, height: 24 }}
+              >
+                <defs>
+                  <symbol id="SnappCirclePlusNoBorderIcon" viewBox="0 0 24 24">
+                    <g fillRule="evenodd">
+                      <path d="M0 0h24v24H0z"></path>
+                      <path
+                        fill="currentColor"
+                        d="M12 7a1 1 0 011 1v3h3a1 1 0 010 2h-3v3a1 1 0 01-2 0v-3H8a1 1 0 010-2h3V8a1 1 0 011-1z"
+                      ></path>
+                    </g>
+                  </symbol>
+                </defs>
+                <use
+                  fill="bg-snp-primary"
+                  href="#SnappCirclePlusNoBorderIcon"
+                  xlinkHref="#SnappCirclePlusNoBorderIcon"
+                ></use>
+              </svg>
+              {children}
+            </button>
+          ) : null}
+        </>
+      ) : (
+        <>
+          {btnStyleparam === "plus_addtoCartR" ? (
+            <button
+              className={`${themeR}    h-9 w-9 px-1 `}
+              onClick={handleAdd}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+                style={{ width: 24, height: 24 }}
+              >
+                <defs>
+                  <symbol id="SnappCirclePlusNoBorderIcon" viewBox="0 0 24 24">
+                    <g fillRule="evenodd">
+                      <path d="M0 0h24v24H0z"></path>
+                      <path
+                        fill="currentColor"
+                        d="M12 7a1 1 0 011 1v3h3a1 1 0 010 2h-3v3a1 1 0 01-2 0v-3H8a1 1 0 010-2h3V8a1 1 0 011-1z"
+                      ></path>
+                    </g>
+                  </symbol>
+                </defs>
+                <use
+                  fill="bg-snp-primary"
+                  href="#SnappCirclePlusNoBorderIcon"
+                  xlinkHref="#SnappCirclePlusNoBorderIcon"
+                ></use>
+              </svg>
+              {children}
+            </button>
+          ) : null}
+        </>
+      )}
+
       {btnStyleparam === "bin_addtoCartR" ? (
         <button className={`${themeR}   h-9 w-9 px-2 `} onClick={handleDelete}>
           <svg
@@ -333,7 +379,83 @@ const Button = ({
           {children}
         </button>
       ) : null}
-      {btnStyleparam === "plus_addtoCart" ? (
+      {plusDisable ? (
+        <>
+          {btnStyleparam === "plus_addtoCart" ? (
+            <button
+              disabled
+              className={`${themeRplus}    h-11 w-11 bg-snp-gray hover:bg-gray-400 cursor-not-allowed `}
+              onClick={handleAdd}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+                style={{ width: 24, height: 24 }}
+              >
+                <defs>
+                  <symbol id="SnappCirclePlusNoBorderIcon" viewBox="0 0 24 24">
+                    <g fillRule="evenodd">
+                      <path d="M0 0h24v24H0z"></path>
+                      <path
+                        fill="currentColor"
+                        d="M12 7a1 1 0 011 1v3h3a1 1 0 010 2h-3v3a1 1 0 01-2 0v-3H8a1 1 0 010-2h3V8a1 1 0 011-1z"
+                      ></path>
+                    </g>
+                  </symbol>
+                </defs>
+                <use
+                  fill="#fffff"
+                  href="#SnappCirclePlusNoBorderIcon"
+                  xlinkHref="#SnappCirclePlusNoBorderIcon"
+                ></use>
+              </svg>
+              {children}
+            </button>
+          ) : null}
+        </>
+      ) : (
+        <>
+          {btnStyleparam === "plus_addtoCart" ? (
+            <button
+              className={`${themeRplus}    h-11 w-11  `}
+              onClick={handleAdd}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+                style={{ width: 24, height: 24 }}
+              >
+                <defs>
+                  <symbol id="SnappCirclePlusNoBorderIcon" viewBox="0 0 24 24">
+                    <g fillRule="evenodd">
+                      <path d="M0 0h24v24H0z"></path>
+                      <path
+                        fill="currentColor"
+                        d="M12 7a1 1 0 011 1v3h3a1 1 0 010 2h-3v3a1 1 0 01-2 0v-3H8a1 1 0 010-2h3V8a1 1 0 011-1z"
+                      ></path>
+                    </g>
+                  </symbol>
+                </defs>
+                <use
+                  fill="#fffff"
+                  href="#SnappCirclePlusNoBorderIcon"
+                  xlinkHref="#SnappCirclePlusNoBorderIcon"
+                ></use>
+              </svg>
+              {children}
+            </button>
+          ) : null}
+        </>
+      )}
+      {/* {btnStyleparam === "plus_addtoCart" ? (
         <button className={`${themeRplus}    h-11 w-11  `} onClick={handleAdd}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -363,7 +485,7 @@ const Button = ({
           </svg>
           {children}
         </button>
-      ) : null}
+      ) : null} */}
       {btnStyleparam === "bin_addtoCart" ? (
         <button
           className={`${themeRplus}   h-11 w-11  `}

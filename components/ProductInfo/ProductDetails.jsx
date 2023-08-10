@@ -34,10 +34,10 @@ export const ProductDetails = ({ product }) => {
       <div className="hidden tablet:block">
         <div className="my-3 tablet:border-t tablet:border-black tablet:border-dashed tablet:h-[1px]"></div>
         <p className="font-iransans ml-2 text-sm mb-2">قیمت مصرف کننده :</p>
-        <div className="h-11">
+        <div className="h-11 flex flex-col items-center w-full mr-auto">
           {discount ? (
-            <div className="flex items-center justify-end w-full mb-1 h-1/2">
-              <div className=" line-through  text-gray-500 ml-2 font-iransans text-xl">
+            <div className="flex items-center justify-end w-full mr-auto mb-1 h-1/2">
+              <div className="line-through  text-gray-500 font-iransans ml-2">
                 {price} تومان
               </div>
               <div className=" bg-snp-highdiscount text-snp-white px-1 rounded-full font-iransans ">
@@ -48,7 +48,7 @@ export const ProductDetails = ({ product }) => {
               </div>
             </div>
           ) : null}
-          <div className="flex justify-end items-center gap-2 font-iransans text-2xl text-gray-500 h-1/2 my-auto">
+          <div className="flex justify-end items-center gap-2 font-iransans text-xl tablet:text-2xl text-gray-500 h-1/2 my-auto w-full mr-auto">
             <p className="tracking-wide">{totalPrice}</p>
             <p>تومان</p>
           </div>

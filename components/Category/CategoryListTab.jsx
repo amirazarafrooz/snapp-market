@@ -24,8 +24,8 @@ export const CategoryListTab = ({ categoryName }) => {
           {filterSubCategory.map((sub) => {
             return (
               <Link href={`/subcategories/${sub.main}`}>
-                <div className="rounded-full border border-snp-primary px-4 ml-3 h-[3rem] flex justify-center items-center  whitespace-nowrap">
-                  <p className=" font-iransansl text-xl text-snp-primary ">
+                <div className="rounded-full border border-snp-primary px-4 ml-3 h-[2.5rem] flex justify-center items-center  whitespace-nowrap">
+                  <p className=" font-iransansl text-md text-snp-primary ">
                     {sub.mainFA}
                   </p>
                 </div>

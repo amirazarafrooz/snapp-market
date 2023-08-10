@@ -5,9 +5,13 @@ import Button from "./button/Button";
 
 export const ProductItemCardButton = ({ product }) => {
   const cart = useSelector((store) => store.cart);
+
+  const filterCartForButton =
+    cart.filter((item) => item.id == product.id)[0]?.count > 0;
+
   return (
     <>
-      {cart.filter((item) => item.id == product.id)[0]?.count > 0 ? (
+      {filterCartForButton ? (
         <>
           {cart
             .filter((item) => item.id == product.id)
@@ -29,10 +33,18 @@ export const ProductItemCardButton = ({ product }) => {
                   <p className="text-snp-primaryh font-iransansb text-lg">
                     {item.count}
                   </p>
-                  <Button
-                    btnStyleparam={"plus_addtoCartR"}
-                    product={product}
-                  ></Button>
+                  {item.count < item.inStock ? (
+                    <Button
+                      btnStyleparam={"plus_addtoCartR"}
+                      product={product}
+                    ></Button>
+                  ) : (
+                    <Button
+                      plusDisable={true}
+                      btnStyleparam={"plus_addtoCartR"}
+                      product={product}
+                    ></Button>
+                  )}
                 </div>
               );
             })}
