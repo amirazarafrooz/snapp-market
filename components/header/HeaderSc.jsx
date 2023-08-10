@@ -12,6 +12,8 @@ import { useState, useCallback } from "react";
 import { ShoppingCard } from "./ShoppingCart";
 import { ShoppingCartModal } from "./modal/ShoppingCartModal";
 import { UserProfileModal } from "./modal/UserProfileModal";
+import { SearchResultModalDowm } from "./modal/SearchResultModalDown";
+import { SearchBar } from "./SearchBar";
 
 export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
   const [shopOpen, setShopOpen] = useState(false);
@@ -40,6 +42,20 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
   const cartHandler = useCallback(() => {
     setShowCart(!showCart);
   }, [showCart]);
+
+  const [searchDownOpen, setSearchDownOpen] = useState(false);
+  const handlemodalSearchDown = (event) => {
+    event.stopPropagation();
+  };
+  const handleCloseSearchDown = () => {
+    setSearchDownOpen(false);
+  };
+
+  const [searchterm, setSearchterm] = useState("");
+  const handleChange = useCallback((e) => {
+    setSearchterm(e.target.value);
+    setSearchDownOpen(!searchDownOpen);
+  }, []);
 
   return (
     <div>
@@ -114,6 +130,8 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
             {/* left container */}
             <div className="tablet:flex  tablet:justify-around tablet:items-center tablet:w-full  ">
               {/* Search box */}
+
+
               <SearchResult
                 device={"tablet+"}
                 searchItem={searchItem}
@@ -162,14 +180,25 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
         <div className=" flex justify-center items-center h-14 tablet:w-full tablet:hidden laptop:hidden desktop:hidden ">
           <div className="flex  items-center   w-144 tablet:justify-start  tablet:w-192 laptop:w-248 desktop:w-300">
             {/* Search box */}
+
+            <SearchResultModalDowm searchDownOpen={searchDownOpen} handleCloseSearchDown={handleCloseSearchDown}>
             <SearchResult
               device={"mobile"}
               subDevice={"mobiledown"}
+              searchterm={searchterm}
               searchItem={searchItem}
               categoryItems={categoryItems}
               subCategory={subCategory}
-
             />
+          </SearchResultModalDowm>
+          <div
+              className=" flex flex-col items-start justify-start  px-2 w-full laptop:hidden "
+              // onClick={() => setSearchOpen(true)}
+            >
+              <SearchBar handleChange={handleChange}/>
+            </div>
+
+
           </div>
         </div>
       </div>

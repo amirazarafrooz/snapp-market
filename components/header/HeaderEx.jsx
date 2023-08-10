@@ -245,11 +245,12 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
             />
           </SearchResultModal>
           <div
-              className=" hidden tablet:block"
-              onClick={() => setSearchOpen(true)}
+              className=" hidden tablet:block px-2"
+              // onClick={() => setSearchOpen(true)}
             >
               <SearchBar handleChange={handleChange}/>
             </div>
+
           </div>
         </div>
       </div>

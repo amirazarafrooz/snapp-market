@@ -43,13 +43,11 @@ console.log(searchterm,'searchTerm');
 
                     {/* form  */}
                     {/* <SearchBar handleChange={handleChange}/> */}
-                      <div>
                          
-                            <div className="relative flex justify-start top-20  h-fit  tablet:top-44 tablet:right-4 laptop:right-36 w-full  mx-6 mobile:mx-0 mobile:w-[480px] tablet:w-144 laptop:w-248 desktop:w-300   z-[202]  ">
                               {searchItem && (
-                                <div className="bg-white w-full rounded-b-md shadow-md px-2 py-2  tablet:w-96 mobile:w-full text-gray-500 text-sm ">
+                                <div className="bg-white w-full rounded-b-md shadow-md px-2 py-2 mobile:w-full tablet:w-96 text-gray-500 text-sm ">
                                   {searchterm !== "" && (
-                                    <div className="w-full tablet:w-96 mt-6 font-iransans">
+                                    <div className="w-full  tablet:w-96 mt-6 font-iransans">
                                       <div className="p-2 flex">
                                         <Image
                                           className="ml-2"
@@ -86,8 +84,7 @@ console.log(searchterm,'searchTerm');
                                   )}
                                 </div>
                               )}
-                            </div>
-                          </div>
+                          
               
                   </div>
           ):(
@@ -96,9 +93,9 @@ console.log(searchterm,'searchTerm');
             {/* <SearchBar handleChange={handleChange}/> */}
               <div>
                 {searchterm !== "" && (
-                 
-                    <div className="relative flex justify-start top-52  h-fit  tablet:top-44 tablet:right-4 laptop:right-36 w-full  mx-6 mobile:mx-0 mobile:w-[480px] tablet:w-144 laptop:w-248 desktop:w-300   z-[202]  ">
-                        <div className="bg-snp-white w-full rounded-b-md shadow-md px-2 py-2  tablet:w-96 mobile:w-full text-gray-500 text-sm ">
+                  
+
+                        <div className="bg-snp-white w-fit rounded-b-md shadow-md px-2 py-2  tablet:w-96 mobile:w-full text-gray-500 text-sm ">
                           {searchterm !== "" && (
                             <div className="w-full tablet:w-96 mt-6 font-iransans">
                               <div className="p-2 flex">
@@ -136,7 +133,6 @@ console.log(searchterm,'searchTerm');
                             </div>
                           )}
                         </div>
-                    </div>
                 )}
               </div>
           </div>
