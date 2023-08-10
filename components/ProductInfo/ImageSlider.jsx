@@ -24,6 +24,7 @@ console.log(images);
 
   return (
     <div className=" h-full  flex justify-center items-center flex-col tablet:w-1/2">
+      
       <div className="flex justify-between items-center border-[1px] px-2 py-5">
       <div onClick={goToNext} className="cursor-pointer p-3 shadow-lg	rounded-full">
       <svg
