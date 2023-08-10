@@ -8,6 +8,7 @@ export const BreadCrumb = ({
   subCategory,
   linkSubCategory,
   subCategoryBrand,
+  productsAmount,
 }) => {
   return (
     <div className="flex items-center w-full font-iransansl text-sm py-3 px-1">
@@ -54,6 +55,12 @@ export const BreadCrumb = ({
           </div>
         </div>
       ) : null}
+      {productsAmount > 0 && (
+        <>
+          <span className="mr-auto">{productsAmount}</span>
+          <span>کالا</span>
+        </>
+      )}
     </div>
   );
 };

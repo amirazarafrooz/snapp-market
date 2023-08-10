@@ -28,6 +28,7 @@ export const SubCategoryPage = ({ mainFilterParam }) => {
         <div className="flex flex-col mobile:w-144 tablet:w-192 laptop:w-248 desktop:w-300 px-2 ">
           <div className="bg-snp-white border rounded py-1 px-4">
             <BreadCrumb
+              productsAmount={filterProducts.length}
               category={filterCategories.parentFA}
               linkCategory={filterCategories.parent}
               subCategory={filterCategories.mainFA}

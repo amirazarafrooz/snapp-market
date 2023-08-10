@@ -10,31 +10,31 @@ const category = data.categories;
 const subCategory = data.subcategories;
 
 export const ProductInfo = ({ productId }) => {
-  const filterCategory = subCategory.filter(cat =>cat.mainFA ==  products.filter(prod => prod.id == productId)[0].category.sub )[0]
+  const filterCategory = subCategory.filter(
+    (cat) =>
+      cat.mainFA ==
+      products.filter((prod) => prod.id == productId)[0].category.sub
+  )[0];
+  const filterProduct = products.filter(
+    (product) => product.id == productId
+  )[0];
+  const { category, brand, images } = filterProduct;
   return (
     <div className="w-full ">
-      {products
-        .filter((product) => product.id == productId)
-        .map((product) => {
-          return (
-            <div key={product.id} className="">
-              <div className="w-full bg-snp-white border rounded my-8 pb-5 tablet:px-12 tablet:pb-12">
-                <BreadCrumb
-                  category={product.category.main}
-                  linkCategory={filterCategory.parent}
-                  subCategory={product.category.sub}
-                  linkSubCategory={filterCategory.main}
-                  subCategoryBrand={product.brand}
-                />
-                <div className="tablet:flex tablet:items-center tablet:justify-center w-full h-full my-10">
-                  <ProductImageCarousel images={product.images} />
-                  <ProductDetails product={product} />
-                </div>
-              </div>
-              <CategoryCarousel title={product.category.sub} seeMore={false} />
-            </div>
-          );
-        })}
+      <div className="w-full bg-snp-white border rounded my-8 pb-5 tablet:px-12 tablet:pb-12">
+        <BreadCrumb
+          category={category.main}
+          linkCategory={filterCategory.parent}
+          subCategory={category.sub}
+          linkSubCategory={filterCategory.main}
+          subCategoryBrand={brand}
+        />
+        <div className="tablet:flex tablet:items-center tablet:justify-center w-full h-full my-10">
+          <ProductImageCarousel images={images} />
+          <ProductDetails product={filterProduct} />
+        </div>
+      </div>
+      <CategoryCarousel title={category.sub} seeMore={false} />
     </div>
   );
 };
