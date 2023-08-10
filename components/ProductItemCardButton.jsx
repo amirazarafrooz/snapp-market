@@ -5,9 +5,13 @@ import Button from "./button/Button";
 
 export const ProductItemCardButton = ({ product }) => {
   const cart = useSelector((store) => store.cart);
+
+  const filterCartForButton =
+    cart.filter((item) => item.id == product.id)[0]?.count > 0;
+
   return (
     <>
-      {cart.filter((item) => item.id == product.id)[0]?.count > 0 ? (
+      {filterCartForButton ? (
         <>
           {cart
             .filter((item) => item.id == product.id)

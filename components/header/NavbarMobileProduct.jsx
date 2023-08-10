@@ -26,8 +26,8 @@ export const NavbarMobileProduct = ({ productId, products }) => {
             </div>
           </div>
         ) : null}
-        <div className="flex items-center gap-1 font-iransans text-lg  text-gray-500 h-1/2 my-auto ">
-          <p>{prodPrice}</p>
+        <div className="flex items-center gap-1 font-iransans text-gray-500 h-1/2 my-auto ">
+          <p className="text-snp-black">{prodPrice}</p>
           <p>تومان</p>
         </div>
       </div>
