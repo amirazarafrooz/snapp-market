@@ -11,7 +11,7 @@ import { finalShoppingCardPrice } from "@/utils/finalShoppingCardPrice";
 import { profitShoppingCardPrice } from "@/utils/profitShoppingCardPrice";
 import { amountProducts } from "@/utils/amountProducts";
 
-export const ShoppingCard = ({ cartHandler, showCart, handlemodalShop }) => {
+export const ShoppingCard = ({ cartHandler, showCart, handlemodalShop,handleCloseShop }) => {
   const cart = useSelector((store) => store.cart);
 
   const finalPrice = useMemo(() => finalShoppingCardPrice(cart), [cart]);
@@ -46,8 +46,8 @@ export const ShoppingCard = ({ cartHandler, showCart, handlemodalShop }) => {
 
   // ("fixed z-50 w-full max-w-md h-full max-h-full overflow-x-hidden overflow-y-auto md:inset-0 text-gray-900 bg-white flex flex-col");
   return (
-    <>
-             <div className="flex items-start justify-between py-3 pr-3 shadow border-b border-b-snp-lightgray font-iransans" >
+    <div onClick={handlemodalShop} className="fixed z-50 w-full max-w-md h-full max-h-full overflow-x-hidden overflow-y-auto  text-gray-900 bg-white flex flex-col">
+             <div   className="flex items-start justify-between py-3 pr-3 shadow border-b border-b-snp-lightgray font-iransans" >
               <div className="flex items-center" >
                 <p>سبد خرید من</p>
                 {cart.length > 0 ? (
@@ -63,21 +63,21 @@ export const ShoppingCard = ({ cartHandler, showCart, handlemodalShop }) => {
               <button
                 type="button"
                 className="  bg-transparent  w-6 h-6 inline-flex justify-center items-center ml-2"
-                onClick={cartHandler}
+                onClick={handleCloseShop}
               >
                 <IoCloseOutline className=" text-snp-secondary w-full h-full" />
               </button>
             </div>
             {cart.length > 0 ? (
               <>
-                <div className="overflow-y-auto overflow-x-hidden scroll-smooth scrollbar-hide">
+                <div  className="overflow-y-auto overflow-x-hidden scroll-smooth scrollbar-hide">
                   <div className=" font-iransansl ">
                     {cart.map((c) => {
                       return <ShoppingItem details={c} />;
                     })}
                   </div>
                 </div>
-                <div className="flex items-center flex-col border-t p-2 gap-1 mt-auto">
+                <div  className="flex items-center flex-col border-t p-2 gap-1 mt-auto">
                   {atLeastPrice ? (
                     <>
                       <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
@@ -127,7 +127,7 @@ export const ShoppingCard = ({ cartHandler, showCart, handlemodalShop }) => {
                 </div>
               </>
             ) : (
-              <div className="h-full flex flex-col justify-center items-center text-center">
+              <div  className="h-full flex flex-col justify-center items-center text-center">
                 <div className="w-3/5 mx-auto">
                   <Image
                     src={freeBasket}
@@ -145,6 +145,6 @@ export const ShoppingCard = ({ cartHandler, showCart, handlemodalShop }) => {
          
         
       
-    </>
+    </div>
   );
 };

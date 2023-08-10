@@ -146,6 +146,7 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
                   shopOpen={shopOpen}
                 >
                   <ShoppingCard
+                    handleCloseShop={handleCloseShop}
                     cartHandler={cartHandler}
                     showCart={showCart}
                     handlemodalShop={handlemodalShop}
