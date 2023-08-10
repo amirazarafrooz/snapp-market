@@ -3,9 +3,13 @@ import Button from "../button/Button";
 
 export const NavbarMobileProductButton = ({ product }) => {
   const cart = useSelector((store) => store.cart);
+
+  const filterCartForButton =
+    cart.filter((item) => item.id == product.id)[0]?.count > 0;
+
   return (
     <div>
-      {cart.filter((item) => item.id == product.id)[0]?.count > 0 ? (
+      {filterCartForButton ? (
         <>
           {cart
             .filter((item) => item.id == product.id)
@@ -27,10 +31,18 @@ export const NavbarMobileProductButton = ({ product }) => {
                   <p className="text-snp-primaryh font-iransansb text-lg ">
                     {item.count}
                   </p>
-                  <Button
-                    btnStyleparam={"plus_addtoCart"}
-                    product={product}
-                  ></Button>
+                  {item.count < item.inStock ? (
+                    <Button
+                      btnStyleparam={"plus_addtoCart"}
+                      product={product}
+                    ></Button>
+                  ) : (
+                    <Button
+                      plusDisable={true}
+                      btnStyleparam={"plus_addtoCart"}
+                      product={product}
+                    ></Button>
+                  )}
                 </div>
               );
             })}
