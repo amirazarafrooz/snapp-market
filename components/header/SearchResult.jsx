@@ -88,16 +88,16 @@ console.log(searchterm,'searchTerm');
               
                   </div>
           ):(
-            <div className="flex flex-col items-start justify-start  px-2 w-full ">
+            <div className="flex  flex-col items-start justify-start  px-10 mobile:px-2 w-full ">
               {/* form  */}
             {/* <SearchBar handleChange={handleChange}/> */}
-              <div>
+              <div className="w-full">
                 {searchterm !== "" && (
                   
 
-                        <div className="bg-snp-white w-fit rounded-b-md shadow-md px-2 py-2  tablet:w-96 mobile:w-full text-gray-500 text-sm ">
+                        <div className="bg-snp-white w-full rounded-b-md shadow-md px-2 py-2  tablet:w-96 mobile:w-full text-gray-500 text-sm ">
                           {searchterm !== "" && (
-                            <div className="w-full tablet:w-96 mt-6 font-iransans">
+                            <div className="w-full  mobile:w-[450px] tablet:w-96 mt-6 font-iransans">
                               <div className="p-2 flex">
                                 <Image
                                   className="ml-2"
