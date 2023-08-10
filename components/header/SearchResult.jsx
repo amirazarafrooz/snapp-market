@@ -43,13 +43,11 @@ console.log(searchterm,'searchTerm');
 
                     {/* form  */}
                     {/* <SearchBar handleChange={handleChange}/> */}
-                      <div>
                          
-                            <div className="relative flex justify-start top-20  h-fit  tablet:top-44 tablet:right-4 laptop:right-36 w-full  mx-6 mobile:mx-0 mobile:w-[480px] tablet:w-144 laptop:w-248 desktop:w-300   z-[202]  ">
                               {searchItem && (
-                                <div className="bg-white w-full rounded-b-md shadow-md px-2 py-2  tablet:w-96 mobile:w-full text-gray-500 text-sm ">
+                                <div className="bg-white w-full rounded-b-md shadow-md px-2 py-2 mobile:w-full tablet:w-96 text-gray-500 text-sm ">
                                   {searchterm !== "" && (
-                                    <div className="w-full tablet:w-96 mt-6 font-iransans">
+                                    <div className="w-full  tablet:w-96 mt-6 font-iransans">
                                       <div className="p-2 flex">
                                         <Image
                                           className="ml-2"
@@ -86,21 +84,20 @@ console.log(searchterm,'searchTerm');
                                   )}
                                 </div>
                               )}
-                            </div>
-                          </div>
+                          
               
                   </div>
           ):(
-            <div className="flex flex-col items-start justify-start  px-2 w-full ">
+            <div className="flex  flex-col items-start justify-start  px-10 mobile:px-2 w-full ">
               {/* form  */}
             {/* <SearchBar handleChange={handleChange}/> */}
-              <div>
+              <div className="w-full">
                 {searchterm !== "" && (
-                 
-                    <div className="relative flex justify-start top-52  h-fit  tablet:top-44 tablet:right-4 laptop:right-36 w-full  mx-6 mobile:mx-0 mobile:w-[480px] tablet:w-144 laptop:w-248 desktop:w-300   z-[202]  ">
+                  
+
                         <div className="bg-snp-white w-full rounded-b-md shadow-md px-2 py-2  tablet:w-96 mobile:w-full text-gray-500 text-sm ">
                           {searchterm !== "" && (
-                            <div className="w-full tablet:w-96 mt-6 font-iransans">
+                            <div className="w-full  mobile:w-[450px] tablet:w-96 mt-6 font-iransans">
                               <div className="p-2 flex">
                                 <Image
                                   className="ml-2"
@@ -136,7 +133,6 @@ console.log(searchterm,'searchTerm');
                             </div>
                           )}
                         </div>
-                    </div>
                 )}
               </div>
           </div>
@@ -144,13 +140,13 @@ console.log(searchterm,'searchTerm');
               </div> 
                ) : (
    
-            <div className="hidden tablet:w-64 tablet:flex  tablet:items-center  tablet:p-2 laptop:w-52 desktop:w-96">
+            <div className="hidden tablet:w-64 tablet:flex  tablet:items-center  laptop:w-52 desktop:w-96">
               {/* form  */}
               {/* <SearchBar handleChange={handleChange}/> */}
                 <div>
                   {searchterm !== "" && (
                    
-                      <div className="relative flex justify-start top-2  h-fit  tablet:top-0 tablet:right-[115px] laptop:right-[500px] desktop:right-[535px] w-full  mx-6 mobile:mx-0 mobile:w-[480px] tablet:w-144 laptop:w-248 desktop:w-300   z-[202]  ">
+                    <div> 
                         {searchItem && (
                           <div className="bg-snp-white  w-full rounded-b-md shadow-md px-2 py-2  tablet:w-56 laptop:w-44 desktop:w-[350px] mobile:w-full text-gray-500 text-sm ">
                             {searchterm !== "" && (
@@ -193,7 +189,7 @@ console.log(searchterm,'searchTerm');
                             )}
                           </div>
                         )}
-                      </div>
+                        </div>
                   )}
                 </div>
             </div>

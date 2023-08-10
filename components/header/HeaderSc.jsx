@@ -12,6 +12,9 @@ import { useState, useCallback } from "react";
 import { ShoppingCard } from "./ShoppingCart";
 import { ShoppingCartModal } from "./modal/ShoppingCartModal";
 import { UserProfileModal } from "./modal/UserProfileModal";
+import { SearchResultModalDowm } from "./modal/SearchResultModalDown";
+import { SearchBar } from "./SearchBar";
+import { SearchResultModalTablet } from "./modal/SearchResultModalTablet";
 
 export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
   const [shopOpen, setShopOpen] = useState(false);
@@ -40,6 +43,34 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
   const cartHandler = useCallback(() => {
     setShowCart(!showCart);
   }, [showCart]);
+
+  const [searchDownOpen, setSearchDownOpen] = useState(false);
+  const handlemodalSearchDown = (event) => {
+    event.stopPropagation();
+  };
+  const handleCloseSearchDown = () => {
+    setSearchDownOpen(false);
+  };
+
+  const [searchterm, setSearchterm] = useState("");
+  const handleChange = useCallback((e) => {
+    setSearchterm(e.target.value);
+    setSearchDownOpen(!searchDownOpen);
+  }, []);
+
+  const [searchTabletOpen, setSearchTabletOpen] = useState(false);
+  const handlemodalSearchTablet = (event) => {
+    event.stopPropagation();
+  };
+  const handleCloseSearchTablet = () => {
+    setSearchTabletOpen(false);
+  };
+
+  const [searchtermTablet, setSearchtermTablet] = useState("");
+  const handleChangeTablet = useCallback((e) => {
+    setSearchtermTablet(e.target.value);
+    setSearchTabletOpen(!searchTabletOpen);
+  }, []);
 
   return (
     <div>
@@ -114,12 +145,21 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
             {/* left container */}
             <div className="tablet:flex  tablet:justify-around tablet:items-center tablet:w-full  ">
               {/* Search box */}
-              <SearchResult
-                device={"tablet+"}
-                searchItem={searchItem}
-                categoryItems={categoryItems}
-                subCategory={subCategory}
-              />
+              <SearchResultModalTablet searchTabletOpen={searchTabletOpen} handleCloseSearchTablet={handleCloseSearchTablet}>
+            <SearchResult
+               device={"tablet+"}
+               searchItem={searchItem}
+               searchterm={searchtermTablet}
+               categoryItems={categoryItems}
+               subCategory={subCategory}
+            />
+          </SearchResultModalTablet>
+          <div
+              className="hidden  tablet:w-64 tablet:flex  tablet:items-center  tablet:p-2 laptop:w-52 desktop:w-96"
+              // onClick={() => setSearchOpen(true)}
+            >
+              <SearchBar handleChange={handleChangeTablet}/>
+            </div>
 
               {/* user info */}
               <UserProfileModal
@@ -162,14 +202,25 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
         <div className=" flex justify-center items-center h-14 tablet:w-full tablet:hidden laptop:hidden desktop:hidden ">
           <div className="flex  items-center   w-144 tablet:justify-start  tablet:w-192 laptop:w-248 desktop:w-300">
             {/* Search box */}
+
+            <SearchResultModalDowm searchDownOpen={searchDownOpen} handleCloseSearchDown={handleCloseSearchDown}>
             <SearchResult
               device={"mobile"}
               subDevice={"mobiledown"}
+              searchterm={searchterm}
               searchItem={searchItem}
               categoryItems={categoryItems}
               subCategory={subCategory}
-
             />
+          </SearchResultModalDowm>
+          <div
+              className=" flex flex-col items-start justify-start  px-2 w-full laptop:hidden "
+              // onClick={() => setSearchOpen(true)}
+            >
+              <SearchBar handleChange={handleChange}/>
+            </div>
+
+
           </div>
         </div>
       </div>
