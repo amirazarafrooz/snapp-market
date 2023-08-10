@@ -3,6 +3,7 @@ import { ProductImageCarousel } from "./ProductImageCarousel/ProductImageCarouse
 import { ProductDetails } from "./ProductDetails";
 import { CategoryCarousel } from "../Category/CategoryCarousel";
 import { BreadCrumb } from "../BreadCrumbs";
+import ImageSlider from "./ImageSlider";
 
 const data = await getLocalData();
 const products = data.products;
@@ -29,8 +30,9 @@ export const ProductInfo = ({ productId }) => {
           linkSubCategory={filterCategory.main}
           subCategoryBrand={brand}
         />
-        <div className="tablet:flex tablet:items-center tablet:justify-center w-full h-full my-10">
-          <ProductImageCarousel images={images} />
+        <div className="tablet:flex tablet:items-center  tablet:justify-center w-full h-full my-10">
+          {/* <ProductImageCarousel images={images} /> */}
+          <ImageSlider slides={images}/>
           <ProductDetails product={filterProduct} />
         </div>
       </div>

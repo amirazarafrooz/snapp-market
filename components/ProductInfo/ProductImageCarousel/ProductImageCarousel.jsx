@@ -7,6 +7,7 @@ import { CustomArrowLeft } from "./CustomArrowLeft";
 import { CustomArrowRight } from "./CustomArrowRight";
 
 export const ProductImageCarousel = ({ images }) => {
+  console.log(images);
   const settings = {
     customPaging: function (i) {
       return (
