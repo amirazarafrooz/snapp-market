@@ -2,8 +2,9 @@ import Image from "next/image";
 import Button from "./button/Button";
 import { useMemo } from "react";
 import { itemCalculatePrice } from "@/utils/itemCalculatePrice";
+import { ShoppingItemButton } from "./ShoppingItemButton";
 
-export const ShoppingItem = ({ details, handleDecrement, handleAdd }) => {
+export const ShoppingItem = ({ details }) => {
   const { images, name, discount, price, count } = details;
   const prodPrice = useMemo(() => itemCalculatePrice(price, discount));
   return (
@@ -47,25 +48,7 @@ export const ShoppingItem = ({ details, handleDecrement, handleAdd }) => {
             </div>
           </div>
           <div className="flex justify-between items-center w-1/2 h-full mt-auto py-3 px-6">
-            {count == 1 ? (
-              <Button
-                btnStyleparam={"bin_addtoCartR"}
-                product={details}
-              ></Button>
-            ) : (
-              <Button
-                btnStyleparam={"minus_addtoCartR"}
-                product={details}
-              ></Button>
-            )}
-
-            <p className="mx-auto text-snp-primaryh font-iransansb text-lg">
-              {count}
-            </p>
-            <Button
-              btnStyleparam={"plus_addtoCartR"}
-              product={details}
-            ></Button>
+            <ShoppingItemButton details={details} />
           </div>
         </div>
       </div>

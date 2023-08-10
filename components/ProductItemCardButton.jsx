@@ -29,10 +29,18 @@ export const ProductItemCardButton = ({ product }) => {
                   <p className="text-snp-primaryh font-iransansb text-lg">
                     {item.count}
                   </p>
-                  <Button
-                    btnStyleparam={"plus_addtoCartR"}
-                    product={product}
-                  ></Button>
+                  {item.count < item.inStock ? (
+                    <Button
+                      btnStyleparam={"plus_addtoCartR"}
+                      product={product}
+                    ></Button>
+                  ) : (
+                    <Button
+                      plusDisable={true}
+                      btnStyleparam={"plus_addtoCartR"}
+                      product={product}
+                    ></Button>
+                  )}
                 </div>
               );
             })}
