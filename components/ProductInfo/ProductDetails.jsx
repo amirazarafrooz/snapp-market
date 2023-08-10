@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { ProductsDetailsButton } from "./ProductDetailsButton";
 import { itemCalculatePrice } from "@/utils/itemCalculatePrice";
+import { efarsi } from "@/utils/efarsi";
 
 export const ProductDetails = ({ product }) => {
   const { name, category, brand, seller, tags, price, discount } = product;
@@ -38,12 +39,12 @@ export const ProductDetails = ({ product }) => {
           {discount ? (
             <div className="flex items-center justify-end w-full mr-auto mb-1 h-1/2">
               <div className="line-through  text-gray-500 font-iransans ml-2">
-                {price} تومان
+                {efarsi(price)} تومان
               </div>
               <div className=" bg-snp-highdiscount text-snp-white px-1 rounded-full font-iransans ">
                 <div className="flex items-center h-fit">
                   <p>٪</p>
-                  <p>{discount}</p>
+                  <p>{efarsi(discount)}</p>
                 </div>
               </div>
             </div>

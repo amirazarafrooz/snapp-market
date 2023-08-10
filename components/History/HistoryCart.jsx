@@ -1,3 +1,4 @@
+import { efarsi } from "@/utils/efarsi";
 import Image from "next/image";
 import { BsArrowLeft } from "react-icons/bs";
 import { MdOutlinePendingActions } from "react-icons/md";
@@ -16,17 +17,17 @@ export const HistoryCart = ({ details }) => {
       <div className="flex items-center px-3 py-3">
         <div className="flex items-center text-sm text-snp-black ml-4">
           <p className="text-gray-500 ml-1">کد سفارش</p>
-          <p>{id}</p>
+          <p>{efarsi(id)}</p>
         </div>
         <div className="flex items-center text-sm text-snp-black ml-4">
           <p className="text-gray-500 ml-1">مبلغ</p>
-          <p>{finalPrice}</p>
+          <p>{efarsi(finalPrice)}</p>
           <p className="text-xs mr-0.5">تومان</p>
         </div>
         {finalProfitPrice != 0 && (
           <div className="flex items-center text-sm text-snp-black">
             <p className="text-gray-500 ml-1">سود</p>
-            <p>{finalProfitPrice}</p>
+            <p>{efarsi(finalProfitPrice)}</p>
             <p className="text-xs mr-0.5">تومان</p>
           </div>
         )}
@@ -43,7 +44,7 @@ export const HistoryCart = ({ details }) => {
                 height={0}
               ></Image>
               <span className="w-4 h-4 absolute top-0 right-0 bg-snp-secondary text-snp-white text-sm flex justify-center items-center rounded-full pt-0.5">
-                {item.count}
+                {efarsi(item.count)}
               </span>
             </div>
           );
