@@ -140,13 +140,13 @@ console.log(searchterm,'searchTerm');
               </div> 
                ) : (
    
-            <div className="hidden tablet:w-64 tablet:flex  tablet:items-center  tablet:p-2 laptop:w-52 desktop:w-96">
+            <div className="hidden tablet:w-64 tablet:flex  tablet:items-center  laptop:w-52 desktop:w-96">
               {/* form  */}
               {/* <SearchBar handleChange={handleChange}/> */}
                 <div>
                   {searchterm !== "" && (
                    
-                      <div className="relative flex justify-start top-2  h-fit  tablet:top-0 tablet:right-[115px] laptop:right-[500px] desktop:right-[535px] w-full  mx-6 mobile:mx-0 mobile:w-[480px] tablet:w-144 laptop:w-248 desktop:w-300   z-[202]  ">
+                    <div> 
                         {searchItem && (
                           <div className="bg-snp-white  w-full rounded-b-md shadow-md px-2 py-2  tablet:w-56 laptop:w-44 desktop:w-[350px] mobile:w-full text-gray-500 text-sm ">
                             {searchterm !== "" && (
@@ -189,7 +189,7 @@ console.log(searchterm,'searchTerm');
                             )}
                           </div>
                         )}
-                      </div>
+                        </div>
                   )}
                 </div>
             </div>

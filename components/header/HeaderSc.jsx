@@ -14,6 +14,7 @@ import { ShoppingCartModal } from "./modal/ShoppingCartModal";
 import { UserProfileModal } from "./modal/UserProfileModal";
 import { SearchResultModalDowm } from "./modal/SearchResultModalDown";
 import { SearchBar } from "./SearchBar";
+import { SearchResultModalTablet } from "./modal/SearchResultModalTablet";
 
 export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
   const [shopOpen, setShopOpen] = useState(false);
@@ -55,6 +56,20 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
   const handleChange = useCallback((e) => {
     setSearchterm(e.target.value);
     setSearchDownOpen(!searchDownOpen);
+  }, []);
+
+  const [searchTabletOpen, setSearchTabletOpen] = useState(false);
+  const handlemodalSearchTablet = (event) => {
+    event.stopPropagation();
+  };
+  const handleCloseSearchTablet = () => {
+    setSearchTabletOpen(false);
+  };
+
+  const [searchtermTablet, setSearchtermTablet] = useState("");
+  const handleChangeTablet = useCallback((e) => {
+    setSearchtermTablet(e.target.value);
+    setSearchTabletOpen(!searchTabletOpen);
   }, []);
 
   return (
@@ -130,14 +145,21 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
             {/* left container */}
             <div className="tablet:flex  tablet:justify-around tablet:items-center tablet:w-full  ">
               {/* Search box */}
-
-
-              <SearchResult
-                device={"tablet+"}
-                searchItem={searchItem}
-                categoryItems={categoryItems}
-                subCategory={subCategory}
-              />
+              <SearchResultModalTablet searchTabletOpen={searchTabletOpen} handleCloseSearchTablet={handleCloseSearchTablet}>
+            <SearchResult
+               device={"tablet+"}
+               searchItem={searchItem}
+               searchterm={searchtermTablet}
+               categoryItems={categoryItems}
+               subCategory={subCategory}
+            />
+          </SearchResultModalTablet>
+          <div
+              className="hidden  tablet:w-64 tablet:flex  tablet:items-center  tablet:p-2 laptop:w-52 desktop:w-96"
+              // onClick={() => setSearchOpen(true)}
+            >
+              <SearchBar handleChange={handleChangeTablet}/>
+            </div>
 
               {/* user info */}
               <UserProfileModal

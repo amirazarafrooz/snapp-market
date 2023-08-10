@@ -245,7 +245,7 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
             />
           </SearchResultModal>
           <div
-              className=" hidden tablet:block px-2"
+              className="w-full tablet:block px-2"
               // onClick={() => setSearchOpen(true)}
             >
               <SearchBar handleChange={handleChange}/>
