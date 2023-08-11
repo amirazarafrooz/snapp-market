@@ -143,7 +143,7 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
             </div>
 
             {/* left container */}
-            <div className="tablet:flex  tablet:justify-around tablet:items-center tablet:w-full  ">
+            <div className="tablet:flex flex items-center tablet:justify-around tablet:items-center tablet:w-full  ">
               {/* Search box */}
               <SearchResultModalTablet searchTabletOpen={searchTabletOpen} handleCloseSearchTablet={handleCloseSearchTablet}>
             <SearchResult
@@ -169,7 +169,7 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
                 <UserProfile handlemodalUser={handlemodalUser} />
               </UserProfileModal>
               <div
-                className=" hidden tablet:block"
+                className=""
                 onClick={() => setUserOpen(true)}
               >
                 <Button btnStyleparam={"HeaderSc"} />
