@@ -4,7 +4,12 @@ import { useState } from "react";
 import Image from "next/image";
 
 const ImageSlider = ({ slides }) => {
+  const [xPosition,setXPosition]=useState(0);
+  const [yPosition,setYPosition]=useState(0);
+  const [mouseEnter,setMouseEnter]=useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+
   const images=slides.map((item)=>item)[currentIndex]
 console.log(images);
   const goToPrevious = () => {
@@ -21,6 +26,23 @@ console.log(images);
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex)
   }
+
+  const mouseOver=(e)=>{
+    const x=e.clientX-e.target.offsetLeft;
+    // console.log(e.clientX-e.target.offsetLeft ,'client_x - offset_x');
+    setXPosition(x);
+    const y=e.clientY-e.target.offsetTop;
+    console.log(e.clientY-e.target.offsetTop ,'client_y - offset_y');
+    setYPosition(y);
+  }
+  
+  const mouseEnterHandler=()=>{
+  setMouseEnter(true)
+  }
+  
+  const mouseLeaveHandler=()=>{
+    setMouseEnter(false)
+    }
 
   return (
     <div className=" h-full  flex justify-center items-center flex-col tablet:w-1/2">
@@ -48,8 +70,10 @@ console.log(images);
       ></use>
     </svg>
       </div>
-      <div className=" w-80 h-80 tablet:w-64 tablet:h-64 laptop:w-80 laptop:h-80 rounded-lg bg-cover bg-center mx-5" style={{ backgroundImage:`url(${slides[currentIndex]})` }}>
+      <div onMouseLeave={mouseLeaveHandler} onMouseEnter={mouseEnterHandler} onMouseMove={mouseOver} className="tablet:cursor-crosshair w-80 h-80 tablet:w-64 tablet:h-64 laptop:w-80 laptop:h-80 rounded-lg bg-cover bg-center mx-5" style={{ backgroundImage:`url(${slides[currentIndex]})` }}>
       </div>
+      {mouseEnter && <div className="hidden absolute tablet:w-80 tablet:h-[400px] laptop:w-[450px] laptop:top-52 tablet:left-16 tablet:top-48 tablet:flex   bg-white border-[1px] w-[420px] desktop:h-[450px] desktop:top-44  desktop:left-56  p-32 overflow-hidden shadow-md">
+        <div className="absolute bg-white-300 w-[320px] h-[320px] rounded-lg  bg-cover bg-center scale-[2] tablet:h-[320px] tablet:top-2 tablet:left-0 top-10 left-0 " style={{transformOrigin:`${xPosition}px ${yPosition}px` , backgroundImage: `url(${slides[currentIndex]})` }}></div></div>}
       <div onClick={goToPrevious} className="cursor-pointer p-3 shadow-lg	rounded-full" >
       <svg
       xmlns="http://www.w3.org/2000/svg"
