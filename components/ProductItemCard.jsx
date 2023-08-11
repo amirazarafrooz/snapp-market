@@ -6,7 +6,7 @@ import { useMemo } from "react";
 import { itemCalculatePrice } from "@/utils/itemCalculatePrice";
 import { efarsi } from "@/utils/efarsi";
 
-export const ProductItemCard = ({ product, cartClassName, imageClass }) => {
+const ProductItemCard = ({ product, cartClassName, imageClass }) => {
   const { id, images, name, quantity, discount, price } = product;
   const prodPrice = useMemo(() => itemCalculatePrice(price, discount));
   return (
@@ -64,3 +64,5 @@ export const ProductItemCard = ({ product, cartClassName, imageClass }) => {
     </div>
   );
 };
+
+export default ProductItemCard;

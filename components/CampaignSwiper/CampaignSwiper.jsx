@@ -7,7 +7,7 @@ const data = await getLocalData();
 const products = data.products;
 const subCategory = data.subcategories;
 
-export const CampaignSwiper = ({ CampaignTitle }) => {
+const CampaignSwiper = ({ CampaignTitle }) => {
   const campaignProducts = products.filter(
     (item) => item.category.sub === CampaignTitle
   );
@@ -38,3 +38,5 @@ export const CampaignSwiper = ({ CampaignTitle }) => {
     </>
   );
 };
+
+export default CampaignSwiper;

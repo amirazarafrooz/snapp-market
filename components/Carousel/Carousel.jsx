@@ -1,9 +1,18 @@
 "use client";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import { ProductItemCard } from "../ProductItemCard";
 import Link from "next/link";
 import clsx from "clsx";
-import { useCallback, useRef } from "react";
+import { Suspense, useCallback, useRef } from "react";
+import dynamic from "next/dynamic";
+import { ProductItemCardPreLoader } from "../ProductItemCardPreLoader";
+import { Loading } from "../Loading";
+
+const ProductItemCard = dynamic(
+  async () => await delay(import("../ProductItemCard")),
+  {
+    ssr: false,
+  }
+);
 
 export const Carousel = ({
   products,
@@ -11,12 +20,12 @@ export const Carousel = ({
   space,
   cartClassName,
   imageClass,
-  link
+  link,
 }) => {
   const scroll = useRef(null);
   const scrollLeft = useCallback(() => {
     scroll.current.scrollLeft -= 240;
-  } , [scroll]);
+  }, [scroll]);
   const scrollRight = useCallback(() => {
     scroll.current.scrollLeft += 240;
   }, [scroll]);
@@ -35,11 +44,13 @@ export const Carousel = ({
         {products.map((product) => {
           return (
             <div key={product.id} className={space}>
-              <ProductItemCard
-                product={product}
-                cartClassName={cartClassName}
-                imageClass={imageClass}
-              />
+              <Suspense fallback={<div className="h-full w-full">salam</div>}>
+                <ProductItemCard
+                  product={product}
+                  cartClassName={cartClassName}
+                  imageClass={imageClass}
+                />
+              </Suspense>
             </div>
           );
         })}
@@ -78,3 +89,9 @@ export const Carousel = ({
     </div>
   );
 };
+
+function delay(promise) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, 2000);
+  }).then(() => promise);
+}
