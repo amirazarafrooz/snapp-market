@@ -135,7 +135,7 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
                 <UserProfile handlemodalUser={handlemodalUser} />
               </UserProfileModal>
               <div
-                className=" hidden tablet:block"
+                className=""
                 onClick={() => setUserOpen(true)}
               >
                 <Button btnStyleparam={"HeaderEx"} />

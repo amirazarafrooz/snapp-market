@@ -21,7 +21,7 @@ const BannerCampaign = ({ bannercount }) => {
         {bannercount === "maltich" && (
           <div>
             <div className="flex gap-2">
-              <Link href="/" className="w-1/2">
+              <Link href="/campaigns/Hype" className="w-1/2">
                 <Image
                   alt="campaign-image"
                   className="rounded-md tablet:hidden"
@@ -30,7 +30,7 @@ const BannerCampaign = ({ bannercount }) => {
                   src={multichsquare}
                 />
               </Link>
-              <Link href="/" className="w-1/2">
+              <Link href="/campaigns/sunich" className="w-1/2">
                 <Image
                   alt="campaign-image"
                   className=" rounded-md tablet:hidden"
@@ -43,7 +43,7 @@ const BannerCampaign = ({ bannercount }) => {
               </Link>
             </div>
             <div className="hidden tablet:block">
-              <Link href="/">
+              <Link href="/campaigns/sunich">
                 <Image
                   alt="campaign-image"
                   className="rounded-md"
@@ -61,7 +61,7 @@ const BannerCampaign = ({ bannercount }) => {
         {bannercount === "sunich" && (
           <div>
             <div className=" flex tablet:gap-2 ">
-              <Link href="/">
+              <Link href="/campaigns/sunich">
                 <Image
                   alt="campaign-image"
                   className="rounded-md hidden tablet:block"
@@ -100,7 +100,7 @@ const BannerCampaign = ({ bannercount }) => {
               <h1 className="font-iransansb">تخفیف های مارکتی</h1>{" "}
             </div>
             <div className="flex flex-row gap-2  flex-wrap justify-center items-center tablet:gap-4 tablet:flex-nowrap ">
-              <Link className=" mobile:w-[48%] tablet:w-1/3 " href="/">
+              <Link className=" mobile:w-[48%] tablet:w-1/3 " href="/campaigns/Laundry">
                 <Image
                   alt="campaign-image"
                   className="rounded-md "
@@ -110,7 +110,7 @@ const BannerCampaign = ({ bannercount }) => {
                     washer                  }
                 />
               </Link>
-              <Link className=" mobile:w-[48%] tablet:w-1/3" href="/">
+              <Link className=" mobile:w-[48%] tablet:w-1/3" href="/campaigns/freezed">
                 <Image
                   alt="campaign-image"
                   className="rounded-md "
@@ -121,7 +121,7 @@ const BannerCampaign = ({ bannercount }) => {
                   }
                 />
               </Link>
-              <Link className=" mobile:w-[48%]  tablet:w-1/3" href="/">
+              <Link className=" mobile:w-[48%]  tablet:w-1/3" href="/campaigns/date">
                 <Image
                   alt="campaign-image"
                   className="rounded-md "

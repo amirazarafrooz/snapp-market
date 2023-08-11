@@ -1,4 +1,4 @@
-import { ProductItemCard } from "../ProductItemCard";
+import  ProductItemCard  from "../ProductItemCard";
 
 export const SubCategoryPageProduct = ({ products }) => {
   return (
