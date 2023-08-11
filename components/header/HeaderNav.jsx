@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { useState , useCallback } from "react";
-import { CategoriesMenu } from "./CategoriesMenu";
+import CategoriesMenu  from "./CategoriesMenu";
 import { CategoriesMenuModal } from "./modal/CategoriesMenuModal";
 import Button from "../button/Button";
 
