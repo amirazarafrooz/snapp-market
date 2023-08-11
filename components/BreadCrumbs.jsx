@@ -1,3 +1,4 @@
+import { efarsi } from "@/utils/efarsi";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineHome, AiOutlineLeft } from "react-icons/ai";
@@ -57,7 +58,7 @@ export const BreadCrumb = ({
       ) : null}
       {productsAmount > 0 && (
         <>
-          <span className="mr-auto">{productsAmount}</span>
+          <span className="mr-auto">{efarsi(productsAmount)}</span>
           <span>کالا</span>
         </>
       )}

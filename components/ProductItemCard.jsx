@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ProductItemCardButton } from "./ProductItemCardButton";
 import { useMemo } from "react";
 import { itemCalculatePrice } from "@/utils/itemCalculatePrice";
+import { efarsi } from "@/utils/efarsi";
 
 export const ProductItemCard = ({ product, cartClassName, imageClass }) => {
   const { id, images, name, quantity, discount, price } = product;
@@ -36,12 +37,12 @@ export const ProductItemCard = ({ product, cartClassName, imageClass }) => {
             <div className="flex items-center w-full mb-1">
               <div className=" bg-snp-highdiscount text-snp-white px-1 rounded-md font-iransans ">
                 <div className="flex items-center">
-                  <p>{discount}</p>
+                  <p>{efarsi(discount)}</p>
                   <p>٪</p>
                 </div>
               </div>
               <p className=" line-through text-xs text-snp-gray mr-2">
-                {price}
+                {efarsi(price)}
               </p>
             </div>
           ) : null}
@@ -50,7 +51,7 @@ export const ProductItemCard = ({ product, cartClassName, imageClass }) => {
               <p className="text-snp-black font-iransans text-md">
                 {prodPrice}
               </p>
-              <p className=" text-gray-600 mr-2 text-xs font-iransansl">
+              <p className=" text-gray-600 mr-0.5 text-xs font-iransansl">
                 تومان
               </p>
             </div>

@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { add, decrement, removeItem, reset } from "@/redux/cartSlice";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { addToHistory } from "@/redux/historySlice";
+import { efarsi } from "@/utils/efarsi";
 
 const Button = ({
   btnStyleparam,
@@ -113,7 +114,7 @@ const Button = ({
           />
           {children}
           <div className="flex justify-center items-center font-iransans text-md text-snp-primary rounded-full bg-snp-lightgray w-6 h-6 mr-3 pt-1">
-            {cartCounts}
+            {efarsi(cartCounts)}
           </div>
         </button>
       ) : null}
