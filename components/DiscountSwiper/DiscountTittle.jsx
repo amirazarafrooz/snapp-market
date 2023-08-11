@@ -1,4 +1,5 @@
 import Button from "../button/Button";
+import Link from "next/link";
 
 export const DiscountTittle = () => {
   return (
@@ -14,7 +15,7 @@ export const DiscountTittle = () => {
           <p className=" font-iransansb">برای کل ماهت، به صرفه خرید کن!</p>
         </div>
         <div className="w-full">
-          <Button btnStyleparam={"allProduct"}>مشاهده همه محصولات</Button>
+          <Button btnStyleparam={"allProduct"}><Link href={'/campaigns/discount'}>مشاهده همه محصولات</Link></Button>
         </div>
       </div>
     </div>

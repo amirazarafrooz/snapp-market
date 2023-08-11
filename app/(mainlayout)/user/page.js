@@ -257,7 +257,7 @@ export default function User() {
           </svg>
           <h3 className="text-3xl mb-4">لیست سفارش‌ها</h3>
         </div>
-        <div className="flex justify-center w-full h-full pt-5 mb-5 text-gray-400 text-lg border-t-[1px]">
+        <div className="flex justify-center w-full  pt-5 mb-5 text-gray-400 text-lg border-t-[1px]">
           <History />
         </div>
       </div>
