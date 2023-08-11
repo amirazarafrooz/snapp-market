@@ -1,6 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import multichbanner from "../../public/assets/images/Multich-banner.jpg"
+import multichsquare from "../../public/assets/images/Multich-square.jpg"
+import sunichsquare from "../../public/assets/images/sanich-square.jpg"
+import sunichbanner from "../../public/assets/images/sunich-banner.jpg"
+import buybanner from "../../public/assets/images/readyfood-square.jpg"
+import washer from "../../public/assets/images/saftlan-square.jpg"
+import freezed from "../../public/assets/images/BA-square.jpg"
+import date from "../../public/assets/images/date-square.jpg"
+
 
 {
   /*// bannercount is measured by counting fetched array from campaign*/
@@ -18,9 +27,7 @@ const BannerCampaign = ({ bannercount }) => {
                   className="rounded-md tablet:hidden"
                   width={1218}
                   height={125}
-                  src={
-                    "https:api.snapp.market/uploads/images/mobile-sliders/64c4f7c7e716e.png"
-                  }
+                  src={multichsquare}
                 />
               </Link>
               <Link href="/" className="w-1/2">
@@ -30,7 +37,7 @@ const BannerCampaign = ({ bannercount }) => {
                   width={1218}
                   height={125}
                   src={
-                    "https:api.snapp.market/uploads/images/mobile-sliders/64c41fa7980fb.jpg"
+                    sunichsquare
                   }
                 />
               </Link>
@@ -39,11 +46,11 @@ const BannerCampaign = ({ bannercount }) => {
               <Link href="/">
                 <Image
                   alt="campaign-image"
-                  className="reunded-md"
+                  className="rounded-md"
                   width={1205}
                   height={123}
                   src={
-                    "https://api.snapp.market/uploads/images/mobile-sliders/64c4c7f3ea040.jpg"
+                    multichbanner
                   }
                 />
               </Link>
@@ -61,7 +68,7 @@ const BannerCampaign = ({ bannercount }) => {
                   width={1218}
                   height={125}
                   src={
-                    "https://api.snapp.market/uploads/images/mobile-sliders/64bae75d3c435.jpg"
+                    sunichbanner
                   }
                 />
               </Link>
@@ -79,7 +86,7 @@ const BannerCampaign = ({ bannercount }) => {
                   width={1218}
                   height={125}
                   src={
-                    "https://api.snapp.market/uploads/images/mobile-sliders/63cc228837b9d.jpg"
+                    buybanner
                   }
                 />
               </Link>
@@ -100,8 +107,7 @@ const BannerCampaign = ({ bannercount }) => {
                   width={382}
                   height={198}
                   src={
-                    "https://api.snapp.market/uploads/images/mobile-sliders/64c404a22ca54.jpg"
-                  }
+                    washer                  }
                 />
               </Link>
               <Link className=" mobile:w-[48%] tablet:w-1/3" href="/">
@@ -111,7 +117,7 @@ const BannerCampaign = ({ bannercount }) => {
                   width={382}
                   height={198}
                   src={
-                    "https://api.snapp.market/uploads/images/mobile-sliders/64c404c40294d.jpg"
+                    freezed
                   }
                 />
               </Link>
@@ -122,7 +128,7 @@ const BannerCampaign = ({ bannercount }) => {
                   width={382}
                   height={198}
                   src={
-                    "https://api.snapp.market/uploads/images/mobile-sliders/64c404e2c6e1a.jpg"
+                    date
                   }
                 />
               </Link>
