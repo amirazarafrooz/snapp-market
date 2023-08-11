@@ -13,6 +13,7 @@ export const SearchResult = ({
   categoryItems,
   subDevice,
   subCategory,
+  handlemodalSearch
 }) => {
   // const [searchterm, setSearchterm] = useState("");
   const [searchResult, setSearchResult] = useState([]);
@@ -44,9 +45,9 @@ export const SearchResult = ({
   return (
     <>
       {device === "mobile" ? (
-        <div className="flex flex-col items-start justify-start  w-full ">
+        <div className="flex flex-col items-start justify-start  w-full " >
           {subDevice === "mobiledown" ? (
-            <div className="flex flex-col items-start justify-start  px-2 w-full ">
+            <div className="flex flex-col items-start justify-start  px-2 w-full " onClick={handlemodalSearch}>
               {/* form  */}
               {/* <SearchBar handleChange={handleChange}/> */}
 
@@ -100,7 +101,7 @@ export const SearchResult = ({
               )}
             </div>
           ) : (
-            <div className="flex  flex-col items-start justify-start  px-10 mobile:px-2 w-full ">
+            <div className="flex  flex-col items-start justify-start  px-10 mobile:px-2 w-full " onClick={handlemodalSearch}>
               {/* form  */}
               {/* <SearchBar handleChange={handleChange}/> */}
               <div className="w-full">
@@ -148,7 +149,7 @@ export const SearchResult = ({
           )}
         </div>
       ) : (
-        <div className="hidden tablet:w-64 tablet:flex  tablet:items-center  laptop:w-52 desktop:w-96">
+        <div className="hidden tablet:w-64 tablet:flex  tablet:items-center  laptop:w-52 desktop:w-96" onClick={handlemodalSearch}>
           {/* form  */}
           {/* <SearchBar handleChange={handleChange}/> */}
           <div>

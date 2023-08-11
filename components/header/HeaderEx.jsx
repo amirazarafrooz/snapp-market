@@ -244,6 +244,7 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
               searchItem={searchItem}
               categoryItems={categoryItems}
               subCategory={subCategory}
+              handlemodalSearch={handlemodalSearch}
             />
           </SearchResultModal>
           <div
