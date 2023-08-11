@@ -54,6 +54,15 @@ export const Carousel = ({
             </div>
           );
         })}
+        {link==undefined?<Link href={'/campaigns/discount'}>
+        <div className="bg-white text-black w-48 h-[356px] rounded ">
+            <div className="w-full h-full flex items-center justify-center">
+              <p className="text-sm text-snp-secondary font-iransans underline">
+                مشاهده بیشتر
+              </p>
+            </div>
+          </div>
+        </Link>:
         <Link href={`/subcategories/${link}`}>
           <div className="bg-white text-black w-48 h-[356px] rounded ">
             <div className="w-full h-full flex items-center justify-center">
@@ -62,7 +71,7 @@ export const Carousel = ({
               </p>
             </div>
           </div>
-        </Link>
+        </Link>}
       </div>
       <div className="absolute right-3 top-[43%]">
         <button
