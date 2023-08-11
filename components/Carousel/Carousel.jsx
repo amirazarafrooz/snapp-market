@@ -8,7 +8,7 @@ import { ProductItemCardPreLoader } from "../ProductItemCardPreLoader";
 import { Loading } from "../Loading";
 
 const ProductItemCard = dynamic(
-  async () => await delay(import("../ProductItemCard")),
+  async () => await import("../ProductItemCard"),
   {
     ssr: false,
   }
@@ -44,13 +44,11 @@ export const Carousel = ({
         {products.map((product) => {
           return (
             <div key={product.id} className={space}>
-              <Suspense fallback={<div className="h-full w-full">salam</div>}>
-                <ProductItemCard
-                  product={product}
-                  cartClassName={cartClassName}
-                  imageClass={imageClass}
-                />
-              </Suspense>
+              <ProductItemCard
+                product={product}
+                cartClassName={cartClassName}
+                imageClass={imageClass}
+              />
             </div>
           );
         })}
