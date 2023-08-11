@@ -11,9 +11,7 @@ const persistor = persistStore(store);
 export function Providers({ children }) {
   return (
     <Provider store={store}>
-      <PersistGate persistor={persistor} loading={<Loading />}>
-        {children}
-      </PersistGate>
+      <PersistGate persistor={persistor}>{children}</PersistGate>
     </Provider>
   );
 }
