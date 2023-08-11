@@ -5,7 +5,7 @@ import { Carousel } from "../Carousel/Carousel";
 const data = await getLocalData();
 const products = data.products;
 
-export const DiscountSwiper = () => {
+const DiscountSwiper = () => {
   const filterDiscount = products.filter((item) => item.discount > 25);
 
   return (
@@ -28,3 +28,5 @@ export const DiscountSwiper = () => {
     </section>
   );
 };
+
+export default DiscountSwiper;
