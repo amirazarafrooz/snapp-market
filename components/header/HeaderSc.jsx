@@ -152,6 +152,7 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
                searchterm={searchtermTablet}
                categoryItems={categoryItems}
                subCategory={subCategory}
+               handlemodalSearch={handlemodalSearchTablet}
             />
           </SearchResultModalTablet>
           <div
@@ -182,6 +183,7 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
                   shopOpen={shopOpen}
                 >
                   <ShoppingCard
+                  handleCloseShop={handleCloseShop}
                     cartHandler={cartHandler}
                     showCart={showCart}
                     handlemodalShop={handlemodalShop}
@@ -211,6 +213,7 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
               searchItem={searchItem}
               categoryItems={categoryItems}
               subCategory={subCategory}
+              handlemodalSearch={handlemodalSearchDown}
             />
           </SearchResultModalDowm>
           <div

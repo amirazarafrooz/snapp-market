@@ -37,10 +37,10 @@ export const HistoryCart = ({ details }) => {
           return (
             <div className=" w-24 h-full mx-2 relative">
               <Image
-                className="w-full h-full"
+                className=""
                 alt="buying item"
                 src={item.images[0]}
-                width={0}
+                width={80}
                 height={0}
               ></Image>
               <span className="w-4 h-4 absolute top-0 right-0 bg-snp-secondary text-snp-white text-sm flex justify-center items-center rounded-full pt-0.5">
