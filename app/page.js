@@ -1,8 +1,8 @@
 import { Header } from "@/components/header/Header";
 import { Footer } from "@/components/footer/Footer";
 import { Suspense } from "react";
-// import HomePage from "@/components/HomePage/HomePage";
 import dynamic from "next/dynamic";
+import delay from "@/utils/delay";
 import { Loading } from "@/components/Loading";
 
 const HomePage = dynamic(() =>
@@ -19,10 +19,4 @@ export default function Home() {
       <Footer />
     </>
   );
-}
-
-function delay(promise) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, 6000);
-  }).then(() => promise);
 }
