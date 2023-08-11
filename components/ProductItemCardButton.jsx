@@ -2,6 +2,7 @@
 
 import { useSelector } from "react-redux";
 import Button from "./button/Button";
+import { efarsi } from "@/utils/efarsi";
 
 export const ProductItemCardButton = ({ product }) => {
   const cart = useSelector((store) => store.cart);
@@ -31,7 +32,7 @@ export const ProductItemCardButton = ({ product }) => {
                   )}
 
                   <p className="text-snp-primaryh font-iransansb text-lg">
-                    {item.count}
+                    {efarsi(item.count)}
                   </p>
                   {item.count < item.inStock ? (
                     <Button

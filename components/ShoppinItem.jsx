@@ -3,6 +3,7 @@ import Button from "./button/Button";
 import { useMemo } from "react";
 import { itemCalculatePrice } from "@/utils/itemCalculatePrice";
 import { ShoppingItemButton } from "./ShoppingItemButton";
+import { efarsi } from "@/utils/efarsi";
 
 export const ShoppingItem = ({ details }) => {
   const { images, name, discount, price, count } = details;
@@ -27,12 +28,12 @@ export const ShoppingItem = ({ details }) => {
               <div className="flex items-center w-full mb-1">
                 <div className=" bg-snp-highdiscount text-snp-white px-1 rounded-md font-iransans text-sm">
                   <div className="flex items-center">
-                    <p>{discount}</p>
+                    <p>{efarsi(discount)}</p>
                     <p>٪</p>
                   </div>
                 </div>
                 <p className="line-through text-xs text-gray-700 mr-2">
-                  {price}
+                  {efarsi(price)}
                 </p>
               </div>
             ) : null}

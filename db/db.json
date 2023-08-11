@@ -7,7 +7,7 @@
       "brand": "روزانه",
       "quantity": "1 لیتر",
       "seller": "هایپراستار",
-      "price": "38.000",
+      "price": 38000,
       "inStock": 10,
       "discount": 25,
       "campaignType": "discount",
@@ -25,7 +25,7 @@
       "brand": "روزانه",
       "quantity": "1 لیتر",
       "seller": "هایپراستار",
-      "price": "44.000",
+      "price": 44000,
       "inStock": 10,
       "discount": 30,
       "campaignType": "discount",
@@ -43,7 +43,7 @@
       "brand": "پگاه",
       "quantity": "946 میلی لیتری",
       "seller": "هایپراستار",
-      "price": "29.900",
+      "price": 29900,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -60,7 +60,7 @@
       "brand": "پگاه",
       "quantity": "800 گرمی",
       "seller": "هایپراستار",
-      "price": "15.200",
+      "price": 15200,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -78,7 +78,7 @@
       "brand": "کاله",
       "quantity": "235 میلی لیتری",
       "seller": "هایپراستار",
-      "price": "37.000",
+      "price": 37000,
       "inStock": 10,
       "discount": 19,
       "campaignType": "none",
@@ -96,7 +96,7 @@
       "brand": "کاله",
       "quantity": "180 گرمی",
       "seller": "هایپراستار",
-      "price": "73.000",
+      "price": 73000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -114,7 +114,7 @@
       "brand": "هراز",
       "quantity": "400 گرمی",
       "seller": "هایپراستار",
-      "price": "49.800",
+      "price": 49800,
       "inStock": 10,
       "discount": 26,
       "campaignType": "discount",
@@ -132,7 +132,7 @@
       "brand": "کاله",
       "quantity": "350 گرمی",
       "seller": "هایپراستار",
-      "price": "53.000",
+      "price": 53000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -151,7 +151,7 @@
       "brand": "206",
       "quantity": "500 گرمی",
       "seller": "هایپراستار",
-      "price": "121.090",
+      "price": 121900,
       "inStock": 10,
       "discount": 25,
       "campaignType": "discount",
@@ -167,7 +167,7 @@
       "brand": "هراز",
       "quantity": "750 گرمی",
       "seller": "هایپراستار",
-      "price": "99.800",
+      "price": 99800,
       "inStock": 10,
       "discount": 15,
       "campaignType": "none",
@@ -185,7 +185,7 @@
       "brand": "هراز",
       "quantity": "1.8 کیلوگرمی",
       "seller": "هایپراستار",
-      "price": "98.900",
+      "price": 98900,
       "inStock": 10,
       "discount": 35,
       "campaignType": "discount",
@@ -202,7 +202,7 @@
       "brand": "کاله",
       "quantity": "2.2 کیلوگرمی",
       "seller": "هایپراستار",
-      "price": "115.000",
+      "price": 115000,
       "inStock": 10,
       "discount": 25,
       "campaignType": "discount",
@@ -220,7 +220,7 @@
       "brand": "کاله",
       "quantity": "125 گرمی",
       "seller": "هایپراستار",
-      "price": "20.150",
+      "price": 20150,
       "inStock": 10,
       "discount": 10,
       "campaignType": "none",
@@ -238,7 +238,7 @@
       "brand": "کاله",
       "quantity": "250 گرمی",
       "seller": "هایپراستار",
-      "price": "24.500",
+      "price": 24500,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -255,7 +255,7 @@
       "brand": "پگاه",
       "quantity": "1.5 کیلوگرمی",
       "seller": "هایپراستار",
-      "price": "100.000",
+      "price": 100000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -272,7 +272,7 @@
       "brand": "هراز",
       "quantity": "1.5 لیتری",
       "seller": "هایپراستار",
-      "price": "33.900",
+      "price": 33900,
       "inStock": 10,
       "discount": 34,
       "campaignType": "discount",
@@ -290,7 +290,7 @@
       "brand": "کاله",
       "quantity": "1.5 لیتری",
       "seller": "هایپراستار",
-      "price": "36.000",
+      "price": 36000,
       "inStock": 10,
       "discount": 25,
       "campaignType": "discount",
@@ -307,7 +307,7 @@
       "brand": "هراز",
       "quantity": "1.5 لیتری",
       "seller": "هایپراستار",
-      "price": "33.900",
+      "price": 33900,
       "inStock": 10,
       "discount": 10,
       "campaignType": "none",
@@ -324,7 +324,7 @@
       "brand": "عالیس",
       "quantity": "330 میلی لیتری",
       "seller": "هایپراستار",
-      "price": "18.500",
+      "price": 18500,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -342,7 +342,7 @@
       "brand": "هراز",
       "quantity": "1.5 لیتری",
       "seller": "هایپراستار",
-      "price": "34.900",
+      "price": 34900,
       "inStock": 10,
       "discount": 35,
       "campaignType": "discount",
@@ -358,7 +358,7 @@
       "brand": "کالین",
       "quantity": "50 گرمی",
       "seller": "هایپراستار",
-      "price": "16.500",
+      "price": 16500,
       "inStock": 10,
       "discount": 19,
       "campaignType": "none",
@@ -376,7 +376,7 @@
       "brand": "کاله",
       "quantity": "100 گرمی",
       "seller": "هایپراستار",
-      "price": "32.500",
+      "price": 32500,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -394,7 +394,7 @@
       "brand": "غنچه",
       "quantity": "250 گرمی",
       "seller": "هایپراستار",
-      "price": "26.350",
+      "price": 26350,
       "inStock": 10,
       "discount": 28,
       "campaignType": "discount",
@@ -411,7 +411,7 @@
       "brand": "لادن",
       "quantity": "250 گرمی",
       "seller": "هایپراستار",
-      "price": "26.350",
+      "price": 26350,
       "inStock": 10,
       "discount": 23,
       "campaignType": "discount",
@@ -429,7 +429,7 @@
       "brand": "کالین",
       "quantity": "250 گرمی",
       "seller": "هایپراستار",
-      "price": "85.000",
+      "price": 85000,
       "inStock": 10,
       "discount": 19,
       "campaignType": "none",
@@ -446,7 +446,7 @@
       "brand": "کاله",
       "quantity": "1.5 لیتری",
       "seller": "هایپراستار",
-      "price": "29.500",
+      "price": 29500,
       "inStock": 10,
       "discount": 25,
       "campaignType": "discount",
@@ -462,7 +462,7 @@
       "brand": "کاله",
       "quantity": "1.5 لیتری",
       "seller": "هایپراستار",
-      "price": "29.500",
+      "price": 29500,
       "inStock": 10,
       "discount": 25,
       "campaignType": "discount",
@@ -479,7 +479,7 @@
       "brand": "پپسی",
       "quantity": "1.5 لیتری",
       "seller": "هایپراستار",
-      "price": "26.500",
+      "price": 26500,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -497,7 +497,7 @@
       "brand": "سون آپ",
       "quantity": "1.5 لیتری",
       "seller": "هایپراستار",
-      "price": "26.500",
+      "price": 26500,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -514,7 +514,7 @@
       "brand": "سپرایت",
       "quantity": "250 میلی لیتری",
       "seller": "هایپراستار",
-      "price": "15.900",
+      "price": 15900,
       "inStock": 10,
       "discount": 6,
       "campaignType": "none",
@@ -530,7 +530,7 @@
       "brand": "جوجو",
       "quantity": "330 میلی لیتری",
       "seller": "هایپراستار",
-      "price": "15.500",
+      "price": 15500,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -546,7 +546,7 @@
       "brand": "شمس",
       "quantity": "1 لیتری",
       "seller": "هایپراستار",
-      "price": "36.000",
+      "price": 36000,
       "inStock": 10,
       "discount": 39,
       "campaignType": "discount",
@@ -563,7 +563,7 @@
       "brand": "شمس",
       "quantity": "1 لیتری",
       "seller": "هایپراستار",
-      "price": "29.500",
+      "price": 29500,
       "inStock": 10,
       "discount": 25,
       "campaignType": "discount",
@@ -580,7 +580,7 @@
       "brand": "جوجو",
       "quantity": "1 لیتری",
       "seller": "هایپراستار",
-      "price": "28.500",
+      "price": 28500,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -598,7 +598,7 @@
       "brand": "جوجو",
       "quantity": "1 لیتری",
       "seller": "هایپراستار",
-      "price": "29.500",
+      "price": 29500,
       "inStock": 10,
       "discount": 10,
       "campaignType": "none",
@@ -616,7 +616,7 @@
       "brand": "سن ایچ",
       "quantity": "1 لیتری",
       "seller": "هایپراستار",
-      "price": "77.000",
+      "price": 77000,
       "inStock": 10,
       "discount": 9,
       "campaignType": "none",
@@ -633,7 +633,7 @@
       "brand": "سن ایچ",
       "quantity": "1 لیتری",
       "seller": "هایپراستار",
-      "price": "26.000",
+      "price": 26000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -650,7 +650,7 @@
       "brand": "سان استار",
       "quantity": "1 لیتری",
       "seller": "هایپراستار",
-      "price": "53.000",
+      "price": 53000,
       "inStock": 10,
       "discount": 19,
       "campaignType": "none",
@@ -667,7 +667,7 @@
       "brand": "سان استار",
       "quantity": "500 میلی لیتری",
       "seller": "هایپراستار",
-      "price": "50.000",
+      "price": 50000,
       "inStock": 10,
       "discount": 20,
       "campaignType": "none",
@@ -685,7 +685,7 @@
       "brand": "سان استار",
       "quantity": "200 میلی لیتری",
       "seller": "هایپراستار",
-      "price": "17.000",
+      "price": 17000,
       "inStock": 10,
       "discount": 24,
       "campaignType": "discount",
@@ -704,7 +704,7 @@
       "brand": "توینینگز",
       "quantity": "100 عددی",
       "seller": "هایپراستار",
-      "price": "131.900",
+      "price": 131900,
       "inStock": 10,
       "discount": 19,
       "campaignType": "none",
@@ -721,7 +721,7 @@
       "brand": "گلستان‌",
       "quantity": "20 عددی",
       "seller": "هایپراستار",
-      "price": "39.500",
+      "price": 39500,
       "inStock": 10,
       "discount": 14,
       "campaignType": "none",
@@ -739,7 +739,7 @@
       "brand": "شهرزاد",
       "quantity": "200 گرمی",
       "seller": "هایپراستار",
-      "price": "64.900",
+      "price": 64900,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -757,7 +757,7 @@
       "brand": "شاهسوند",
       "quantity": "25 عددی",
       "seller": "هایپراستار",
-      "price": "28.828",
+      "price": 28828,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -775,7 +775,7 @@
       "brand": "توینینگز",
       "quantity": "25 عددی",
       "seller": "هایپراستار",
-      "price": "41.900",
+      "price": 41900,
       "inStock": 10,
       "discount": 19,
       "campaignType": "none",
@@ -793,7 +793,7 @@
       "brand": "کریستال",
       "quantity": "1 لیتری",
       "seller": "هایپراستار",
-      "price": "16.000",
+      "price": 16000,
       "inStock": 10,
       "discount": 9,
       "campaignType": "none",
@@ -811,7 +811,7 @@
       "brand": "کاله",
       "quantity": "1.5 لیتری",
       "seller": "هایپراستار",
-      "price": "20.000",
+      "price": 20000,
       "inStock": 10,
       "discount": 25,
       "campaignType": "discount",
@@ -827,7 +827,7 @@
       "brand": "دماوند",
       "quantity": "1.5 لیتری",
       "seller": "هایپراستار",
-      "price": "8.000",
+      "price": 8000,
       "inStock": 10,
       "discount": 8,
       "campaignType": "none",
@@ -845,7 +845,7 @@
       "brand": "واتا",
       "quantity": "1.5 لیتری",
       "seller": "هایپراستار",
-      "price": "8.000",
+      "price": 8000,
       "inStock": 10,
       "discount": 9,
       "campaignType": "none",
@@ -862,7 +862,7 @@
       "brand": "دماوند",
       "quantity": "500 میلی لیتری",
       "seller": "هایپراستار",
-      "price": "5.000",
+      "price": 5000,
       "inStock": 10,
       "discount": 7,
       "campaignType": "none",
@@ -879,7 +879,7 @@
       "brand": "بدون برند",
       "quantity": "500 گرمی",
       "seller": "هایپراستار",
-      "price": "7.450",
+      "price": 7450,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -895,7 +895,7 @@
       "brand": "بدون برند",
       "quantity": "1 کیلوگرمی",
       "seller": "هایپراستار",
-      "price": "36.900",
+      "price": 36900,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -912,7 +912,7 @@
       "brand": "بدون برند",
       "quantity": "1 کیلوگرمی ± 200 گرم",
       "seller": "هایپراستار",
-      "price": "56.900",
+      "price": 56900,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -928,7 +928,7 @@
       "brand": "بدون برند",
       "quantity": "1 کیلوگرمی",
       "seller": "هایپراستار",
-      "price": "49.900",
+      "price": 49900,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -946,7 +946,7 @@
       "brand": "بدون برند",
       "quantity": "1 کیلوگرمی",
       "seller": "هایپراستار",
-      "price": "33.500",
+      "price": 33500,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -965,7 +965,7 @@
       "brand": "بدون برند",
       "quantity": "1 کیلوگرمی ± 40 گرم",
       "seller": "هایپراستار",
-      "price": "14.800",
+      "price": 14800,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -984,7 +984,7 @@
       "brand": "بدون برند",
       "quantity": "500 گرمی",
       "seller": "هایپراستار",
-      "price": "5.950",
+      "price": 5950,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1003,7 +1003,7 @@
       "brand": "بدون برند",
       "quantity": "1.5 کیلوگرمی ± 80 گرم",
       "seller": "هایپراستار",
-      "price": "15.750",
+      "price": 15750,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1023,7 +1023,7 @@
       "brand": "بدون برند",
       "quantity": "300 گرمی",
       "seller": "هایپراستار",
-      "price": "55.000",
+      "price": 55000,
       "inStock": 10,
       "discount": 15,
       "campaignType": "none",
@@ -1042,7 +1042,7 @@
       "brand": "بدون برند",
       "quantity": "1 کیلوگرمی",
       "seller": "هایپراستار",
-      "price": "27.900",
+      "price": 27900,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1058,7 +1058,7 @@
       "brand": "دنت",
       "quantity": "100 گرمی",
       "seller": "هایپراستار",
-      "price": "18.000",
+      "price": 18000,
       "inStock": 10,
       "discount": 30,
       "campaignType": "discount",
@@ -1074,7 +1074,7 @@
       "brand": "کوپا",
       "quantity": "125 گرمی",
       "seller": "هایپراستار",
-      "price": "20.000",
+      "price": 20000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1090,7 +1090,7 @@
       "brand": "دنت",
       "quantity": "100 گرمی",
       "seller": "هایپراستار",
-      "price": "108.000",
+      "price": 108000,
       "inStock": 10,
       "discount": 32,
       "campaignType": "discount",
@@ -1106,7 +1106,7 @@
       "brand": "نوشین",
       "quantity": "70 گرمی",
       "seller": "هایپراستار",
-      "price": "18.000",
+      "price": 18000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1121,7 +1121,7 @@
       "brand": "کوپا",
       "quantity": "125 گرمی",
       "seller": "هایپراستار",
-      "price": "20.000",
+      "price": 20000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1137,7 +1137,7 @@
       "brand": "خشکپاک",
       "quantity": "400 گرمی",
       "seller": "هایپراستار",
-      "price": "60.000",
+      "price": 60000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1152,7 +1152,7 @@
       "brand": "خشکپاک",
       "quantity": "40 گرمی",
       "seller": "هایپراستار",
-      "price": "45.000",
+      "price": 45000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1168,7 +1168,7 @@
       "brand": "خشکپاک",
       "quantity": "450 گرمی",
       "seller": "هایپراستار",
-      "price": "430.000",
+      "price": 430000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1183,7 +1183,7 @@
       "brand": "بدون برند",
       "quantity": "250 گرمی",
       "seller": "هایپراستار",
-      "price": "230.000",
+      "price": 230000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1198,7 +1198,7 @@
       "brand": "بدون برند",
       "quantity": "250 گرمی",
       "seller": "هایپراستار",
-      "price": "155.000",
+      "price": 155000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1213,7 +1213,7 @@
       "brand": "مزمز",
       "quantity": "250 گرمی",
       "seller": "هایپراستار",
-      "price": "40.000",
+      "price": 40000,
       "inStock": 10,
       "discount": 19,
       "campaignType": "none",
@@ -1228,7 +1228,7 @@
       "brand": "مروارید سیاه",
       "quantity": "1 کیلوگرمی",
       "seller": "هایپراستار",
-      "price": "105.000",
+      "price": 105000,
       "inStock": 10,
       "discount": 30,
       "campaignType": "discount",
@@ -1244,7 +1244,7 @@
       "brand": "مروارید سیاه",
       "quantity": "600 گرمی",
       "seller": "هایپراستار",
-      "price": "92.200",
+      "price": 92200,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1261,7 +1261,7 @@
       "brand": "مروارید سیاه",
       "quantity": "400 گرمی",
       "seller": "هایپراستار",
-      "price": "153.200",
+      "price": 153200,
       "inStock": 10,
       "discount": 15,
       "campaignType": "none",
@@ -1278,7 +1278,7 @@
       "brand": "دهکده پانی",
       "quantity": "600 گرمی",
       "seller": "هایپراستار",
-      "price": "92.250",
+      "price": 92250,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1294,7 +1294,7 @@
       "brand": "فرمند",
       "quantity": "100 گرمی",
       "seller": "هایپراستار",
-      "price": "20.000",
+      "price": 20000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1313,7 +1313,7 @@
       "brand": "شیبابا",
       "quantity": "100 گرمی",
       "seller": "هایپراستار",
-      "price": "20.000",
+      "price": 20000,
       "inStock": 10,
       "discount": 26,
       "campaignType": "discount",
@@ -1331,7 +1331,7 @@
       "brand": "شیبابا",
       "quantity": "100 گرمی",
       "seller": "هایپراستار",
-      "price": "20.000",
+      "price": 20000,
       "inStock": 10,
       "discount": 26,
       "campaignType": "discount",
@@ -1347,7 +1347,7 @@
       "brand": "می ماس",
       "quantity": "500 گرمی",
       "seller": "هایپراستار",
-      "price": "60.000",
+      "price": 60000,
       "inStock": 10,
       "discount": 35,
       "campaignType": "discount",
@@ -1364,7 +1364,7 @@
       "brand": "فرمند",
       "quantity": "100 گرمی",
       "seller": "هایپراستار",
-      "price": "20.000",
+      "price": 20000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1382,7 +1382,7 @@
       "brand": "خشکپاک",
       "quantity": "650 گرمی",
       "seller": "هایپراستار",
-      "price": "277.500",
+      "price": 277500,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1397,7 +1397,7 @@
       "brand": "خشکپاک",
       "quantity": "300 گرمی",
       "seller": "هایپراستار",
-      "price": "100.000",
+      "price": 100000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1414,7 +1414,7 @@
       "brand": "بدون برند",
       "quantity": "250 گرمی",
       "seller": "هایپراستار",
-      "price": "160.000",
+      "price": 160000,
       "inStock": 10,
       "discount": 22,
       "campaignType": "discount",
@@ -1429,7 +1429,7 @@
       "brand": "گلستان‌",
       "quantity": "230 گرمی",
       "seller": "هایپراستار",
-      "price": "81.900",
+      "price": 81900,
       "inStock": 10,
       "discount": 19,
       "campaignType": "none",
@@ -1445,7 +1445,7 @@
       "brand": "بدون برند",
       "quantity": "250 گرمی",
       "seller": "هایپراستار",
-      "price": "73.750",
+      "price": 73750,
       "inStock": 10,
       "discount": 2,
       "campaignType": "none",
@@ -1460,7 +1460,7 @@
       "brand": "تیراژه",
       "quantity": "",
       "seller": "هایپراستار",
-      "price": "262.350",
+      "price": 262350,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1476,7 +1476,7 @@
       "brand": "جی پلاس",
       "quantity": "",
       "seller": "هایپراستار",
-      "price": "7.870.500",
+      "price": 7870500,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1491,7 +1491,7 @@
       "brand": "نکسار",
       "quantity": "",
       "seller": "هایپراستار",
-      "price": "6.088.500",
+      "price": 6088500,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1506,7 +1506,7 @@
       "brand": "جی پلاس",
       "quantity": "",
       "seller": "هایپراستار",
-      "price": "12.300.000",
+      "price": 12300000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1521,7 +1521,7 @@
       "brand": "جی پلاس",
       "quantity": "",
       "seller": "هایپراستار",
-      "price": "11.900.000",
+      "price": 11900000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1541,7 +1541,7 @@
       "brand": "کملیون",
       "quantity": "4 عددی",
       "seller": "هایپراستار",
-      "price": "29.900",
+      "price": 29900,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1559,7 +1559,7 @@
       "brand": "کملیون",
       "quantity": "6 عددی",
       "seller": "هایپراستار",
-      "price": "44.000",
+      "price": 44000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1578,7 +1578,7 @@
       "brand": "کملیون",
       "quantity": "8 عددی",
       "seller": "هایپراستار",
-      "price": "54.900",
+      "price": 54900,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1597,7 +1597,7 @@
       "brand": "کملیون",
       "quantity": "4 عددی",
       "seller": "هایپراستار",
-      "price": "64.900",
+      "price": 64900,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1615,7 +1615,7 @@
       "brand": "کملیون",
       "quantity": "2 عددی",
       "seller": "هایپراستار",
-      "price": "15.700",
+      "price": 15700,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1631,7 +1631,7 @@
       "brand": "سیدکو",
       "quantity": "1 عددی",
       "seller": "هایپراستار",
-      "price": "104.900",
+      "price": 104900,
       "inStock": 10,
       "discount": 30,
       "campaignType": "discount",
@@ -1649,7 +1649,7 @@
       "brand": "کملیون",
       "quantity": "1 عددی",
       "seller": "هایپراستار",
-      "price": "79.900",
+      "price": 79900,
       "inStock": 10,
       "discount": 12,
       "campaignType": "none",
@@ -1666,7 +1666,7 @@
       "brand": "آوا",
       "quantity": "1 عددی",
       "seller": "هایپراستار",
-      "price": "35.000",
+      "price": 35000,
       "inStock": 10,
       "discount": 12,
       "campaignType": "none",
@@ -1683,7 +1683,7 @@
       "brand": "آوا",
       "quantity": "3 عددی",
       "seller": "هایپراستار",
-      "price": "105.000",
+      "price": 105000,
       "inStock": 10,
       "discount": 14,
       "campaignType": "none",
@@ -1700,7 +1700,7 @@
       "brand": "ال جی",
       "quantity": "",
       "seller": "هایپراستار",
-      "price": "14.000.000",
+      "price": 14000000,
       "inStock": 10,
       "discount": 2,
       "campaignType": "none",
@@ -1717,7 +1717,7 @@
       "brand": "ال جی",
       "quantity": "",
       "seller": "هایپراستار",
-      "price": "18.000.000",
+      "price": 18000000,
       "inStock": 10,
       "discount": 2,
       "campaignType": "none",
@@ -1735,7 +1735,7 @@
       "brand": "ال جی",
       "quantity": "",
       "seller": "هایپراستار",
-      "price": "14.000.000",
+      "price": 14000000,
       "inStock": 10,
       "discount": 2,
       "campaignType": "none",
@@ -1753,7 +1753,7 @@
       "brand": "ال جی",
       "quantity": "",
       "seller": "هایپراستار",
-      "price": "14.000.000",
+      "price": 14000000,
       "inStock": 10,
       "discount": 2,
       "campaignType": "none",
@@ -1771,7 +1771,7 @@
       "brand": "ال جی",
       "quantity": "",
       "seller": "هایپراستار",
-      "price": "18.000.000",
+      "price": 18000000,
       "inStock": 10,
       "discount": 2,
       "campaignType": "none",
@@ -1787,7 +1787,7 @@
       "brand": "غنچه",
       "quantity": "1.8 لیتری",
       "seller": "هایپراستار",
-      "price": "96.300",
+      "price": 96300,
       "inStock": 10,
       "discount": 19,
       "campaignType": "none",
@@ -1802,7 +1802,7 @@
       "brand": "بهار",
       "quantity": "1.5 لیتری",
       "seller": "هایپراستار",
-      "price": "104.500",
+      "price": 104500,
       "inStock": 10,
       "discount": 4,
       "campaignType": "none",
@@ -1819,7 +1819,7 @@
       "brand": "بهار",
       "quantity": "1.5 لیتری",
       "seller": "هایپراستار",
-      "price": "94.500",
+      "price": 94500,
       "inStock": 10,
       "discount": 4,
       "campaignType": "none",
@@ -1837,7 +1837,7 @@
       "brand": "لادن",
       "quantity": "900 میلی لیتری",
       "seller": "هایپراستار",
-      "price": "59.400",
+      "price": 59400,
       "inStock": 10,
       "discount": 9,
       "campaignType": "none",
@@ -1853,7 +1853,7 @@
       "brand": "غنچه",
       "quantity": "1.8 لیتری",
       "seller": "هایپراستار",
-      "price": "124.600",
+      "price": 124600,
       "inStock": 10,
       "discount": 19,
       "campaignType": "none",
@@ -1873,11 +1873,11 @@
       "brand": "زر ماکارون",
       "quantity": "1 کیلوگرم",
       "seller": "هایپراستار",
-      "price": "34.000",
+      "price": 34000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
-      "tags": ["ماکارونی","قطر1/5"],
+      "tags": ["ماکارونی", "قطر1/5"],
       "images": [
         "https://api.snapp.market/media/cache/product-variation_image2/uploads/images/vendors/users/app/20210815-219169.jpg"
       ]
@@ -1892,11 +1892,11 @@
       "brand": "زر ماکارون",
       "quantity": "700 گرم",
       "seller": "هایپراستار",
-      "price": "24.000",
+      "price": 24000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
-      "tags": ["ماکارونی","قطر1/2"],
+      "tags": ["ماکارونی", "قطر1/2"],
       "images": [
         "https://api.snapp.market/media/cache/product_variation_transparent_image/62df80258d4c2.png",
         "https://api.snapp.market/media/cache/product-variation_image_thumbnail/uploads/images/vendors/users/app/213535-20.jpg"
@@ -1912,7 +1912,7 @@
       "brand": "مانا",
       "quantity": "500 گرم",
       "seller": "هایپراستار",
-      "price": "48.500",
+      "price": 48500,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1933,11 +1933,11 @@
       "brand": "آرین",
       "quantity": "700 گرم",
       "seller": "هایپراستار",
-      "price": "24.000",
+      "price": 24000,
       "inStock": 10,
       "discount": 17,
       "campaignType": "none",
-      "tags": ["ماکارونی","قطر1/5"],
+      "tags": ["ماکارونی", "قطر1/5"],
       "images": [
         "https://api.snapp.market/media/cache/product_variation_transparent_image/20230425-420460-20000.png",
         "https://api.snapp.market/media/cache/product-variation_image_thumbnail/uploads/images/vendors/users/app/20230307-420460-2.jpg",
@@ -1954,7 +1954,7 @@
       "brand": "رشد",
       "quantity": "200 گرم",
       "seller": "هایپراستار",
-      "price": "23.000",
+      "price": 23000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -1971,7 +1971,7 @@
       "brand": "هایلی",
       "quantity": "2.5 کیلوگرمی",
       "seller": "هایپراستار",
-      "price": "193.500",
+      "price": 193500,
       "inStock": 10,
       "discount": 4,
       "campaignType": "none",
@@ -1986,7 +1986,7 @@
       "brand": "لوکس",
       "quantity": "10 کیلوگرمی",
       "seller": "هایپراستار",
-      "price": "556.000",
+      "price": 556000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -2003,7 +2003,7 @@
       "brand": "هایلی",
       "quantity": "10 کیلوگرمی",
       "seller": "هایپراستار",
-      "price": "541.000",
+      "price": 541000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -2018,7 +2018,7 @@
       "brand": "خوشبخت",
       "quantity": "10 کیلوگرمی",
       "seller": "هایپراستار",
-      "price": "575.000",
+      "price": 575000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -2036,7 +2036,7 @@
       "brand": "احمد",
       "quantity": "10 کیلوگرمی",
       "seller": "هایپراستار",
-      "price": "519.000",
+      "price": 519000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
@@ -2053,11 +2053,11 @@
       "brand": "مکنزی",
       "quantity": "800 گرمی",
       "seller": "هایپراستار",
-      "price": "45.000",
+      "price": 45000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
-      "tags":["گوجه فرنگی"],
+      "tags": ["گوجه فرنگی"],
       "images": [
         "https://api.snapp.market/media/cache/product_variation_transparent_image/20230426-348962-20000.png",
         "https://api.snapp.market/media/cache/product-variation_image_thumbnail/uploads/images/vendors/users/app/20230426-348962-2.jpg",
@@ -2071,11 +2071,11 @@
       "brand": "مجید",
       "quantity": "280 گرمی",
       "seller": "هایپراستار",
-      "price": "43.900",
+      "price": 43900,
       "inStock": 10,
       "discount": 10,
       "campaignType": "none",
-      "tags":["انار"],
+      "tags": ["انار"],
       "images": [
         "https://api.snapp.market/media/cache/product-variation_image2/uploads/images/vendors/users/app/60fd57674fe4e.jpg"
       ]
@@ -2087,11 +2087,11 @@
       "brand": "خوشبخت",
       "quantity": "800 گرمی",
       "seller": "هایپراستار",
-      "price": "45.000",
+      "price": 45000,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
-      "tags":["گوجه فرنگی"],
+      "tags": ["گوجه فرنگی"],
       "images": [
         "https://api.snapp.market/media/cache/product_variation_transparent_image/20230513-348961-20000.png",
         "https://api.snapp.market/media/cache/product-variation_image_thumbnail/uploads/images/vendors/users/app/20230513-348961-2.jpg",
@@ -2105,11 +2105,11 @@
       "brand": "پایا",
       "quantity": "800 گرمی",
       "seller": "هایپراستار",
-      "price": "45.000",
+      "price": 45000,
       "inStock": 10,
       "discount": 9,
       "campaignType": "none",
-      "tags":["گوجه فرنگی"],
+      "tags": ["گوجه فرنگی"],
       "images": [
         "https://api.snapp.market/media/cache/product-variation_image2/uploads/images/vendors/users/app/6173e34c6fe56.jpg"
       ]
@@ -2121,11 +2121,11 @@
       "brand": "اروم آدا",
       "quantity": "260 گرمی",
       "seller": "هایپراستار",
-      "price": "49.900",
+      "price": 49900,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
-      "tags":["انار"],
+      "tags": ["انار"],
       "images": [
         "https://api.snapp.market/media/cache/product_variation_transparent_image/20210729-243414-1.png",
         "https://api.snapp.market/media/cache/product-variation_image_thumbnail/uploads/images/vendors/users/app/20210729-243414-2.jpg",
@@ -2139,11 +2139,11 @@
       "brand": "گلستان‌",
       "quantity": "900 گرمی",
       "seller": "هایپراستار",
-      "price": "101.900",
+      "price": 101900,
       "inStock": 10,
       "discount": 14,
       "campaignType": "none",
-      "tags":["نخود"],
+      "tags": ["نخود"],
       "images": [
         "https://api.snapp.market/media/cache/product-variation_image2/uploads/images/vendors/users/app/20210801-33134-1.jpg"
       ]
@@ -2155,11 +2155,11 @@
       "brand": "گلستان‌",
       "quantity": "450 گرمی",
       "seller": "هایپراستار",
-      "price": "43.900",
+      "price": 43900,
       "inStock": 10,
       "discount": 19,
       "campaignType": "none",
-      "tags":["لپه"],
+      "tags": ["لپه"],
       "images": [
         "https://api.snapp.market/media/cache/product_variation_transparent_image/6321d86fa989f.png",
         "https://api.snapp.market/media/cache/product-variation_image_thumbnail/uploads/images/vendors/users/app/6321d8707e91f.jpg",
@@ -2173,11 +2173,11 @@
       "brand": "ساشا",
       "quantity": "900 گرمی",
       "seller": "هایپراستار",
-      "price": "74.500",
+      "price": 74500,
       "inStock": 10,
       "discount": 19,
       "campaignType": "none",
-      "tags":["ماش"],
+      "tags": ["ماش"],
       "images": [
         "https://api.snapp.market/media/cache/product_variation_transparent_image/20230521-20230520-280026-20000.png",
         "https://api.snapp.market/media/cache/product-variation_image_thumbnail/uploads/images/vendors/users/app/20230521-20230520-280026-2.jpg",
@@ -2191,11 +2191,11 @@
       "brand": "گلستان‌",
       "quantity": "900 گرمی",
       "seller": "هایپراستار",
-      "price": "113.900",
+      "price": 113900,
       "inStock": 10,
       "discount": 0,
       "campaignType": "none",
-      "tags":["لوبیا"],
+      "tags": ["لوبیا"],
       "images": [
         "https://api.snapp.market/media/cache/product_variation_transparent_image/20210802-33142-1.png",
         "https://api.snapp.market/media/cache/product-variation_image_thumbnail/uploads/images/vendors/users/app/20210802-33142-2.jpg",
@@ -2209,11 +2209,11 @@
       "brand": "خشکپاک",
       "quantity": "750 گرمی",
       "seller": "هایپراستار",
-      "price": "65.800",
+      "price": 65800,
       "inStock": 10,
       "discount": 19,
       "campaignType": "none",
-      "tags":["عدس"],
+      "tags": ["عدس"],
       "images": [
         "https://api.snapp.market/media/cache/product-variation_image2/uploads/images/vendors/users/app/20210801-242312-1.jpg"
       ]
@@ -2225,11 +2225,11 @@
       "brand": "کنارستان",
       "quantity": "900 گرمی",
       "seller": "هایپراستار",
-      "price": "98.500",
+      "price": 98500,
       "inStock": 10,
       "discount": 19,
       "campaignType": "none",
-      "tags":["نخود و لوبیا"],
+      "tags": ["نخود و لوبیا"],
       "images": [
         "https://api.snapp.market/media/cache/product_variation_transparent_image/401278-1.png",
         "https://api.snapp.market/media/cache/product-variation_image_thumbnail/uploads/images/vendors/users/app/401278-2.jpg",
@@ -2720,11 +2720,12 @@
       "parent": "nuts",
       "parentFA": "خشکبار، دسر و شیرینی"
     },
-    { "id": 330046,
-     "main": 33002027, 
-     "mainFA": "ماکارونی و لازانیا و رشته",
-     "parent": "grocery-bread",
-      "parentFA": "خواربار و نان" 
+    {
+      "id": 330046,
+      "main": 33002027,
+      "mainFA": "ماکارونی و لازانیا و رشته",
+      "parent": "grocery-bread",
+      "parentFA": "خواربار و نان"
     },
     {
       "id": 330045,
@@ -3312,214 +3313,532 @@
     }
   ],
   "captions": [
-    {"main": "dairy-product",
-    "text":[
-      {"title":"لبنیات و خرید لبنیات" ,"caption":"لبنیات یا فرآورده های لبنی به آن دسته از مواد غذایی گفته می شود که ماده اولیه تهیه آن شیر می‌باشد. مواد لبنی تازه نقش ویژه ای در سبد غذایی خانواده دارند که با مصرف و خرید لبنیات تازه از انواع محلی و پاستوریزه می‌ توانید مهمترین نیاز غذایی بدن خود را تکمیل نمایید."},
-      {"title":"انواع لبنیات","caption":"اصلی ترین محصول لبنیات، شیر و ماست و کره و پنیر و کشک می‌باشد. شیر تازه و مدت دار به خوبی بدن شما را از انواع مواد مورد نیاز تامین کرده است و اسنپ مارکت به عنوان یک فروشگاه آنلاین لبنیات، تنوعی بی نظیری از این محصول از جمله انواع شیرقهوه، شیر کم چرب، پرچرب، شیر پاستوریزه و هموژنیزه را در اختیار شما قرار می دهد.\nکره در طعم های مختلف میتواند هم به عنوان چاشنی غذا و هم به عنوان صبحانه مورد مصرف قرار گیرد. این محصول در انواع کره حیوانی و گیاهی در دسترس می باشد.\nخامه ترکیب بی نظیری از طعم‌های یادآور خاطرات، کیک تولد، شیرینی‌های خامه ای، بستنی سنتی و صبحانه‌ای دلچسب است. در اسنپ مارکت به آسانی می توان انواع خامه تازه و مدت دار، خامه قنادی و خامه صبحانه را در طعم‌ها و بسته بندی‌ های متفاوت در دسترس داشته باشید.\nماست، دوغ و کفیر از محبوب ترین چاشنی‌ها و نوشیدنی های سفره ایرانی می باشند. ماست های سنتی و پاستوریزه، چکیده و همزده، موسیر و طعم دار با انواع پرچرب و کم چرب، نیاز تمام سلیقه ها را برآورده نموده است.\nانواع مختلفی از پنیر در سراسر جهان وجود دارد که محبوب ترین آنها در فروشگاه آنلاین لبنیات اسنپ مارکت با همان کیفیت جهانی در دسترس مشتریان گرامی قرار گرفته است. داستان پنیر از پنیر لیقوان و فتا شروع شده و تا پنیرهایی همچون خامه قنادی و پنیر گودا ادامه دارد."},
-      {"title":"خواص لبنیات","caption":"از خواص لبنیات می شود به پروتئین و کلسیم اشاره کرد که نیاز بدن را تامین نموده و از بروز اختلالات و ضایعات استخوانی پیشگیری می‌کند، مصرف کافی لبنیات به رشد کودکان و نوجوانان کمک میکند. همچنین لبنیات بهترین منبع انواع ویتامین‌ها از جمله ویتامین (آ) و ویتامین‌های گروه (ب) به‌ ویژه (ب۲) هستند."},
-      {"title":"خرید اینترنتی لبنیات","caption":"لبنیات می‌ توانند برای افرادی که عدم تحمل لاکتوز ویا حساسیت به مصرف شیر دارند مشکلاتی ایجاد کند، از همین رو سوپرمارکت انلاین اسنپ مارکت طیف وسیعی از انواع لبنیات از جمله لبنیات فاقد لاکتوز و پالم را نیز در سبد محصولات خود گنجانده است و شما قادر خواهید بود دسته مناسب برای مصرفتان را انتخاب نمایید.\nعلاوه بر این تاریخ انقضا و تولید نیز از جمله مهم ترین فاکتورهای خرید اینترنتی لبنیات است، که در فروشگاه اسنپ مارکت انواع لبنیات با تاریخ مصرف به تازه و یا نسبتا تازه ارسال می گردند."}
-    ]
-  },{
-    "main":"drinks",
-    "text":[
-      {"title":"نوشیدنی و خرید نوشیدنی","caption":"نوشیدنی ها بخشی از نیاز روزانه بدن به آب را تأمین می‌کنند و کاهش آب موجب ایجاد انواع اختلالات جدی در بدن می‎ شود.\nحال تامین آب مهم ترین و اساسی ترین نیاز روزانه بدن می‌باشد اما امروزه انواع نوشیدنی ها از قبیل آبمیوه‌ها، دوغ، شربت، نوشابه، و نوشیدنی های انرژی زا هم تولید شده و در مصرف عموم قرار گرفته است."},
-      {"title":"انواع نوشیدنی ها","caption":"آب معدنی که خالص ترین نوع نوشیدنی محسوب می شود.\nآبمیوه یا آب سبزیجات و شربت‌ها که از محصولات به صورت تازه و یا شرکتی در فروشگاه اینترنتی اسنپ مارکت در دسترس می‌باشند.\nنوشیدنی‌های حاوی گازکربنیک مثل انواع نوشابه، نوشیدنی و نوشابه‌های انرژی زا که این روز‌ها به یک گزینه محبوب در میان جوان‌ها تبدیل شده‌اند.\nنوشابه انرژی زا تامین کننده انرژی مورد نیاز برای فعالیت روزانه و نوشیدنی خنک با طعم‌های دلچسب و دوست داشتنی از برند‌هایی معتبر همچون هایپ و ردبول و... در اسنپ مارکت\nنوشیدنی‌های داغ همچون انواع چای، قهوه و شکلات داغ و قهوه که دومین نوشیدنی پرطرفدار در جهان پس از آب شناخته شده است. خرید انواع قهوه فوری، قهوه ترک، قهوه دمی در اسنپ مارکت برای شما فراهم شده است.\nلازم به ذکر است که دسته بندی چای از نوشیدنی های محبوب ایرانیان است که در انواع مختلف در اسنپ مارکت در قابل خریداری است.\nامروزه خرید نوشیدنی به صورت آنلاین طرفداران زیادی پیدا کرده است و شما می توانید در سوپرمارکت اینترنتی اسنپ مارکت انواع نوشیدنی را خریداری کنید."}
-    ]
-  },{
-    "main":"fruit-and-vegetables",
-    "text":[]
-  },{
-    "main":"nuts",
-    "text":[]
-  },{
-    "main":"grocery-bread",
-    "text":[
-      {"title":"خرید اینترنتی خواربار","caption":"خواربار یکی از اساسی ترین و اصلی ترین دسته بندی های در برگیرنده نیازها انسان‌ها می باشد و پوشش دهنده عمده نیازهای بدن محسوب می‌شود. خرید خواربار باید از فروشگاههای مطمئن و دارای پروانه فروش انجام شود که اسنپ مارکت این اطمینان را به تمامی کاربران می دهد تا خریدی مطمئن را تجربه کنند.\nلیست خرید خواربار که شامل مواد اولیه پخت و پز، روغن، حبوبات، پاستا و نودل قند و شکر و... می‌باشد را می توانید با مناسب ترین قیمت و به صورت آنلاین از اسنپ مارکت تهیه کنید."},
-      {"title":"انواع خواربار و کالاهای اساسی","caption":""},
-      {"title":"برنج ","caption":"خواص این ماده غذایی شامل تامین انرژی سریع و فوری، فعالیت خوب دستگاه گوارش، تثبیت سطح قند خون و فراهم کردن منابع لازم ویتامین B1 برای بدن می‌باشد. برای خرید برنج از اسنپ مارکت کلیک کنید!"},
-      {"title":"غلات","caption":"به گروهی از گیاهان زراعی گفته می شود که دانه آن‌ها در درجه اول برای تهیه نان و تغذیه اکثر مردم و درجه دوم جهت تغذیه حیوانات و پرندگان به مصرف می رسد. غلات مناطق گرم از قبیل برنج، ذرت، ارزن، گندم وجو می باشد و از ارزش غذایی بالایی برخوردارند."},
-      {"title":"حبوبات","caption":"حبوبات هم جزو مهمترین های خواربار محسوب می شوند که باید در برنامه ی غذایی افراد قرار بگیرند تا نیازهای اساسی بدن را برطرف کنند."},
-      {"title":"ماکارونی و نودل","caption":"انواع فرآورده‌های ماکارونی شامل پاستا و اسپاگتی می‌باشند. در واقع ماکارونی به عنوان یک غذای پرطرف‌دار و خوشمزه شناخته می‌شود و ماده اصلی سازنده آن گندم است و از پر طرفدارترین های دسته بندی خواربار است. برای خرید ماکارونی با تخفیف از اسنپ مارکت کلیک کنید!"},
-      {"title":"قند و شکر","caption":"قند و شکر هم جزو پر مصرف ترین های این دسته بندی قرار دارند و بیشتر در مصارف شیرینی پزی قابل استفاده هستند و به صورت بسته بندی و بهداشتی در اختیار مصرف کنندگان فروشگاه اینترنتی اسنپ مارکت قرار می گیرند. امروزه انواع قند و شکر در بسته بندی‌های مختلف و متناسب با نیاز شما و در انواع شکر قهوه‌ای، قند و شکر رژیمی و... در فروشگاه اینترنتی اسنپ مارکت در دسترس است. برای خرید قند و شکر کلیک کنید."},
-      {"title":"خرید خواربار","caption":"با اسنپ مارکت به راحتی خواربار های مد نظرتان را تهیه کنید و مواد اساسی خانه‌تان را سریعا درب منزل تحویل بگیرید."}
-    ]
-  },{
-    "main":"digital-appliances",
-    "text":[]
-  },{
-    "main":"3300201",
-    "text":[
-      {"title":"خرید اینترنتی شیر","caption":"اگر شما قصد دارید خرید شیر را به صورت اینترنتی انجام دهید، باید بگوییم که بهترین تصمیم را گرفته اید. شما با انتخاب اپلیکیشن یا سایت اسنپ مارکت می‌توانید در هر زمانی که بخواهید، سفارش خود را ثبت کرده و در زمان مورد نظر آن را تحویل بگیرید. این در حالی است که شما می‌توانید طیف وسیعی از محصولات از برندهای مختلف را بررسی و اقلام مورد نظر را خریداری کنید. برای خرید لبنیات و خرید پنیر و خرید کره پاستوریزه با بیشترین تخفیف ها کلیک کنید."},
-      {"title":"قیمت شیر","caption":"شیر یکی از اقلام خوراکی مهمی است که قیمت مناسبی برای آن در نظر گرفته شده است. هرچند شما با توجه به نوع شیر، حجم آن و برندی که انتخاب کرده اید، باید قیمت مشخصی پرداخت کنید."},
-      {"title":"انواع برندهای شیر","caption":"اگر شما هم قصد دارید با توجه به سلیقه و رژیم غذایی خود شیر مورد نظرتان را خریداری کنید، بهتر است با برندهای معتبر این کالا آشنا شوید. در سال‌های اخیر شرکت‌هایی مانند کاله، پگاه، دامداران، پاکبان، پاژن، دومینو، عالیس، هراز و دنت توانسته‌اند انواع محصولات شیر مانند شیر کم چرب و پر چرب، شیر کاکائو و شیر با طعم انواع میوه را تولید و به مشتریان عرضه کنند."},
-      {"title":"شیر","caption":"شیر یکی از مفیدترین و محبوب ترین مواد غذایی است که از آن انواع لبنیات مانند ماست، پنیر، دوغ و کشک را تهیه می‌کنند. اهمیت شیر در سلامتی به گونه ای است که از همان اولین روز زندگی، در برنامه غذایی انسان قرار می‌گیرد. در حقیقت، نوشیدن شیر باعث تأمین کلسیم، پتاسیم و پروتئین می‌شود. بنابراین گاوداری‌های مختلفی در سراسر کشور برای تولید شیر وجود دارند که پس از جمع آوری این ماده با دستگاه‌های مختلف آن را پاستوریزه و به فروشگاه‌ها عرضه می‌کنند. در کنار شیر بهتر است دوغ را هم امتحان کنید."},
-      {"title":"خواص و فواید شیر","caption":"وجود پروتئین، کربوهیدرات، کلسیم، پتاسیم، ویتامین B12 و ویتامین D و سایر مواد معدنی و ویتامین‌ها در شیر، باعث شده است که به عنوان غذایی مفید محسوب شود. با خوردن شیر که منبعی سرشار از کلسیم و ویتامین دی است، استخوان‌ها و دندان‌ها مستحکم‌تر خواهند شد. از طرفی پتاسیم شیر باعث تنظیم فشار خون و بهبود سلامتی قلب و عروق می‌شود. این در حالی است که سیستم ایمنی بدن تقویت شده و بدن از گزند عوامل بیماری‌ زا در امان خواهد ماند. اگر نگاهی جامع بیندازیم، متوجه تأثیر همه جانبه مواد مغذی شیر بر سلامتی تمام بدن خواهیم شد."},
-      {"title":"انواع محصولات شیر","caption":"با توجه به اهمیت مصرف شیر، انواع محصولات آن مانند شیر کم چرب، شیر پرچرب، شیر کاکائو، و شیر با طعم میوه‌های مختلف مانند شیر موز، شیر هویج، شیر طالبی و شیر توت فرنگی تولید و در فروشگاه‌ها عرضه می‌شوند. این تنوع محصولات پاسخگوی نیاز طیف گسترده‌ای از سلایق و نیازهای مردم است."}
-    ]
-  },{
-    "main":"3300202",
-    "text":[
-      {"title":"قیمت پنیر","caption":"پنیر یکی از اجناسی است که قیمت مقرون به صرفه ای دارد. هرچند شما با توجه به نوع پنیر، حجم پنیر و برندی که انتخاب کرده اید، قیمت مشخصی پرداخت خواهید کرد."},
-      {"title":"خرید اینترنتی پنیر","caption":"خرید آنلاین پنیر یکی از هوشمندانه‌ترین تصمیمات شما به حساب می‌آید. این در حالی است که اگر اسنپ مارکت را برای خرید اینترنتی پنیر انتخاب کنید، امکان استفاده از خدماتی مانند خرید پنیرهای متنوع، استفاده از تخفیف‌های مختلف و تحویل گرفتن سفارش در زمان تعیین شده را دارید."},
-      {"title":"انواع محصولات پنیر","caption":"محبوبیت پنیر در سراسر جهان، باعث شده که این ماده خوراکی با تنوع بالایی در سوپرمارکت‌ها وجود داشته باشد. پنیر لیقوان یکی از محبوب‌ترین پنیرها در ایران است. پنیر موزارلا یکی از معروف ترین پنیرهای ایتالیایی است که دو نوع تازه و خشک شده دارد. پنیر دیگری که در ایتالیا و دنیا محبوبیت دارد، پنیر پارمسان است که بافت سفت و پوسته پوسته دارد. پنیر گودا هم یکی از محصولات لبنی هلندی به حساب می‌آید که طعم متنوعی دارد. پنیر چدار هم یکی از محصولات انگلستانی اما با محبوبیت جهانی است. این پنیر در تهیه انواع ساندویچ‌ها، پیتزا و پاستا کاربرد دارد."},
-      {"title":"انواع برندهای پنیر","caption":"اگر شما هم پنیر را در برنامه غذایی خود قرار داده و در تهیه فست فودها از آن استفاده می‌کنید با نام برندهایی مانند روزانه، کاله، پگاه، لبنه و هراز آشنایی دارید. این برندها در حوزه تولید محصولات لبنی مختلف از جمله پنیر فعالیت موفقی داشته اند و انواع پنیر مانند فتا، خامه‌ای، گودا، چدار و موزارلا را تولید می‌کنند."},
-      {"title":"پنیر","caption":"پنیر یکی از پرمصرف ترین محصولات لبنی به شمار می‌آید که از تنوع بالایی برخوردار است. هنوز کسی نمی‌داند که اولین پنیر را چه کسی و در چه قرنی تولید کرد. اما برای تهیه آن از شیر تازه گاو، گوسفند و بز دلمه شده استفاده می‌کنند. در همین راستا باکتری مخمر و مایه پنیر را به شیر می‌افزایند و از قالب‌های پنیر برای شکل‌دهی به آن استفاده می‌کنند. گفتنی است که مصرف پنیر بخشی از نیاز بدن به پروتئین، کربوهیدرات، کلسیم، ویتامین‌ها و مواد معدنی را تأمین می‌کند. به همین دلیل، خرید پنیر به عنوان یکی از اجزای برنامه غذایی روزانه یا هفتگی خانواده‌های ایرانی اهمیت ویژه‌ای دارد. توصیه میشود در کنار مصرف پنیر از مصرف کره و شیر هم غافل نشوید."},
-      {"title":"خواص و فواید پنیر","caption":"پنیر هم مانند سایر محصولات لبنی در بهبود سلامتی انسان نقش مهمی بازی می‌کند. کلسیم، ویتامین B و ویتامین K موجود در پنیر باعث استحکام استخوان‌ها و دندان‌ها می‌شوند. این در حالی است که اسید لینولئیک و سلنیوم آن سیستم ایمنی را برای مقابله در برابر سرطان و عوامل بیماری زای دیگر تقویت می‌کنند. هر کدام از ویتامین‌ها و مواد معدنی موجود در پنیر برای سلامتی مهم هستند. برای مثال، ویتامین B کافی و سدیم کمی که در پنیر وجود دارند برای تنظیم فشار خون مفید هستند. کربوهیدرات ناچیز پنیر به گونه ای است که افراد دیابتی بتوانند با خیال آسوده، آن را در وعده غذایی خود قرار دهند. سدیم، پتاسیم و پروتئین‌هایی مانند کازیین نیز در بهبود سلامتی قلب اهمیت دارند."}
-    ]
-  },{
-    "main":"3300203",
-    "text":[]
-  },{
-    "main":"3300204",
-    "text":[
-      {"title":"خرید اینترنتی دوغ","caption":"دوغ به عنوان یکی از محصولات پرمصرف در سبد خانوار ایرانی، گزینۀ اصلی بسیاری از ما در خریدهای روزانه است. به منظور خرید اینترنتی دوغ می‌توانید به بخش لبنیات در فروشگاه اسنپ مارکت مراجعه کنید. انواع دوغ گازدار و دوغ بدون گاز در سبد فروشگاهی آمادۀ خرید هستند. دوغ آبعلی و دوغ کفیر نیز از محصولات محبوبی هستند که می‌توانید به سادگی آن‌ها را خرید کنید. لذت نوشیدن دوغ با غذای ایرانی همواره با شما خواهد بود. شما میتوانید در کنار دوغ تازه از محصولات دیگر مانند پنیر تازه و شیر هم استفاده کنید."},
-      {"title":"قیمت دوغ","caption":"دوغ‌ها با وجود تنوع در حجم، گازدار یا معمولی بودن، برند و ترکیبات اضافی آن‌ها، قیمت‌های ثابت و معقولانه‌ای دارند. دوغ به عنوان یکی از نوشیدنی‌های رسمی کشورمان می‌تواند با بهترین قیمت بر سر سفره‌هایمان حاضر باشد."},
-      {"title":"دوغ","caption":"دوغ نوعی از نوشیدنی‌های لبنی است. این نوشیدنی که از ترکیب آب، ماست و نمک به دست می‌آید منبعی عالی از انواع مواد معدنی است. فرآیند تشکیل دوغ از ترکیب و به هم زدن متوالی آب و ماست آغاز می‌شود. به هم زدن ماست و آب می‌تواند در مشک به صورت دستی یا در دستگاه سانتریفیوژ انجام شود. درست کردن دوغ فرآیند جالبی دارد. این روند تا جایی ادامه پیدا می‌کند که کره روی سطح ترکیب ایجاد شود. با شناور شدن کره، آن را جدا کرده و مابقی ترکیب را که همان دوغ است در مکانی قرار می‌دهند تا در اصطلاح گرما ببیند. بعد از گذشت چند روز، یک نوشیدنی لذیذ که همراه همیشگی سفرۀ ایرانیان است حاصل خواهد شد. دوغ یکی از بهترین انواع لبنیات است که جایگاهی مهمی در هرم غذایی دارد لذا خرید دوغ به تمام افراد پیشنهاد می شود."},
-      {"title":"فواید و خواص دوغ","caption":"دوغ از نوشیدنی‌هایی است که از کودک تا بزرگسال به آن علاقه دارند. این نوشیدنی را می‌توان حتی در دوران بارداری و بیماری نیز به عنوان یکی از مواد مقوی مصرف کرد. در فرهنگ ما ایرانیان نیز بعد از آب و چای می‌توان دوغ را به عنوان محبوب‌ترین نوشیدنی‌ها دانست. یک لیتر دوغ حاوی مواد مغذی زیر است:\n • انرژی: 270 کیلوکالری\n • پروتئین: 2 درصد\n • کلسیم: 6 گرم\n • چربی: 5 درصد\nمصرف یک لیوان دوغ می‌تواند چیزی حدود 280 میلی‌گرم کلسیم به بدن برساند. این میزان چیزی حدود یک‌چهارم میزان کلسیم مورد نیاز روزانۀ بدن است. دوغ یکی از بهترین وشیدنی‌های آرام‌بخش و خواب‌آور است. مصرف دوغ به افرادی که دچار اختلالات بی‌خوابی هستند بسیار توصیه شده است. نوشیدن دوغ در زمانی که نیاز به هوشیاری (مثلاً در کار با وسایل صنعتی) دارید می‌تواند خطرساز باشد. فواید و خواص دوغ در روند عادی زندگی و ابتلا به بیماری‌ها بسیار ست. در ادامه برخی از خواص دوغ را مرور می‌کنیم:\n • به بهبود علائم گرمازدگی کمک می‌کند.\n • منجر به محو شدن لکه‌های پوستی می‌شود.\n • بافت استخوان را محکم می‌کند.\n • سیستم گوارشی بدن را تقویت می‌کند.\n • دفع کنندۀ سموم بدن است.\n • به رشد استخوان‌های کودک کمک ی‌کند.\n • مفید در دوران بارداری است.\n • منجر به هیدراته شدن بدن می‌شود.\n"},
-      {"title":"انواع دوغ","caption":"دوغ یکی از نوشیدنی‌های اصیل ایرانی است که جایگاه مهمی در کنار انواع خورشت‌ها و کباب‌های ایرانی دارد. دوغ فرآورده‌ای تخمیری است که اسناد به جای مانده از آن به 1300 سال پیش از میلاد مسیح برمی‌گردد. این نوشیدنی در روند رشد و توسعۀ خود به مناطق دیگر جهان، روندی طولانی را گذرانده است. همچنان نیز در مورد خاستگاه دوغ شبهات متعددی وجود دارد. چرا که در کشورهای مختلف، شیوۀ تهیۀ دوغ متفاوت است. پیش‌تر در ایران نیز از این نوشیدنی به عنوان یکی از فرآورده‌های جانبی کره یاد می‌شد. انواع دوغ‌ها را می‌توان بنا به دسته‌بندی‌های متفاوتی شناخت. با این حال مهم‌ترین انواع دوغ را می‌توان موارد زیر دانست:\n • دوغ معمولی\n • دوغ گازدار\n • دوغ گرمادیده\n • دوغ گرمادیدۀ گازدار\nهر یک از انواع دوغ‌ها نیز دارای تنوع خاص خود هستند. مثلاً دوغ معمولی از ترکیب ماست، آب و نمک به عمل می‌آید. با این وجود، دوغ معمولی نیز می‌تواند انواع ختلفی داشته باشد. طعم‌های مختلفی که دوغ‌های معمولی دارند یکی از دسته‌بندی‌های اصلی آن‌هاست. نوع میکروارگانیزم‌هایی که در تهیۀ دوغ صنعتی به کار گرفته می‌شوند نیز در نوع‌بندی آن‌ها موثر است.\nدوغ‌های گرمادیده به دلیل افزایش زمان نگهداری، طعم و خاصیت متفاوتی پیدا می‌کند. اضافه ردن برخی باکتری‌ها به دوغ نیز باعث گازدار شدن آن‌ها می‌شود. البته در برخی موارد ممکن است از گاز کربن دی‌اکسید به این منظور استفاده شود. این روزها تنوع زیادی از دوغ‌ها را در قفسۀ فروشگاه‌ها شاهد هستیم. به خصوص که وجود سبزی‌های خشک در ترکیبات دوغ‌ها نیز باعث گسترش تنوع ن‌ها شده است. نعنا، کاکوتی و پونه از جمله گیاهان رایج و محبوبی هستند که به دوغ اضافه می‌شوند.\n"},
-      {"title":"برندهای معتبر دوغ","caption":"ایران به عنوان یکی از کشورهای مبدا دوغ، تولیدات زیادی در این زمینه دارد و شما می توانید در اسنپ مارکت به خرید دوغ از انواع برند ها بپردازید. برخی از این برندها دارای سابقۀ طولانی در صنعت لبنیات کشور هستند. برخی دیگر نیز با وجود سابقۀ کمتر، کیفیت بالایی از محصولات را ارائه می‌دهند. کاله، عالیس، دامداران، هراز، مانیزان، پگاه، رامک، طراوت و پاکبان از برندهای معتبر دوغ در کشور هستند."}
-    ]
-  },{
-    "main":"3300205",
-    "text":[
-      {"title":"خرید کره پاستوریزه","caption":"کره پاستوریزه گونه‌ای از چربی‌هاست که از خامۀ شیر یا دوغ به عمل می‌آید. کره در واقع به گونه‌ای از چربی‌های گرم نشده گفته می‌شود. نوعی از کره پاستوریزه که از خامه گفته می‌شود، رنگی متمایل به زرد دارد. کره‌ای که از دوغ به عمل می‌آید بیشتر رنگ سفید دارد. در بیشتر نقاط جهان، خرید کره و شیر رایج‌تر است. هرچند که کره دوغی که از شیر گاو به عمل آمده باشد بیشترین خاصیت را دارد. کره‌ای که از شیر دیگر حیوانات تهیه شده است معمولاً چربی بیشتر داشته و رنگی متمایل به زرد روشن دارد. انواع کره‌ پاستوریزه که به صورت بسته‌بندی شده در فروشگاه‌ها یافت می‌شود، کرۀ خامۀ شیر است که از به هم زدن پیوستۀ خامه تولید می‌شود."},
-      {"title":"قیمت کره","caption":"قیمت کره با توجه به برند، حجم، گیاهی یا حیوانی بودن و نوع بسته‌بندی متغیر است. معمولاً انواع کره پاستوریزه گیاهی دارای قیمتی بالاتر در مقایسه با مارگارین است. برای اطلاع از قیمت انواع کره می‌توانید به دسته‌بندی مربوطه در بخش لبنیات مراجعه کنید. در کنار محصولات لبنی مانند کره. شیر شما میتوانید برای خرید پنیر، خرید دوغ و خرید ماست با تخفیف های شگفت انگیز اقدام کنید."},
-      {"title":"خرید اینترنتی کره","caption":"برای خرید اینترنتی کره می‌توانید به سادگی از طریق فروشگاه آنلاین اسنپ مارکت اقدام کنید. کره و دیگر محصولات لبنی مختلف را در برندها و بسته‌بندی‌های گوناگون می‌توانید در اینجا بیابید. سفارش خود را انجام داده و آن را درب منزل خود تحویل بگیرید."},
-      {"title":"فواید و خواص کره","caption":"کره به عنوان محصول لبنی پرمصرف، نوعی چربی است که علاوه بر خواص بسیار، کاربردهای متعددی نیز در آشپزی دارد. این مادۀ غذایی ارزشمند می‌تواند به سادگی منجر به خوش‌طعم و خوش‌عطر شدن خوراکی‌ها شود. امروزه کره‌ها در انواع مختلفی تهیه می‌شوند که هر یک خواص ویژه خود برای بدن را دارد. کره دارای خواص زیادی برای بدن است که چند مورد از آن‌ها را در فهرست زیر می‌خوانیم:\n  • حاوی انواع ویتامین‌های K ،A ،D و E است.\n  • منبع مهمی از عناصر روی، مس و منگنز است.\n  • حاوی انواع آنتی‌اکسیدان‌ها به منظور مقابله با رادیکال‌های آزاد است.\n  • چربی‌های اشباع موجود در کره، کلسترول بد خون را کاهش ی‌دهد.\n  • کره پاستوریزه سرشار از کلسترول خوب است.\n  • با تقویت متابولیسم منجر به کاهش وزن و چربی می‌شود.\n  • خواص آن برای تقویت سیستم ایمنی چشمگیر است.\n  • به بهبود بینایی، تقویت دندان‌ها و ساختار سلولی کمک می‌کند.\n  • به حفظ سلامت قلب و عروق و جلوگیری از سکته کمک می‌کند.\n  • سیدهای چرب امگا در تقویت مغز و عملکرد ذهن موثر است.\n  • کلسیم موجود در آن منجر به استحکام بافت استخوانی می‌شود.\n  • به تقویت سلامت چشم و جلوگیری از آب مروارید کمک می‌کند.\n  • در تغذیه، درخشندگی و زیبایی پوست موثر است.\nمصرف کره به عنوان یک محصول لبنی پرطرفدار باید در حد اعتدال صورت گیرد. هرچند که کره دارای خواص زیادی است اما نباید از مضرات احتمالی آن چشم پوشید. افرادی که دچار اضافه وزن زیاد هستند نباید اقدام به مصرف زیاد کره نمایند. همچنین کسانی که در معرض چربی خون بالا و انواع امراض قلبی و عروقی هستند نیز باید در مصرف آن محتاط باشند."},
-      {"title":"انواع کره","caption":"انواع کره با توجه به مواد تشکیل دهندۀ آن، طعم، میزان چربی و نوع بسته‌بندی مشخص می‌شوند. کره به عنوان یک فرآوردۀ لبنی محبوب و پرطرفدار، رنگ، طعم و عطر متفاوتی دارد. اینکه کره از شیر یا دوغ تهیه شده باشد، اصلی‌ترین وجه تمایز انواع کره‌هاست. کره حیوانی و کره گیاهی را می‌توان اصلی‌ترین دسته‌بندی برای کره‌ها دانست. با این حال کره‌ها را می‌توان براساس نوع طعمی که دارند نیز دسته‌بندی کرد. کره شیرین و کره ترش از انواع دیگر کره‌ها هستند.\nکره گیاهی یا مارگارین، نوعی از کره‌ است که از روغن‌های گیاهی به عمل می‌آید. کره گیاهی در ظاهر بسیار مشابه با کره حیوانی است اما در تولید آن بر پایۀ شیر نیست. این نوع از کره محتوی برخی از ویتامین‌ها و مواد معدنی که در شیر وجود ندارد نیست. روی، آهن و مس موجود در مارگارین اندک است. به همین دلیل نمی‌توان آن را جایگزین مناسبی برای کره حیوانی دانست. با این حال مارگارین نوعی از کره است که منبع غنی از ویتامین (A) به حساب می‌آید. انواع کره مارگارین نیز بر اساس انواع روغن‌های گیاهی که در آن استفاده شده‌اند متغیر هستند.\nکره حیوانی خصوصیات بسیار مشابه با روغن حیوانی دارد. این نوع از کره از فرآیند جوشاندن و انجام برخی ترکیبات روی شیر حیوانات به عمل می‌آید. شیر گوسفند، گاو و بز بیشترین کاربرد را در تولید کره پاستوریزه حیوانی دارند. این نوع از کره‌ها طعم و عطر خاصی به غذا می‌دهند. کره حیوانی یکی از منابع عالی ویتامین‌ها و انواع مواد آلی و معدنی است. از خواص مهم کره حیوانی، تحمل دمایی بالای آن است. این ویژگی منجر به کاربرد این نوع کره در آشپزی شده است."},
-      {"title":"برندهای معتبر کره","caption":"برندهای متعدد تولیدکنندۀ کره هستند که تولیدان آن‌ها را در قفسۀ فروشگاه‌ها می‌یابید. کاله، کالین، لادن، مهگل، ماردینی، پاکبان، پگاه، شکلی و تاپ از برندهای معتبر کره در ایران هستند. تولیدات این برندها شامل انواع مختلف کره‌های حیوانی و گیاهی است که همگی از کیفیت بالایی نیز برخوردارند."}
-    ]
-  },{
-    "main":"3300208",
-    "text":[
-      {"title":"خرید نوشابه گازدار","caption":"نوشابه به دسته‌ای از نوشیدنی‌ها گفته می‌شود که ترکیب خاص آن باعث محبوبیت زیادش شده است. هرچند که شیوۀ ساخت انواع نوشابه متفاوت از یکدیگرند، اما ترکیبات پایۀ بسیاری از آن‌ها مشخص است. آب گازدار، مواد شیرین‌کننده و طعم‌دهنده‌ها، ترکیبات کلیِ نوشابه زیرو، نوشابه کوکاکولا، نوشابه پپسی و دیگر انواع آن‌ها هستند. خرید نوشابه و مصرف روزانۀ آن، عادت بسیاری از مردمان امروز است. برای خرید نوشیدنی و خرید ماالشعیر و خرید آب معدنی و خرید چای در انواع مختلف از اسنپ مارکت کلیک کنید!\n نوشابه  را می‌توان محبوب‌ترین و قدیمی‌ترین نوشیدنی گازدار در جهان دانست. استفاده از نوشابه در بسیاری از مناسبت‌ها رایج است. نوشابه، یکی از بهترین نوشیدنی‌ها به منظور رفع عطش می‌باشد. هرچند که دربارۀ مضرات انواع نوشابه‌ها بسیار شنیده‌ایم اما این نوشیدنی خواص منحصربفرد خود را نیز دارد. البته که لازم است در مصرف نوشابه احتیاط کنید. "},
-      {"title":"قیمت نوشابه","caption":"قیمت انواع نوشابه با توجه به حجم، طعم و کیفیت آن مشخص می‌شود. قیمت نوشابه بسیار مقرون به صرفه است. نوشابه‌ها از جمله نوشیدنی‌های اقتصادی و ارزان هستند. حجم بالا و قیمت پایینی که نوشابه‌ها دارند باعث شده است که تهیۀ آن‌ها را بسیار ساده کرده است. بسته‌بندی‌های قوطی نوشابه‌ها نیز قیمت مناسبی دارند. اما مشخصاً خرید نوشابه خانواده و حجم‌های بزرگ‌تر، صرفۀ اقتصادی بیشتری خواهند داشت."},
-      {"title":"خرید اینترنتی نوشابه","caption":"در اسنپ مارکت می‌توانید به خرید نوشابه‌ با برندها و طعم‌های متفاوت را بپردازید. نوشابه ارزان قیمت و با کیفیت از محصولاتی است که می‌تواند تجربۀ لذت غذا یا رفع عطش در روزمره‌های زندگی را به شکلی موثر برطرف نماید."},
-      {"title":"برندهای معتبر نوشابه","caption":"انواع برندهای معتبر نوشابه در بازار هستند که اکثراً از کیفیت بالایی برخوردارند. معروف‌ترین برندهای نوشابه، کوکاکولا و پپسی هستند. برندهای داخلی و خارجی متعدد با انواع و اقسام طعم‌ها و خواص رژیمی وجود دارند که افراد با توجه به سلیقه و سبک زندگی خود از آن‌ها استفاده می‌کنند. پپسی مکس، سون آپ و میراندا زیر مجموعۀ خانوادۀ پپسی و کوکاکولا زیرو، فانتا و اسپرایت از خانوادۀ کوکاکولا هستند. در کنار آن می توان به برند هایی نظیر نوشابه لاکیدو کاله، عالیس، کانادا درای و زمزم نیز اشاره کرد."},
-      {"title":"فواید نوشابه","caption":"اثرات دارویی نوشیدنی‌های گازدار بیش از 2 هزار سال پیش کشف شدند. زمانی که یونانیان باستان متوجه تاثیرات چشمه‌های طبیعی مولد آب گازدار بر سلامت عمومی بدن شدند. انواع نوشیدنی‌های گازدار امروز، حاصل تلاش‌های اروپاییان قرن هفدهم برای تولید آب گازدار مشابه با چشمه‌های طبیعی بود. اولین نمونه‌های آب‌های گازدار و نوشابه‌های مصنوعی مربوط به اواخر دهۀ 1700 میلادی است.\nدر کنار زیاد بودن قند و اسیدی بودن نوشابه ها که در صورت زیاد مصرف شدن و خصوصا با شکم خالی می توانند مضر باشند، افزایش گردش خون، بهبود هضم غذا، افزایش متابولیسم بدن، کمک به کاهش وزن و تقویت سیستم ایمنی، از خواص نوشابه‌ اند. در مواردی که فرد دچار مسمومیت غذایی شده باشد، نوشابۀ گازدار مشکی به عنوان یک برطرف کنندۀ تهوع توصیه می‌شود. همچنین که نوشابه‌ها می‌توانند باعث پاکسازی گلو نیز شوند."},
-      {"title":"انواع نوشابه","caption":"نوشابه ها را می‌توان بر مبنای طعم و برند آن‌ها دسته‌بندی کرد. نوشابه‌های غیرالکلی، محبوب‌ترین نوشیدنی‌ها در سراسر جهان هستند. این نوشابه‌ها از ترکیب آب گازدار، ساکاروز، مواد اسیدی‌کننده، نگهدارنده‌ها، بافرها، امولوسیون‌ها، روغن‌ها و طعم‌دهنده‌های خوراکی تولید می‌شوند.\nاین ترکیبات به عنوان تشکیل‌دهنده‌های اصلی انواع نوشابه هستند. تفاوت نوشابه‌ها نیز براساس طعم، شیوۀ تولید و دستورالعمل خاص شرکت تولید کننده سنجیده می‌شوند. مثلاً برای بسیاری از ما تفاوت طعم نوشابه پپسی و نوشابه فانتا کاملاً واضح است.\nدر حال حاضر شاهد وجود انواع طعم‌های نوشابه‌ها هستیم. نوشابه پرتقالی، کولا، لیمویی، شاتوت و انواع نوشیدنی‌های میوه‌ای از جملۀ این طعم‌ها هستند. نوشابه‌ها را می‌توان براساس نوع بسته‌بندی نیز تقسیم کرد. نوشابه‌های قوطی، شیشه‌ای و بطری از انواع بسته‌بندی‌ها هستند. همچنین که نوشابه‌های خانواده و یک‌نفره نیز وجود دارند که نوع آن‌ها را متفاوت می‌کنند."}
-    ]
-  },{
-    "main":"3300209",
-    "text":[
-      {"title":"ماءالشعیر","caption":"ماءالشعیر یا آبجوی بدون الکل یکی از پرطرفدارترین و دلنشین ترین نوشیدنی‌ها در ایران است. این نوشیدنی جذاب حدود دو دهه است که در میان جوانان و نوجوانان ایرانی بسیار محبوب شده است. این محبوبیت تا جایی ادامه داشته که در حال حاضر خرید ماءالشعیر به یکی از نیازهای هفتگی یا حتی روزانه اغلب خانواده‌های ایرانی تبدیل شده است. آبجوی بدون الکل اگر بدون شکر باشد یک نوشیدنی بسیار پرخاصیت به حساب می‌آید. جالب است بدانید که این نوشیدنی محبوب و پرخاصیت از دانه‌های جو تهیه می‌شود. در کارخانه دانه‌های جو طی فرآیند و دمای خاصی به مالت تبدیل می‌شوند و در نهایت از عصاره مالت ترکیب شده با رازیانه و شکر آبجوی بدون الکل به دست می‌آید."},
-      {"title":"فواید و خواص ماءالشعیر","caption":"این نوشیدنی فواید بسیار زیادی برای بدن دارد. از جمله خواص ماءالشعیر می‌توان به دفع سنگ کلیه و رفع یبوست اشاره کرد. ماء الشعیر به دلیل برخورداری از مقادیر زیادی ویتامین B که برای پوست و مو بسیار مفید است. همچنین دارای ویتامین C، آمینو اسید ها و مالتوز و اسید نوکلئیک است.\nیکی از مهم ترین خواص ماءالشعیر، حفظ سلامت پوست و کمک به تقویت و رشد مو است. این نوشیدنی دلچسب اگر دارای مقادیر کمی شکر باشد، برای بدن بسیار مفید خواهد بود."},
-      {"title":"انواع ماءالشعیر","caption":"این نوشیدنی‌ها در طعم و مزه‌های گوناگون تولید شده و به بازار ارائه می‌شوند. آبجوی بدون الکل کلاسیک یک نمونه بدون شکر و افزودنی از این نوشیدنی است. به همین دلیل طعم کلاسیک آن به عنوان یک نوشیدنی سالم شناخته می‌شود. این نوشیدنی طعمی تلخ و قوی دارد و مزه‌اش برای همه افراد مناسب نیست. بدون شک می‌توان لقب پرطرفدارترین طعم‌های این نوشیدنی را متعلق به ماءالشعیر هلو، انگور، آناناس، لیمو و استوایی دانست."},
-      {"title":"برندهای معتبر ماءالشعیر","caption":"اگر علاقمند از طرفداران این نوشیدنی باشید احتمالاً نام برندهای معتبر و محبوبی مثل جوجو، هوفنبرگ، هی دی، شمس و بهنوش را بارها شنیده‌اید. این نام‌ها در حوزه تولید نوشیدنی به خصوص آبجوی بدون الکل، در ایران بسیار شناخته شده و معتبر هستند. همچنین برند دلستر آن چنان محبوب بود که بسیاری به 'ماء الشعیر'، 'دلستر' می گفتند."},
-      {"title":"قیمت ماءالشعیر","caption":"قیمت ماء الشعیر بسیار مقرون به صرفه است. به طور مثال با وجود حجم بالایی که معمولاً این نوشیدنی‌ها دارند قیمت آن‌ها بسیار مناسب است. حتی بسته‌بندی قوطی با شیشه‌ای این نوع نوشیدنی هم قیمت مناسبی دارد، اما خرید ماءالشعیر بزرگ قطعاً به صرفه‌تر از نوع کوچک آن خواهد بود."},
-      {"title":"خرید اینترنتی ماءالشعیر","caption":"خرید آنلاین ماء الشعیر یک انتخاب هوشمندانه است که از اتلاف وقت جلوگیری می‌کند. شما می‌توانید به راحتی نوشیدنی‌هایی مثل ماءالشعیر و انواع اقلام مصرفی روزانه خود را از طریق اسنپ مارکت سفارش دهید تا به سرعت برایتان ارسال شود."}
-    ]
-  },{
-    "main":"3300210",
-    "text":[
-      {"title":"","caption":""},
-      {"title":"","caption":""},
-      {"title":"","caption":""},
-      {"title":"","caption":""},
-      {"title":"","caption":""},
-      {"title":"","caption":""}
-    ]
-  },{
-    "main":"33002011",
-    "text":[
-      {"title":"چای و دمنوش","caption":"هیچ چیز مثل چای و دمنوش نمی‌تواند خستگی را از تن‌مان بیرون کند. انواع چای سبز و چای ترش، دمنوش بابونه، چای ماسالا و چای زعفرانی در دل فرهنگ و سبک زندگی ما ایرانیان ریشه کرده‌اند. دمنوش‌ها از نوشیدنی‌هایِ سنتی گیاهی محبوب و با خواص فراوان هستند. خرید چای همیشه یکی از خرید‌های پرچالش ما است، خرید دمنوش هم همینطور. زیرا تنوع محصولات و برندهای با کیفیت، انتخاب و خرید سریع را برایمان دشوار می‌کنند.\nبسیاری از افراد، جدا از طعم و مزۀ مطلوب این نوشیدنی‌ها، آن‌ها را برای خواص متعددی که دارند مورد استفاده قرار می‌دهند. جای دادن بخشی از سبک زندگی‌ و تغذیه‌ای به نوشیدن انواع دمنوش می‌تواند باعث ارتقای سطح سلامتی شود. دمنوش‌ها از انواع میوه‌های خشک، گل‌ها، گیاهان و ادویه‌جات تهیه می‌شوند. طعم و عطر متنوع و متفاوتی که دمنوش‌ها دارند ناشی از تنوع گیاهان است. دمنوش‌ها می‌توانند به صورت خالص و یا با عسل، شکر و نبات مصرف شوند.\nبسیار پیش می‌آید که چای و دمنوش را در کنار یکدگیر به کار می‌بریم. اما یکی دانستن این دو اشتباه است. چای به نوشیدنی دم کردۀ برگ گیاه کاملیا سیننسیس گفته می‌شود. چای سبز و چای سیاه در این دسته از دم‌کرده‌ها قرار می‌گیرند. در مقابل، دم‌نوش به دم‌کردۀ بخش‌های مختلف انواع گیاهان گفته می‌شود.\nهر آنچه به غیر از گیاه کاملیا سیننسیس باشد در ردۀ دم‌نوش‌ها قرار می‌گیرد. دمنوش‌ها می‌توانند به صورت تکی یا ترکیبی تهیه شوند. هر یک از دم‌نوش‌ها دارای خواص منحصربفرد خود است. با این حال، ترکیب کردن آن‌ها با یکدیگر می‌تواند خواص جدیدی را پدید آورد."},
-      {"title":"فواید و خواص چای و دمنوش","caption":"دمنوش‌ها خواص متعدد و متفاوتی برای بدن دارند. هزاران سال است که از انواع دم‌کرده‌های گیاهی برای درمان انواع بیماری‌ها استفاده شده است. مهم‌ترین مزیت دمنوش‌ها، سادگی تهیۀ آن‌هاست. این نوشیدنی‌های خوش‌عطر و مفید را می‌توان به سادگی و سریع در خانه آماده کرد. بسته به اینکه از چه گیاهانی برای دم کردن استفاده می‌کنید، از خواص مختلفی بهره‌مند خواهید شد. مصرف دمنوش‌ها یکی از بهترین راه‌ها برای کسب آرامش و شادابی است. برخی از آن‌ها نیز به عنوان مسکن‌های فوری برای رفع سردرد و دردهای عضلانی شناخته می‌شوند.\nچای سبز درمان کنندۀ بسیاری از دردهای عضلانی و آرتریت است. همچنین برای بهبود نفخ، کاهش درد معده، آلرژی و کاهش وزن نیز مورد استفاده قرار می‌گیرد. چای بابونه مفید برای خواب، مشکلات پوستی، مشکلات گوارشی، اضطراب و نفخ است. چای نعناع به درمان تهوع، سردرد و دردهای قاعدگی کمک زیادی می‌کند. چای ترش مفید برای فشار خون بالا و بیماری‌های تنفسی است. چای معمولی یا چای سیاه با انواع التهاب‌ها مبارزه می‌کند. مصرف به اندازۀ چای در درمان سرفه، تقویت سیستم ایمنی و بهبود سرماخوردگی کمک می‌کند. چای در ترکیب با انواع ادویه‌ها نیز خواص جدیدی به خود می‌گیرد. مثلاً چای زنجبیل برای انواع ناراحتی‌های معده و دردهای قاعدگی مفید است. همچنین چای دارچین به بهبود سردرد و رفع خواب آلودگی کمک می‌کند."},
-      {"title":"انواع چای و دمنوش","caption":"چای‌ و دمنوش دارای تنوع بسیار زیادی است. انواع چای که بسیاری از ما هر روز می‌نوشیم، متفاوت از یکدیگر هستند. بسته به محلی که چای کشت شده، نوع بسته‌بندی، نحوۀ خشک کردن، استفاده یا عدم استفاده از رنگ و عطر مصنوعی و چندین پارامتر دیگر، در تنوع چای‌ها موثر هستند. همچنین نوع بسته‌بندی انواع چای نیز در این مساله دخیل است. چای‌ها در ابعاد و اندازه‌های مختلفی بسته‌بندی می‌شوند. از طرفی انواع چای کیسه‌ای و دمی نیز منجر به دسته‌بندی جدیدی در این زمینه می‌شوند. دمنوش‌ها نیز انواع مختلفی دارند. هر یک از دمنوش‌ها بر پایۀ گیاه مورد نظر، نوع و جنس خاص خود را دارد. خرید دمنوش گل گاو زبان، دمنوش نعناع، دمنوش بابونه، دمنوش به لیمو، چای ترش، گل محمدی و انواع دیگر در اسنپ مارکت قابل انجام است. چای ماسالا هم نوعی نوشیدنی سنتی هندی است که از ترکیب چند ادویۀ مختلف با شیر تهیه می‌شود."},
-      {"title":"برندهای معتبر چای و دمنوش","caption":"چای ایرانی یکی از بهترین چای‌ها در دنیاست. در کشور خودمان هم بیشتر علاقۀ مردم به چای تولید داخل است. برندهای معتبر زیادی در این زمینه فعالیت دارند. غزال، دکتر آز، فامیلا، گلستان، فان تایم، گلیران، جهان، محمود، هایلی، احمد، بهرامن، فومنات، میعاد، نادری، رفاه لاهیجان، سلامت، شهرزاد و شاهسوند از برندهای معروف و معتبر در تولید انواع چای و دمنوش در ایران هستند."},
-      {"title":"قیمت چای و دمنوش","caption":"قیمت چای و دمنوش می‌تواند بسیار متنوع باشد. بسته به کیفیت چای، نوع دمنوش، بسته‌بندی، ابعاد و اندازه و چندین مورد دیگر، قیمت چای و انواع دمنوش تغییر می‌کند. با این حال انواع چای و دمنوش در قیمت‌های مختلف هستند که افراد می‌توانند تهیه کنند. برای خرید چای ایرانی و انواع دمنوش نگران قیمت نباشید. با هر بودجه‌ای می‌توانید نوع دلخواه خود را داشته باشید."},
-      {"title":"خرید اینترنتی چای و دمنوش","caption":"به منظور خرید اینترنتی چای ایرانی و انواع دمنوش‌های بسته‌بندی به اسنپ مارکت مراجعه کنید. خرید چای با بهترین کیفیت، خرید دمنوش در انواع طعم‌ها و تهیۀ بسیاری دیگر از اقلام مورد نیاز خانواده از طریق پلتفرم اسنپ مارکت امکان‌پذیر است. کافیست سفارش خود را ثبت کنید و محصول را درب منزل تحویل بگیرید."}
-    ]
-  },{
-    "main":"33002012",
-    "text":[
-      {"title":"قیمت و خرید آب معدنی بهداشتی","caption":"آب معدنی یکی از محصولات بی‌نظیر طبیعت است. آب، مادۀ اصلی حیات است و بیش از هفتاد درصد بدن ما و بسیاری دیگر از جانوران را تشکیل داده است. این واقعیت نشان از اهمیت آب و کیفیت آن در سبک زندگی و سلامتی دارد. آب معدنی به گونه‌ای از آب‌های طبیعی گفته می‌شود که حاوی میزان مشخصی از مادۀ جامد محلول در آب است. در زمان خرید آب معدنی باید به این توجه کنید که ترکیبات آلی موجود در آنها متفاوت از یکدیگر هستند. از این رو با انواع آب معدنی در طبیعت روبرو هستیم که هر یک، کاربردهای خاص خود را دارند."},
-      {"title":"فواید و خواص آب معدنی","caption":"منیزیم، سدیم، کلسیم و پتاسیم موجود در آب معدنی، تأثیراتی قابل توجه بر سلامتی و متابولیسم بدن دارد. در مقایسه با آب‌های تصفیه شدۀ شهری، مصرف آب معدنی می‌تواند املاح و ترکیبات ضروری بدن را به شکل موثرتری در اختیار آن قرار دهد. تأثیرات خرید آب معدنی و مصرف مداوم آن، اثرات خود را در مدت زمان مشخصی نشان خواهد داد. این تأثیرات از وضعیت ظاهری پوست تا سیستم گوارش و عملکرد مغز، متغیر هستند. مصرف آب معدنی منجر به افزایش سلامت استخوان‌ها، تنظیم میزان چربی و فشار خون، کاهش احتمال ابتلا به بیماری‌های قلبی و کاهش میزان اسیدیتۀ خون می‌شود. مصرف آب معدنی به سم‌زدایی و هیدراتاسیون بدن کمک زیادی می‌کند. نوشیدن آب معدنی در جایگزین کردن الکترولیت‌ها در بدن نیز موثر است."},
-      {"title":"انواع آب معدنی","caption":"آب معدنی به گونه‌ای از آب‌های طبیعی گفته می‌شود که محتوی دست کم 250 واحد در میلیون از مادۀ جامد محلول باشد. این معیار توسط تست‌های آزمایشگاهی مورد سنجش قرار میگیرد. کیفیت‌سنجی آزمایشگاه به این صورت است که تا میزان 249 میلی‌گرم در لیتر از آب‌های طبیعی را به عنوان آب چشمه طبقه‌بندی می‌کنند.\nدسته‌بندی 250 تا 500 آن، آب معدنی با مواد جامد کم یا نوع سبک محسوب می‌شود. بیشتر از 500 میلی‌گرم در لیتر آن نیز به عنوان آب با محتوای معدنی بالا تلقی می‌شود. هرچند که این نوع از کیفیت و استاندارد ممکن است در کشورهای دیگر به شکل متفاوتی باشد.\nآب‌هایی که از دل زمین خارج می‌شوند در مسیر خود از چندین لایه سنگ و شن عبور می‌کنند. این روند منجر به تصفیۀ آب و نیز غنی‌تر شدن آن با مواد معدنی می‌شود. موادی که در حین گذر آب از زمین حل می‌شوند ممکن است برای سلامتی مضر یا مفید باشند. بنابراین هنگام پر کردن بطری‌های آب معدنی، کیفیت‌سنجی متفاوتی از آن صورت می‌گیرد.\nسال‌های اخیر، دوران پیچیده شدن مفاهیم تولید بوده است. پیش از این تنها یک نوع آب معدنی در بازار وجود داشت که توسط برندهای محدودی تولید می‌شدند. اما در حال حاضر شاهد انواع و اقسام آب‌های معدنی در قفسه‌های فروشگاه‌ها هستیم. انواع آب معدنی را می‌توان مطابق با دسته‌بندی‌های مختلفی جدا کرد. آب معدنی گازدار یا بدون گاز نمونه‌ای از این دسته‌بندی‌هاست. همچنین انواع آب معدنی ساده و طعم‌دار نیز وجود دارد."},
-      {"title":"برندهای معتبر آب معدنی","caption":"انواع برندهای معتبر آب معدنی در بازار هستند که همگی از کیفیت قابل قبولی برخوردارند. شناخته شده‌ترین برندهای معتبر آب معدنی شامل کاله، آکوآفینا، دماوند، دسانی، لایت، نستله، پارسی و میوا هستند. یکی از قدیمی‌ترین برندها، آب معدنی دماوند است که همچنان در این عرصه فعالیت دارد."},
-      {"title":"قیمت آب معدنی","caption":"قیمت آب معدنی با توجه به بسته‌بندی، طعم و کیفیت آن مشخص می‌شود. در کنار انواع آب معدنی ساده، خرید عرقیات گیاهی و خرید آب گازدار نیز رواج دارد. برای خرید آنلاین آب معدنی از اسنپ مارکت می‌توانید به بخش مورد نظر مراجعه نمایید. قیمت آب‌های معدنی گوناگون با توجه به شرکت تولیدکننده، کیفیت و میزان املاحی که در آن‌ها وجود دارند متفاوت‌اند که می‌توانید در زمان خرید آب، به میزان آنها بر روی بطری آب دقت کنید."},
-      {"title":"خرید اینترنتی آب معدنی","caption":"انواع آب معدنی کوچک و بزرگ با برندهای متفاوت را می‌توانید به صورت آنلاین در اسنپ مارکت خرید کنید. آب معدنی دماوند، آب معدنی دسانی و آب معدنی نستله از برندهای شناخته شدۀ آن در کشور هستند. هر یک از آب‌های معدنی بسته‌بندی شده، خواص و طعم خاص خود را دارند. این برندها با هدف بهره‌مند شدن همۀ افراد از فواید آب سالم فعالیت می‌کنند."}
-    ]
-  },{
-    "main":"33002017",
-    "text":[
-      {"title":"خرید میوه آنلاین","caption":"مشغله‌های کاری و کمبود وقت این روزها بیداد می‌کند. از طرفی خرید راحت‌تر و بدون دغدغه برای اکثر افراد یک نیاز محسوب می‌شود تا در وقت و انرژی خود صرفه‌جویی کنند. خرید آنلاین میوه و سبزیجات، باعث می‌شود تا نگرانی از بابت تأمین این مواد نداشته باشید. در مهمانی‌های خود می‌توانید به راحتی از فروشگاه اینترنتی میوه، در اسرع وقت خرید خود را انجام دهید.\nاسنپ مارکت نه تنها امکان خرید غیر حضوری را برایتان فراهم کرده است، بلکه بهترین انواع میوه تازه و میوه فصل را در فروشگاه خود دارد. پس از هر نوع میوه و سبزیجات که لازم داشته باشید، در منزل خود خرید می‌کنید و در اسرع وقت برای شما ارسال می‌شود."},
-      {"title":"قیمت میوه تازه","caption":"قیمت روز در میوه فروشی اسنپ مارکت را می‌توانید ببینید و با خرید میوه ارزان و تازه، سلامت خود و عزیزانتان را تضمین کنید. قیمت میوه ها با توجه به نوع آنها بسیار متغیر است و از قیمت های ارزان شروع شده و برای میوه های کمیاب تر و وارداتی مانند آناناس گرانتر می شوند."},
-      {"title":"کیفیت میوه در خرید اینترنتی","caption":"یکی از دغدغه‌های افراد هنگام خرید آنلاین میوه، کیفیت آن‌هاست. در اسنپ مارکت با دستچین کردن میوه ها از فروشگاه ها، تلاش داریم تا بهترین میوه‌های باکیفیت را برای شما ارسال کنیم. همچنین میوه ها در بسته بندی های محافظت شده برای شما ارسال خواهند شد تا ضرب نبینند.\nبدین صورت می‌توانید با آرامش خاطر یک خرید ارزان، باکیفیت و آنلاین را از اسنپ مارکت داشته باشید و بهترین میوه فصل را تهیه کنید."},
-      {"title":"میوه","caption":"میوه، همیشه در سبد کالای خانواده‌ها جای داشته است و به علت فوایدی که برای سلامتی دارد، استفاده از آن‌ها از اهمیت زیادی برخوردار است. خرید میوه جزو مواردی است که همیشه به آن نیاز دارید. خرید میوه باکیفیت و ارزان را می‌توانید از اسنپ مارکت انجام دهید.\nهر چند خرید انواع میوه را می‌توان از فروشگاه‌های مختلفی انجام داد، اما ممکن است خرید میوه تازه و باکیفیت که با قیمت مناسبی عرضه شود، از هر جایی امکان‌پذیر نباشد. به همین علت خرید سبزیجات و میوه را باید از مراکز معتبر انجام داد. اسنپ مارکت یکی از بهترین فروشگاه‌هایی است که در زمینه خرید میوه به شما کمک شایانی می‌کند تا تجربه یک خرید لذت‌بخش را داشته باشید."},
-      {"title":"فواید و خواص میوه و سبزیجات","caption":"میوه‌ها سرشار از انواع ویتامین، املاح معدنی و آنتی اکسیدان هستند. به علاوه وجود فیبرهای گیاهی در ساختار میوه، به بهبود سلامت دستگاه گوارش کمک شایانی می‌کند. خواص میوه باعث شده است تا در اهمیت زیادی در هرم غذایی داشته باشد. بر اساس نظر کارشناسان سلامت، هر فرد باید روزی یک یا دو واحد میوه را در رژیم غذایی خود بگنجاند و از سبزیجات به‌وفور در وعده‌های غذایی استفاده کند./nسلامت قلب و عروق، پوست و مو، سیستم عصبی و دستگاه ایمنی بدن به مقدار زیادی وابسته به مصرف میوه است. میوه تازه، مواد مغذی زیادی را به بدن می‌رساند و سلامت آن را تضمین می‌کند. به گونه‌ای که برای تأمین ویتامین و املاح معدنی بدن، میوه‌های مختلف توسط کارشناسان تغذیه در رژیم غذایی چاقی، لاغری و درمانی گنجانده می‌شود. بدن انسان ها در کنار میوه و سبزیجات تازه به گوشت قرمز و لبنیات و مواد پروتیینی هم نیاز دارد.\nبا توجه به توضیحاتی که داده شد، هر خانواده نیاز دارد تا میوه و سبزیجات را جزو لیست خرید خانه داشته باشد."},
-      {"title":"انواع میوه ","caption":"انواع میوه در بازار وجود دارد که افراد بر اساس ذائقه، دسترسی و حتی هزینه‌های خرید خود از آن‌ها بهره می‌برند. شاید بتوان مصرف میوه را محدود کرد؛ اما حذف آن‌ها امکان پذیر نیست. برخی افراد به میوه‌های معمول علاقه‌مند هستند که شامل موارد زیر هستند:\n  • انواع سیب\n  • انواع مرکبات\n  • هلو\n  • موز\n  • هندوانه\n  • گیلاس و ...\nافرادی هم هستند که میوه‌های وارداتی، استوایی و کمیاب را در سبد میوه خود قرار می‌دهند که شامل موارد زیر هستند:\n  • میوه آووکادو\n  • آناناس\n  • انبه و ...\nیک میوه فروشی باید بتواند تمام این موارد را در خود داشته باشد تا هر فرد با هر ذائقه و نیازی بتواند خرید خود را به صورت کامل در آن انجام دهد. در فروشگاه اسنپ مارکت تنوع بسیار بالایی را از انواع میوه‌های مختلف و روز می‌بینید که کاملاً تازه هستند."}
-    ]
-  },{
-    "main":"33002018",
-    "text":[
-      {"title":"خرید صیفی جات و خرید سبزی بسته بندی","caption":""},
-      {"title":"سبزیجات و صیفی‌‌جات ارگانیک","caption":"امروزه متخصصان تغذیه تاکید بسیاری به خرید سبزیجات و خرید صیفی جات ارگانیک و تازه دارند. همان‌طور که می‌دانید، میوه‌ها و سبزیجات بخشی از یک رژیم غذایی سالم و متعادل هستند و می‌توانند به شما در سالم ماندن و حفظ سیستم ایمنی بدن‌تان کمک کنند. با توجه به نقش مهمی که سیستم ایمنی در حفظ سلامت بدن و جلوگیری از بروز بسیاری از بیماری‌ها دارد، مصرف به‌اندازه‌ی انواع میوه‌ و سبزیجات در برنامه‌ی غذایی بسیار لازم و ضروری به نظر می‌رسد.شما همچنین میتوانید برای خرید میوه آنلاین از اسنپ مارکت اقدام کنید."},
-      {"title":"فواید و خواص سبزیجات و صیفی‌جات","caption":"میوه‌ها و سبزیجات سرشار از ویتامین‌ها و مواد معدنی از جمله ویتامین C و پتاسیم هستند. آن‌ها منبع عالی فیبر غذایی هستند که می‌تواند به حفظ سلامت روده و جلوگیری از یبوست و سایر مشکلات گوارشی کمک کند. همچنین رژیم غذایی سرشار از فیبر خطر ابتلا به سرطان روده را کاهش می‌دهد. علاوه بر این، مصرف آن‌ها به کاهش خطر بیماری‌های قلبی، سکته‌ی مغزی و برخی از انواع سرطان کمک می‌کند. تحقیقات نشان داده‌اند که میوه‌ها، سبزیجات و صیفی‌جات در یک رژیم غذایی سالم و متعادل بسیار موثر هستند. در کنار فواید و خواص بی‌شمار، طعم آن‌ها بسیار خوشمزه است و تنوع زیادی برای انتخاب وجود دارد. به همین دلیل خرید سبزیجات و مصرف روزانه‌ی آن‌ها به شدت توصیه می‌شود."},
-      {"title":"انواع سبزیجات و صیفی‌جات","caption":"سبزی خوردن شامل انواع مختلف سبزی است که هر یک طعم بی‌نظیری داشته و خواص بسیاری به همراه دارد. علاوه بر سبزی‌ خوردن، انواع دیگر سبزی از جمله سبزی قرمه، سبزی آش، سبزی کوکو یا سبزی سوپ که ترکیبی از چند سبزی مختلف است، نیز به صورت تازه مصرف می‌شوند. در میان انواع صیفی‌جات، انواع کلم، کرفس، فلفل دلمه، هویج، بلال، بامیه و‌ بادمجان طرفداران زیادی دارند. نکته‌ی مهم در تهیه‌ی سبزیجات و صیفی‌جات، تازگی و ارگانیک بودن آن‌هاست. خوشبختانه امروزه خرید آنلاین سبزیجات، کار را برای متقاضیان آسان کرده است. آن‌ها می‌توانند به راحتی در کمترین زمان محصول مورد نظر خود را به صورت آنلاین مشاهده و آن را به مقدار مورد نیاز به صورت ارگانیک تهیه نمایند."},
-      {"title":"برندهای معتبر صیفی‌جات و سبزیجات بسته ‌بندی","caption":"شاید این سوال برای شما هم مطرح شود که بسته‌ بندی سبزی‌جات و صیفی‌جات چه مزایایی به دنبال دارد؟ برخلاف اکثر مواد غذایی، سبزیجات و صیفی‌جات تازه پس از چیده شدن نیز آب، بخار و هوا را تنفس و جذب می‌کنند، در این فرآیند آن‌ها اکسیژن را جذب کرده و دی اکسید کربن و بخار آب آزاد می‌کنند. نکته‌ی کلیدی برای تازه ماندن محصولات بسته‌بندی شده این است که میزان تنفس آن‌ها کاهش می‌یابد و در عین حال کیفیت‌شان (طعم، بافت، ویژگی‌های ظاهری و خواص) حفظ می‌شود. مواد بسته ‌بندی مورد استفاده برای صیفی‌جات و سبزیجات از اهمیت ویژه‌ای برخوردار هستند. همچنین به میزان نفوذپذیری و تنفس آن‌‌ها نیز باید توجه شود. اگر محصولات به صورت هرمتیک بسته شوند، اکسیژن کافی وجود نخواهد داشت و شرایط بی‌هوازی نامطلوب ایجاد می‌شود. از طرف دیگر، اگر مواد باز باشند، فضای محافظ خارج می‌شود و به نفع محصولات نخواهد بود.\nبا توجه به فوایدی که مصرف سبزیجات و صیفی‌جات تازه به همراه دارد، امروزه بسیاری از شرکت‌ها این محصولات را با بالاترین کیفیت بسته‌بندی و به مشتریان عرضه می‌کنند. آن‌ها با دستگاه‌‌های مخصوص تمام شرایط لازم برای تازه ماندن و حفظ کیفیت مواد داخل بسته‌بندی را فراهم کرده و این محصولات را به صورت کاملا ارگانیک به دست مصرف‌کننده می‌رسانند. علاوه بر این، خرید سبزیجات بسته‌ بندی این امکان را فراهم می‌کند تا افرادی که فرصت کافی برای خرید کردن ندارند، بتوانند محصول مورد نظر خود را به سادگی تهیه کنند. اما در نظر داشته باشید که هنگام خرید سبزی توجه به برخی نکات مانند قیمت آن لازم و ضروری است. پیشنهاد میکنیم حتما مقاله طرز تهیه دلمه برگ مو مطالعه کنید."},
-      {"title":"قیمت صیفی‌جات و سبزیجات بسته ‌بندی","caption":"قیمت سبزیجات و صیفی‌جات به عوامل مختلفی از جمله نوع و کیفیت آن‌ها بستگی دارد. اما به طور کلی خرید سبزی بسته ‌بندی به دلیل نداشتن ضایعات و مواد دور ریختنی، بسیار مقرون به صرفه بوده و همچنین مصرف آن‌ها بسیار آسان‌تر است. یکی دیگر از عواملی که در قیمت سبزیجات و صیفی‌جات تاثیرگذار است، وزن آن‌هاست. مانند اغلب محصولات غذایی، عموما هرچه وزن محصول بیشتر باشد، خرید آن برای مصرف‌کننده از نظر اقتصادی مقرون به‌ صرفه‌تر خواهد بود."},
-      {"title":"خرید صیفی‌‌جات ارگانیک و سبزیجات بسته بندی","caption":"اسنپ مارکت این امکان را برای شما فراهم کرده است تا بتوانید خرید آنلاین صیفی‌جات‌ و سبزیجات را با بالاترین کیفیت تجربه کنید. با اسنپ مارکت می‌توانید این محصولات را به صورت کاملا ارگانیک و تازه با مناسب‌ترین قیمت تهیه کرده و از طعم و خواص بی‌نظیر آن‌ها بهره‌مند شوید. علاوه بر این، با خرید اینترنتی میوه و سبزیجات می‌توانید در زمان و هزینه‌ها صرفه‌جویی کرده و در عین حال از خرید با کیفیت خود لذت ببرید."}
-    ]
-  },{
-    "main":"33002019",
-    "text":[]
-  },{
-    "main":"33002020",
-    "text":[]
-  },{
-    "main":"33002021",
-    "text":[]
-  },{
-    "main":"33002022",
-    "text":[]
-  },{
-    "main":"33002023",
-    "text":[]
-  },{
-    "main":"33002026",
-    "text":[
-      {"title":"قیمت روغن","caption":"روغن‌ها به عنوان یک مادۀ مصرفی قیمت‌های متنوعی دارند. اما به طور کلی می‌توان گفت که قیمت آن‌ها به نسبت کم است. همچنین لازم به ذکر است که روغن مایع در اندازه‌های مختلفی تولید شده و در بازار وجود دارد. بنابراین افراد می‌توانند مقدار روغن را با توجه به نیازشان تهیه کنند. روغن‌های پخت و پز که در اندازه‌های بزرگ تولید می‌شوند نسبت به حجم کمتر قیمت‌های مناسب و به صرفه‌تری دارند. بنابراین در صورتی که استفاده از روغن زیاد باشد بهتر است که حجم بزرگ آن تهیه شود. شما میتوانید برای خرید خواربار و همچنین خرید برنج ایرانی و خرید رب مورد نیاز خود از اپلیکیشن یا سایت اسنپ مارکت استفاده کنید."},
-      {"title":"خرید روغن","caption":"روغن مایع یا روغن غذا یکی از انواع روغن است که در پخت و پز بسیار استفاده می‌شود. خرید روغن البته تنها به روغن‌های پخت و پز محدود نمی‌شود. روغن‌های خوراکی تنوع بسیار بالایی داشته و هر کدام برای کارهای مشخصی استفاده می‌شوند. همچنین این روغن‌ها ویژگی‌های مخصوص به خود را دارند. روغن مایع در تهیه بیشتر غذاها استفاده می‌شود. بنابراین جز جدایی‌ناپذیر خریدهای خانه محسوب می‌شود. اما با توجه به تنوع آن‌ها بهتر است که با انواع و ویژگی‌های آن آشنا شوید تا تصمیم‌گیری و انتخاب آن‌ها آسان گردد. در ادامه به معرفی انواع روغن و همچنین خواص و اهمیت استفاده از آن‌ها می‌پردازیم.\nهمانطور که اشاره شد اکثر غذاها با استفاده از روغن تهیه می‌شود. روغن در صورت استفادۀ خیلی زیاد می‌تواند ضررهایی داشته باشد اما با مصرف متعادل آن می‌توان از خواص آن‌ها بهره‌مند شد. روغن‌ها تنوع بسیاری دارند. برخی روغن‌های گیاهی مانند روغن کانولا حاوی ویتامین است و همچنین چربی ضروری بدن را تامین می‌کند. روغن‌های دیگری مانند روغن زیتون نیز خواص بسیاری دارد که با استفاده از آن به جای روغن‌های مضر می‌توان از فواید آن بهره برد. بنابراین حال که استفاده از روغن برای آشپزی ضروری است بهتر است که روغن‌های با کیفیت را بشناسید و آن‌ها را با نمونه‌های مضر و یا بی‌کیفیت جایگزین کنید."},
-      {"title":"انواع روغن","caption":"روغن‌ها به طور کلی به دو دسته روغن‌های گیاهی و روغن حیوانی تقسیم می‌شوند. اما غالباً آن چه برای آشپزی استفاده می‌شود، روغن‌های مایع گیاهی است. از مهم‌ترین روغن‌هایی که برای آشپزی استفاده می‌شوند می‌توان از روغن آفتاب گردان، روغن سرخ کردنی، روغن زیتون، روغن کنجد، روغن کانولا و روغن ذرت اشاره کرد. همانطور که مشخص است تمام این روغن‌ها گیاهی هستند و هرکدام ویژگی‌های خاص خود را دارند. به طور مثال روغن کانولا که بسیار هم در آشپزی محبوب است و از آن زیاد استفاده می‌شود دارای چربی‌های مفید و ضروری است. همچنین دارای ویتامین E و آنتی‌اکسیدان است. این روغن نسبت به روغن‌های دیگر اسیدهای چرب کمتری نیز دارد. روغن آفتابگردان نیز حاوی امگا 3 است که برای بدن فواید بسیاری دارد.\nبه طور کلی لازم به ذکر است که یک روغن مرغوب 2 ویژگی خیلی مهم دارد. طعم خوب و ارزش غذایی بالا این دو ویژگی هستند. در صورتی که روغن، ارزش غذایی کافی نداشته باشد، تنها باعث چرب شدن غذا شده و هیچ مزیت دیگری نخواهد داشت."},
-      {"title":"برندهای روغن","caption":"روغن پخت و پز و روغن‌هایی که استفادۀ زیاد دارند توسط شرکت‌های مختلفی تولید و وارد بازار می‌شوند. همانطور که مشخص است با توجه به ترکیبات و مواد اولیه استفاده شده، هر یک از آن‌ها می‌تواند کیفیت و ویژگی‌های متفاوتی داشته باشد. محصولات برخی از این شرکت‌ها نسبت به سایرین محبوبیت بیشتری دارند. از جمله مهم‌ترین برندهای تولید روغن می‌توان به فامیلا، اویلا، بهار، لادن، غنچه، یک و یک، طبیعت، زر اویل و موارد دیگر اشاره کرد."},
-      {"title":"خرید اینترنتی روغن","caption":"از زمانی که اینترنت به جز جدایی‌ناپذیر زندگی افراد تبدیل شد، اقداماتی با استفاده از آن برای پیشبرد آسان کارهای روزمره نیز انجام گرفت. به طور مثال خریدهای روزانه از جمله خریدهای سوپرمارکتی امروزه به راحتی به صورت آنلاین انجام می‌گیرد. شما با استفاده از وب سایت و یا اپلیکیشن اسنپ مارکت به راحتی می‌توانید از سوپرمارکت، هایپر مارکت و یا هایپراستارهای اطراف موارد مورد نیاز خود را انتخاب و سپس خرید خود را نهایی کنید. از مزیت‌های استفاده از این سامانه آن است که سفارش خود را در زمان کم و درب منزل تحویل خواهید گرفت."}
-    ]
-  },{
-    "main":"33002027",
-    "text":[
-      {"title":"خرید ماکارونی","caption":"ماکارونی و رشته مانند برنج جز مواد غذایی خام محسوب می‌شوند. ماکارونی از آردی با نام سمولینا تهیه می‌شود. وابسته به کیفیت این آرد، کیفیت ماکارونی و رشته نیز مشخص خواهد شد. ماکارونی یک غذای بسیار پرطرفدار نه تنها در ایران، بلکه در سراسر جهان محسوب می‌شود. این غذا از قدیم نیز عضو دائمی سبد خرید ایرانی‌ها بوده است. اصالت ماکارونی به کشور ایتالیا بر می‌گردد. بیشتر دستور پخت‌های آن نیز مربوط به این کشور است. َشما میتوانید انواع خواربار و ماکارونی و سویا را از فروشگاه اسنپ مارکت تهیه کنید.\nیکی از مهم‌ترین دلایل محبوبیت ماکارونی علاوه بر طعم آن، مدت زمان کم برای آماده سازی این غذاست. در ادامۀ این مطب قصد داریم به معرفی و انواع ماکارونی بپردازیم."},
-      {"title":"خواص ماکارونی","caption":"ماکارونی از نظر ارزش غذایی قابل قبول است. البته ارزش غذایی آن بسیار وابسته به نوع آردی است که برای تولید آن استفاده شده است. این آرد شباهت زیادی به نشاسته دارد. با این تفاوت که مقدار پروتئین آن کمی از نشاسته کمتر است.\nماکارونی سرشار از ویتامین A است. در نتیجه در سلامت مو موثر خواهد بود. ماکارونی همچنین حاوی مقدار قابل توجهی پتاسیم بوده و بنابراین برای سلامت قلب و عروق مفید است. همچنین لازم به ذکر است که این غذا سرشار از کربوهیدرات است و به بدن انرژی می‌‌رساند. مصرف ماکارونی می‌تواند، سطح سوخت و ساز یا همان متابولیسم بدن را افزایش دهد. در نتیجه مصرف آن شما را فعال نگه می‌دارد و ضعف و خستگی را کاهش خواهد داد. پیشنهاد میکنیم طرز تهیه پاستا آلفردو و مرغ را از بلاگ اسنپ مارکت مطالعه کنید."},
-      {"title":"انواع ماکارونی","caption":"ماکارونی و لازانیا انواع گوناگونی دارند. ماکارونی از نظر فرم و همچنین ترکیبات آن به چندین دسته تقسیم می‌شود. ماکارونی پیچ پیچی، ماکارونی صدفی، ماکارونی پاستا، پاستا فرمی، پاستا پیکولی، ماکارونی پروانه‌ای، پنه ریگاتو، ماکارونی رشته‌ای، ماکارونی گوش ماهی و موارد دیگر همگی از انواع ماکارونی محسوب می‌شوند. البته این تقسیم‌بندی از لحاظ فرم و شکل آن است. لازم به ذکر است که ماکارونی‌های رشته‌ای نیز از نظر قطر به چند دسته تقسیم می‌شوند.\nماکارونی سبوس‌دار و یا ماکارونی سبزیجات نیز از نظر ترکیب مواد اولیه با ماکارونی ساده تفاوت دارند. لازم به ذکر است که ماکارونی سبوس‌دار از خواص بسیار زیادی نسبت به مدل معمولی آن برخوردار است. رشته فرنگی و رشته آش نیز به گونه‌ای به ماکارونی شباهت دارند و با یکدیگر هم‌خانواده محسوب می‌شوند.\nلازانیا نیز جزء خانوادۀ ماکارونی طبقه‌بندی می‌شود. لازانیا نیز همانند ماکارونی یک غذای بسیار محبوب و پرطرفدار بوده که تهیه آن نیز ساده است. بهتر است طرز تهیه لازانیا بدون فر را هم مطالعه کنید."},
-      {"title":"برندهای ماکارونی","caption":"ماکارونی توسط شرکت‌های متفاوتی تولید و وارد بازار می‌شود. همانطور که مشخص است کیفیت محصولات شرکت‌های مختلف با یکدیگر متفاوت هستند. این تفاوت مربوط به استفاده از مواد اولیه مختلف است. در صورتی که آرد سمولینا استفاده شده در ماکارونی مرغوب‌تر باشد به تبع ماکارونی نیز با کیفیت‌تر خواهد بود.\nاز جمله مهم‌ترین برندهایی که به تولید ماکارونی می‌پردازند می‌توان به زر ماکارون، مانا، هاتی کارا، زر، تک، رشد و مهنام اشاره کرد. همۀ برندهایی که گفته شد جز معتبرترین برندها محسوب می‌شوند و می‌توانید با آن‌ها یک ماکارونی خوشمزه تهیه کنید. بهتر است طرز تهیه سالاد ماکارونی را هم مطالعه کنید."},
-      {"title":"قیمت ماکارونی","caption":"قسمت ماکارونی نسبت به شرکت تولیدی و مواد اولیه استفاده شده در آن متفاوت است. اما ماکارونی ایرانی به طور کلی دارای یک محدودۀ قیمت مشخصی است و قیمت بالایی ندارد. از مهم‌ترین مشخصه‌های یک ماکارونی مرغوب می‌توان به بسته‌بندی و کیفیت آرد سمولینای آن اشاره کرد."},
-      {"title":"خرید اینترنتی ماکارونی و خرید پاستا","caption":"امروزه با پیشرفت تکنولوژی و استفادۀ بیشتر از اینترنت و پلتفرم‌های مختلف کارهای روزمره بسیار آسان شده است. برای مثال به راحتی می‌توان اکثر خریدهای خود را به شکل آنلاین و اینترنتی و بدون صرف زیاد انرژی و زمان انجام داد. یکی از این خریدها، خریدهای سوپرمارکتی است.\nشما می‌توانید تمام خریدهای خود را توسط وب سایت و یا اپلیکیشن اسنپ مارکت به صورت آنلاین انجام داده و در زمان کم درب خانه تحویل بگیرید. نکتۀ مهم دیگر در خرید اینترنتی از اسنپ مارکت آن است که می‌توانید محصولات مختلف را با یکدیگر مقایسه کرده و از سوپرمارکت مورد نظر خرید خود را نهایی و ثبت کنید. قبل از اقدام به خرید مواد غذایی بهتر است لیست خرید خانه اسنپ مارکت را در نظر داشته باشید."}
-    ]
-  },{
-    "main":"33002028",
-    "text":[
-      {"title":"خرید و قیمت برنج ایرانی و خارجی","caption":"برنج‌های مصرفی ایرانیان در دو دسته اصلی برنج ایرانی و خارجی قرار می‌گیرند. برنج‌های ایرانی عموماً در شمال ایران کشت می‌شوند. این برنج در فروشگاه‌های مرتبط با اسنپ مارکت با توجه به برند، درجه کیفیت برنج و وزن هر بسته آن با قیمت مشخصی به فروش می‌رسد. در حالی که برنج هندی و پاکستانی نیز وجود دارند که با قیمت پایینی تری نسبت به برنج ایرانی فروخته می‌شوند."},
-      {"title":"خرید برنج دولتی","caption":"برنج دولتی نیز قیمتی با توجه به تصمیمات سازمان جهاد کشاورزی دارد. به نحوی که برنج در فروشگاه‌های زنجیره ای و اینترنتی در راستای تنظیم بازار با قیمت‌های مشخصی به فروش می‌رسند. کافی است در سایت یا اپلیکیشن اسنپ مارکت، گزینه تنظیم بازار را انتخاب کنید تا برنج دولتی برای شما به نمایش گذاشته شود."},
-      {"title":"خرید و قیمت  برنج پاکستانی","caption":"یکی از پرفروش‌ترین برنج‌های خارجی، برنج پاکستانی است که با توجه به درجه کیفیت، برند عرضه کننده و وزن هر بسته، قیمت مشخصی دارد. لازم به ذکر است که برنج‌های پاکستانی هم با قیمت تنظیم بازار به فروش می‌رسند."},
-      {"title":"خرید و قیمت برنج هندی","caption":"برنج هندی هم سال‌هاست یکی از گزینه‌های خرید برنج ایرانی‌ها محسوب می‌شود. مخصوصاً بسیاری در مراسم مختلف مانند اعیاد یا عزاداری‌ها برای مهمانی و نذری دادن از برنج هندی استفاده می‌کنند. قیمت برنج هندی هم با توجه به برند توزیع کننده، وزن و درجه کیفیت برنج متفاوت است."},
-      {"title":"مورد انواع برندهای برنج","caption":"با توجه به اهمیت برنج در برنامه غذایی روزانه و هفتگی، آشنایی با نام انواع برندهای برنج خالی از لطف نیست. اگر به فروشگاه‌های اینترنتی و حضوری مختلف نگاهی بیندازید، با نام‌های مختلفی روبرو می‌شوید. اما همچنان برندهایی مانند گلستان، محسن، برنج هاشمی، طارم و طبیعت حرف اول را در تولید و توزیع برنج می‌زنند."},
-      {"title":"برنج","caption":"برنج یکی از اقلام اصلی رژیم غذایی و مایحتاج مردم ایرانی به شمار می‌آید. به همین دلیل شناخت انواع برنج و اطلاع از قیمت آنها از اهمیت بسیاری برخوردار است. مخصوصاً اگر خرید اینترنتی برنج را در اولویت داشته باشید."},
-      {"title":"نگاهی به برنج سبوس دار و برنج دودی","caption":"دو نوع برنج که خریداران خاص خود را دارند، برنج سبوس دار و برنج دودی هستند. برنج سبوس دار یا برنج قهوه ای به خاطر سبوسی که دارد، از ارزش غذایی بالایی برخوردار است. این برنج در بهبود عملکرد سیستم گوارش، تقویت مو، کاهش وزن و ارتقای سلامتی اندام‌های دیگر بدن نقش مهمی دارد. برنج دودی هم عطری دارد که بسیاری شیفته آن می‌شوند. هرچند خاصیت ضد سرطانی این برنج یکی دیگر از دلایل محبوبیت آن به شمار می‌آید. به همین دلیل خرید اینترنتی آنها همچون سایر انواع برنج از اسنپ مارکت امکان پذیر است."}
-
-    ]
-  },{
-    "main":"33002029",
-    "text":[
-      {"title":"رب","caption":"رب گوجه فرنگی را می‌توان یکی از مهم‌ترین چاشنی‌ها برای طبخ انواع غذا دانست. این ماده غذایی علاوه بر طعم، به غذا رنگی جذاب و دلنشین می‌دهد. به همین دلیل در سبد خرید ماهانه تمام ایرانی‌ها می‌توان رب گوجه فرنگی را دید. رب گوجه فرنگی را در بسیاری از غذاها و خورش‌ها استفاده می‌کنند. شما برای درست کردن غذاهایی مانند املت، آبگوشت و خورش قیمه به رب گوجه فرنگی نیاز دارید. باید بدانید که رب گوجه در حقیقت همان گوجه است که پس از فرآوری و جدا کردن دانه‌ها و پوست آن و طی یک فرآیند صنعتی تبدیل به ماده‌ای یک دست به نام رب گوجه فرنگی می‌شود."},
-      {"title":"خواص رب گوجه فرنگی","caption":"گوجه فرنگی و رب گوجه فرنگی سرشار از برخی مواد مغذی هستند. انواع آنتی اکسیدان موجود در رب گوجه می‌توانند با افزایش قدرت سیستم ایمنی، بدن را در برابر بسیاری از بیماری‌ها مقاوم‌تر کنند. از دیگر خواص مصرف گوجه فرنگی می‌توان به افزایش قدرت حافظه، افزایش میزان یادگیری، تقویت سیستم عصبی و خواب آرام‌تر اشاره کرد. حتما مقاله ی دلایل گنجاندن گوجه فرنگی در رژیم غذایی را مطالعه کنید."},
-      {"title":"بهترین شکل استفاده از رب","caption":"برای این که بتوانید از رب گوجه فرنگی به بهترین شکل استفاده کنید بهتر است ابتدا آن را با مقداری آب مخلوط کنید و سپس به غذا اضافه کنید. با این کار می‌توانید از خواص آن بیشترین بهره را ببرید."},
-      {"title":"بهترین برندهای رب گوجه فرنگی","caption":"برندها و شرکت‌های مختلفی در ایران اقدام به تولید و توزیع رب گوجه فرنگی می‌کنند. از بهترین و معروف‌ترین برندهای تهیه و توزیع رب گوجه فرنگی می‌توان به تبرک، اویلا، فامیلا، بدر، شاپرک، خوشاب، روژین، هایپراستار، اروم آدا، سحر، پیک، طبیعت، ایلیکا، شاهسوند و اصالت اشاره کرد"},
-      {"title":"خرید آنلاین رب گوجه فرنگی","caption":"خرید رب گوجه فرنگی را می‌توان به صورت حضوری از سوپر مارکت‌ها و به صورت اینترنتی از فروشگاه‌های معتبر انجام داد. یکی از معتبرترین فروشگاه‌های اینترنتی در ایران اسنپ مارکت است. شما در اسنپ مارکت می‌توانید انواع مختلف رب گوجه فرنگی مرغوب را با قیمت‌های مناسب خریداری کنید. تخفیف‌ها و جشنواره‌هایی که برای فروش برخی از محصولات وجود دارد نیز باعث می‌شود تا بتوانید این محصول و بسیاری از محصولات دیگر را با قیمت مناسب‌تری خریداری کنید. برای خرید رب گوجه فرنگی یا سایر مایحتاج خود تنها لازم است که اپلیکیشن اسنپ فود را روی گوشی تلفن همراه خود نصب نمایید. سپس با ورود به این اپلیکیشن اقلام مورد نیاز خود را سفارش دهید. در مرحله بعد می‌توانید زمان تحویل این اقلام را تعیین کنید. با این کار اقلام مورد نیاز خود را در زمانی مناسب و جلوی در منزل تحویل خواهید گرفت."}
-    ]
-  },{
-    "main":"33002030",
-    "text":[
-      {"title":"","caption":"خرید حبوبات، خرید سویا و خرید عدس با بهترین قیمت ها و تخفیف های مناسب"}
-    ]
-  }
+    {
+      "main": "dairy-product",
+      "text": [
+        {
+          "title": "لبنیات و خرید لبنیات",
+          "caption": "لبنیات یا فرآورده های لبنی به آن دسته از مواد غذایی گفته می شود که ماده اولیه تهیه آن شیر می‌باشد. مواد لبنی تازه نقش ویژه ای در سبد غذایی خانواده دارند که با مصرف و خرید لبنیات تازه از انواع محلی و پاستوریزه می‌ توانید مهمترین نیاز غذایی بدن خود را تکمیل نمایید."
+        },
+        {
+          "title": "انواع لبنیات",
+          "caption": "اصلی ترین محصول لبنیات، شیر و ماست و کره و پنیر و کشک می‌باشد. شیر تازه و مدت دار به خوبی بدن شما را از انواع مواد مورد نیاز تامین کرده است و اسنپ مارکت به عنوان یک فروشگاه آنلاین لبنیات، تنوعی بی نظیری از این محصول از جمله انواع شیرقهوه، شیر کم چرب، پرچرب، شیر پاستوریزه و هموژنیزه را در اختیار شما قرار می دهد.\nکره در طعم های مختلف میتواند هم به عنوان چاشنی غذا و هم به عنوان صبحانه مورد مصرف قرار گیرد. این محصول در انواع کره حیوانی و گیاهی در دسترس می باشد.\nخامه ترکیب بی نظیری از طعم‌های یادآور خاطرات، کیک تولد، شیرینی‌های خامه ای، بستنی سنتی و صبحانه‌ای دلچسب است. در اسنپ مارکت به آسانی می توان انواع خامه تازه و مدت دار، خامه قنادی و خامه صبحانه را در طعم‌ها و بسته بندی‌ های متفاوت در دسترس داشته باشید.\nماست، دوغ و کفیر از محبوب ترین چاشنی‌ها و نوشیدنی های سفره ایرانی می باشند. ماست های سنتی و پاستوریزه، چکیده و همزده، موسیر و طعم دار با انواع پرچرب و کم چرب، نیاز تمام سلیقه ها را برآورده نموده است.\nانواع مختلفی از پنیر در سراسر جهان وجود دارد که محبوب ترین آنها در فروشگاه آنلاین لبنیات اسنپ مارکت با همان کیفیت جهانی در دسترس مشتریان گرامی قرار گرفته است. داستان پنیر از پنیر لیقوان و فتا شروع شده و تا پنیرهایی همچون خامه قنادی و پنیر گودا ادامه دارد."
+        },
+        {
+          "title": "خواص لبنیات",
+          "caption": "از خواص لبنیات می شود به پروتئین و کلسیم اشاره کرد که نیاز بدن را تامین نموده و از بروز اختلالات و ضایعات استخوانی پیشگیری می‌کند، مصرف کافی لبنیات به رشد کودکان و نوجوانان کمک میکند. همچنین لبنیات بهترین منبع انواع ویتامین‌ها از جمله ویتامین (آ) و ویتامین‌های گروه (ب) به‌ ویژه (ب۲) هستند."
+        },
+        {
+          "title": "خرید اینترنتی لبنیات",
+          "caption": "لبنیات می‌ توانند برای افرادی که عدم تحمل لاکتوز ویا حساسیت به مصرف شیر دارند مشکلاتی ایجاد کند، از همین رو سوپرمارکت انلاین اسنپ مارکت طیف وسیعی از انواع لبنیات از جمله لبنیات فاقد لاکتوز و پالم را نیز در سبد محصولات خود گنجانده است و شما قادر خواهید بود دسته مناسب برای مصرفتان را انتخاب نمایید.\nعلاوه بر این تاریخ انقضا و تولید نیز از جمله مهم ترین فاکتورهای خرید اینترنتی لبنیات است، که در فروشگاه اسنپ مارکت انواع لبنیات با تاریخ مصرف به تازه و یا نسبتا تازه ارسال می گردند."
+        }
+      ]
+    },
+    {
+      "main": "drinks",
+      "text": [
+        {
+          "title": "نوشیدنی و خرید نوشیدنی",
+          "caption": "نوشیدنی ها بخشی از نیاز روزانه بدن به آب را تأمین می‌کنند و کاهش آب موجب ایجاد انواع اختلالات جدی در بدن می‎ شود.\nحال تامین آب مهم ترین و اساسی ترین نیاز روزانه بدن می‌باشد اما امروزه انواع نوشیدنی ها از قبیل آبمیوه‌ها، دوغ، شربت، نوشابه، و نوشیدنی های انرژی زا هم تولید شده و در مصرف عموم قرار گرفته است."
+        },
+        {
+          "title": "انواع نوشیدنی ها",
+          "caption": "آب معدنی که خالص ترین نوع نوشیدنی محسوب می شود.\nآبمیوه یا آب سبزیجات و شربت‌ها که از محصولات به صورت تازه و یا شرکتی در فروشگاه اینترنتی اسنپ مارکت در دسترس می‌باشند.\nنوشیدنی‌های حاوی گازکربنیک مثل انواع نوشابه، نوشیدنی و نوشابه‌های انرژی زا که این روز‌ها به یک گزینه محبوب در میان جوان‌ها تبدیل شده‌اند.\nنوشابه انرژی زا تامین کننده انرژی مورد نیاز برای فعالیت روزانه و نوشیدنی خنک با طعم‌های دلچسب و دوست داشتنی از برند‌هایی معتبر همچون هایپ و ردبول و... در اسنپ مارکت\nنوشیدنی‌های داغ همچون انواع چای، قهوه و شکلات داغ و قهوه که دومین نوشیدنی پرطرفدار در جهان پس از آب شناخته شده است. خرید انواع قهوه فوری، قهوه ترک، قهوه دمی در اسنپ مارکت برای شما فراهم شده است.\nلازم به ذکر است که دسته بندی چای از نوشیدنی های محبوب ایرانیان است که در انواع مختلف در اسنپ مارکت در قابل خریداری است.\nامروزه خرید نوشیدنی به صورت آنلاین طرفداران زیادی پیدا کرده است و شما می توانید در سوپرمارکت اینترنتی اسنپ مارکت انواع نوشیدنی را خریداری کنید."
+        }
+      ]
+    },
+    {
+      "main": "fruit-and-vegetables",
+      "text": []
+    },
+    {
+      "main": "nuts",
+      "text": []
+    },
+    {
+      "main": "grocery-bread",
+      "text": [
+        {
+          "title": "خرید اینترنتی خواربار",
+          "caption": "خواربار یکی از اساسی ترین و اصلی ترین دسته بندی های در برگیرنده نیازها انسان‌ها می باشد و پوشش دهنده عمده نیازهای بدن محسوب می‌شود. خرید خواربار باید از فروشگاههای مطمئن و دارای پروانه فروش انجام شود که اسنپ مارکت این اطمینان را به تمامی کاربران می دهد تا خریدی مطمئن را تجربه کنند.\nلیست خرید خواربار که شامل مواد اولیه پخت و پز، روغن، حبوبات، پاستا و نودل قند و شکر و... می‌باشد را می توانید با مناسب ترین قیمت و به صورت آنلاین از اسنپ مارکت تهیه کنید."
+        },
+        { "title": "انواع خواربار و کالاهای اساسی", "caption": "" },
+        {
+          "title": "برنج ",
+          "caption": "خواص این ماده غذایی شامل تامین انرژی سریع و فوری، فعالیت خوب دستگاه گوارش، تثبیت سطح قند خون و فراهم کردن منابع لازم ویتامین B1 برای بدن می‌باشد. برای خرید برنج از اسنپ مارکت کلیک کنید!"
+        },
+        {
+          "title": "غلات",
+          "caption": "به گروهی از گیاهان زراعی گفته می شود که دانه آن‌ها در درجه اول برای تهیه نان و تغذیه اکثر مردم و درجه دوم جهت تغذیه حیوانات و پرندگان به مصرف می رسد. غلات مناطق گرم از قبیل برنج، ذرت، ارزن، گندم وجو می باشد و از ارزش غذایی بالایی برخوردارند."
+        },
+        {
+          "title": "حبوبات",
+          "caption": "حبوبات هم جزو مهمترین های خواربار محسوب می شوند که باید در برنامه ی غذایی افراد قرار بگیرند تا نیازهای اساسی بدن را برطرف کنند."
+        },
+        {
+          "title": "ماکارونی و نودل",
+          "caption": "انواع فرآورده‌های ماکارونی شامل پاستا و اسپاگتی می‌باشند. در واقع ماکارونی به عنوان یک غذای پرطرف‌دار و خوشمزه شناخته می‌شود و ماده اصلی سازنده آن گندم است و از پر طرفدارترین های دسته بندی خواربار است. برای خرید ماکارونی با تخفیف از اسنپ مارکت کلیک کنید!"
+        },
+        {
+          "title": "قند و شکر",
+          "caption": "قند و شکر هم جزو پر مصرف ترین های این دسته بندی قرار دارند و بیشتر در مصارف شیرینی پزی قابل استفاده هستند و به صورت بسته بندی و بهداشتی در اختیار مصرف کنندگان فروشگاه اینترنتی اسنپ مارکت قرار می گیرند. امروزه انواع قند و شکر در بسته بندی‌های مختلف و متناسب با نیاز شما و در انواع شکر قهوه‌ای، قند و شکر رژیمی و... در فروشگاه اینترنتی اسنپ مارکت در دسترس است. برای خرید قند و شکر کلیک کنید."
+        },
+        {
+          "title": "خرید خواربار",
+          "caption": "با اسنپ مارکت به راحتی خواربار های مد نظرتان را تهیه کنید و مواد اساسی خانه‌تان را سریعا درب منزل تحویل بگیرید."
+        }
+      ]
+    },
+    {
+      "main": "digital-appliances",
+      "text": []
+    },
+    {
+      "main": "3300201",
+      "text": [
+        {
+          "title": "خرید اینترنتی شیر",
+          "caption": "اگر شما قصد دارید خرید شیر را به صورت اینترنتی انجام دهید، باید بگوییم که بهترین تصمیم را گرفته اید. شما با انتخاب اپلیکیشن یا سایت اسنپ مارکت می‌توانید در هر زمانی که بخواهید، سفارش خود را ثبت کرده و در زمان مورد نظر آن را تحویل بگیرید. این در حالی است که شما می‌توانید طیف وسیعی از محصولات از برندهای مختلف را بررسی و اقلام مورد نظر را خریداری کنید. برای خرید لبنیات و خرید پنیر و خرید کره پاستوریزه با بیشترین تخفیف ها کلیک کنید."
+        },
+        {
+          "title": "قیمت شیر",
+          "caption": "شیر یکی از اقلام خوراکی مهمی است که قیمت مناسبی برای آن در نظر گرفته شده است. هرچند شما با توجه به نوع شیر، حجم آن و برندی که انتخاب کرده اید، باید قیمت مشخصی پرداخت کنید."
+        },
+        {
+          "title": "انواع برندهای شیر",
+          "caption": "اگر شما هم قصد دارید با توجه به سلیقه و رژیم غذایی خود شیر مورد نظرتان را خریداری کنید، بهتر است با برندهای معتبر این کالا آشنا شوید. در سال‌های اخیر شرکت‌هایی مانند کاله، پگاه، دامداران، پاکبان، پاژن، دومینو، عالیس، هراز و دنت توانسته‌اند انواع محصولات شیر مانند شیر کم چرب و پر چرب، شیر کاکائو و شیر با طعم انواع میوه را تولید و به مشتریان عرضه کنند."
+        },
+        {
+          "title": "شیر",
+          "caption": "شیر یکی از مفیدترین و محبوب ترین مواد غذایی است که از آن انواع لبنیات مانند ماست، پنیر، دوغ و کشک را تهیه می‌کنند. اهمیت شیر در سلامتی به گونه ای است که از همان اولین روز زندگی، در برنامه غذایی انسان قرار می‌گیرد. در حقیقت، نوشیدن شیر باعث تأمین کلسیم، پتاسیم و پروتئین می‌شود. بنابراین گاوداری‌های مختلفی در سراسر کشور برای تولید شیر وجود دارند که پس از جمع آوری این ماده با دستگاه‌های مختلف آن را پاستوریزه و به فروشگاه‌ها عرضه می‌کنند. در کنار شیر بهتر است دوغ را هم امتحان کنید."
+        },
+        {
+          "title": "خواص و فواید شیر",
+          "caption": "وجود پروتئین، کربوهیدرات، کلسیم، پتاسیم، ویتامین B12 و ویتامین D و سایر مواد معدنی و ویتامین‌ها در شیر، باعث شده است که به عنوان غذایی مفید محسوب شود. با خوردن شیر که منبعی سرشار از کلسیم و ویتامین دی است، استخوان‌ها و دندان‌ها مستحکم‌تر خواهند شد. از طرفی پتاسیم شیر باعث تنظیم فشار خون و بهبود سلامتی قلب و عروق می‌شود. این در حالی است که سیستم ایمنی بدن تقویت شده و بدن از گزند عوامل بیماری‌ زا در امان خواهد ماند. اگر نگاهی جامع بیندازیم، متوجه تأثیر همه جانبه مواد مغذی شیر بر سلامتی تمام بدن خواهیم شد."
+        },
+        {
+          "title": "انواع محصولات شیر",
+          "caption": "با توجه به اهمیت مصرف شیر، انواع محصولات آن مانند شیر کم چرب، شیر پرچرب، شیر کاکائو، و شیر با طعم میوه‌های مختلف مانند شیر موز، شیر هویج، شیر طالبی و شیر توت فرنگی تولید و در فروشگاه‌ها عرضه می‌شوند. این تنوع محصولات پاسخگوی نیاز طیف گسترده‌ای از سلایق و نیازهای مردم است."
+        }
+      ]
+    },
+    {
+      "main": "3300202",
+      "text": [
+        {
+          "title": "قیمت پنیر",
+          "caption": "پنیر یکی از اجناسی است که قیمت مقرون به صرفه ای دارد. هرچند شما با توجه به نوع پنیر، حجم پنیر و برندی که انتخاب کرده اید، قیمت مشخصی پرداخت خواهید کرد."
+        },
+        {
+          "title": "خرید اینترنتی پنیر",
+          "caption": "خرید آنلاین پنیر یکی از هوشمندانه‌ترین تصمیمات شما به حساب می‌آید. این در حالی است که اگر اسنپ مارکت را برای خرید اینترنتی پنیر انتخاب کنید، امکان استفاده از خدماتی مانند خرید پنیرهای متنوع، استفاده از تخفیف‌های مختلف و تحویل گرفتن سفارش در زمان تعیین شده را دارید."
+        },
+        {
+          "title": "انواع محصولات پنیر",
+          "caption": "محبوبیت پنیر در سراسر جهان، باعث شده که این ماده خوراکی با تنوع بالایی در سوپرمارکت‌ها وجود داشته باشد. پنیر لیقوان یکی از محبوب‌ترین پنیرها در ایران است. پنیر موزارلا یکی از معروف ترین پنیرهای ایتالیایی است که دو نوع تازه و خشک شده دارد. پنیر دیگری که در ایتالیا و دنیا محبوبیت دارد، پنیر پارمسان است که بافت سفت و پوسته پوسته دارد. پنیر گودا هم یکی از محصولات لبنی هلندی به حساب می‌آید که طعم متنوعی دارد. پنیر چدار هم یکی از محصولات انگلستانی اما با محبوبیت جهانی است. این پنیر در تهیه انواع ساندویچ‌ها، پیتزا و پاستا کاربرد دارد."
+        },
+        {
+          "title": "انواع برندهای پنیر",
+          "caption": "اگر شما هم پنیر را در برنامه غذایی خود قرار داده و در تهیه فست فودها از آن استفاده می‌کنید با نام برندهایی مانند روزانه، کاله، پگاه، لبنه و هراز آشنایی دارید. این برندها در حوزه تولید محصولات لبنی مختلف از جمله پنیر فعالیت موفقی داشته اند و انواع پنیر مانند فتا، خامه‌ای، گودا، چدار و موزارلا را تولید می‌کنند."
+        },
+        {
+          "title": "پنیر",
+          "caption": "پنیر یکی از پرمصرف ترین محصولات لبنی به شمار می‌آید که از تنوع بالایی برخوردار است. هنوز کسی نمی‌داند که اولین پنیر را چه کسی و در چه قرنی تولید کرد. اما برای تهیه آن از شیر تازه گاو، گوسفند و بز دلمه شده استفاده می‌کنند. در همین راستا باکتری مخمر و مایه پنیر را به شیر می‌افزایند و از قالب‌های پنیر برای شکل‌دهی به آن استفاده می‌کنند. گفتنی است که مصرف پنیر بخشی از نیاز بدن به پروتئین، کربوهیدرات، کلسیم، ویتامین‌ها و مواد معدنی را تأمین می‌کند. به همین دلیل، خرید پنیر به عنوان یکی از اجزای برنامه غذایی روزانه یا هفتگی خانواده‌های ایرانی اهمیت ویژه‌ای دارد. توصیه میشود در کنار مصرف پنیر از مصرف کره و شیر هم غافل نشوید."
+        },
+        {
+          "title": "خواص و فواید پنیر",
+          "caption": "پنیر هم مانند سایر محصولات لبنی در بهبود سلامتی انسان نقش مهمی بازی می‌کند. کلسیم، ویتامین B و ویتامین K موجود در پنیر باعث استحکام استخوان‌ها و دندان‌ها می‌شوند. این در حالی است که اسید لینولئیک و سلنیوم آن سیستم ایمنی را برای مقابله در برابر سرطان و عوامل بیماری زای دیگر تقویت می‌کنند. هر کدام از ویتامین‌ها و مواد معدنی موجود در پنیر برای سلامتی مهم هستند. برای مثال، ویتامین B کافی و سدیم کمی که در پنیر وجود دارند برای تنظیم فشار خون مفید هستند. کربوهیدرات ناچیز پنیر به گونه ای است که افراد دیابتی بتوانند با خیال آسوده، آن را در وعده غذایی خود قرار دهند. سدیم، پتاسیم و پروتئین‌هایی مانند کازیین نیز در بهبود سلامتی قلب اهمیت دارند."
+        }
+      ]
+    },
+    {
+      "main": "3300203",
+      "text": []
+    },
+    {
+      "main": "3300204",
+      "text": [
+        {
+          "title": "خرید اینترنتی دوغ",
+          "caption": "دوغ به عنوان یکی از محصولات پرمصرف در سبد خانوار ایرانی، گزینۀ اصلی بسیاری از ما در خریدهای روزانه است. به منظور خرید اینترنتی دوغ می‌توانید به بخش لبنیات در فروشگاه اسنپ مارکت مراجعه کنید. انواع دوغ گازدار و دوغ بدون گاز در سبد فروشگاهی آمادۀ خرید هستند. دوغ آبعلی و دوغ کفیر نیز از محصولات محبوبی هستند که می‌توانید به سادگی آن‌ها را خرید کنید. لذت نوشیدن دوغ با غذای ایرانی همواره با شما خواهد بود. شما میتوانید در کنار دوغ تازه از محصولات دیگر مانند پنیر تازه و شیر هم استفاده کنید."
+        },
+        {
+          "title": "قیمت دوغ",
+          "caption": "دوغ‌ها با وجود تنوع در حجم، گازدار یا معمولی بودن، برند و ترکیبات اضافی آن‌ها، قیمت‌های ثابت و معقولانه‌ای دارند. دوغ به عنوان یکی از نوشیدنی‌های رسمی کشورمان می‌تواند با بهترین قیمت بر سر سفره‌هایمان حاضر باشد."
+        },
+        {
+          "title": "دوغ",
+          "caption": "دوغ نوعی از نوشیدنی‌های لبنی است. این نوشیدنی که از ترکیب آب، ماست و نمک به دست می‌آید منبعی عالی از انواع مواد معدنی است. فرآیند تشکیل دوغ از ترکیب و به هم زدن متوالی آب و ماست آغاز می‌شود. به هم زدن ماست و آب می‌تواند در مشک به صورت دستی یا در دستگاه سانتریفیوژ انجام شود. درست کردن دوغ فرآیند جالبی دارد. این روند تا جایی ادامه پیدا می‌کند که کره روی سطح ترکیب ایجاد شود. با شناور شدن کره، آن را جدا کرده و مابقی ترکیب را که همان دوغ است در مکانی قرار می‌دهند تا در اصطلاح گرما ببیند. بعد از گذشت چند روز، یک نوشیدنی لذیذ که همراه همیشگی سفرۀ ایرانیان است حاصل خواهد شد. دوغ یکی از بهترین انواع لبنیات است که جایگاهی مهمی در هرم غذایی دارد لذا خرید دوغ به تمام افراد پیشنهاد می شود."
+        },
+        {
+          "title": "فواید و خواص دوغ",
+          "caption": "دوغ از نوشیدنی‌هایی است که از کودک تا بزرگسال به آن علاقه دارند. این نوشیدنی را می‌توان حتی در دوران بارداری و بیماری نیز به عنوان یکی از مواد مقوی مصرف کرد. در فرهنگ ما ایرانیان نیز بعد از آب و چای می‌توان دوغ را به عنوان محبوب‌ترین نوشیدنی‌ها دانست. یک لیتر دوغ حاوی مواد مغذی زیر است:\n • انرژی: 270 کیلوکالری\n • پروتئین: 2 درصد\n • کلسیم: 6 گرم\n • چربی: 5 درصد\nمصرف یک لیوان دوغ می‌تواند چیزی حدود 280 میلی‌گرم کلسیم به بدن برساند. این میزان چیزی حدود یک‌چهارم میزان کلسیم مورد نیاز روزانۀ بدن است. دوغ یکی از بهترین وشیدنی‌های آرام‌بخش و خواب‌آور است. مصرف دوغ به افرادی که دچار اختلالات بی‌خوابی هستند بسیار توصیه شده است. نوشیدن دوغ در زمانی که نیاز به هوشیاری (مثلاً در کار با وسایل صنعتی) دارید می‌تواند خطرساز باشد. فواید و خواص دوغ در روند عادی زندگی و ابتلا به بیماری‌ها بسیار ست. در ادامه برخی از خواص دوغ را مرور می‌کنیم:\n • به بهبود علائم گرمازدگی کمک می‌کند.\n • منجر به محو شدن لکه‌های پوستی می‌شود.\n • بافت استخوان را محکم می‌کند.\n • سیستم گوارشی بدن را تقویت می‌کند.\n • دفع کنندۀ سموم بدن است.\n • به رشد استخوان‌های کودک کمک ی‌کند.\n • مفید در دوران بارداری است.\n • منجر به هیدراته شدن بدن می‌شود.\n"
+        },
+        {
+          "title": "انواع دوغ",
+          "caption": "دوغ یکی از نوشیدنی‌های اصیل ایرانی است که جایگاه مهمی در کنار انواع خورشت‌ها و کباب‌های ایرانی دارد. دوغ فرآورده‌ای تخمیری است که اسناد به جای مانده از آن به 1300 سال پیش از میلاد مسیح برمی‌گردد. این نوشیدنی در روند رشد و توسعۀ خود به مناطق دیگر جهان، روندی طولانی را گذرانده است. همچنان نیز در مورد خاستگاه دوغ شبهات متعددی وجود دارد. چرا که در کشورهای مختلف، شیوۀ تهیۀ دوغ متفاوت است. پیش‌تر در ایران نیز از این نوشیدنی به عنوان یکی از فرآورده‌های جانبی کره یاد می‌شد. انواع دوغ‌ها را می‌توان بنا به دسته‌بندی‌های متفاوتی شناخت. با این حال مهم‌ترین انواع دوغ را می‌توان موارد زیر دانست:\n • دوغ معمولی\n • دوغ گازدار\n • دوغ گرمادیده\n • دوغ گرمادیدۀ گازدار\nهر یک از انواع دوغ‌ها نیز دارای تنوع خاص خود هستند. مثلاً دوغ معمولی از ترکیب ماست، آب و نمک به عمل می‌آید. با این وجود، دوغ معمولی نیز می‌تواند انواع ختلفی داشته باشد. طعم‌های مختلفی که دوغ‌های معمولی دارند یکی از دسته‌بندی‌های اصلی آن‌هاست. نوع میکروارگانیزم‌هایی که در تهیۀ دوغ صنعتی به کار گرفته می‌شوند نیز در نوع‌بندی آن‌ها موثر است.\nدوغ‌های گرمادیده به دلیل افزایش زمان نگهداری، طعم و خاصیت متفاوتی پیدا می‌کند. اضافه ردن برخی باکتری‌ها به دوغ نیز باعث گازدار شدن آن‌ها می‌شود. البته در برخی موارد ممکن است از گاز کربن دی‌اکسید به این منظور استفاده شود. این روزها تنوع زیادی از دوغ‌ها را در قفسۀ فروشگاه‌ها شاهد هستیم. به خصوص که وجود سبزی‌های خشک در ترکیبات دوغ‌ها نیز باعث گسترش تنوع ن‌ها شده است. نعنا، کاکوتی و پونه از جمله گیاهان رایج و محبوبی هستند که به دوغ اضافه می‌شوند.\n"
+        },
+        {
+          "title": "برندهای معتبر دوغ",
+          "caption": "ایران به عنوان یکی از کشورهای مبدا دوغ، تولیدات زیادی در این زمینه دارد و شما می توانید در اسنپ مارکت به خرید دوغ از انواع برند ها بپردازید. برخی از این برندها دارای سابقۀ طولانی در صنعت لبنیات کشور هستند. برخی دیگر نیز با وجود سابقۀ کمتر، کیفیت بالایی از محصولات را ارائه می‌دهند. کاله، عالیس، دامداران، هراز، مانیزان، پگاه، رامک، طراوت و پاکبان از برندهای معتبر دوغ در کشور هستند."
+        }
+      ]
+    },
+    {
+      "main": "3300205",
+      "text": [
+        {
+          "title": "خرید کره پاستوریزه",
+          "caption": "کره پاستوریزه گونه‌ای از چربی‌هاست که از خامۀ شیر یا دوغ به عمل می‌آید. کره در واقع به گونه‌ای از چربی‌های گرم نشده گفته می‌شود. نوعی از کره پاستوریزه که از خامه گفته می‌شود، رنگی متمایل به زرد دارد. کره‌ای که از دوغ به عمل می‌آید بیشتر رنگ سفید دارد. در بیشتر نقاط جهان، خرید کره و شیر رایج‌تر است. هرچند که کره دوغی که از شیر گاو به عمل آمده باشد بیشترین خاصیت را دارد. کره‌ای که از شیر دیگر حیوانات تهیه شده است معمولاً چربی بیشتر داشته و رنگی متمایل به زرد روشن دارد. انواع کره‌ پاستوریزه که به صورت بسته‌بندی شده در فروشگاه‌ها یافت می‌شود، کرۀ خامۀ شیر است که از به هم زدن پیوستۀ خامه تولید می‌شود."
+        },
+        {
+          "title": "قیمت کره",
+          "caption": "قیمت کره با توجه به برند، حجم، گیاهی یا حیوانی بودن و نوع بسته‌بندی متغیر است. معمولاً انواع کره پاستوریزه گیاهی دارای قیمتی بالاتر در مقایسه با مارگارین است. برای اطلاع از قیمت انواع کره می‌توانید به دسته‌بندی مربوطه در بخش لبنیات مراجعه کنید. در کنار محصولات لبنی مانند کره. شیر شما میتوانید برای خرید پنیر، خرید دوغ و خرید ماست با تخفیف های شگفت انگیز اقدام کنید."
+        },
+        {
+          "title": "خرید اینترنتی کره",
+          "caption": "برای خرید اینترنتی کره می‌توانید به سادگی از طریق فروشگاه آنلاین اسنپ مارکت اقدام کنید. کره و دیگر محصولات لبنی مختلف را در برندها و بسته‌بندی‌های گوناگون می‌توانید در اینجا بیابید. سفارش خود را انجام داده و آن را درب منزل خود تحویل بگیرید."
+        },
+        {
+          "title": "فواید و خواص کره",
+          "caption": "کره به عنوان محصول لبنی پرمصرف، نوعی چربی است که علاوه بر خواص بسیار، کاربردهای متعددی نیز در آشپزی دارد. این مادۀ غذایی ارزشمند می‌تواند به سادگی منجر به خوش‌طعم و خوش‌عطر شدن خوراکی‌ها شود. امروزه کره‌ها در انواع مختلفی تهیه می‌شوند که هر یک خواص ویژه خود برای بدن را دارد. کره دارای خواص زیادی برای بدن است که چند مورد از آن‌ها را در فهرست زیر می‌خوانیم:\n  • حاوی انواع ویتامین‌های K ،A ،D و E است.\n  • منبع مهمی از عناصر روی، مس و منگنز است.\n  • حاوی انواع آنتی‌اکسیدان‌ها به منظور مقابله با رادیکال‌های آزاد است.\n  • چربی‌های اشباع موجود در کره، کلسترول بد خون را کاهش ی‌دهد.\n  • کره پاستوریزه سرشار از کلسترول خوب است.\n  • با تقویت متابولیسم منجر به کاهش وزن و چربی می‌شود.\n  • خواص آن برای تقویت سیستم ایمنی چشمگیر است.\n  • به بهبود بینایی، تقویت دندان‌ها و ساختار سلولی کمک می‌کند.\n  • به حفظ سلامت قلب و عروق و جلوگیری از سکته کمک می‌کند.\n  • سیدهای چرب امگا در تقویت مغز و عملکرد ذهن موثر است.\n  • کلسیم موجود در آن منجر به استحکام بافت استخوانی می‌شود.\n  • به تقویت سلامت چشم و جلوگیری از آب مروارید کمک می‌کند.\n  • در تغذیه، درخشندگی و زیبایی پوست موثر است.\nمصرف کره به عنوان یک محصول لبنی پرطرفدار باید در حد اعتدال صورت گیرد. هرچند که کره دارای خواص زیادی است اما نباید از مضرات احتمالی آن چشم پوشید. افرادی که دچار اضافه وزن زیاد هستند نباید اقدام به مصرف زیاد کره نمایند. همچنین کسانی که در معرض چربی خون بالا و انواع امراض قلبی و عروقی هستند نیز باید در مصرف آن محتاط باشند."
+        },
+        {
+          "title": "انواع کره",
+          "caption": "انواع کره با توجه به مواد تشکیل دهندۀ آن، طعم، میزان چربی و نوع بسته‌بندی مشخص می‌شوند. کره به عنوان یک فرآوردۀ لبنی محبوب و پرطرفدار، رنگ، طعم و عطر متفاوتی دارد. اینکه کره از شیر یا دوغ تهیه شده باشد، اصلی‌ترین وجه تمایز انواع کره‌هاست. کره حیوانی و کره گیاهی را می‌توان اصلی‌ترین دسته‌بندی برای کره‌ها دانست. با این حال کره‌ها را می‌توان براساس نوع طعمی که دارند نیز دسته‌بندی کرد. کره شیرین و کره ترش از انواع دیگر کره‌ها هستند.\nکره گیاهی یا مارگارین، نوعی از کره‌ است که از روغن‌های گیاهی به عمل می‌آید. کره گیاهی در ظاهر بسیار مشابه با کره حیوانی است اما در تولید آن بر پایۀ شیر نیست. این نوع از کره محتوی برخی از ویتامین‌ها و مواد معدنی که در شیر وجود ندارد نیست. روی، آهن و مس موجود در مارگارین اندک است. به همین دلیل نمی‌توان آن را جایگزین مناسبی برای کره حیوانی دانست. با این حال مارگارین نوعی از کره است که منبع غنی از ویتامین (A) به حساب می‌آید. انواع کره مارگارین نیز بر اساس انواع روغن‌های گیاهی که در آن استفاده شده‌اند متغیر هستند.\nکره حیوانی خصوصیات بسیار مشابه با روغن حیوانی دارد. این نوع از کره از فرآیند جوشاندن و انجام برخی ترکیبات روی شیر حیوانات به عمل می‌آید. شیر گوسفند، گاو و بز بیشترین کاربرد را در تولید کره پاستوریزه حیوانی دارند. این نوع از کره‌ها طعم و عطر خاصی به غذا می‌دهند. کره حیوانی یکی از منابع عالی ویتامین‌ها و انواع مواد آلی و معدنی است. از خواص مهم کره حیوانی، تحمل دمایی بالای آن است. این ویژگی منجر به کاربرد این نوع کره در آشپزی شده است."
+        },
+        {
+          "title": "برندهای معتبر کره",
+          "caption": "برندهای متعدد تولیدکنندۀ کره هستند که تولیدان آن‌ها را در قفسۀ فروشگاه‌ها می‌یابید. کاله، کالین، لادن، مهگل، ماردینی، پاکبان، پگاه، شکلی و تاپ از برندهای معتبر کره در ایران هستند. تولیدات این برندها شامل انواع مختلف کره‌های حیوانی و گیاهی است که همگی از کیفیت بالایی نیز برخوردارند."
+        }
+      ]
+    },
+    {
+      "main": "3300208",
+      "text": [
+        {
+          "title": "خرید نوشابه گازدار",
+          "caption": "نوشابه به دسته‌ای از نوشیدنی‌ها گفته می‌شود که ترکیب خاص آن باعث محبوبیت زیادش شده است. هرچند که شیوۀ ساخت انواع نوشابه متفاوت از یکدیگرند، اما ترکیبات پایۀ بسیاری از آن‌ها مشخص است. آب گازدار، مواد شیرین‌کننده و طعم‌دهنده‌ها، ترکیبات کلیِ نوشابه زیرو، نوشابه کوکاکولا، نوشابه پپسی و دیگر انواع آن‌ها هستند. خرید نوشابه و مصرف روزانۀ آن، عادت بسیاری از مردمان امروز است. برای خرید نوشیدنی و خرید ماالشعیر و خرید آب معدنی و خرید چای در انواع مختلف از اسنپ مارکت کلیک کنید!\n نوشابه  را می‌توان محبوب‌ترین و قدیمی‌ترین نوشیدنی گازدار در جهان دانست. استفاده از نوشابه در بسیاری از مناسبت‌ها رایج است. نوشابه، یکی از بهترین نوشیدنی‌ها به منظور رفع عطش می‌باشد. هرچند که دربارۀ مضرات انواع نوشابه‌ها بسیار شنیده‌ایم اما این نوشیدنی خواص منحصربفرد خود را نیز دارد. البته که لازم است در مصرف نوشابه احتیاط کنید. "
+        },
+        {
+          "title": "قیمت نوشابه",
+          "caption": "قیمت انواع نوشابه با توجه به حجم، طعم و کیفیت آن مشخص می‌شود. قیمت نوشابه بسیار مقرون به صرفه است. نوشابه‌ها از جمله نوشیدنی‌های اقتصادی و ارزان هستند. حجم بالا و قیمت پایینی که نوشابه‌ها دارند باعث شده است که تهیۀ آن‌ها را بسیار ساده کرده است. بسته‌بندی‌های قوطی نوشابه‌ها نیز قیمت مناسبی دارند. اما مشخصاً خرید نوشابه خانواده و حجم‌های بزرگ‌تر، صرفۀ اقتصادی بیشتری خواهند داشت."
+        },
+        {
+          "title": "خرید اینترنتی نوشابه",
+          "caption": "در اسنپ مارکت می‌توانید به خرید نوشابه‌ با برندها و طعم‌های متفاوت را بپردازید. نوشابه ارزان قیمت و با کیفیت از محصولاتی است که می‌تواند تجربۀ لذت غذا یا رفع عطش در روزمره‌های زندگی را به شکلی موثر برطرف نماید."
+        },
+        {
+          "title": "برندهای معتبر نوشابه",
+          "caption": "انواع برندهای معتبر نوشابه در بازار هستند که اکثراً از کیفیت بالایی برخوردارند. معروف‌ترین برندهای نوشابه، کوکاکولا و پپسی هستند. برندهای داخلی و خارجی متعدد با انواع و اقسام طعم‌ها و خواص رژیمی وجود دارند که افراد با توجه به سلیقه و سبک زندگی خود از آن‌ها استفاده می‌کنند. پپسی مکس، سون آپ و میراندا زیر مجموعۀ خانوادۀ پپسی و کوکاکولا زیرو، فانتا و اسپرایت از خانوادۀ کوکاکولا هستند. در کنار آن می توان به برند هایی نظیر نوشابه لاکیدو کاله، عالیس، کانادا درای و زمزم نیز اشاره کرد."
+        },
+        {
+          "title": "فواید نوشابه",
+          "caption": "اثرات دارویی نوشیدنی‌های گازدار بیش از 2 هزار سال پیش کشف شدند. زمانی که یونانیان باستان متوجه تاثیرات چشمه‌های طبیعی مولد آب گازدار بر سلامت عمومی بدن شدند. انواع نوشیدنی‌های گازدار امروز، حاصل تلاش‌های اروپاییان قرن هفدهم برای تولید آب گازدار مشابه با چشمه‌های طبیعی بود. اولین نمونه‌های آب‌های گازدار و نوشابه‌های مصنوعی مربوط به اواخر دهۀ 1700 میلادی است.\nدر کنار زیاد بودن قند و اسیدی بودن نوشابه ها که در صورت زیاد مصرف شدن و خصوصا با شکم خالی می توانند مضر باشند، افزایش گردش خون، بهبود هضم غذا، افزایش متابولیسم بدن، کمک به کاهش وزن و تقویت سیستم ایمنی، از خواص نوشابه‌ اند. در مواردی که فرد دچار مسمومیت غذایی شده باشد، نوشابۀ گازدار مشکی به عنوان یک برطرف کنندۀ تهوع توصیه می‌شود. همچنین که نوشابه‌ها می‌توانند باعث پاکسازی گلو نیز شوند."
+        },
+        {
+          "title": "انواع نوشابه",
+          "caption": "نوشابه ها را می‌توان بر مبنای طعم و برند آن‌ها دسته‌بندی کرد. نوشابه‌های غیرالکلی، محبوب‌ترین نوشیدنی‌ها در سراسر جهان هستند. این نوشابه‌ها از ترکیب آب گازدار، ساکاروز، مواد اسیدی‌کننده، نگهدارنده‌ها، بافرها، امولوسیون‌ها، روغن‌ها و طعم‌دهنده‌های خوراکی تولید می‌شوند.\nاین ترکیبات به عنوان تشکیل‌دهنده‌های اصلی انواع نوشابه هستند. تفاوت نوشابه‌ها نیز براساس طعم، شیوۀ تولید و دستورالعمل خاص شرکت تولید کننده سنجیده می‌شوند. مثلاً برای بسیاری از ما تفاوت طعم نوشابه پپسی و نوشابه فانتا کاملاً واضح است.\nدر حال حاضر شاهد وجود انواع طعم‌های نوشابه‌ها هستیم. نوشابه پرتقالی، کولا، لیمویی، شاتوت و انواع نوشیدنی‌های میوه‌ای از جملۀ این طعم‌ها هستند. نوشابه‌ها را می‌توان براساس نوع بسته‌بندی نیز تقسیم کرد. نوشابه‌های قوطی، شیشه‌ای و بطری از انواع بسته‌بندی‌ها هستند. همچنین که نوشابه‌های خانواده و یک‌نفره نیز وجود دارند که نوع آن‌ها را متفاوت می‌کنند."
+        }
+      ]
+    },
+    {
+      "main": "3300209",
+      "text": [
+        {
+          "title": "ماءالشعیر",
+          "caption": "ماءالشعیر یا آبجوی بدون الکل یکی از پرطرفدارترین و دلنشین ترین نوشیدنی‌ها در ایران است. این نوشیدنی جذاب حدود دو دهه است که در میان جوانان و نوجوانان ایرانی بسیار محبوب شده است. این محبوبیت تا جایی ادامه داشته که در حال حاضر خرید ماءالشعیر به یکی از نیازهای هفتگی یا حتی روزانه اغلب خانواده‌های ایرانی تبدیل شده است. آبجوی بدون الکل اگر بدون شکر باشد یک نوشیدنی بسیار پرخاصیت به حساب می‌آید. جالب است بدانید که این نوشیدنی محبوب و پرخاصیت از دانه‌های جو تهیه می‌شود. در کارخانه دانه‌های جو طی فرآیند و دمای خاصی به مالت تبدیل می‌شوند و در نهایت از عصاره مالت ترکیب شده با رازیانه و شکر آبجوی بدون الکل به دست می‌آید."
+        },
+        {
+          "title": "فواید و خواص ماءالشعیر",
+          "caption": "این نوشیدنی فواید بسیار زیادی برای بدن دارد. از جمله خواص ماءالشعیر می‌توان به دفع سنگ کلیه و رفع یبوست اشاره کرد. ماء الشعیر به دلیل برخورداری از مقادیر زیادی ویتامین B که برای پوست و مو بسیار مفید است. همچنین دارای ویتامین C، آمینو اسید ها و مالتوز و اسید نوکلئیک است.\nیکی از مهم ترین خواص ماءالشعیر، حفظ سلامت پوست و کمک به تقویت و رشد مو است. این نوشیدنی دلچسب اگر دارای مقادیر کمی شکر باشد، برای بدن بسیار مفید خواهد بود."
+        },
+        {
+          "title": "انواع ماءالشعیر",
+          "caption": "این نوشیدنی‌ها در طعم و مزه‌های گوناگون تولید شده و به بازار ارائه می‌شوند. آبجوی بدون الکل کلاسیک یک نمونه بدون شکر و افزودنی از این نوشیدنی است. به همین دلیل طعم کلاسیک آن به عنوان یک نوشیدنی سالم شناخته می‌شود. این نوشیدنی طعمی تلخ و قوی دارد و مزه‌اش برای همه افراد مناسب نیست. بدون شک می‌توان لقب پرطرفدارترین طعم‌های این نوشیدنی را متعلق به ماءالشعیر هلو، انگور، آناناس، لیمو و استوایی دانست."
+        },
+        {
+          "title": "برندهای معتبر ماءالشعیر",
+          "caption": "اگر علاقمند از طرفداران این نوشیدنی باشید احتمالاً نام برندهای معتبر و محبوبی مثل جوجو، هوفنبرگ، هی دی، شمس و بهنوش را بارها شنیده‌اید. این نام‌ها در حوزه تولید نوشیدنی به خصوص آبجوی بدون الکل، در ایران بسیار شناخته شده و معتبر هستند. همچنین برند دلستر آن چنان محبوب بود که بسیاری به 'ماء الشعیر'، 'دلستر' می گفتند."
+        },
+        {
+          "title": "قیمت ماءالشعیر",
+          "caption": "قیمت ماء الشعیر بسیار مقرون به صرفه است. به طور مثال با وجود حجم بالایی که معمولاً این نوشیدنی‌ها دارند قیمت آن‌ها بسیار مناسب است. حتی بسته‌بندی قوطی با شیشه‌ای این نوع نوشیدنی هم قیمت مناسبی دارد، اما خرید ماءالشعیر بزرگ قطعاً به صرفه‌تر از نوع کوچک آن خواهد بود."
+        },
+        {
+          "title": "خرید اینترنتی ماءالشعیر",
+          "caption": "خرید آنلاین ماء الشعیر یک انتخاب هوشمندانه است که از اتلاف وقت جلوگیری می‌کند. شما می‌توانید به راحتی نوشیدنی‌هایی مثل ماءالشعیر و انواع اقلام مصرفی روزانه خود را از طریق اسنپ مارکت سفارش دهید تا به سرعت برایتان ارسال شود."
+        }
+      ]
+    },
+    {
+      "main": "3300210",
+      "text": [
+        { "title": "", "caption": "" },
+        { "title": "", "caption": "" },
+        { "title": "", "caption": "" },
+        { "title": "", "caption": "" },
+        { "title": "", "caption": "" },
+        { "title": "", "caption": "" }
+      ]
+    },
+    {
+      "main": "33002011",
+      "text": [
+        {
+          "title": "چای و دمنوش",
+          "caption": "هیچ چیز مثل چای و دمنوش نمی‌تواند خستگی را از تن‌مان بیرون کند. انواع چای سبز و چای ترش، دمنوش بابونه، چای ماسالا و چای زعفرانی در دل فرهنگ و سبک زندگی ما ایرانیان ریشه کرده‌اند. دمنوش‌ها از نوشیدنی‌هایِ سنتی گیاهی محبوب و با خواص فراوان هستند. خرید چای همیشه یکی از خرید‌های پرچالش ما است، خرید دمنوش هم همینطور. زیرا تنوع محصولات و برندهای با کیفیت، انتخاب و خرید سریع را برایمان دشوار می‌کنند.\nبسیاری از افراد، جدا از طعم و مزۀ مطلوب این نوشیدنی‌ها، آن‌ها را برای خواص متعددی که دارند مورد استفاده قرار می‌دهند. جای دادن بخشی از سبک زندگی‌ و تغذیه‌ای به نوشیدن انواع دمنوش می‌تواند باعث ارتقای سطح سلامتی شود. دمنوش‌ها از انواع میوه‌های خشک، گل‌ها، گیاهان و ادویه‌جات تهیه می‌شوند. طعم و عطر متنوع و متفاوتی که دمنوش‌ها دارند ناشی از تنوع گیاهان است. دمنوش‌ها می‌توانند به صورت خالص و یا با عسل، شکر و نبات مصرف شوند.\nبسیار پیش می‌آید که چای و دمنوش را در کنار یکدگیر به کار می‌بریم. اما یکی دانستن این دو اشتباه است. چای به نوشیدنی دم کردۀ برگ گیاه کاملیا سیننسیس گفته می‌شود. چای سبز و چای سیاه در این دسته از دم‌کرده‌ها قرار می‌گیرند. در مقابل، دم‌نوش به دم‌کردۀ بخش‌های مختلف انواع گیاهان گفته می‌شود.\nهر آنچه به غیر از گیاه کاملیا سیننسیس باشد در ردۀ دم‌نوش‌ها قرار می‌گیرد. دمنوش‌ها می‌توانند به صورت تکی یا ترکیبی تهیه شوند. هر یک از دم‌نوش‌ها دارای خواص منحصربفرد خود است. با این حال، ترکیب کردن آن‌ها با یکدیگر می‌تواند خواص جدیدی را پدید آورد."
+        },
+        {
+          "title": "فواید و خواص چای و دمنوش",
+          "caption": "دمنوش‌ها خواص متعدد و متفاوتی برای بدن دارند. هزاران سال است که از انواع دم‌کرده‌های گیاهی برای درمان انواع بیماری‌ها استفاده شده است. مهم‌ترین مزیت دمنوش‌ها، سادگی تهیۀ آن‌هاست. این نوشیدنی‌های خوش‌عطر و مفید را می‌توان به سادگی و سریع در خانه آماده کرد. بسته به اینکه از چه گیاهانی برای دم کردن استفاده می‌کنید، از خواص مختلفی بهره‌مند خواهید شد. مصرف دمنوش‌ها یکی از بهترین راه‌ها برای کسب آرامش و شادابی است. برخی از آن‌ها نیز به عنوان مسکن‌های فوری برای رفع سردرد و دردهای عضلانی شناخته می‌شوند.\nچای سبز درمان کنندۀ بسیاری از دردهای عضلانی و آرتریت است. همچنین برای بهبود نفخ، کاهش درد معده، آلرژی و کاهش وزن نیز مورد استفاده قرار می‌گیرد. چای بابونه مفید برای خواب، مشکلات پوستی، مشکلات گوارشی، اضطراب و نفخ است. چای نعناع به درمان تهوع، سردرد و دردهای قاعدگی کمک زیادی می‌کند. چای ترش مفید برای فشار خون بالا و بیماری‌های تنفسی است. چای معمولی یا چای سیاه با انواع التهاب‌ها مبارزه می‌کند. مصرف به اندازۀ چای در درمان سرفه، تقویت سیستم ایمنی و بهبود سرماخوردگی کمک می‌کند. چای در ترکیب با انواع ادویه‌ها نیز خواص جدیدی به خود می‌گیرد. مثلاً چای زنجبیل برای انواع ناراحتی‌های معده و دردهای قاعدگی مفید است. همچنین چای دارچین به بهبود سردرد و رفع خواب آلودگی کمک می‌کند."
+        },
+        {
+          "title": "انواع چای و دمنوش",
+          "caption": "چای‌ و دمنوش دارای تنوع بسیار زیادی است. انواع چای که بسیاری از ما هر روز می‌نوشیم، متفاوت از یکدیگر هستند. بسته به محلی که چای کشت شده، نوع بسته‌بندی، نحوۀ خشک کردن، استفاده یا عدم استفاده از رنگ و عطر مصنوعی و چندین پارامتر دیگر، در تنوع چای‌ها موثر هستند. همچنین نوع بسته‌بندی انواع چای نیز در این مساله دخیل است. چای‌ها در ابعاد و اندازه‌های مختلفی بسته‌بندی می‌شوند. از طرفی انواع چای کیسه‌ای و دمی نیز منجر به دسته‌بندی جدیدی در این زمینه می‌شوند. دمنوش‌ها نیز انواع مختلفی دارند. هر یک از دمنوش‌ها بر پایۀ گیاه مورد نظر، نوع و جنس خاص خود را دارد. خرید دمنوش گل گاو زبان، دمنوش نعناع، دمنوش بابونه، دمنوش به لیمو، چای ترش، گل محمدی و انواع دیگر در اسنپ مارکت قابل انجام است. چای ماسالا هم نوعی نوشیدنی سنتی هندی است که از ترکیب چند ادویۀ مختلف با شیر تهیه می‌شود."
+        },
+        {
+          "title": "برندهای معتبر چای و دمنوش",
+          "caption": "چای ایرانی یکی از بهترین چای‌ها در دنیاست. در کشور خودمان هم بیشتر علاقۀ مردم به چای تولید داخل است. برندهای معتبر زیادی در این زمینه فعالیت دارند. غزال، دکتر آز، فامیلا، گلستان، فان تایم، گلیران، جهان، محمود، هایلی، احمد، بهرامن، فومنات، میعاد، نادری، رفاه لاهیجان، سلامت، شهرزاد و شاهسوند از برندهای معروف و معتبر در تولید انواع چای و دمنوش در ایران هستند."
+        },
+        {
+          "title": "قیمت چای و دمنوش",
+          "caption": "قیمت چای و دمنوش می‌تواند بسیار متنوع باشد. بسته به کیفیت چای، نوع دمنوش، بسته‌بندی، ابعاد و اندازه و چندین مورد دیگر، قیمت چای و انواع دمنوش تغییر می‌کند. با این حال انواع چای و دمنوش در قیمت‌های مختلف هستند که افراد می‌توانند تهیه کنند. برای خرید چای ایرانی و انواع دمنوش نگران قیمت نباشید. با هر بودجه‌ای می‌توانید نوع دلخواه خود را داشته باشید."
+        },
+        {
+          "title": "خرید اینترنتی چای و دمنوش",
+          "caption": "به منظور خرید اینترنتی چای ایرانی و انواع دمنوش‌های بسته‌بندی به اسنپ مارکت مراجعه کنید. خرید چای با بهترین کیفیت، خرید دمنوش در انواع طعم‌ها و تهیۀ بسیاری دیگر از اقلام مورد نیاز خانواده از طریق پلتفرم اسنپ مارکت امکان‌پذیر است. کافیست سفارش خود را ثبت کنید و محصول را درب منزل تحویل بگیرید."
+        }
+      ]
+    },
+    {
+      "main": "33002012",
+      "text": [
+        {
+          "title": "قیمت و خرید آب معدنی بهداشتی",
+          "caption": "آب معدنی یکی از محصولات بی‌نظیر طبیعت است. آب، مادۀ اصلی حیات است و بیش از هفتاد درصد بدن ما و بسیاری دیگر از جانوران را تشکیل داده است. این واقعیت نشان از اهمیت آب و کیفیت آن در سبک زندگی و سلامتی دارد. آب معدنی به گونه‌ای از آب‌های طبیعی گفته می‌شود که حاوی میزان مشخصی از مادۀ جامد محلول در آب است. در زمان خرید آب معدنی باید به این توجه کنید که ترکیبات آلی موجود در آنها متفاوت از یکدیگر هستند. از این رو با انواع آب معدنی در طبیعت روبرو هستیم که هر یک، کاربردهای خاص خود را دارند."
+        },
+        {
+          "title": "فواید و خواص آب معدنی",
+          "caption": "منیزیم، سدیم، کلسیم و پتاسیم موجود در آب معدنی، تأثیراتی قابل توجه بر سلامتی و متابولیسم بدن دارد. در مقایسه با آب‌های تصفیه شدۀ شهری، مصرف آب معدنی می‌تواند املاح و ترکیبات ضروری بدن را به شکل موثرتری در اختیار آن قرار دهد. تأثیرات خرید آب معدنی و مصرف مداوم آن، اثرات خود را در مدت زمان مشخصی نشان خواهد داد. این تأثیرات از وضعیت ظاهری پوست تا سیستم گوارش و عملکرد مغز، متغیر هستند. مصرف آب معدنی منجر به افزایش سلامت استخوان‌ها، تنظیم میزان چربی و فشار خون، کاهش احتمال ابتلا به بیماری‌های قلبی و کاهش میزان اسیدیتۀ خون می‌شود. مصرف آب معدنی به سم‌زدایی و هیدراتاسیون بدن کمک زیادی می‌کند. نوشیدن آب معدنی در جایگزین کردن الکترولیت‌ها در بدن نیز موثر است."
+        },
+        {
+          "title": "انواع آب معدنی",
+          "caption": "آب معدنی به گونه‌ای از آب‌های طبیعی گفته می‌شود که محتوی دست کم 250 واحد در میلیون از مادۀ جامد محلول باشد. این معیار توسط تست‌های آزمایشگاهی مورد سنجش قرار میگیرد. کیفیت‌سنجی آزمایشگاه به این صورت است که تا میزان 249 میلی‌گرم در لیتر از آب‌های طبیعی را به عنوان آب چشمه طبقه‌بندی می‌کنند.\nدسته‌بندی 250 تا 500 آن، آب معدنی با مواد جامد کم یا نوع سبک محسوب می‌شود. بیشتر از 500 میلی‌گرم در لیتر آن نیز به عنوان آب با محتوای معدنی بالا تلقی می‌شود. هرچند که این نوع از کیفیت و استاندارد ممکن است در کشورهای دیگر به شکل متفاوتی باشد.\nآب‌هایی که از دل زمین خارج می‌شوند در مسیر خود از چندین لایه سنگ و شن عبور می‌کنند. این روند منجر به تصفیۀ آب و نیز غنی‌تر شدن آن با مواد معدنی می‌شود. موادی که در حین گذر آب از زمین حل می‌شوند ممکن است برای سلامتی مضر یا مفید باشند. بنابراین هنگام پر کردن بطری‌های آب معدنی، کیفیت‌سنجی متفاوتی از آن صورت می‌گیرد.\nسال‌های اخیر، دوران پیچیده شدن مفاهیم تولید بوده است. پیش از این تنها یک نوع آب معدنی در بازار وجود داشت که توسط برندهای محدودی تولید می‌شدند. اما در حال حاضر شاهد انواع و اقسام آب‌های معدنی در قفسه‌های فروشگاه‌ها هستیم. انواع آب معدنی را می‌توان مطابق با دسته‌بندی‌های مختلفی جدا کرد. آب معدنی گازدار یا بدون گاز نمونه‌ای از این دسته‌بندی‌هاست. همچنین انواع آب معدنی ساده و طعم‌دار نیز وجود دارد."
+        },
+        {
+          "title": "برندهای معتبر آب معدنی",
+          "caption": "انواع برندهای معتبر آب معدنی در بازار هستند که همگی از کیفیت قابل قبولی برخوردارند. شناخته شده‌ترین برندهای معتبر آب معدنی شامل کاله، آکوآفینا، دماوند، دسانی، لایت، نستله، پارسی و میوا هستند. یکی از قدیمی‌ترین برندها، آب معدنی دماوند است که همچنان در این عرصه فعالیت دارد."
+        },
+        {
+          "title": "قیمت آب معدنی",
+          "caption": "قیمت آب معدنی با توجه به بسته‌بندی، طعم و کیفیت آن مشخص می‌شود. در کنار انواع آب معدنی ساده، خرید عرقیات گیاهی و خرید آب گازدار نیز رواج دارد. برای خرید آنلاین آب معدنی از اسنپ مارکت می‌توانید به بخش مورد نظر مراجعه نمایید. قیمت آب‌های معدنی گوناگون با توجه به شرکت تولیدکننده، کیفیت و میزان املاحی که در آن‌ها وجود دارند متفاوت‌اند که می‌توانید در زمان خرید آب، به میزان آنها بر روی بطری آب دقت کنید."
+        },
+        {
+          "title": "خرید اینترنتی آب معدنی",
+          "caption": "انواع آب معدنی کوچک و بزرگ با برندهای متفاوت را می‌توانید به صورت آنلاین در اسنپ مارکت خرید کنید. آب معدنی دماوند، آب معدنی دسانی و آب معدنی نستله از برندهای شناخته شدۀ آن در کشور هستند. هر یک از آب‌های معدنی بسته‌بندی شده، خواص و طعم خاص خود را دارند. این برندها با هدف بهره‌مند شدن همۀ افراد از فواید آب سالم فعالیت می‌کنند."
+        }
+      ]
+    },
+    {
+      "main": "33002017",
+      "text": [
+        {
+          "title": "خرید میوه آنلاین",
+          "caption": "مشغله‌های کاری و کمبود وقت این روزها بیداد می‌کند. از طرفی خرید راحت‌تر و بدون دغدغه برای اکثر افراد یک نیاز محسوب می‌شود تا در وقت و انرژی خود صرفه‌جویی کنند. خرید آنلاین میوه و سبزیجات، باعث می‌شود تا نگرانی از بابت تأمین این مواد نداشته باشید. در مهمانی‌های خود می‌توانید به راحتی از فروشگاه اینترنتی میوه، در اسرع وقت خرید خود را انجام دهید.\nاسنپ مارکت نه تنها امکان خرید غیر حضوری را برایتان فراهم کرده است، بلکه بهترین انواع میوه تازه و میوه فصل را در فروشگاه خود دارد. پس از هر نوع میوه و سبزیجات که لازم داشته باشید، در منزل خود خرید می‌کنید و در اسرع وقت برای شما ارسال می‌شود."
+        },
+        {
+          "title": "قیمت میوه تازه",
+          "caption": "قیمت روز در میوه فروشی اسنپ مارکت را می‌توانید ببینید و با خرید میوه ارزان و تازه، سلامت خود و عزیزانتان را تضمین کنید. قیمت میوه ها با توجه به نوع آنها بسیار متغیر است و از قیمت های ارزان شروع شده و برای میوه های کمیاب تر و وارداتی مانند آناناس گرانتر می شوند."
+        },
+        {
+          "title": "کیفیت میوه در خرید اینترنتی",
+          "caption": "یکی از دغدغه‌های افراد هنگام خرید آنلاین میوه، کیفیت آن‌هاست. در اسنپ مارکت با دستچین کردن میوه ها از فروشگاه ها، تلاش داریم تا بهترین میوه‌های باکیفیت را برای شما ارسال کنیم. همچنین میوه ها در بسته بندی های محافظت شده برای شما ارسال خواهند شد تا ضرب نبینند.\nبدین صورت می‌توانید با آرامش خاطر یک خرید ارزان، باکیفیت و آنلاین را از اسنپ مارکت داشته باشید و بهترین میوه فصل را تهیه کنید."
+        },
+        {
+          "title": "میوه",
+          "caption": "میوه، همیشه در سبد کالای خانواده‌ها جای داشته است و به علت فوایدی که برای سلامتی دارد، استفاده از آن‌ها از اهمیت زیادی برخوردار است. خرید میوه جزو مواردی است که همیشه به آن نیاز دارید. خرید میوه باکیفیت و ارزان را می‌توانید از اسنپ مارکت انجام دهید.\nهر چند خرید انواع میوه را می‌توان از فروشگاه‌های مختلفی انجام داد، اما ممکن است خرید میوه تازه و باکیفیت که با قیمت مناسبی عرضه شود، از هر جایی امکان‌پذیر نباشد. به همین علت خرید سبزیجات و میوه را باید از مراکز معتبر انجام داد. اسنپ مارکت یکی از بهترین فروشگاه‌هایی است که در زمینه خرید میوه به شما کمک شایانی می‌کند تا تجربه یک خرید لذت‌بخش را داشته باشید."
+        },
+        {
+          "title": "فواید و خواص میوه و سبزیجات",
+          "caption": "میوه‌ها سرشار از انواع ویتامین، املاح معدنی و آنتی اکسیدان هستند. به علاوه وجود فیبرهای گیاهی در ساختار میوه، به بهبود سلامت دستگاه گوارش کمک شایانی می‌کند. خواص میوه باعث شده است تا در اهمیت زیادی در هرم غذایی داشته باشد. بر اساس نظر کارشناسان سلامت، هر فرد باید روزی یک یا دو واحد میوه را در رژیم غذایی خود بگنجاند و از سبزیجات به‌وفور در وعده‌های غذایی استفاده کند./nسلامت قلب و عروق، پوست و مو، سیستم عصبی و دستگاه ایمنی بدن به مقدار زیادی وابسته به مصرف میوه است. میوه تازه، مواد مغذی زیادی را به بدن می‌رساند و سلامت آن را تضمین می‌کند. به گونه‌ای که برای تأمین ویتامین و املاح معدنی بدن، میوه‌های مختلف توسط کارشناسان تغذیه در رژیم غذایی چاقی، لاغری و درمانی گنجانده می‌شود. بدن انسان ها در کنار میوه و سبزیجات تازه به گوشت قرمز و لبنیات و مواد پروتیینی هم نیاز دارد.\nبا توجه به توضیحاتی که داده شد، هر خانواده نیاز دارد تا میوه و سبزیجات را جزو لیست خرید خانه داشته باشد."
+        },
+        {
+          "title": "انواع میوه ",
+          "caption": "انواع میوه در بازار وجود دارد که افراد بر اساس ذائقه، دسترسی و حتی هزینه‌های خرید خود از آن‌ها بهره می‌برند. شاید بتوان مصرف میوه را محدود کرد؛ اما حذف آن‌ها امکان پذیر نیست. برخی افراد به میوه‌های معمول علاقه‌مند هستند که شامل موارد زیر هستند:\n  • انواع سیب\n  • انواع مرکبات\n  • هلو\n  • موز\n  • هندوانه\n  • گیلاس و ...\nافرادی هم هستند که میوه‌های وارداتی، استوایی و کمیاب را در سبد میوه خود قرار می‌دهند که شامل موارد زیر هستند:\n  • میوه آووکادو\n  • آناناس\n  • انبه و ...\nیک میوه فروشی باید بتواند تمام این موارد را در خود داشته باشد تا هر فرد با هر ذائقه و نیازی بتواند خرید خود را به صورت کامل در آن انجام دهد. در فروشگاه اسنپ مارکت تنوع بسیار بالایی را از انواع میوه‌های مختلف و روز می‌بینید که کاملاً تازه هستند."
+        }
+      ]
+    },
+    {
+      "main": "33002018",
+      "text": [
+        { "title": "خرید صیفی جات و خرید سبزی بسته بندی", "caption": "" },
+        {
+          "title": "سبزیجات و صیفی‌‌جات ارگانیک",
+          "caption": "امروزه متخصصان تغذیه تاکید بسیاری به خرید سبزیجات و خرید صیفی جات ارگانیک و تازه دارند. همان‌طور که می‌دانید، میوه‌ها و سبزیجات بخشی از یک رژیم غذایی سالم و متعادل هستند و می‌توانند به شما در سالم ماندن و حفظ سیستم ایمنی بدن‌تان کمک کنند. با توجه به نقش مهمی که سیستم ایمنی در حفظ سلامت بدن و جلوگیری از بروز بسیاری از بیماری‌ها دارد، مصرف به‌اندازه‌ی انواع میوه‌ و سبزیجات در برنامه‌ی غذایی بسیار لازم و ضروری به نظر می‌رسد.شما همچنین میتوانید برای خرید میوه آنلاین از اسنپ مارکت اقدام کنید."
+        },
+        {
+          "title": "فواید و خواص سبزیجات و صیفی‌جات",
+          "caption": "میوه‌ها و سبزیجات سرشار از ویتامین‌ها و مواد معدنی از جمله ویتامین C و پتاسیم هستند. آن‌ها منبع عالی فیبر غذایی هستند که می‌تواند به حفظ سلامت روده و جلوگیری از یبوست و سایر مشکلات گوارشی کمک کند. همچنین رژیم غذایی سرشار از فیبر خطر ابتلا به سرطان روده را کاهش می‌دهد. علاوه بر این، مصرف آن‌ها به کاهش خطر بیماری‌های قلبی، سکته‌ی مغزی و برخی از انواع سرطان کمک می‌کند. تحقیقات نشان داده‌اند که میوه‌ها، سبزیجات و صیفی‌جات در یک رژیم غذایی سالم و متعادل بسیار موثر هستند. در کنار فواید و خواص بی‌شمار، طعم آن‌ها بسیار خوشمزه است و تنوع زیادی برای انتخاب وجود دارد. به همین دلیل خرید سبزیجات و مصرف روزانه‌ی آن‌ها به شدت توصیه می‌شود."
+        },
+        {
+          "title": "انواع سبزیجات و صیفی‌جات",
+          "caption": "سبزی خوردن شامل انواع مختلف سبزی است که هر یک طعم بی‌نظیری داشته و خواص بسیاری به همراه دارد. علاوه بر سبزی‌ خوردن، انواع دیگر سبزی از جمله سبزی قرمه، سبزی آش، سبزی کوکو یا سبزی سوپ که ترکیبی از چند سبزی مختلف است، نیز به صورت تازه مصرف می‌شوند. در میان انواع صیفی‌جات، انواع کلم، کرفس، فلفل دلمه، هویج، بلال، بامیه و‌ بادمجان طرفداران زیادی دارند. نکته‌ی مهم در تهیه‌ی سبزیجات و صیفی‌جات، تازگی و ارگانیک بودن آن‌هاست. خوشبختانه امروزه خرید آنلاین سبزیجات، کار را برای متقاضیان آسان کرده است. آن‌ها می‌توانند به راحتی در کمترین زمان محصول مورد نظر خود را به صورت آنلاین مشاهده و آن را به مقدار مورد نیاز به صورت ارگانیک تهیه نمایند."
+        },
+        {
+          "title": "برندهای معتبر صیفی‌جات و سبزیجات بسته ‌بندی",
+          "caption": "شاید این سوال برای شما هم مطرح شود که بسته‌ بندی سبزی‌جات و صیفی‌جات چه مزایایی به دنبال دارد؟ برخلاف اکثر مواد غذایی، سبزیجات و صیفی‌جات تازه پس از چیده شدن نیز آب، بخار و هوا را تنفس و جذب می‌کنند، در این فرآیند آن‌ها اکسیژن را جذب کرده و دی اکسید کربن و بخار آب آزاد می‌کنند. نکته‌ی کلیدی برای تازه ماندن محصولات بسته‌بندی شده این است که میزان تنفس آن‌ها کاهش می‌یابد و در عین حال کیفیت‌شان (طعم، بافت، ویژگی‌های ظاهری و خواص) حفظ می‌شود. مواد بسته ‌بندی مورد استفاده برای صیفی‌جات و سبزیجات از اهمیت ویژه‌ای برخوردار هستند. همچنین به میزان نفوذپذیری و تنفس آن‌‌ها نیز باید توجه شود. اگر محصولات به صورت هرمتیک بسته شوند، اکسیژن کافی وجود نخواهد داشت و شرایط بی‌هوازی نامطلوب ایجاد می‌شود. از طرف دیگر، اگر مواد باز باشند، فضای محافظ خارج می‌شود و به نفع محصولات نخواهد بود.\nبا توجه به فوایدی که مصرف سبزیجات و صیفی‌جات تازه به همراه دارد، امروزه بسیاری از شرکت‌ها این محصولات را با بالاترین کیفیت بسته‌بندی و به مشتریان عرضه می‌کنند. آن‌ها با دستگاه‌‌های مخصوص تمام شرایط لازم برای تازه ماندن و حفظ کیفیت مواد داخل بسته‌بندی را فراهم کرده و این محصولات را به صورت کاملا ارگانیک به دست مصرف‌کننده می‌رسانند. علاوه بر این، خرید سبزیجات بسته‌ بندی این امکان را فراهم می‌کند تا افرادی که فرصت کافی برای خرید کردن ندارند، بتوانند محصول مورد نظر خود را به سادگی تهیه کنند. اما در نظر داشته باشید که هنگام خرید سبزی توجه به برخی نکات مانند قیمت آن لازم و ضروری است. پیشنهاد میکنیم حتما مقاله طرز تهیه دلمه برگ مو مطالعه کنید."
+        },
+        {
+          "title": "قیمت صیفی‌جات و سبزیجات بسته ‌بندی",
+          "caption": "قیمت سبزیجات و صیفی‌جات به عوامل مختلفی از جمله نوع و کیفیت آن‌ها بستگی دارد. اما به طور کلی خرید سبزی بسته ‌بندی به دلیل نداشتن ضایعات و مواد دور ریختنی، بسیار مقرون به صرفه بوده و همچنین مصرف آن‌ها بسیار آسان‌تر است. یکی دیگر از عواملی که در قیمت سبزیجات و صیفی‌جات تاثیرگذار است، وزن آن‌هاست. مانند اغلب محصولات غذایی، عموما هرچه وزن محصول بیشتر باشد، خرید آن برای مصرف‌کننده از نظر اقتصادی مقرون به‌ صرفه‌تر خواهد بود."
+        },
+        {
+          "title": "خرید صیفی‌‌جات ارگانیک و سبزیجات بسته بندی",
+          "caption": "اسنپ مارکت این امکان را برای شما فراهم کرده است تا بتوانید خرید آنلاین صیفی‌جات‌ و سبزیجات را با بالاترین کیفیت تجربه کنید. با اسنپ مارکت می‌توانید این محصولات را به صورت کاملا ارگانیک و تازه با مناسب‌ترین قیمت تهیه کرده و از طعم و خواص بی‌نظیر آن‌ها بهره‌مند شوید. علاوه بر این، با خرید اینترنتی میوه و سبزیجات می‌توانید در زمان و هزینه‌ها صرفه‌جویی کرده و در عین حال از خرید با کیفیت خود لذت ببرید."
+        }
+      ]
+    },
+    {
+      "main": "33002019",
+      "text": []
+    },
+    {
+      "main": "33002020",
+      "text": []
+    },
+    {
+      "main": "33002021",
+      "text": []
+    },
+    {
+      "main": "33002022",
+      "text": []
+    },
+    {
+      "main": "33002023",
+      "text": []
+    },
+    {
+      "main": "33002026",
+      "text": [
+        {
+          "title": "قیمت روغن",
+          "caption": "روغن‌ها به عنوان یک مادۀ مصرفی قیمت‌های متنوعی دارند. اما به طور کلی می‌توان گفت که قیمت آن‌ها به نسبت کم است. همچنین لازم به ذکر است که روغن مایع در اندازه‌های مختلفی تولید شده و در بازار وجود دارد. بنابراین افراد می‌توانند مقدار روغن را با توجه به نیازشان تهیه کنند. روغن‌های پخت و پز که در اندازه‌های بزرگ تولید می‌شوند نسبت به حجم کمتر قیمت‌های مناسب و به صرفه‌تری دارند. بنابراین در صورتی که استفاده از روغن زیاد باشد بهتر است که حجم بزرگ آن تهیه شود. شما میتوانید برای خرید خواربار و همچنین خرید برنج ایرانی و خرید رب مورد نیاز خود از اپلیکیشن یا سایت اسنپ مارکت استفاده کنید."
+        },
+        {
+          "title": "خرید روغن",
+          "caption": "روغن مایع یا روغن غذا یکی از انواع روغن است که در پخت و پز بسیار استفاده می‌شود. خرید روغن البته تنها به روغن‌های پخت و پز محدود نمی‌شود. روغن‌های خوراکی تنوع بسیار بالایی داشته و هر کدام برای کارهای مشخصی استفاده می‌شوند. همچنین این روغن‌ها ویژگی‌های مخصوص به خود را دارند. روغن مایع در تهیه بیشتر غذاها استفاده می‌شود. بنابراین جز جدایی‌ناپذیر خریدهای خانه محسوب می‌شود. اما با توجه به تنوع آن‌ها بهتر است که با انواع و ویژگی‌های آن آشنا شوید تا تصمیم‌گیری و انتخاب آن‌ها آسان گردد. در ادامه به معرفی انواع روغن و همچنین خواص و اهمیت استفاده از آن‌ها می‌پردازیم.\nهمانطور که اشاره شد اکثر غذاها با استفاده از روغن تهیه می‌شود. روغن در صورت استفادۀ خیلی زیاد می‌تواند ضررهایی داشته باشد اما با مصرف متعادل آن می‌توان از خواص آن‌ها بهره‌مند شد. روغن‌ها تنوع بسیاری دارند. برخی روغن‌های گیاهی مانند روغن کانولا حاوی ویتامین است و همچنین چربی ضروری بدن را تامین می‌کند. روغن‌های دیگری مانند روغن زیتون نیز خواص بسیاری دارد که با استفاده از آن به جای روغن‌های مضر می‌توان از فواید آن بهره برد. بنابراین حال که استفاده از روغن برای آشپزی ضروری است بهتر است که روغن‌های با کیفیت را بشناسید و آن‌ها را با نمونه‌های مضر و یا بی‌کیفیت جایگزین کنید."
+        },
+        {
+          "title": "انواع روغن",
+          "caption": "روغن‌ها به طور کلی به دو دسته روغن‌های گیاهی و روغن حیوانی تقسیم می‌شوند. اما غالباً آن چه برای آشپزی استفاده می‌شود، روغن‌های مایع گیاهی است. از مهم‌ترین روغن‌هایی که برای آشپزی استفاده می‌شوند می‌توان از روغن آفتاب گردان، روغن سرخ کردنی، روغن زیتون، روغن کنجد، روغن کانولا و روغن ذرت اشاره کرد. همانطور که مشخص است تمام این روغن‌ها گیاهی هستند و هرکدام ویژگی‌های خاص خود را دارند. به طور مثال روغن کانولا که بسیار هم در آشپزی محبوب است و از آن زیاد استفاده می‌شود دارای چربی‌های مفید و ضروری است. همچنین دارای ویتامین E و آنتی‌اکسیدان است. این روغن نسبت به روغن‌های دیگر اسیدهای چرب کمتری نیز دارد. روغن آفتابگردان نیز حاوی امگا 3 است که برای بدن فواید بسیاری دارد.\nبه طور کلی لازم به ذکر است که یک روغن مرغوب 2 ویژگی خیلی مهم دارد. طعم خوب و ارزش غذایی بالا این دو ویژگی هستند. در صورتی که روغن، ارزش غذایی کافی نداشته باشد، تنها باعث چرب شدن غذا شده و هیچ مزیت دیگری نخواهد داشت."
+        },
+        {
+          "title": "برندهای روغن",
+          "caption": "روغن پخت و پز و روغن‌هایی که استفادۀ زیاد دارند توسط شرکت‌های مختلفی تولید و وارد بازار می‌شوند. همانطور که مشخص است با توجه به ترکیبات و مواد اولیه استفاده شده، هر یک از آن‌ها می‌تواند کیفیت و ویژگی‌های متفاوتی داشته باشد. محصولات برخی از این شرکت‌ها نسبت به سایرین محبوبیت بیشتری دارند. از جمله مهم‌ترین برندهای تولید روغن می‌توان به فامیلا، اویلا، بهار، لادن، غنچه، یک و یک، طبیعت، زر اویل و موارد دیگر اشاره کرد."
+        },
+        {
+          "title": "خرید اینترنتی روغن",
+          "caption": "از زمانی که اینترنت به جز جدایی‌ناپذیر زندگی افراد تبدیل شد، اقداماتی با استفاده از آن برای پیشبرد آسان کارهای روزمره نیز انجام گرفت. به طور مثال خریدهای روزانه از جمله خریدهای سوپرمارکتی امروزه به راحتی به صورت آنلاین انجام می‌گیرد. شما با استفاده از وب سایت و یا اپلیکیشن اسنپ مارکت به راحتی می‌توانید از سوپرمارکت، هایپر مارکت و یا هایپراستارهای اطراف موارد مورد نیاز خود را انتخاب و سپس خرید خود را نهایی کنید. از مزیت‌های استفاده از این سامانه آن است که سفارش خود را در زمان کم و درب منزل تحویل خواهید گرفت."
+        }
+      ]
+    },
+    {
+      "main": "33002027",
+      "text": [
+        {
+          "title": "خرید ماکارونی",
+          "caption": "ماکارونی و رشته مانند برنج جز مواد غذایی خام محسوب می‌شوند. ماکارونی از آردی با نام سمولینا تهیه می‌شود. وابسته به کیفیت این آرد، کیفیت ماکارونی و رشته نیز مشخص خواهد شد. ماکارونی یک غذای بسیار پرطرفدار نه تنها در ایران، بلکه در سراسر جهان محسوب می‌شود. این غذا از قدیم نیز عضو دائمی سبد خرید ایرانی‌ها بوده است. اصالت ماکارونی به کشور ایتالیا بر می‌گردد. بیشتر دستور پخت‌های آن نیز مربوط به این کشور است. َشما میتوانید انواع خواربار و ماکارونی و سویا را از فروشگاه اسنپ مارکت تهیه کنید.\nیکی از مهم‌ترین دلایل محبوبیت ماکارونی علاوه بر طعم آن، مدت زمان کم برای آماده سازی این غذاست. در ادامۀ این مطب قصد داریم به معرفی و انواع ماکارونی بپردازیم."
+        },
+        {
+          "title": "خواص ماکارونی",
+          "caption": "ماکارونی از نظر ارزش غذایی قابل قبول است. البته ارزش غذایی آن بسیار وابسته به نوع آردی است که برای تولید آن استفاده شده است. این آرد شباهت زیادی به نشاسته دارد. با این تفاوت که مقدار پروتئین آن کمی از نشاسته کمتر است.\nماکارونی سرشار از ویتامین A است. در نتیجه در سلامت مو موثر خواهد بود. ماکارونی همچنین حاوی مقدار قابل توجهی پتاسیم بوده و بنابراین برای سلامت قلب و عروق مفید است. همچنین لازم به ذکر است که این غذا سرشار از کربوهیدرات است و به بدن انرژی می‌‌رساند. مصرف ماکارونی می‌تواند، سطح سوخت و ساز یا همان متابولیسم بدن را افزایش دهد. در نتیجه مصرف آن شما را فعال نگه می‌دارد و ضعف و خستگی را کاهش خواهد داد. پیشنهاد میکنیم طرز تهیه پاستا آلفردو و مرغ را از بلاگ اسنپ مارکت مطالعه کنید."
+        },
+        {
+          "title": "انواع ماکارونی",
+          "caption": "ماکارونی و لازانیا انواع گوناگونی دارند. ماکارونی از نظر فرم و همچنین ترکیبات آن به چندین دسته تقسیم می‌شود. ماکارونی پیچ پیچی، ماکارونی صدفی، ماکارونی پاستا، پاستا فرمی، پاستا پیکولی، ماکارونی پروانه‌ای، پنه ریگاتو، ماکارونی رشته‌ای، ماکارونی گوش ماهی و موارد دیگر همگی از انواع ماکارونی محسوب می‌شوند. البته این تقسیم‌بندی از لحاظ فرم و شکل آن است. لازم به ذکر است که ماکارونی‌های رشته‌ای نیز از نظر قطر به چند دسته تقسیم می‌شوند.\nماکارونی سبوس‌دار و یا ماکارونی سبزیجات نیز از نظر ترکیب مواد اولیه با ماکارونی ساده تفاوت دارند. لازم به ذکر است که ماکارونی سبوس‌دار از خواص بسیار زیادی نسبت به مدل معمولی آن برخوردار است. رشته فرنگی و رشته آش نیز به گونه‌ای به ماکارونی شباهت دارند و با یکدیگر هم‌خانواده محسوب می‌شوند.\nلازانیا نیز جزء خانوادۀ ماکارونی طبقه‌بندی می‌شود. لازانیا نیز همانند ماکارونی یک غذای بسیار محبوب و پرطرفدار بوده که تهیه آن نیز ساده است. بهتر است طرز تهیه لازانیا بدون فر را هم مطالعه کنید."
+        },
+        {
+          "title": "برندهای ماکارونی",
+          "caption": "ماکارونی توسط شرکت‌های متفاوتی تولید و وارد بازار می‌شود. همانطور که مشخص است کیفیت محصولات شرکت‌های مختلف با یکدیگر متفاوت هستند. این تفاوت مربوط به استفاده از مواد اولیه مختلف است. در صورتی که آرد سمولینا استفاده شده در ماکارونی مرغوب‌تر باشد به تبع ماکارونی نیز با کیفیت‌تر خواهد بود.\nاز جمله مهم‌ترین برندهایی که به تولید ماکارونی می‌پردازند می‌توان به زر ماکارون، مانا، هاتی کارا، زر، تک، رشد و مهنام اشاره کرد. همۀ برندهایی که گفته شد جز معتبرترین برندها محسوب می‌شوند و می‌توانید با آن‌ها یک ماکارونی خوشمزه تهیه کنید. بهتر است طرز تهیه سالاد ماکارونی را هم مطالعه کنید."
+        },
+        {
+          "title": "قیمت ماکارونی",
+          "caption": "قسمت ماکارونی نسبت به شرکت تولیدی و مواد اولیه استفاده شده در آن متفاوت است. اما ماکارونی ایرانی به طور کلی دارای یک محدودۀ قیمت مشخصی است و قیمت بالایی ندارد. از مهم‌ترین مشخصه‌های یک ماکارونی مرغوب می‌توان به بسته‌بندی و کیفیت آرد سمولینای آن اشاره کرد."
+        },
+        {
+          "title": "خرید اینترنتی ماکارونی و خرید پاستا",
+          "caption": "امروزه با پیشرفت تکنولوژی و استفادۀ بیشتر از اینترنت و پلتفرم‌های مختلف کارهای روزمره بسیار آسان شده است. برای مثال به راحتی می‌توان اکثر خریدهای خود را به شکل آنلاین و اینترنتی و بدون صرف زیاد انرژی و زمان انجام داد. یکی از این خریدها، خریدهای سوپرمارکتی است.\nشما می‌توانید تمام خریدهای خود را توسط وب سایت و یا اپلیکیشن اسنپ مارکت به صورت آنلاین انجام داده و در زمان کم درب خانه تحویل بگیرید. نکتۀ مهم دیگر در خرید اینترنتی از اسنپ مارکت آن است که می‌توانید محصولات مختلف را با یکدیگر مقایسه کرده و از سوپرمارکت مورد نظر خرید خود را نهایی و ثبت کنید. قبل از اقدام به خرید مواد غذایی بهتر است لیست خرید خانه اسنپ مارکت را در نظر داشته باشید."
+        }
+      ]
+    },
+    {
+      "main": "33002028",
+      "text": [
+        {
+          "title": "خرید و قیمت برنج ایرانی و خارجی",
+          "caption": "برنج‌های مصرفی ایرانیان در دو دسته اصلی برنج ایرانی و خارجی قرار می‌گیرند. برنج‌های ایرانی عموماً در شمال ایران کشت می‌شوند. این برنج در فروشگاه‌های مرتبط با اسنپ مارکت با توجه به برند، درجه کیفیت برنج و وزن هر بسته آن با قیمت مشخصی به فروش می‌رسد. در حالی که برنج هندی و پاکستانی نیز وجود دارند که با قیمت پایینی تری نسبت به برنج ایرانی فروخته می‌شوند."
+        },
+        {
+          "title": "خرید برنج دولتی",
+          "caption": "برنج دولتی نیز قیمتی با توجه به تصمیمات سازمان جهاد کشاورزی دارد. به نحوی که برنج در فروشگاه‌های زنجیره ای و اینترنتی در راستای تنظیم بازار با قیمت‌های مشخصی به فروش می‌رسند. کافی است در سایت یا اپلیکیشن اسنپ مارکت، گزینه تنظیم بازار را انتخاب کنید تا برنج دولتی برای شما به نمایش گذاشته شود."
+        },
+        {
+          "title": "خرید و قیمت  برنج پاکستانی",
+          "caption": "یکی از پرفروش‌ترین برنج‌های خارجی، برنج پاکستانی است که با توجه به درجه کیفیت، برند عرضه کننده و وزن هر بسته، قیمت مشخصی دارد. لازم به ذکر است که برنج‌های پاکستانی هم با قیمت تنظیم بازار به فروش می‌رسند."
+        },
+        {
+          "title": "خرید و قیمت برنج هندی",
+          "caption": "برنج هندی هم سال‌هاست یکی از گزینه‌های خرید برنج ایرانی‌ها محسوب می‌شود. مخصوصاً بسیاری در مراسم مختلف مانند اعیاد یا عزاداری‌ها برای مهمانی و نذری دادن از برنج هندی استفاده می‌کنند. قیمت برنج هندی هم با توجه به برند توزیع کننده، وزن و درجه کیفیت برنج متفاوت است."
+        },
+        {
+          "title": "مورد انواع برندهای برنج",
+          "caption": "با توجه به اهمیت برنج در برنامه غذایی روزانه و هفتگی، آشنایی با نام انواع برندهای برنج خالی از لطف نیست. اگر به فروشگاه‌های اینترنتی و حضوری مختلف نگاهی بیندازید، با نام‌های مختلفی روبرو می‌شوید. اما همچنان برندهایی مانند گلستان، محسن، برنج هاشمی، طارم و طبیعت حرف اول را در تولید و توزیع برنج می‌زنند."
+        },
+        {
+          "title": "برنج",
+          "caption": "برنج یکی از اقلام اصلی رژیم غذایی و مایحتاج مردم ایرانی به شمار می‌آید. به همین دلیل شناخت انواع برنج و اطلاع از قیمت آنها از اهمیت بسیاری برخوردار است. مخصوصاً اگر خرید اینترنتی برنج را در اولویت داشته باشید."
+        },
+        {
+          "title": "نگاهی به برنج سبوس دار و برنج دودی",
+          "caption": "دو نوع برنج که خریداران خاص خود را دارند، برنج سبوس دار و برنج دودی هستند. برنج سبوس دار یا برنج قهوه ای به خاطر سبوسی که دارد، از ارزش غذایی بالایی برخوردار است. این برنج در بهبود عملکرد سیستم گوارش، تقویت مو، کاهش وزن و ارتقای سلامتی اندام‌های دیگر بدن نقش مهمی دارد. برنج دودی هم عطری دارد که بسیاری شیفته آن می‌شوند. هرچند خاصیت ضد سرطانی این برنج یکی دیگر از دلایل محبوبیت آن به شمار می‌آید. به همین دلیل خرید اینترنتی آنها همچون سایر انواع برنج از اسنپ مارکت امکان پذیر است."
+        }
+      ]
+    },
+    {
+      "main": "33002029",
+      "text": [
+        {
+          "title": "رب",
+          "caption": "رب گوجه فرنگی را می‌توان یکی از مهم‌ترین چاشنی‌ها برای طبخ انواع غذا دانست. این ماده غذایی علاوه بر طعم، به غذا رنگی جذاب و دلنشین می‌دهد. به همین دلیل در سبد خرید ماهانه تمام ایرانی‌ها می‌توان رب گوجه فرنگی را دید. رب گوجه فرنگی را در بسیاری از غذاها و خورش‌ها استفاده می‌کنند. شما برای درست کردن غذاهایی مانند املت، آبگوشت و خورش قیمه به رب گوجه فرنگی نیاز دارید. باید بدانید که رب گوجه در حقیقت همان گوجه است که پس از فرآوری و جدا کردن دانه‌ها و پوست آن و طی یک فرآیند صنعتی تبدیل به ماده‌ای یک دست به نام رب گوجه فرنگی می‌شود."
+        },
+        {
+          "title": "خواص رب گوجه فرنگی",
+          "caption": "گوجه فرنگی و رب گوجه فرنگی سرشار از برخی مواد مغذی هستند. انواع آنتی اکسیدان موجود در رب گوجه می‌توانند با افزایش قدرت سیستم ایمنی، بدن را در برابر بسیاری از بیماری‌ها مقاوم‌تر کنند. از دیگر خواص مصرف گوجه فرنگی می‌توان به افزایش قدرت حافظه، افزایش میزان یادگیری، تقویت سیستم عصبی و خواب آرام‌تر اشاره کرد. حتما مقاله ی دلایل گنجاندن گوجه فرنگی در رژیم غذایی را مطالعه کنید."
+        },
+        {
+          "title": "بهترین شکل استفاده از رب",
+          "caption": "برای این که بتوانید از رب گوجه فرنگی به بهترین شکل استفاده کنید بهتر است ابتدا آن را با مقداری آب مخلوط کنید و سپس به غذا اضافه کنید. با این کار می‌توانید از خواص آن بیشترین بهره را ببرید."
+        },
+        {
+          "title": "بهترین برندهای رب گوجه فرنگی",
+          "caption": "برندها و شرکت‌های مختلفی در ایران اقدام به تولید و توزیع رب گوجه فرنگی می‌کنند. از بهترین و معروف‌ترین برندهای تهیه و توزیع رب گوجه فرنگی می‌توان به تبرک، اویلا، فامیلا، بدر، شاپرک، خوشاب، روژین، هایپراستار، اروم آدا، سحر، پیک، طبیعت، ایلیکا، شاهسوند و اصالت اشاره کرد"
+        },
+        {
+          "title": "خرید آنلاین رب گوجه فرنگی",
+          "caption": "خرید رب گوجه فرنگی را می‌توان به صورت حضوری از سوپر مارکت‌ها و به صورت اینترنتی از فروشگاه‌های معتبر انجام داد. یکی از معتبرترین فروشگاه‌های اینترنتی در ایران اسنپ مارکت است. شما در اسنپ مارکت می‌توانید انواع مختلف رب گوجه فرنگی مرغوب را با قیمت‌های مناسب خریداری کنید. تخفیف‌ها و جشنواره‌هایی که برای فروش برخی از محصولات وجود دارد نیز باعث می‌شود تا بتوانید این محصول و بسیاری از محصولات دیگر را با قیمت مناسب‌تری خریداری کنید. برای خرید رب گوجه فرنگی یا سایر مایحتاج خود تنها لازم است که اپلیکیشن اسنپ فود را روی گوشی تلفن همراه خود نصب نمایید. سپس با ورود به این اپلیکیشن اقلام مورد نیاز خود را سفارش دهید. در مرحله بعد می‌توانید زمان تحویل این اقلام را تعیین کنید. با این کار اقلام مورد نیاز خود را در زمانی مناسب و جلوی در منزل تحویل خواهید گرفت."
+        }
+      ]
+    },
+    {
+      "main": "33002030",
+      "text": [
+        {
+          "title": "",
+          "caption": "خرید حبوبات، خرید سویا و خرید عدس با بهترین قیمت ها و تخفیف های مناسب"
+        }
+      ]
+    }
   ]
 }

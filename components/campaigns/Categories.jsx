@@ -35,6 +35,7 @@ export const Categories = () => {
 
 
 
+
   return (
     <div className="flex flex-col justify-center mt-4 w-full ">
       <h3 className="flex  w-full justify-start px-4 laptop:px-5 desktop:px-3 font-iransans text-base">
@@ -62,7 +63,9 @@ export const Categories = () => {
             </Link>
           </div>
         ))}
+
       </div>
     </div>
   );
 };
+export default Categories;

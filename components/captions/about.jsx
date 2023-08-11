@@ -1,4 +1,4 @@
-export const AboutSnappmarket = () => {
+const AboutSnappmarket = () => {
   return (
     <div className=" flex justify-center w-full mb-10">
       <div className=" bg-white w-full h-auto pt-4 pb-6 px-3.5 border border-solid border-gray-300 border-opacity-50 rounded">
@@ -25,11 +25,17 @@ export const AboutSnappmarket = () => {
             گستردگی این محصولات این امکان را به کاربران میدهد که تمامی اجناس
             مورد نیاز خود را به صورت یکباره تهیه کرده و با توجه به موقعیت
             جغرافیایی ثبت شده در
-            <span className=" text-blue-600 cursor-pointer font-semibold"> اپلیکیشن </span>و یا وب سایت, اجناس خریداری شده را در زمانی
-            کوتاه و از نزدیکترین شعبه هایپراستار درب منزل خود تحویل بگیرند.
+            <span className=" text-blue-600 cursor-pointer font-semibold">
+              {" "}
+              اپلیکیشن{" "}
+            </span>
+            و یا وب سایت, اجناس خریداری شده را در زمانی کوتاه و از نزدیکترین
+            شعبه هایپراستار درب منزل خود تحویل بگیرند.
           </p>
         </div>
       </div>
     </div>
   );
 };
+
+export default AboutSnappmarket;

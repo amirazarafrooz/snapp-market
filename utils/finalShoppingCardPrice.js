@@ -1,3 +1,5 @@
+import { efarsi } from "./efarsi";
+
 export const finalShoppingCardPrice = (cart) => {
   const price = cart.reduce(
     (init, cur) =>
@@ -6,5 +8,5 @@ export const finalShoppingCardPrice = (cart) => {
         : cur.count * cur.price),
     0
   );
-  return price.toFixed(3);
+  return efarsi(price);
 };

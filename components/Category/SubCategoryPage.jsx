@@ -8,7 +8,6 @@ import { SubCategoryPageMain } from "./SubCategoryPageMain";
 
 const data = await getLocalData();
 const products = data.products;
-const categories = data.categories;
 const subCategory = data.subcategories;
 
 export const SubCategoryPage = ({ mainFilterParam }) => {
@@ -24,7 +23,6 @@ export const SubCategoryPage = ({ mainFilterParam }) => {
     <div className="w-full flex justify-center my-8">
       <div className="flex justify-center w-144 tablet:w-192 laptop:w-248 desktop:w-300 ">
         <SubCategoryFilter />
-        {/* mobile:max-w-[510px] */}
         <div className="flex flex-col mobile:w-144 tablet:w-192 laptop:w-248 desktop:w-300 px-2 ">
           <div className="bg-snp-white border rounded py-1 px-4">
             <BreadCrumb

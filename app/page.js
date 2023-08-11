@@ -1,49 +1,28 @@
-import Image from 'next/image'
-import snappmarketlogo from "../public/assets/images/snappmarket-logo.svg"
-import { CampaignSwiper } from '@/components/CampaignSwiper/CampaignSwiper'
-import { BannerCampaign } from '@/components/campaigns/BannerCampaign'
-import { Categories } from '@/components/campaigns/Categories'
-import { AboutSnappmarket } from '@/components/captions/about'
+import { Header } from "@/components/header/Header";
+import { Footer } from "@/components/footer/Footer";
+import { Suspense } from "react";
+// import HomePage from "@/components/HomePage/HomePage";
+import dynamic from "next/dynamic";
+import { Loading } from "@/components/Loading";
 
-import Button from '@/components/button/Button'
-import { CategoriesMenu } from '@/components/header/CategoriesMenu'
-import { Carousel } from '@/components/Carousel/Carousel'
-import { DiscountSwiper } from '@/components/DiscountSwiper/DiscountSwiper'
-import { Header } from '@/components/header/Header'
-import { Footer } from '@/components/footer/Footer'
-
+const HomePage = dynamic(() =>
+  delay(import("../components/HomePage/HomePage"))
+);
 
 export default function Home() {
   return (
-<>         <Header/>
-    <main className='bg-snp-bg-body w-full  flex justify-center'>
+    <>
+      <Header />
+      <Suspense fallback={<Loading />}>
+        <HomePage />
+      </Suspense>
+      <Footer />
+    </>
+  );
+}
 
-        {/* main layout  */}
-      <div className='mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300 '>
-      <CategoriesMenu showToggle={true}/>
-      
-
-      <div className='w-full p-2 mt-6'> <DiscountSwiper/></div>
-      <BannerCampaign bannercount={'maltich'}/>
-      <Categories/>
-      <BannerCampaign bannercount={'sunich'}/>
-      <div className='w-full p-2'><CampaignSwiper CampaignTitle={'شیر'} campaignId={"s2"}/></div>
-      <div className='w-full p-2'> <CampaignSwiper CampaignTitle={'نوشابه'} campaignId={"s3"}/></div>
-      <BannerCampaign bannercount={'marketingDiscount'}/>
-      <div className='w-full p-2'> <CampaignSwiper CampaignTitle={'پنیر'} campaignId={"s4"}/></div>
-      <BannerCampaign bannercount={'buyandcook'}/>
-      <AboutSnappmarket/>
-
-
-      
-
-
-      </div>
-    </main>
-      <Footer/>
-      </>
-
-
-
-)
+function delay(promise) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, 6000);
+  }).then(() => promise);
 }
