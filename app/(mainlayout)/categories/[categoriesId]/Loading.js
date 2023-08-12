@@ -15,6 +15,15 @@ export default function Loading() {
           </div>
         </div>
         <div className="w-full laptop:w-3/4 h-full">
+          <div className="w-full  laptop:hidden my-10 p-6 border rounded mt-8">
+            <div className="w-1/2 h-6 bg-snp-gray rounded my-4"></div>
+            <div className="flex gap-3">
+              <div className="w-20 h-8 bg-snp-gray rounded-lg"></div>
+              <div className="w-20 h-8 bg-snp-gray rounded-lg"></div>
+              <div className="w-20 h-8 bg-snp-gray rounded-lg"></div>
+              <div className="w-20 h-8 bg-snp-gray rounded-lg"></div>
+            </div>
+          </div>
           <div className="w-full rounded border h-12 flex items-center justify-start px-3">
             <div className="bg-snp-gray h-4 w-10 mx-2 rounded"></div>
             <div className="bg-snp-gray h-4 w-10 mx-2 rounded"></div>
