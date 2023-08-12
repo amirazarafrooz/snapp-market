@@ -26,7 +26,6 @@ const images=[drinksSquare,diarySquare,friutSquare,condimentSquare,snacksSquare,
 export const Categories = () => {
   const selectImage=(image)=>{
     for (let index = 0; index < images.length; index++) {
-      console.log(images[index].src,' images[index]');
       if(images[index].src.toLowerCase().includes(image.toLowerCase())){
        return images[index];
       }
