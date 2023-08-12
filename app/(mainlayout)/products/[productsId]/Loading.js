@@ -8,8 +8,8 @@ export default function Loading() {
           <div className="w-full h-12 flex items-center justify-start px-3">
             <div className="bg-snp-gray h-5 w-1/2 rounded"></div>
           </div>
-          <div className="w-full h-3/4 p-10 flex items-center gap-2">
-            <div className="w-1/2 h-96 flex justify-center items-center border rounded">
+          <div className="w-full h-3/4 p-10 tablet:flex items-center gap-2">
+            <div className="w-full tablet:w-1/2 h-96 flex justify-center items-center border rounded">
               <Image
                 src={snappLogo}
                 width={0}
@@ -17,7 +17,7 @@ export default function Loading() {
                 style={{ width: "50%", height: "50%" }}
               ></Image>
             </div>
-            <div className="w-1/2 h-full rounded p-4">
+            <div className="w-full tablet:w-1/2 h-full rounded p-4">
               <div className="h-5 w-4/6 bg-snp-gray rounded mb-5"></div>
               <div className="h-4 w-3/6 bg-snp-gray rounded my-6"></div>
               <div className="h-4 w-2/6 bg-snp-gray rounded my-6"></div>
@@ -32,8 +32,8 @@ export default function Loading() {
             </div>
           </div>
         </div>
-        <div className="w-full h-[356px] rounded border grid grid-cols-4 my-8">
-          <div className="flex flex-col justify-center items-center bg-gray-100 px-2 border">
+        <div className="w-full h-[356px] overflow-x-auto rounded border grid grid-rows-1 grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4 my-8">
+          <div className="hidden laptop:flex flex-col justify-center items-center bg-gray-100 px-2 border">
             <div className="w-full h-1/2 flex justify-center items-center">
               <Image
                 src={snappLogo}
@@ -57,7 +57,7 @@ export default function Loading() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center bg-gray-100 px-2 border">
+          <div className="hidden tablet:flex flex-col justify-center items-center bg-gray-100 px-2 border ">
             <div className="w-full h-1/2 flex justify-center items-center">
               <Image
                 src={snappLogo}

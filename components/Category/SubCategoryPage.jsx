@@ -5,12 +5,14 @@ import { getLocalData } from "@/lib/localdata";
 import { BreadCrumb } from "../BreadCrumbs";
 import { SubCategoryPageProduct } from "./SubCategoryPageProduct";
 import { SubCategoryPageMain } from "./SubCategoryPageMain";
+import { AboutSubCategory } from "../captions/AboutSubCategory";
+import { Tags } from "../captions/Tags";
 
 const data = await getLocalData();
 const products = data.products;
 const subCategory = data.subcategories;
 
-export const SubCategoryPage = ({ mainFilterParam }) => {
+const SubCategoryPage = ({ mainFilterParam }) => {
   const filterProducts = products.filter(
     (item) =>
       item.category.sub ==
@@ -35,8 +37,15 @@ export const SubCategoryPage = ({ mainFilterParam }) => {
           <div className="w-[300px] mobile:w-[450px] tablet:w-[675px] laptop:w-[900px] desktop:w-[1125px]">
           <SubCategoryPageMain products={filterProducts} />
           </div>
+          <AboutSubCategory subId={mainFilterParam} />
+          <Tags
+            subId={mainFilterParam}
+            subcategory={subCategory}
+            product={products}
+          />
         </div>
       </div>
     </div>
   );
 };
+export default SubCategoryPage;
