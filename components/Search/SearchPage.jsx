@@ -1,28 +1,23 @@
 "use client";
 import { useSearchParams } from "next/navigation";
 import { BreadCrumb } from "../common/BreadCrumbs";
-import { SearchPageMain } from "./SearchPageMain";
+import { SubCategoryPageMain } from "../Category/SubCategoryPageMain";
 
-export const SearchPage = ({ products }) => {
+const SearchPage = ({ products }) => {
   const searchParams = useSearchParams();
   const term = searchParams.get("term");
   const filterSearchProducts = products.filter((prod) =>
     prod.category.sub.includes(term)
   );
-  console.log(filterSearchProducts);
+
   return (
-    <div className="w-full flex flex-col justify-center my-8">
-      <div className="w-full bg-snp-white border rounded py-1 px-4">
-        <BreadCrumb
-        // productsAmount={filterProducts.length}
-        // category={filterCategories.parentFA}
-        // linkCategory={filterCategories.parent}
-        // subCategory={filterCategories.mainFA}
-        />
+    <div className="w-full my-8 px-2">
+      <div className="mt-8 bg-snp-white border rounded py-1 px-4">
+        <BreadCrumb category={term} />
       </div>
-      <div className=" w-[898px] mx-auto">
-        <SearchPageMain products={filterSearchProducts} />
-      </div>
+      <SubCategoryPageMain products={filterSearchProducts} />
     </div>
   );
 };
+
+export default SearchPage;
