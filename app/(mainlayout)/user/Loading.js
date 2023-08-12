@@ -10,7 +10,7 @@ export default function Loading() {
           <div className="h-6 w-5/6 bg-snp-gray rounded my-4"></div>
         </div>
       </div>
-      <div className="w-full laptop:w-4/6 border rounded flex flex-col justify-center items-center px-5">
+      <div className="w-full laptop:w-4/6 border rounded flex flex-col justify-center items-center px-5 animate-pulse">
         <div className="w-16 h-16 rounded-full bg-snp-gray"></div>
         <div className="w-2/5 h-10 bg-snp-gray rounded my-3"></div>
         <div className="w-full h-7 bg-snp-gray rounded my-3"></div>

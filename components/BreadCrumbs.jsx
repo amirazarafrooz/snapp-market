@@ -12,7 +12,7 @@ export const BreadCrumb = ({
   productsAmount,
 }) => {
   return (
-    <div className="flex items-center w-full font-iransansl text-sm py-3 px-1">
+    <div className="flex items-center w-full font-iransansl text-xs mobile:text-sm py-3 px-1">
       <Link href={"/"} className="flex items-center">
         <AiOutlineHome className="text-lg pb-0.5" />
         <p className="mr-1">اسنپ مارکت</p>
