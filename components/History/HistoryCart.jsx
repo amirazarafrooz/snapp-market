@@ -24,7 +24,7 @@ export const HistoryCart = ({ details }) => {
           <p>{efarsi(finalPrice)}</p>
           <p className="text-xs mr-0.5">تومان</p>
         </div>
-        {finalProfitPrice != 0 && (
+        {finalProfitPrice > 0 && (
           <div className="flex items-center text-sm text-snp-black">
             <p className="text-gray-500 ml-1">سود</p>
             <p>{efarsi(finalProfitPrice)}</p>
