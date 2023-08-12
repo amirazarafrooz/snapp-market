@@ -1,7 +1,7 @@
 "use client";
 import React, { useMemo } from "react";
 import { useState, useCallback } from "react";
-import { CategoriesMenu } from "./CategoriesMenu";
+import  CategoriesMenu  from "./CategoriesMenu";
 import { useSelector } from "react-redux";
 import { CategoriesMenuModal } from "./modal/CategoriesMenuModal";
 import { NavbarMobileProduct } from "./NavbarMobileProduct";
