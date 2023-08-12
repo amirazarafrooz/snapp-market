@@ -29,8 +29,8 @@ export default function Loading() {
             <div className="bg-snp-gray h-4 w-10 mx-2 rounded"></div>
             <div className="bg-snp-gray h-4 w-10 mx-2 rounded"></div>
           </div>
-          <div className="w-full h-[356px] rounded border grid grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4 my-8">
-            <div className="flex flex-col justify-center items-center bg-gray-100 px-2 border">
+          <div className="w-full h-[356px] rounded border grid grid-rows-1 grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4 my-8">
+            <div className="hidden laptop:flex laptop:flex-col justify-center items-center bg-gray-100 px-2 border">
               <div className="w-full h-1/2 flex justify-center items-center">
                 <Image
                   src={snappLogo}
@@ -54,7 +54,7 @@ export default function Loading() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-center items-center bg-gray-100 px-2 border">
+            <div className="hidden tablet:flex tablet:flex-col justify-center items-center bg-gray-100 px-2 border">
               <div className="w-full h-1/2 flex justify-center items-center">
                 <Image
                   src={snappLogo}
@@ -127,8 +127,8 @@ export default function Loading() {
               </div>
             </div>
           </div>
-          <div className="w-full h-[356px] rounded border grid grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4 my-8">
-            <div className="flex flex-col justify-center items-center bg-gray-100 px-2 border">
+          <div className="w-full h-[356px] rounded border grid grid-rows-1 grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4 my-8">
+            <div className="hidden laptop:flex laptop:flex-col justify-center items-center bg-gray-100 px-2 border">
               <div className="w-full h-1/2 flex justify-center items-center">
                 <Image
                   src={snappLogo}
@@ -152,7 +152,7 @@ export default function Loading() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-center items-center bg-gray-100 px-2 border">
+            <div className="hidden tablet:flex tablet:flex-col justify-center items-center bg-gray-100 px-2 border">
               <div className="w-full h-1/2 flex justify-center items-center">
                 <Image
                   src={snappLogo}
