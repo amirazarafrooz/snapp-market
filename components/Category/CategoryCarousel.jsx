@@ -1,5 +1,5 @@
 import { getLocalData } from "@/lib/localdata";
-import { Carousel } from "../Carousel/Carousel";
+import { Carousel } from "../common/Carousel/Carousel";
 import { CategoryCarouselTittle } from "./CategoryCarouselTittle";
 
 const data = await getLocalData();

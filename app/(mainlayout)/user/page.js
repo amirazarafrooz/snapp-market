@@ -1,12 +1,12 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import delay from "@/utils/delay";
-import Loading from "./Loading";
+import UserLoading from "./UserLoading";
 
 const UserPage = dynamic(
   async () => await delay(import("../../../components/UserPage/UserPage")),
   {
-    loading: () => <Loading />,
+    loading: () => <UserLoading />,
   }
 );
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useMemo, useRef } from "react";
 import { useSelector } from "react-redux";
 import { ShoppingItem } from "./ShoppinItem";
-import Button from "../button/Button";
+import Button from "../common/button/Button";
 import { useEffect } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import freeBasket from "../../public/assets/images/freeBasket.svg";

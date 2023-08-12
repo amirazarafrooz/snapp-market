@@ -1,9 +1,9 @@
 "use client";
 import React, { useCallback, useMemo } from "react";
 import Image from "next/image";
-import categoruIcon from "../../public/assets/images/category-icon.svg";
-import cartIcon from "../../public/assets/images/cartbtn-icon.svg";
-import arrowIcon from "../../public/assets/images/arrow-icon.svg";
+import categoruIcon from "../../../public/assets/images/category-icon.svg";
+import cartIcon from "../../../public/assets/images/cartbtn-icon.svg";
+import arrowIcon from "../../../public/assets/images/arrow-icon.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { add, decrement, removeItem, reset } from "@/redux/cartSlice";
 import { RiDeleteBinLine } from "react-icons/ri";

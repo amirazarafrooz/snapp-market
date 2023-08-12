@@ -7,7 +7,7 @@ import clock from "../../public/assets/images/clock-icon.svg";
 import delivery from "../../public/assets/images/delivery-icon.svg";
 import { SearchResult } from "./SearchResult";
 import { UserProfile } from "./UserProfile";
-import Button from "../button/Button";
+import Button from "../common/button/Button";
 // import { CategoriesMenu } from "./CategoriesMenu";
 import CategoriesMenu from "./CategoriesMenu";
 import Link from "next/link";
@@ -43,7 +43,6 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
     setUserOpen(false);
   };
 
-
   const [searchOpen, setSearchOpen] = useState(false);
   const handlemodalSearch = (event) => {
     event.stopPropagation();
@@ -57,7 +56,6 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
     setSearchterm(e.target.value);
     setSearchOpen(!searchOpen);
   }, []);
-
 
   const [showUserProfile, setShowUserProfile] = useState(false);
   const userProfileHandler = useCallback(() => {
@@ -134,10 +132,7 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
               >
                 <UserProfile handlemodalUser={handlemodalUser} />
               </UserProfileModal>
-              <div
-                className=""
-                onClick={() => setUserOpen(true)}
-              >
+              <div className="" onClick={() => setUserOpen(true)}>
                 <Button btnStyleparam={"HeaderEx"} />
               </div>
 
@@ -237,23 +232,25 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
             </div>
 
             {/* Search box */}
-            <SearchResultModal searchOpen={searchOpen} handleCloseSearch={handleCloseSearch}>
-            <SearchResult
-              device={"mobile"}
-              searchterm={searchterm}
-              searchItem={searchItem}
-              categoryItems={categoryItems}
-              subCategory={subCategory}
-              handlemodalSearch={handlemodalSearch}
-            />
-          </SearchResultModal>
-          <div
+            <SearchResultModal
+              searchOpen={searchOpen}
+              handleCloseSearch={handleCloseSearch}
+            >
+              <SearchResult
+                device={"mobile"}
+                searchterm={searchterm}
+                searchItem={searchItem}
+                categoryItems={categoryItems}
+                subCategory={subCategory}
+                handlemodalSearch={handlemodalSearch}
+              />
+            </SearchResultModal>
+            <div
               className="w-full tablet:block px-2"
               // onClick={() => setSearchOpen(true)}
             >
-              <SearchBar handleChange={handleChange}/>
+              <SearchBar handleChange={handleChange} />
             </div>
-
           </div>
         </div>
       </div>

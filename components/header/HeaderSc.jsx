@@ -7,7 +7,7 @@ import Link from "next/link";
 import { HeaderNav } from "./HeaderNav";
 import { SearchResult } from "./SearchResult";
 import { UserProfile } from "./UserProfile";
-import Button from "../button/Button";
+import Button from "../common/button/Button";
 import { useState, useCallback } from "react";
 import { ShoppingCard } from "./ShoppingCart";
 import { ShoppingCartModal } from "./modal/ShoppingCartModal";
@@ -145,22 +145,25 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
             {/* left container */}
             <div className="tablet:flex flex items-center tablet:justify-around tablet:items-center tablet:w-full  ">
               {/* Search box */}
-              <SearchResultModalTablet searchTabletOpen={searchTabletOpen} handleCloseSearchTablet={handleCloseSearchTablet}>
-            <SearchResult
-               device={"tablet+"}
-               searchItem={searchItem}
-               searchterm={searchtermTablet}
-               categoryItems={categoryItems}
-               subCategory={subCategory}
-               handlemodalSearch={handlemodalSearchTablet}
-            />
-          </SearchResultModalTablet>
-          <div
-              className="hidden  tablet:w-64 tablet:flex  tablet:items-center  tablet:p-2 laptop:w-52 desktop:w-96"
-              // onClick={() => setSearchOpen(true)}
-            >
-              <SearchBar handleChange={handleChangeTablet}/>
-            </div>
+              <SearchResultModalTablet
+                searchTabletOpen={searchTabletOpen}
+                handleCloseSearchTablet={handleCloseSearchTablet}
+              >
+                <SearchResult
+                  device={"tablet+"}
+                  searchItem={searchItem}
+                  searchterm={searchtermTablet}
+                  categoryItems={categoryItems}
+                  subCategory={subCategory}
+                  handlemodalSearch={handlemodalSearchTablet}
+                />
+              </SearchResultModalTablet>
+              <div
+                className="hidden  tablet:w-64 tablet:flex  tablet:items-center  tablet:p-2 laptop:w-52 desktop:w-96"
+                // onClick={() => setSearchOpen(true)}
+              >
+                <SearchBar handleChange={handleChangeTablet} />
+              </div>
 
               {/* user info */}
               <UserProfileModal
@@ -169,10 +172,7 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
               >
                 <UserProfile handlemodalUser={handlemodalUser} />
               </UserProfileModal>
-              <div
-                className=""
-                onClick={() => setUserOpen(true)}
-              >
+              <div className="" onClick={() => setUserOpen(true)}>
                 <Button btnStyleparam={"HeaderSc"} />
               </div>
 
@@ -183,7 +183,7 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
                   shopOpen={shopOpen}
                 >
                   <ShoppingCard
-                  handleCloseShop={handleCloseShop}
+                    handleCloseShop={handleCloseShop}
                     cartHandler={cartHandler}
                     showCart={showCart}
                     handlemodalShop={handlemodalShop}
@@ -205,25 +205,26 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
           <div className="flex  items-center   w-144 tablet:justify-start  tablet:w-192 laptop:w-248 desktop:w-300">
             {/* Search box */}
 
-            <SearchResultModalDowm searchDownOpen={searchDownOpen} handleCloseSearchDown={handleCloseSearchDown}>
-            <SearchResult
-              device={"mobile"}
-              subDevice={"mobiledown"}
-              searchterm={searchterm}
-              searchItem={searchItem}
-              categoryItems={categoryItems}
-              subCategory={subCategory}
-              handlemodalSearch={handlemodalSearchDown}
-            />
-          </SearchResultModalDowm>
-          <div
+            <SearchResultModalDowm
+              searchDownOpen={searchDownOpen}
+              handleCloseSearchDown={handleCloseSearchDown}
+            >
+              <SearchResult
+                device={"mobile"}
+                subDevice={"mobiledown"}
+                searchterm={searchterm}
+                searchItem={searchItem}
+                categoryItems={categoryItems}
+                subCategory={subCategory}
+                handlemodalSearch={handlemodalSearchDown}
+              />
+            </SearchResultModalDowm>
+            <div
               className=" flex flex-col items-start justify-start  px-2 w-full laptop:hidden "
               // onClick={() => setSearchOpen(true)}
             >
-              <SearchBar handleChange={handleChange}/>
+              <SearchBar handleChange={handleChange} />
             </div>
-
-
           </div>
         </div>
       </div>

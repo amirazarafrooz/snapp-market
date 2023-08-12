@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import Button from "../button/Button";
+import Button from "../common/button/Button";
 
 export const NavbarMobileProductButton = ({ product }) => {
   const cart = useSelector((store) => store.cart);

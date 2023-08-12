@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "../button/Button";
+import Button from "../common/button/Button";
 import { useMemo } from "react";
 import { itemCalculatePrice } from "@/utils/itemCalculatePrice";
 import { ShoppingItemButton } from "./ShoppingItemButton";

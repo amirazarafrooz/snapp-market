@@ -1,6 +1,7 @@
 import Image from "next/image";
 import snappLogo from "../../../../public/assets/images/snappmarket-logo.svg";
-export default function Loading() {
+
+export default function ProductsLoading() {
   return (
     <div className=" w-full  my-8">
       <div className="w-full animate-pulse">

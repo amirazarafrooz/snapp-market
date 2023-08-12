@@ -1,7 +1,7 @@
 import { getLocalData } from "@/lib/localdata";
 import { CampaignSwiperTittle } from "./CampaignSwiperTittle";
-import campaignBackground from "../../public/assets/images/campaignBackground.png";
-import { Carousel } from "../Carousel/Carousel";
+import campaignBackground from "../../../public/assets/images/campaignBackground.png";
+import { Carousel } from "../../common/Carousel/Carousel";
 
 const data = await getLocalData();
 const products = data.products;

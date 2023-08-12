@@ -29,7 +29,7 @@ export const SubCategoryPageMain = ({ products }) => {
   };
 
   return (
-    <>
+    <div className="w-full mb-8">
       {/* filter products */}
       <div className="flex items-center h-[62px] p-1 mobile:p-4 border-[1px] rounded-t text-xs mobile:text-xs mt-8 bg-snp-white">
         <svg
@@ -81,7 +81,7 @@ export const SubCategoryPageMain = ({ products }) => {
       </div>
 
       {/* items load here */}
-      <div className="flex justify-center mobile:justify-start w-full items-start flex-wrap border-l-[1px] border-b-[1px]  border-r-[1px]">
+      <div className="flex justify-center mobile:justify-start w-full items-start flex-wrap border-l-[1px] border-b-[1px]  border-r-[1px] overflow-hidden">
         <SubCategoryPageProduct products={sortedProducts} />
       </div>
 
@@ -128,6 +128,6 @@ export const SubCategoryPageMain = ({ products }) => {
           </li>
         </ul>
       </div> */}
-    </>
+    </div>
   );
 };

@@ -3,7 +3,7 @@ import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import Link from "next/link";
 import clsx from "clsx";
 import { useCallback, useRef } from "react";
-import ProductItemCard from "../common/ProductItemCard";
+import ProductItemCard from "../ProductItemCard";
 
 export const Carousel = ({
   products,
