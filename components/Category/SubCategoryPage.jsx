@@ -7,8 +7,7 @@ import { SubCategoryPageProduct } from "./SubCategoryPageProduct";
 import { SubCategoryPageMain } from "./SubCategoryPageMain";
 import { AboutSubCategory } from "../captions/AboutSubCategory";
 import { Tags } from "../captions/Tags";
-import { AboutSubCategory } from "../captions/AboutSubCategory";
-import { Tags } from "../captions/Tags";
+
 
 const data = await getLocalData();
 const products = data.products;
