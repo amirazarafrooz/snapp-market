@@ -5,6 +5,24 @@ import { SubCategoryPageMain } from "@/components/Category/SubCategoryPageMain";
 
 const data = await getLocalData();
 const product = data.products;
+const campaignRoot = ["sunich","Hype","date", "freezed","Laundry" ]
+
+export async function getStaticPaths() {
+
+  const paths = campaignRoot.map((item) => {
+    return {
+      params: {
+        campaignsId: `${item}`,
+      },
+    };
+  });
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
 
 export default function CampaignsDetail({ params }) {
   const filterProducts = product.filter(
@@ -57,6 +75,8 @@ export default function CampaignsDetail({ params }) {
   }
 
   
+
+
   return (
     <main className="bg-snp-bg-body w-full  flex justify-center">
       <div className="mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300">
