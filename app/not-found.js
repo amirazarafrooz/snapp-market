@@ -18,7 +18,7 @@ export default function NotFound() {
           backgroundImage: `url(${headerbanner.src})`,
         }}
       >
-        <div className="w-144 h-full flex justify-between items-center tablet:w-192 laptop:w-248 desktop:w-300">
+        <div className="w-full h-full flex justify-between items-center tablet:w-192 laptop:w-248 desktop:w-300">
           {" "}
           {/* logo */}
           <Link href={'/'}><Image className="h-full w-12 tablet:w-14  " src={logo}></Image></Link>
@@ -42,7 +42,7 @@ export default function NotFound() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center my-4 px-4">
-        <div className="w-144 flex  min-h-fit flex-col items-center p-8 bg-snp-white tablet:w-192 laptop:w-248 desktop:w-300">
+        <div className="w-full flex  min-h-fit flex-col items-center p-8 bg-snp-white tablet:w-192 laptop:w-248 desktop:w-300">
           <div className="flex flex-col h-[306px]">
             <Image
               className="w-[252px] h-auto max-w-xl z-20"
