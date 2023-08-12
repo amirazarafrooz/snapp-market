@@ -8,6 +8,7 @@ import { SubCategoryPageMain } from "./SubCategoryPageMain";
 import { AboutSubCategory } from "../captions/AboutSubCategory";
 import { Tags } from "../captions/Tags";
 
+
 const data = await getLocalData();
 const products = data.products;
 const subCategory = data.subcategories;
@@ -34,9 +35,15 @@ const SubCategoryPage = ({ mainFilterParam }) => {
               subCategory={filterCategories.mainFA}
             />
           </div>
-          <div className="w-[300px] mobile:w-[450px] tablet:w-[675px] laptop:w-[900px] desktop:w-[1125px]">
+          <div className="w-[300px] mobile:w-[450px] tablet:w-[675px] laptop:w-[900px] desktop:w-[1125px] mb-8">
           <SubCategoryPageMain products={filterProducts} />
           </div>
+          <AboutSubCategory subId={mainFilterParam} />
+          <Tags
+            subId={mainFilterParam}
+            subcategory={subCategory}
+            product={products}
+            />
           <AboutSubCategory subId={mainFilterParam} />
           <Tags
             subId={mainFilterParam}
