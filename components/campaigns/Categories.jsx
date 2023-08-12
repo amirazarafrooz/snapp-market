@@ -47,17 +47,17 @@ export const Categories = () => {
         .map((item) => (
           <div className="flex items-center rounded-lg h-20 w-[30%] bg-snp-light tablet:w-[23%] laptop:w-56 laptop:h-28 ">
             <Link
-              className="flex items-center gap-2 justify-start w-full "
+              className="flex items-center mobile:gap-2 justify-start w-full "
               href={`/categories/${item.main}`}
             >
               
               <Image alt="categories-icon"
-                className="ml-2 laptop:w-24 laptop:h-24"
+                className="mobile:ml-2 laptop:w-24 laptop:h-24"
                 width={53}
                 height={53}
                 src={selectImage(item.image)}
               ></Image>
-              <span className="text-snp-lightblack font-iransans text-xs tablet:text-sm laptop:text-base px-2">
+              <span className="text-snp-lightblack font-iransans text-xs tablet:text-sm laptop:text-base mobile:px-2">
                 {item.mainFA}
               </span>
             </Link>
