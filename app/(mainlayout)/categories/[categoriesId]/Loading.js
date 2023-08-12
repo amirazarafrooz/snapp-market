@@ -3,7 +3,7 @@ import snappLogo from "../../../../public/assets/images/snappmarket-logo.svg";
 export default function Loading() {
   return (
     <div className=" w-full h-screen flex my-8">
-      <div className="pl-3 flex w-1/4  ">
+      <div className="pl-3 w-1/4 hidden laptop:flex  ">
         <div className="w-full h-fit border rounded py-4 px-3 sticky top-[130px] animate-pulse">
           <div className="h-8 w-1/4 bg-snp-gray rounded mb-5"></div>
           <div className="h-4 w-3/4 bg-snp-gray rounded my-4"></div>

@@ -1,5 +1,4 @@
 import { getLocalData } from "@/lib/localdata";
-import { ProductImageCarousel } from "./ProductImageCarousel/ProductImageCarousel";
 import { ProductDetails } from "./ProductDetails";
 import { CategoryCarousel } from "../Category/CategoryCarousel";
 import { BreadCrumb } from "../BreadCrumbs";
@@ -7,10 +6,9 @@ import ImageSlider from "./ImageSlider";
 
 const data = await getLocalData();
 const products = data.products;
-const category = data.categories;
 const subCategory = data.subcategories;
 
-export const ProductInfo = ({ productId }) => {
+const ProductInfo = ({ productId }) => {
   const filterCategory = subCategory.filter(
     (cat) =>
       cat.mainFA ==
@@ -31,8 +29,7 @@ export const ProductInfo = ({ productId }) => {
           subCategoryBrand={brand}
         />
         <div className="tablet:flex tablet:items-center  tablet:justify-center w-full h-full my-10">
-          {/* <ProductImageCarousel images={images} /> */}
-          <ImageSlider slides={images}/>
+          <ImageSlider slides={images} />
           <ProductDetails product={filterProduct} />
         </div>
       </div>
@@ -40,3 +37,5 @@ export const ProductInfo = ({ productId }) => {
     </div>
   );
 };
+
+export default ProductInfo;
