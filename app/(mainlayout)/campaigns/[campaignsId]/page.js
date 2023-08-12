@@ -5,7 +5,7 @@ import { SubCategoryPageMain } from "@/components/Category/SubCategoryPageMain";
 
 const data = await getLocalData();
 const product = data.products;
-const campaignRoot = ["sunich","Hype","date", "freezed","Laundry" ]
+const campaignRoot = ["sunich","Hype","date", "freezed","Laundry","discount" ]
 
 export async function getStaticPaths() {
 
