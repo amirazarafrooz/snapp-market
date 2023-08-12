@@ -1,12 +1,19 @@
-import { CategoryPage } from "@/components/Category/CategoryPage";
 import { getLocalData } from "@/lib/localdata";
-import { SubCategoryPage } from "@/components/Category/SubCategoryPage";
-import { AboutSubCategory } from "@/components/captions/AboutSubCategory";
-import { Tags } from "@/components/captions/Tags";
+// import { SubCategoryPage } from "@/components/Category/SubCategoryPage";
+import dynamic from "next/dynamic";
+import delay from "@/utils/delay";
+import Loading from "./Loading";
+
+const SubCategoryPage = dynamic(
+  async () =>
+    await delay(import("../../../../components/Category/SubCategoryPage")),
+  {
+    loading: () => <Loading />,
+  }
+);
 
 const data = await getLocalData();
 const category = data.subcategories;
-const product = data.products;
 
 export async function getStaticPaths() {
   const paths = category.map((item) => {
@@ -27,12 +34,6 @@ export default function subCategoriesDetail({ params }) {
     <main className="bg-snp-bg-body w-full  flex justify-center">
       <div className="mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300">
         <SubCategoryPage mainFilterParam={params.subcategoriesId} />
-        <AboutSubCategory subId={params.subcategoriesId} />
-        <Tags
-          subId={params.subcategoriesId}
-          subcategory={category}
-          product={product}
-        />
       </div>
     </main>
   );
