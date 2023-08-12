@@ -25,7 +25,7 @@ export const SubCategoryPageMain = ({ products }) => {
 
   return (
     <>
-      <div className="flex items-center h-[62px] p-4 border-[1px] rounded-t mobile:text-xs mt-8 bg-snp-white">
+      <div className="flex items-center h-[62px] p-4 border-[1px] rounded-t text-xs mobile:text-sm mt-8 bg-snp-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -66,7 +66,7 @@ export const SubCategoryPageMain = ({ products }) => {
       </div>
 
       {/* items load here */}
-      <div className="flex justify-center mobile:justify-start w-full items-start flex-wrap border-l-[1px] border-r-[1px]">
+      <div className="flex justify-center mobile:justify-start w-full items-start flex-wrap border-l-[1px] border-r-[1px] overflow-hidden">
         <SubCategoryPageProduct products={sortedProducts} />
       </div>
 
