@@ -26,7 +26,17 @@ else {
 // logic
     const [stickyClass, setStickyClass] = useState('hidden');
 
+  
+
     useEffect(() => {
+      
+      const stickNavbar = () => {
+        if (window !== undefined) {
+          let windowHeight = window.scrollY;
+          windowHeight > 256 ? setStickyClass('notHidden') : setStickyClass('hidden');
+        }
+      };
+
         window.addEventListener('scroll', stickNavbar);
     
         return () => {
@@ -36,12 +46,7 @@ else {
       }, []);
 
 
-      const stickNavbar = () => {
-        if (window !== undefined) {
-          let windowHeight = window.scrollY;
-          windowHeight > 256 ? setStickyClass('notHidden') : setStickyClass('hidden');
-        }
-      };
+    
 
 
     return (

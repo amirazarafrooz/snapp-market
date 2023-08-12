@@ -25,7 +25,9 @@ export const SubCategoryPageMain = ({ products }) => {
 
   return (
     <>
-      <div className="flex items-center h-[62px] p-4 border-[1px] rounded-t text-xs mobile:text-sm mt-8 bg-snp-white">
+    {/* filter products */}
+      <div className="flex items-center h-[62px] p-1 mobile:p-4 border-[1px] rounded-t text-xs mobile:text-xs mt-8 bg-snp-white">
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -33,6 +35,7 @@ export const SubCategoryPageMain = ({ products }) => {
           height="32"
           fill="currentColor"
           viewBox="0 0 32 32"
+          className="mx-1"
           style={{ width: 20, height: 20 }}
         >
           <defs>
@@ -42,10 +45,10 @@ export const SubCategoryPageMain = ({ products }) => {
           </defs>
           <use href="#SortIcon" xlinkHref="#SortIcon"></use>
         </svg>
-        <span className="font-iransans mx-3">مرتب سازی بر اساس :</span>
+        <span className="hidden mobile:block font-iransans mobile:mx-3">مرتب سازی بر اساس :</span>
         <ul className="flex justify-evenly items-center font-iransans ">
           <li
-            className="px-3 py-2 rounded-full cursor-pointer mx-1 active:bg-snp-secondary active:text-snp-white hover:bg-snp-lightgray hover:text-snp-secondary"
+            className="px-3 py-2 whitespace-nowrap rounded-full cursor-pointer mx-1 active:bg-snp-secondary active:text-snp-white hover:bg-snp-lightgray hover:text-snp-secondary"
             onClick={() => sortProductHandler("default")}
           >
             پیش فرض
@@ -66,12 +69,13 @@ export const SubCategoryPageMain = ({ products }) => {
       </div>
 
       {/* items load here */}
-      <div className="flex justify-center mobile:justify-start w-full items-start flex-wrap border-l-[1px] border-r-[1px] overflow-hidden">
+      <div className="flex justify-center mobile:justify-start w-full items-start flex-wrap border-l-[1px] border-b-[1px]  border-r-[1px]">
+
         <SubCategoryPageProduct products={sortedProducts} />
       </div>
 
       {/* pagination btns here */}
-      <div className="flex items-center justify-center h-[62px] p-4 border-[1px] rounded-b">
+      {/* <div className="flex items-center justify-center h-[62px] p-4 border-[1px] rounded-b">
         <ul className="flex justify-evenly items-center font-iransans">
           <li className="w-9 h-9 px-3 py-1 flex items-center justify-center">
             <svg
@@ -112,7 +116,7 @@ export const SubCategoryPageMain = ({ products }) => {
             </svg>
           </li>
         </ul>
-      </div>
+      </div> */}
     </>
   );
 };
