@@ -217,7 +217,7 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
         </div>
 
         {/* Lower row container */}
-        <div className=" flex justify-center tablet:w-full ">
+        <div className=" flex  items-center  justify-center tablet:w-full h-16">
           <div className="flex  items-start  p-2 w-144 tablet:justify-start  tablet:w-192 laptop:w-248 desktop:w-300">
             {/* Category btn */}
             <div className="hidden tablet:block"></div>

@@ -45,14 +45,14 @@ export const SearchResult = ({
   return (
     <>
       {device === "mobile" ? (
-        <div className="flex flex-col items-start justify-start  w-full " >
+        <div className="flex flex-col items-start justify-start   w-full " >
           {subDevice === "mobiledown" ? (
-            <div className="flex flex-col items-start justify-start  px-2 w-full " onClick={handlemodalSearch}>
+            <div className="flex flex-col items-center justify-center   w-full " onClick={handlemodalSearch}>
               {/* form  */}
               {/* <SearchBar handleChange={handleChange}/> */}
 
               {searchItem && (
-                <div className="bg-white w-full rounded-b-md shadow-md px-2 py-2 mobile:w-full tablet:w-96 text-gray-500 text-sm ">
+                <div className="bg-white w-full rounded-b-md shadow-md py-2 mobile:w-full   text-gray-500 text-sm ">
                   {searchterm !== "" && (
                     <div className="w-full  tablet:w-96 mt-6 font-iransans">
                       <div className="p-2 flex">
@@ -101,7 +101,7 @@ export const SearchResult = ({
               )}
             </div>
           ) : (
-            <div className="flex  flex-col items-start justify-start  px-10 mobile:px-2 w-full " onClick={handlemodalSearch}>
+            <div className="flex  flex-col items-start justify-start px-6 mobile:px-0 tablet:px-2 w-full " onClick={handlemodalSearch}>
               {/* form  */}
               {/* <SearchBar handleChange={handleChange}/> */}
               <div className="w-full">
@@ -156,7 +156,7 @@ export const SearchResult = ({
             {searchterm !== "" && (
               <div>
                 {searchItem && (
-                  <div className="bg-snp-white  w-full rounded-b-md shadow-md px-2 py-2  tablet:w-56 laptop:w-44 desktop:w-[350px] mobile:w-full text-gray-500 text-sm ">
+                  <div className="bg-snp-white  w-full rounded-b-md shadow-md px-2 py-2  tablet:w-60 laptop:w-48 desktop:w-[368px] mobile:w-full text-gray-500 text-sm ">
                     {searchterm !== "" && (
                       <div className="w-full tablet:w-96 mt-2 font-iransans">
                         <div className="p-2 flex">

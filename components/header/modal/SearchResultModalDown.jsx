@@ -25,11 +25,11 @@ export const SearchResultModalDowm = ({ children, searchDownOpen, handleCloseSea
         <div
           onClick={handleCloseSearchDown}
           ref={scroll}
-          className="fixed top-[106px] left-0 right-0 bottom-0 bg-[#00000033]  flex flex-col items-center justify-center overflow-hidden z-[999] "
+          className="fixed top-[102px] left-0 right-0 bottom-0 bg-[#00000033]  flex flex-col items-center justify-center overflow-hidden z-[999] "
         >
           <div
             onClick={handleCloseSearchDown}
-            className="relative  flex justify-start top-0  h-full  tablet:top-20 tablet:right-4 laptop:right-36 w-full px-4  mx-6 mobile:mx-0 mobile:w-144 tablet:w-144 laptop:w-248 desktop:w-300   z-[202]  ">            {children}
+            className="relative  flex justify-start top-0  h-full  tablet:top-20 tablet:right-4 laptop:right-36 w-full px-4  mobile:mx-0  mobile:px-2  mobile:w-144 tablet:w-144 laptop:w-248 desktop:w-300   z-[202]  ">            {children}
           </div> 
          </div>
       )}
