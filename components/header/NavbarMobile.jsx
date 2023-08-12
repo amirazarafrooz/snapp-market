@@ -5,6 +5,9 @@ import { CategoriesMenu } from "./CategoriesMenu";
 import { useSelector } from "react-redux";
 import { CategoriesMenuModal } from "./modal/CategoriesMenuModal";
 import { NavbarMobileProduct } from "./NavbarMobileProduct";
+import { ShoppingCartModal } from "./modal/ShoppingCartModal";
+import { ShoppingCard } from "./ShoppingCart";
+import Link from "next/link";
 
 export const NavbarMobile = ({ categoryItems, productId, products }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,11 +25,19 @@ export const NavbarMobile = ({ categoryItems, productId, products }) => {
     [cart]
   );
 
+  const [shopOpen, setShopOpen] = useState(false);
+  const handlemodalShop = (event) => {
+    event.stopPropagation();
+  };
+  const handleCloseShop = () => {
+    setShopOpen(false);
+  };
+
   return (
     <div className="flex justify-center">
       {/* navbar menu-mobile */}
       {productId ? (
-        <div className="flex justify-center w-full bg-snp-white border-t-[1px] fixed bottom-0  tablet:hidden laptop:hidden desktop:hidden z-[500]">
+        <div className="flex justify-center w-full bg-snp-white border-t-[1px] fixed bottom-0  tablet:hidden laptop:hidden desktop:hidden z-[200]">
           <div className="flex justify-around w-full h-22 px-6 pt-4 pb-5">
             <div className="w-full  flex flex-col justify-center items-center font-iransansl cursor-pointer">
               <NavbarMobileProduct productId={productId} products={products} />
@@ -34,9 +45,9 @@ export const NavbarMobile = ({ categoryItems, productId, products }) => {
           </div>
         </div>
       ) : (
-        <div className="flex justify-center w-full bg-snp-white fixed bottom-0  tablet:hidden laptop:hidden desktop:hidden z-[500]">
+        <div className="flex justify-center w-full bg-snp-white fixed bottom-0  tablet:hidden laptop:hidden desktop:hidden z-[200]">
           <div className="flex justify-around w-144 h-22 px-2 pt-4 pb-5">
-            <div className="w-14  flex flex-col justify-center items-center font-iransansl cursor-pointer">
+       <Link href={'/'} >    <div className="w-14  flex flex-col justify-center items-center font-iransansl cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -52,6 +63,7 @@ export const NavbarMobile = ({ categoryItems, productId, products }) => {
               </svg>
               <span>خانه</span>
             </div>
+            </Link>
             <CategoriesMenuModal handleClose={handleClose} isOpen={isOpen}>
               <CategoriesMenu
                 handleClose={handleClose}
@@ -83,7 +95,21 @@ export const NavbarMobile = ({ categoryItems, productId, products }) => {
               <span>دسته بندی ها</span>
             </div>
 
-            <div className="w-16 flex flex-col justify-center items-center font-iransansl cursor-pointer relative">
+
+            <ShoppingCartModal
+                  handleCloseShop={handleCloseShop}
+                  shopOpen={shopOpen}
+                >
+                  <ShoppingCard
+                    handleCloseShop={handleCloseShop}
+                
+                    handlemodalShop={handlemodalShop}
+                  />
+                </ShoppingCartModal>
+
+
+
+            <div   onClick={() => setShopOpen(true)} className="w-16 flex flex-col justify-center items-center font-iransansl cursor-pointer relative">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
