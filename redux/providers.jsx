@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { store } from "../redux/store";
 import { PersistGate } from "redux-persist/integration/react";
 import { persistStore } from "redux-persist";
-import { Loading } from "@/components/Loading";
+import Loading from "@/app/(mainlayout)/Loading";
 
 const persistor = persistStore(store);
 
