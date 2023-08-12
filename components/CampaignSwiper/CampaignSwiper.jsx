@@ -11,6 +11,7 @@ const CampaignSwiper = ({ CampaignTitle }) => {
   const campaignProducts = products.filter(
     (item) => item.category.sub === CampaignTitle
   );
+  campaignProducts.length = 9;
   const filterCategory = subCategory.filter(
     (item) => item.mainFA === CampaignTitle
   )[0].main;

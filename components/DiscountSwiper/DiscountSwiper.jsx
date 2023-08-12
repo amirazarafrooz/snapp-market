@@ -6,7 +6,8 @@ const data = await getLocalData();
 const products = data.products;
 
 const DiscountSwiper = () => {
-  const filterDiscount = products.filter((item) => item.discount > 25);
+  const filterDiscountProduct = products.filter((item) => item.discount > 25);
+  filterDiscountProduct.length = 9;
 
   return (
     <section
@@ -21,7 +22,7 @@ const DiscountSwiper = () => {
         <Carousel
           space={"ml-4"}
           cartClassName={"rounded-md"}
-          products={filterDiscount}
+          products={filterDiscountProduct}
         />
       </div>
       {/* <SwiperElement products={products} /> */}

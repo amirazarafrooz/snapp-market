@@ -17,6 +17,11 @@ export const SubCategoryPageMain = ({ products }) => {
         cheapProducts.sort((a, b) => a.price - b.price);
         setSortedProducts(cheapProducts);
         break;
+      case "discount":
+        const discountProduct = [...products];
+        discountProduct.sort((a, b) => b.discount - a.discount);
+        setSortedProducts(discountProduct);
+        break;
       default:
         setSortedProducts(products);
         break;
@@ -25,9 +30,8 @@ export const SubCategoryPageMain = ({ products }) => {
 
   return (
     <>
-    {/* filter products */}
+      {/* filter products */}
       <div className="flex items-center h-[62px] p-1 mobile:p-4 border-[1px] rounded-t text-xs mobile:text-xs mt-8 bg-snp-white">
-
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -45,32 +49,39 @@ export const SubCategoryPageMain = ({ products }) => {
           </defs>
           <use href="#SortIcon" xlinkHref="#SortIcon"></use>
         </svg>
-        <span className="hidden mobile:block font-iransans mobile:mx-3">مرتب سازی بر اساس :</span>
+        <span className="hidden tablet:block font-iransans mobile:mx-3">
+          مرتب سازی بر اساس :
+        </span>
         <ul className="flex justify-evenly items-center font-iransans ">
           <li
-            className="px-3 py-2 whitespace-nowrap rounded-full cursor-pointer mx-1 active:bg-snp-secondary active:text-snp-white hover:bg-snp-lightgray hover:text-snp-secondary"
+            className="px-2 py-2 whitespace-nowrap rounded-full cursor-pointer mx-1 active:bg-snp-secondary active:text-snp-white hover:bg-snp-lightgray hover:text-snp-secondary"
             onClick={() => sortProductHandler("default")}
           >
             پیش فرض
           </li>
           <li
-            className="px-3 py-2 rounded-full cursor-pointer active:bg-snp-secondary active:text-snp-white hover:bg-snp-lightgray hover:text-snp-secondary mx-1"
+            className="px-2 py-2 rounded-full cursor-pointer active:bg-snp-secondary active:text-snp-white hover:bg-snp-lightgray hover:text-snp-secondary mx-1"
             onClick={() => sortProductHandler("exp")}
           >
             گران‌ترین
           </li>
           <li
-            className="px-3 py-2 rounded-full cursor-pointer mx-1 active:bg-snp-secondary active:text-snp-white hover:bg-snp-lightgray hover:text-snp-secondary"
+            className="px-2 py-2 rounded-full cursor-pointer mx-1 active:bg-snp-secondary active:text-snp-white hover:bg-snp-lightgray hover:text-snp-secondary"
             onClick={() => sortProductHandler("cheap")}
           >
             ارزان‌ترین
+          </li>
+          <li
+            className="px-2 py-2 rounded-full cursor-pointer mx-1 active:bg-snp-secondary active:text-snp-white hover:bg-snp-lightgray hover:text-snp-secondary"
+            onClick={() => sortProductHandler("discount")}
+          >
+            بیشترین تخفیف
           </li>
         </ul>
       </div>
 
       {/* items load here */}
       <div className="flex justify-center mobile:justify-start w-full items-start flex-wrap border-l-[1px] border-b-[1px]  border-r-[1px]">
-
         <SubCategoryPageProduct products={sortedProducts} />
       </div>
 

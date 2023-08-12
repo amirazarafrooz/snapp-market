@@ -3,18 +3,18 @@ import snappLogo from "../../../../public/assets/images/snappmarket-logo.svg";
 export default function Loading() {
   return (
     <div className="w-full  my-8 px-4">
-      <div className="w-full rounded border flex items-center justify-start px-3 py-4 mb-8">
+      <div className="w-full rounded border flex items-center justify-start px-3 py-4 mb-8 animate-pulse">
         <div className="bg-snp-gray h-5 w-16 mx-4 rounded"></div>
         <div className="bg-snp-gray h-5 w-16 mx-4 rounded"></div>
         <div className="bg-snp-gray h-5 w-16 mx-4 rounded"></div>
       </div>
-      <div className="w-full h-full border rounded">
+      <div className="w-full h-full border rounded animate-pulse">
         <div className="w-full  border-b h-12 flex items-center justify-start px-3">
           <div className="bg-snp-gray h-4 w-10 mx-2 rounded"></div>
           <div className="bg-snp-gray h-4 w-10 mx-2 rounded"></div>
           <div className="bg-snp-gray h-4 w-10 mx-2 rounded"></div>
         </div>
-        <div>
+        <div className="animate-pulse">
           <div className="w-full h-[356px] grid grid-rows-1 grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4">
             <div className="hidden laptop:flex laptop:flex-col justify-center items-center bg-gray-100 px-2 border">
               <div className="w-full h-1/2 flex justify-center items-center">
