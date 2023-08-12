@@ -2,9 +2,7 @@ import dynamic from "next/dynamic";
 import delay from "@/utils/delay";
 
 // import { ProductItemCard } from "../ProductItemCard";
-const ProductItemCard = dynamic(
-  async () => await delay(import("../ProductItemCard"))
-);
+const ProductItemCard = dynamic(async () => await import("../ProductItemCard"));
 
 export const SubCategoryPageProduct = ({ products }) => {
   return (
