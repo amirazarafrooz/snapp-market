@@ -13,8 +13,6 @@ import { amountProducts } from "@/utils/amountProducts";
 import { efarsi } from "@/utils/efarsi";
 
 export const ShoppingCard = ({
-  cartHandler,
-  showCart,
   handlemodalShop,
   handleCloseShop,
 }) => {
@@ -28,21 +26,7 @@ export const ShoppingCard = ({
 
   const atLeastPrice = finalPrice < 100;
 
-  const modal = useRef(null);
-
-  useEffect(() => {
-    // Applying on mount
-    if (showCart) {
-      // document.body.style.overflow = "hidden";
-      console.log("makhfi");
-    } else {
-      document.body.style.overflow = "visible";
-      console.log("ashkara");
-    }
-    // Applying on unmount
-    return () => {};
-  }, [cartHandler]);
-
+  
   // const handleDecrement = (id) => {
   //   dispatch(decrement(id))
   // }

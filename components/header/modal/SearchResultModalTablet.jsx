@@ -25,11 +25,11 @@ export const SearchResultModalTablet = ({ children, searchTabletOpen, handleClos
         <div
           onClick={handleCloseSearchTablet}
           ref={scroll}
-          className="fixed top-[53px] left-0 right-0 bottom-0 bg-[#00000033]  flex flex-col items-center justify-center overflow-hidden z-[999] "
+          className="fixed top-[52px] left-0 right-0 bottom-0 bg-[#00000033]  flex flex-col items-center justify-center overflow-hidden z-[999] "
         >
           <div
             onClick={handleCloseSearchTablet}
-            className=" relative flex justify-start items-start top-0  h-full  tablet:top-0 tablet:right-[115px] laptop:right-[500px] desktop:right-[535px] w-full  mx-6 mobile:mx-0 mobile:w-[480px] tablet:w-144 laptop:w-248 desktop:w-300   z-[202]  ">            {children}
+            className=" relative flex justify-start items-start top-0  h-full  tablet:top-0 tablet:right-[108px] laptop:right-[492px] desktop:right-[524px] w-full  mx-6 mobile:mx-0 mobile:w-[480px]  tablet:w-144 laptop:w-248 desktop:w-300   z-[202]  ">            {children}
           </div> 
          </div>
       )}

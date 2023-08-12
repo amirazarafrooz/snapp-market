@@ -269,7 +269,7 @@ export const Footer = () => {
               <li>ایمیل : info@snapp.market</li>
               <li>کد پستی: ۱۹۶۷۸۶۵۶۳۱</li>
             </ul>
-            <div className="flex justify-between items-center h-9 p-1 w-56 text-sm leading-9 text-gray-500">
+            <div className="flex justify-between items-center h-9 p-1 w-full text-sm leading-9 text-gray-500">
               <span>info@snapp.market</span>
               <a href="#">
                 <svg
