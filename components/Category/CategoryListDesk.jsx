@@ -10,7 +10,7 @@ export const CategoryListDesk = ({ categoryName }) => {
     (item) => item.parent === categoryName
   );
   return (
-    <div className="w-[95%] px-3 hidden laptop:flex laptop:w-1/4 my-8 ">
+    <div className="pl-3 hidden laptop:flex laptop:w-1/4 my-8 ">
       <div className="w-full h-fit border rounded py-4 px-3 sticky top-[130px]">
         <p className=" font-iransans text-md mb-5">دسته بندی‌ها :</p>
         {subCategoryFilter.map((item) => {
