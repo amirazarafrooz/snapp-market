@@ -28,7 +28,7 @@ const ProductInfo = ({ productId }) => {
           linkSubCategory={filterCategory.main}
           subCategoryBrand={brand}
         />
-        <div className="tablet:flex tablet:items-center  tablet:justify-center w-full h-full my-10">
+        <div className="tablet:flex tablet:items-center  tablet:justify-center tablet:gap-5 px-4 tablet:p-0 w-full h-full my-10 ">
           <ImageSlider slides={images} />
           <ProductDetails product={filterProduct} />
         </div>

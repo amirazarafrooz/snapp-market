@@ -7,7 +7,7 @@ export const ProductDetails = ({ product }) => {
   const { name, category, brand, seller, tags, price, discount } = product;
   const totalPrice = useMemo(() => itemCalculatePrice(price, discount));
   return (
-    <div className="w-full tablet:w-1/2 px-4 mt-10 tablet:mt-0 tablet:px-12">
+    <div className="w-full tablet:w-1/2  mt-10 tablet:mt-0 tablet:px-4">
       <p className=" font-iransansb text-xl tracking-wide">{name}</p>
       <div className="flex items-center py-3 mt-2">
         <p className="font-iransans ml-2 text-sm">برند :</p>

@@ -7,12 +7,14 @@ import { SubCategoryPageProduct } from "./SubCategoryPageProduct";
 import { SubCategoryPageMain } from "./SubCategoryPageMain";
 import { AboutSubCategory } from "../captions/AboutSubCategory";
 import { Tags } from "../captions/Tags";
+import { AboutSubCategory } from "../captions/AboutSubCategory";
+import { Tags } from "../captions/Tags";
 
 const data = await getLocalData();
 const products = data.products;
 const subCategory = data.subcategories;
 
-export const SubCategoryPage = ({ mainFilterParam }) => {
+const SubCategoryPage = ({ mainFilterParam }) => {
   const filterProducts = products.filter(
     (item) =>
       item.category.sub ==
@@ -43,8 +45,15 @@ export const SubCategoryPage = ({ mainFilterParam }) => {
             subcategory={subCategory}
             product={products}
             />
+          <AboutSubCategory subId={mainFilterParam} />
+          <Tags
+            subId={mainFilterParam}
+            subcategory={subCategory}
+            product={products}
+          />
         </div>
       </div>
     </div>
   );
 };
+export default SubCategoryPage;
