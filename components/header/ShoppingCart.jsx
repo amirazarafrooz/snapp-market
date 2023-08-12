@@ -86,7 +86,7 @@ export const ShoppingCard = ({ handlemodalShop, handleCloseShop }) => {
               <>
                 {isProfitProducts > 0 ? (
                   <>
-                    <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
+                    <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1 font-iransansl">
                       <span>{finalProfitPrice}</span>
                       <span className="mr-1">تومان سود خرید</span>
                     </div>
