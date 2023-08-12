@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { SubCategoryFilter } from "./SubCategoryFilter";
-import { ProductItemCard } from "../ProductItemCard";
+import { ProductItemCard } from "../common/ProductItemCard";
 import { getLocalData } from "@/lib/localdata";
-import { BreadCrumb } from "../BreadCrumbs";
+import { BreadCrumb } from "../common/BreadCrumbs";
 import { SubCategoryPageProduct } from "./SubCategoryPageProduct";
 import { SubCategoryPageMain } from "./SubCategoryPageMain";
 import { AboutSubCategory } from "../captions/AboutSubCategory";

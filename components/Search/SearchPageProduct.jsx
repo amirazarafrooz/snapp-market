@@ -1,4 +1,4 @@
-import  ProductItemCard  from "../ProductItemCard";
+import ProductItemCard from "../common/ProductItemCard";
 
 export const SearchPageProduct = ({ products }) => {
   return (

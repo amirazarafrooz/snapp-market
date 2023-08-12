@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useMemo, useRef } from "react";
 import { useSelector } from "react-redux";
-import { ShoppingItem } from "../ShoppinItem";
+import { ShoppingItem } from "./ShoppinItem";
 import Button from "../button/Button";
 import { useEffect } from "react";
 import { IoCloseOutline } from "react-icons/io5";
@@ -12,10 +12,7 @@ import { profitShoppingCardPrice } from "@/utils/profitShoppingCardPrice";
 import { amountProducts } from "@/utils/amountProducts";
 import { efarsi } from "@/utils/efarsi";
 
-export const ShoppingCard = ({
-  handlemodalShop,
-  handleCloseShop,
-}) => {
+export const ShoppingCard = ({ handlemodalShop, handleCloseShop }) => {
   const cart = useSelector((store) => store.cart);
 
   const finalPrice = useMemo(() => finalShoppingCardPrice(cart), [cart]);
@@ -26,7 +23,6 @@ export const ShoppingCard = ({
 
   const atLeastPrice = finalPrice < 100;
 
-  
   // const handleDecrement = (id) => {
   //   dispatch(decrement(id))
   // }

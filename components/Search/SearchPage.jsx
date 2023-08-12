@@ -1,6 +1,6 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import { BreadCrumb } from "../BreadCrumbs";
+import { BreadCrumb } from "../common/BreadCrumbs";
 import { SearchPageMain } from "./SearchPageMain";
 
 export const SearchPage = ({ products }) => {

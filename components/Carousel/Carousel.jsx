@@ -2,11 +2,8 @@
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import Link from "next/link";
 import clsx from "clsx";
-import { Suspense, useCallback, useRef } from "react";
-import dynamic from "next/dynamic";
-import { ProductItemCardPreLoader } from "../ProductItemCardPreLoader";
-import { Loading } from "../Loading";
-import ProductItemCard from "../ProductItemCard";
+import { useCallback, useRef } from "react";
+import ProductItemCard from "../common/ProductItemCard";
 
 export const Carousel = ({
   products,

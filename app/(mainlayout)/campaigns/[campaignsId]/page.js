@@ -1,14 +1,20 @@
 import Image from "next/image";
 import { getLocalData } from "../../../../lib/localdata";
-import { BreadCrumb } from "@/components/BreadCrumbs";
+import { BreadCrumb } from "@/components/common/BreadCrumbs";
 import { SubCategoryPageMain } from "@/components/Category/SubCategoryPageMain";
 
 const data = await getLocalData();
 const product = data.products;
-const campaignRoot = ["sunich","Hype","date", "freezed","Laundry","discount" ]
+const campaignRoot = [
+  "sunich",
+  "Hype",
+  "date",
+  "freezed",
+  "Laundry",
+  "discount",
+];
 
 export async function getStaticPaths() {
-
   const paths = campaignRoot.map((item) => {
     return {
       params: {
@@ -22,7 +28,6 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
-
 
 export default function CampaignsDetail({ params }) {
   const filterProducts = product.filter(
@@ -70,20 +75,15 @@ export default function CampaignsDetail({ params }) {
       breadcrumbCategory = "شستشوی لباس";
       break;
     default:
-      breadcrumbCategory=''
+      breadcrumbCategory = "";
       break;
   }
-
-  
-
 
   return (
     <main className="bg-snp-bg-body w-full  flex justify-center">
       <div className="mx-auto w-full mobile:w-144 tablet:w-192  laptop:w-248 desktop:w-300">
         <div className="mt-8 bg-snp-white border rounded py-1 px-4">
-          <BreadCrumb
-            category={breadcrumbCategory}
-          />
+          <BreadCrumb category={breadcrumbCategory} />
         </div>
         {params.campaignsId == "discount" && (
           <SubCategoryPageMain products={filterProducts} />

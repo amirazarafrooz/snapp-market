@@ -1,7 +1,7 @@
 "use client";
 
 import { useSelector } from "react-redux";
-import Button from "./button/Button";
+import Button from "../button/Button";
 import { efarsi } from "@/utils/efarsi";
 
 export const ProductItemCardButton = ({ product }) => {
