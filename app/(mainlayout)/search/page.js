@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import SubProductsLoading from "../subcategories/[subcategoriesId]/SubProductsLoading";
 
 const SearchPage = dynamic(
-  async () => await delay(import("@/components/Search/SearchPage")),
+  async () => await delay(import("@/components/SearchPage/SearchPage")),
   {
     loading: () => <SubProductsLoading />,
   }

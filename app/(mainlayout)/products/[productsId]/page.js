@@ -6,7 +6,7 @@ import ProductsLoading from "./ProductsLoading";
 
 const ProductInfo = dynamic(
   async () =>
-    await delay(import("../../../../components/ProductInfo/ProductInfo")),
+    await delay(import("../../../../components/ProductInfoPage/ProductInfo")),
   {
     loading: () => <ProductsLoading />,
   }
