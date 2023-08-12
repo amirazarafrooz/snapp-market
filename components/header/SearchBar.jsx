@@ -11,7 +11,7 @@ export const SearchBar = ({handleChange}) => {
                       <input
                         onChange={handleChange}
                         type="text"
-                        className="block w-full   h-9 font-iransans rounded-full focus:rounded-b-none focus:outline-none focus:rounded-t-lg indent-10  placeholder-gray-900 text-xs tablet:w-96 tablet:h-10"
+                        className="block w-full transition-transform ease-in-out delay-700  h-9 font-iransans rounded-full focus:rounded-b-none focus:outline-none focus:rounded-t-lg indent-10  placeholder-gray-900 text-xs tablet:w-96 tablet:h-10"
                         placeholder="جست و جوی برند یا محصول"
                       ></input>
                       <button className="absolute flex  justify-center items-center w-10">
