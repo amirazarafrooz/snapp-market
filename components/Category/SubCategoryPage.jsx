@@ -21,10 +21,10 @@ export const SubCategoryPage = ({ mainFilterParam }) => {
   )[0];
   return (
     <div className="w-full flex justify-center my-8">
-      <div className="flex justify-center w-144 tablet:w-192 laptop:w-248 desktop:w-300 ">
+      <div className="flex justify-center w-144 tablet:w-192 laptop:w-248 desktop:w-300">
         <SubCategoryFilter />
-        <div className="flex flex-col mobile:w-144 tablet:w-192 laptop:w-248 desktop:w-300 px-2 ">
-          <div className="bg-snp-white border rounded py-1 px-4">
+        <div className="flex flex-col items-center mobile:w-144 tablet:w-192 laptop:w-248 desktop:w-300 px-2 ">
+          <div className="bg-snp-white border rounded py-1 px-4 w-full">
             <BreadCrumb
               productsAmount={filterProducts.length}
               category={filterCategories.parentFA}
@@ -32,7 +32,9 @@ export const SubCategoryPage = ({ mainFilterParam }) => {
               subCategory={filterCategories.mainFA}
             />
           </div>
+          <div className="w-[300px] mobile:w-[450px] tablet:w-[675px] laptop:w-[900px] desktop:w-[1125px]">
           <SubCategoryPageMain products={filterProducts} />
+          </div>
         </div>
       </div>
     </div>
