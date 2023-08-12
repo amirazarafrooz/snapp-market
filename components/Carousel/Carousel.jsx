@@ -6,13 +6,7 @@ import { Suspense, useCallback, useRef } from "react";
 import dynamic from "next/dynamic";
 import { ProductItemCardPreLoader } from "../ProductItemCardPreLoader";
 import { Loading } from "../Loading";
-
-const ProductItemCard = dynamic(
-  async () => await import("../ProductItemCard"),
-  {
-    ssr: false,
-  }
-);
+import ProductItemCard from "../ProductItemCard";
 
 export const Carousel = ({
   products,
@@ -52,24 +46,27 @@ export const Carousel = ({
             </div>
           );
         })}
-        {link==undefined?<Link href={'/campaigns/discount'}>
-        <div className="bg-white text-black w-48 h-[356px] rounded ">
-            <div className="w-full h-full flex items-center justify-center">
-              <p className="text-sm text-snp-secondary font-iransans underline">
-                مشاهده بیشتر
-              </p>
+        {link == undefined ? (
+          <Link href={"/campaigns/discount"}>
+            <div className="bg-white text-black w-48 h-[356px] rounded ">
+              <div className="w-full h-full flex items-center justify-center">
+                <p className="text-sm text-snp-secondary font-iransans underline">
+                  مشاهده بیشتر
+                </p>
+              </div>
             </div>
-          </div>
-        </Link>:
-        <Link href={`/subcategories/${link}`}>
-          <div className="bg-white text-black w-48 h-[356px] rounded ">
-            <div className="w-full h-full flex items-center justify-center">
-              <p className="text-sm text-snp-secondary font-iransans underline">
-                مشاهده بیشتر
-              </p>
+          </Link>
+        ) : (
+          <Link href={`/subcategories/${link}`}>
+            <div className="bg-white text-black w-48 h-[356px] rounded ">
+              <div className="w-full h-full flex items-center justify-center">
+                <p className="text-sm text-snp-secondary font-iransans underline">
+                  مشاهده بیشتر
+                </p>
+              </div>
             </div>
-          </div>
-        </Link>}
+          </Link>
+        )}
       </div>
       <div className="absolute right-3 top-[43%]">
         <button

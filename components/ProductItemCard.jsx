@@ -25,6 +25,7 @@ const ProductItemCard = ({ product, cartClassName, imageClass }) => {
           sizes="100vw"
           style={{ width: "100%", height: "auto" }}
           src={images[0]}
+          loading="lazy"
         ></Image>
         <p className="text-snp-black mt-2 text-sm min-h-[3.5rem] font-iransansl ">
           {name}
