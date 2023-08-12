@@ -41,10 +41,10 @@ export const ProductDetails = ({ product }) => {
               <div className="line-through  text-gray-500 font-iransans ml-2">
                 {efarsi(price)} تومان
               </div>
-              <div className=" bg-snp-highdiscount text-snp-white px-1 rounded-full font-iransans ">
+              <div className=" bg-snp-highdiscount text-snp-white h-6 w-8 flex justify-center items-center rounded-lg font-iransans ">
                 <div className="flex items-center h-fit">
-                  <p>٪</p>
                   <p>{efarsi(discount)}</p>
+                  <p>٪</p>
                 </div>
               </div>
             </div>
