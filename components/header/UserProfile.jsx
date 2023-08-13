@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useState, useEffect,useRef } from "react";
 
-export const UserProfile = ({ handlemodalUser }) => {
+export const UserProfile = ({ handlemodalUser,handleCloseUser }) => {
 
  
 
@@ -10,7 +10,7 @@ export const UserProfile = ({ handlemodalUser }) => {
       <div className="relative " >
         
        
-          <div className="bg-snp-white shadow-md  tablet:ml-12 w-60 mobile:w-60 h-72  rounded-b-lg z-[202]"onClick={handlemodalUser} >
+          <div className="bg-snp-white shadow-md  tablet:ml-12 w-60 mobile:w-60 h-72  rounded-b-lg z-[202]" onClick={handlemodalUser} >
             <div className="flex flex-col justify-center font-iransans p-3 h-[85px] border-b-2 bg-[#FAFAFA] ">
               <span className="text-sm leading-7 ">پایونیر تیم </span>
               <div className="mt-3 text-sm ">
@@ -22,7 +22,7 @@ export const UserProfile = ({ handlemodalUser }) => {
             </div>
             <div className=" flex flex-col items-start justify-center w-full ">
               {/* user  */}
-              <Link
+              <Link 
                 href={"/"}
                 className="group hover:bg-[#FAFAFA] flex justify-start p-3 mt-1 items-center text-gray-400 text-[13px]  w-full font-iransans"
               >
@@ -74,7 +74,7 @@ export const UserProfile = ({ handlemodalUser }) => {
                 </span>
               </Link>
 
-              <Link
+              <Link onClick={handleCloseUser}
                 href={"/user"}
                 className="group hover:bg-[#FAFAFA] flex justify-start p-3 mt-1 items-center text-gray-400 text-[13px]  w-full font-iransans"
               >

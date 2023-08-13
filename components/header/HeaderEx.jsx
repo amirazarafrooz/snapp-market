@@ -145,7 +145,7 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
                 handleCloseUser={handleCloseUser}
                 userOpen={userOpen}
               >
-                <UserProfile handlemodalUser={handlemodalUser} />
+                <UserProfile handlemodalUser={handlemodalUser} handleCloseUser={handleCloseUser} />
               </UserProfileModal>
               <div className="" onClick={() => setUserOpen(true)}>
                 <Button btnStyleparam={"HeaderEx"} />
