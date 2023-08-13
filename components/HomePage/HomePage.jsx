@@ -37,7 +37,7 @@ const HomePage = () => {
         <BannerCampaign bannercount={"sunich"} />
 
         <div className="w-full p-2">
-          <CampaignSwiper CampaignTitle={"شیر"} campaignId={"s2"} />
+          <CampaignSwiper CampaignTitle={"میوه تازه"} campaignId={"s2"} />
         </div>
 
         <div className="w-full p-2">
@@ -47,7 +47,7 @@ const HomePage = () => {
         <BannerCampaign bannercount={"marketingDiscount"} />
 
         <div className="w-full p-2">
-          <CampaignSwiper CampaignTitle={"پنیر"} campaignId={"s4"} />
+          <CampaignSwiper CampaignTitle={"پفک و اسنک"} campaignId={"s4"} />
         </div>
 
         <BannerCampaign bannercount={"buyandcook"} />

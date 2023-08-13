@@ -4,7 +4,7 @@ import { getLocalData } from "../../../../lib/localdata";
 import delay from "@/utils/delay";
 import Loading from "../../subcategories/[subcategoriesId]/SubProductsLoading";
 const CampaignPage = dynamic(
-  async () => await delay(import("@/components/CampaignPage/CampaignPage")),
+  async () => await delay(import("@/components/campaigns/CampaignPage/CampaignPage")),
   {
     loading: () => <Loading />,
   }

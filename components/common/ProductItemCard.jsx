@@ -42,7 +42,7 @@ const ProductItemCard = ({ product, cartClassName, imageClass }) => {
                   <p>٪</p>
                 </div>
               </div>
-              <p className=" line-through text-xs text-snp-gray mr-2">
+              <p className=" line-through text-xs font-iransans text-snp-gray mr-2">
                 {efarsi(price)}
               </p>
             </div>
