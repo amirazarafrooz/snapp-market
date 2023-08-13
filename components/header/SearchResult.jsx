@@ -54,7 +54,7 @@ export const SearchResult = ({
               {searchItem && (
                 <div className="bg-white w-full rounded-b-md shadow-md py-2 mobile:w-full   text-gray-500 text-sm ">
                   {searchterm !== "" && (
-                    <div className="w-full  tablet:w-96 mt-6 font-iransans">
+                    <div className="w-full  tablet:w-96 mt-0 font-iransans">
                       <div className="p-2 flex">
                         <Image
                           className="ml-2"
@@ -108,7 +108,7 @@ export const SearchResult = ({
                 {searchterm !== "" && (
                   <div className="bg-snp-white w-full rounded-b-md shadow-md px-2 py-2  tablet:w-96 mobile:w-full text-gray-500 text-sm ">
                     {searchterm !== "" && (
-                      <div className="w-full  mobile:w-[450px] tablet:w-96 mt-6 font-iransans">
+                      <div className="w-full  mobile:w-[450px] tablet:w-96 mt-0 font-iransans">
                         <div className="p-2 flex">
                           <Image
                             className="ml-2"
@@ -158,7 +158,7 @@ export const SearchResult = ({
                 {searchItem && (
                   <div className="bg-snp-white  w-full rounded-b-md shadow-md px-2 py-2  tablet:w-60 laptop:w-48 desktop:w-[368px] mobile:w-full text-gray-500 text-sm ">
                     {searchterm !== "" && (
-                      <div className="w-full tablet:w-96 mt-2 font-iransans">
+                      <div className="w-full tablet:w-96 mt-0 font-iransans">
                         <div className="p-2 flex">
                           <Image
                             className="ml-2"

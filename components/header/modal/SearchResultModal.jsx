@@ -25,7 +25,7 @@ export const SearchResultModal = ({ children, searchOpen, handleCloseSearch }) =
         <div
           onClick={handleCloseSearch}
           ref={scroll}
-          className="fixed top-[230px] tablet:top-[198px] left-0 right-0 bottom-0 bg-[#00000033]  flex flex-col items-center justify-center overflow-hidden z-[999] "
+          className="fixed top-[230px] tablet:top-[204px] left-0 right-0 bottom-0 bg-[#00000033]  flex flex-col items-center justify-center overflow-hidden z-[999] "
         >
           <div
             onClick={handleCloseSearch}

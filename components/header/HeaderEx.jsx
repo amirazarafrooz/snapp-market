@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import headerbanner from "../../public/assets/images/header-banner.png";
 import logo from "../../public/assets/images/snappmarket-logo.svg";
@@ -53,6 +53,9 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
 
   const [searchterm, setSearchterm] = useState("");
   const handleChange = useCallback((e) => {
+    if (searchterm.length == 0) {
+      setSearchOpen(false);
+    }
     setSearchterm(e.target.value);
     setSearchOpen(!searchOpen);
   }, []);
@@ -66,6 +69,18 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
   const cartHandler = useCallback(() => {
     setShowCart(!showCart);
   }, [showCart]);
+
+  const modals = [isOpen, shopOpen, userOpen, searchOpen];
+  const modalSet = [setIsOpen, setShopOpen, setUserOpen, setSearchOpen];
+
+  useEffect(() => {
+    console.log("useEffect is here");
+    for (let i = 0; i < modals.length; i++) {
+      if (modals[i] == true) {
+        modalSet.filter((item, index) => index !== i).map((item)=>item(false));
+      }
+    }
+  }, [isOpen, shopOpen, userOpen, searchOpen]);
 
   return (
     <div>
