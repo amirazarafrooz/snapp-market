@@ -15,7 +15,7 @@ const CategoriesMenu = ({ categoryItems, handlemodal, handleClose }) => {
           onClick={handlemodal}
         >
           <div
-            className="fixed right-0 top-0 z-50 flex flex-col   laptop:flex  laptop:justify-start laptop:items-center laptop: laptop:flex-wrap laptop:gap-0 w-72 h-full bg-snp-white px-6 pt-6 pb-2
+            className="fixed overflow-scroll right-0 top-0 z-50 flex flex-col   laptop:flex  laptop:justify-start laptop:items-center laptop: laptop:flex-wrap laptop:gap-0 w-72 h-full bg-snp-white px-6 pt-6 pb-2
                         laptop:relative laptop:w-248 laptop:shadow-md laptop:h-96 laptop:px-6 laptop:pt-5 laptop:pb-2 laptop:mx-auto laptop:rounded-b-lg laptop:rounded-tl-lg desktop:w-300"
           >
             <div className="flex justify-between items-center mb-6  font-iransansb laptop:hidden">
