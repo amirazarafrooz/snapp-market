@@ -1,5 +1,5 @@
 import { getLocalData } from "@/lib/localdata";
-import { BreadCrumb } from "../BreadCrumbs";
+import { BreadCrumb } from "../common/BreadCrumbs";
 import { CategoryCarousel } from "./CategoryCarousel";
 
 const data = await getLocalData();

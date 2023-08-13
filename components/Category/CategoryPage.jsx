@@ -2,7 +2,7 @@ import { getLocalData } from "@/lib/localdata";
 import { CategoryListDesk } from "./CategoryListDesk";
 import { CategoryListTab } from "./CategoryListTab";
 import { CategoryProducts } from "./CategoryProducts";
-import { BreadCrumb } from "../BreadCrumbs";
+import { BreadCrumb } from "../common/BreadCrumbs";
 import { AboutMainCategory } from "../captions/AboutMainCategory";
 
 const data = await getLocalData();

@@ -1,5 +1,5 @@
 import { efarsi } from "@/utils/efarsi";
-import Button from "./button/Button";
+import Button from "../common/button/Button";
 
 export const ShoppingItemButton = ({ details }) => {
   const { count, inStock } = details;

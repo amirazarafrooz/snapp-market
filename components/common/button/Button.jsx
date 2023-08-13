@@ -1,14 +1,15 @@
 "use client";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useMemo } from "react";
 import Image from "next/image";
-import categoruIcon from "../../public/assets/images/category-icon.svg";
-import cartIcon from "../../public/assets/images/cartbtn-icon.svg";
-import arrowIcon from "../../public/assets/images/arrow-icon.svg";
+import categoruIcon from "../../../public/assets/images/category-icon.svg";
+import cartIcon from "../../../public/assets/images/cartbtn-icon.svg";
+import arrowIcon from "../../../public/assets/images/arrow-icon.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { add, decrement, removeItem, reset } from "@/redux/cartSlice";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { addToHistory } from "@/redux/historySlice";
 import { efarsi } from "@/utils/efarsi";
+import { amountProducts } from "@/utils/amountProducts";
 
 const Button = ({
   btnStyleparam,
@@ -20,7 +21,7 @@ const Button = ({
   plusDisable,
 }) => {
   const cart = useSelector((store) => store.cart);
-  const cartCounts = cart.reduce((init, cur) => (init += cur.count), 0);
+  const cartCounts = useMemo(() => amountProducts(cart), [cart]);
   const dispath = useDispatch();
   const handleAdd = useCallback(() => {
     dispath(add({ ...product, count: 0 }));
@@ -113,7 +114,7 @@ const Button = ({
             src={cartIcon}
           />
           {children}
-          <div className="flex justify-center items-center font-iransans text-md text-snp-primary rounded-full bg-snp-lightgray w-6 h-6 mr-3 pt-1">
+          <div className="flex justify-center items-center font-iransans text-md text-snp-primary rounded-full bg-snp-lightgray w-6 h-6 mr-3 ">
             {efarsi(cartCounts)}
           </div>
         </button>

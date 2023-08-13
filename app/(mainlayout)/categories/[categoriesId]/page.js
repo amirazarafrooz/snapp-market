@@ -1,16 +1,14 @@
 // import { CategoryPage } from "@/components/Category/CategoryPage";
 import { getLocalData } from "@/lib/localdata";
-import { SubCategoryPage } from "@/components/Category/SubCategoryPage";
-import { AboutMainCategory } from "@/components/captions/AboutMainCategory";
 import dynamic from "next/dynamic";
 import delay from "@/utils/delay";
-import Loading from "./Loading";
+import CategoriesLoading from "./CategoriesLoading";
 
 const CategoryPage = dynamic(
   async () =>
     await delay(import("../../../../components/Category/CategoryPage")),
   {
-    loading: () => <Loading />,
+    loading: () => <CategoriesLoading />,
   }
 );
 

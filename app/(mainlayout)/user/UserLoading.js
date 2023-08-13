@@ -1,4 +1,4 @@
-export default function Loading() {
+export default function UserLoading() {
   return (
     <div className=" w-full laptop:flex my-8 rounded ">
       <div className="pl-3 w-2/6 hidden laptop:flex ">
