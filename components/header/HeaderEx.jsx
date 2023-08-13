@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
-import headerbanner from "../../public/assets/images/header-banner.png";
+import headerbanner from "../../public/assets/images/header-bannerE.png";
 import logo from "../../public/assets/images/snappmarket-logo.svg";
-import marketlogo from "../../public/assets/images/market-logo.jpg";
+import marketlogo from "../../public/assets/images/market-logo.png";
 import clock from "../../public/assets/images/clock-icon.svg";
 import delivery from "../../public/assets/images/delivery-icon.svg";
 import { SearchResult } from "./SearchResult";

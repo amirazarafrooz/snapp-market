@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import multichbanner from "../../public/assets/images/Multich-banner.jpg"
-import multichsquare from "../../public/assets/images/Multich-square.jpg"
-import sunichsquare from "../../public/assets/images/sanich-square.jpg"
-import sunichbanner from "../../public/assets/images/sunich-banner.jpg"
-import buybanner from "../../public/assets/images/readyfood-square.jpg"
-import washer from "../../public/assets/images/saftlan-square.jpg"
-import freezed from "../../public/assets/images/BA-square.jpg"
-import date from "../../public/assets/images/date-square.jpg"
+import multichbanner from "../../public/assets/images/Multich-banner.png"
+import multichsquare from "../../public/assets/images/Multich-square.png"
+import sunichsquare from "../../public/assets/images/sanich-square.png"
+import sunichbanner from "../../public/assets/images/sunich-banner.png"
+import buybanner from "../../public/assets/images/readyfood-square.png"
+import washer from "../../public/assets/images/saftlan-square.png"
+import freezed from "../../public/assets/images/BA-square.png"
+import date from "../../public/assets/images/date-square.png"
 
 
 {
@@ -142,15 +142,15 @@ const BannerCampaign = ({ bannercount }) => {
 
 export default BannerCampaign;
 
-// https://api.snapp.market/uploads/images/mobile-sliders/64c4c7f3ea040.jpg banner khosgel nimesafhe
-// "https://api.snapp.market/uploads/images/mobile-sliders/64c4c7f3ea040.jpg" banner khosgel bozorg
+// https://api.snapp.market/uploads/images/mobile-sliders/64c4c7f3ea040.png banner khosgel nimesafhe
+// "https://api.snapp.market/uploads/images/mobile-sliders/64c4c7f3ea040.png" banner khosgel bozorg
 
 // https://api.snapp.market/uploads/images/mobile-sliders/64c501d46efba.png    banner zesht bozorg
 
-// https://api.snapp.market/uploads/images/mobile-sliders/64c4c7f3ea040.jpg
+// https://api.snapp.market/uploads/images/mobile-sliders/64c4c7f3ea040.png
 
-// https://api.snapp.market/uploads/images/mobile-sliders/64c4c80d89599.jpg
+// https://api.snapp.market/uploads/images/mobile-sliders/64c4c80d89599.png
 
-//https://api.snapp.market/uploads/images/mobile-sliders/64c404a22ca54.jpg
-//https://api.snapp.market/uploads/images/mobile-sliders/64c404c40294d.jpg
-//https://api.snapp.market/uploads/images/mobile-sliders/64c404e2c6e1a.jpg
+//https://api.snapp.market/uploads/images/mobile-sliders/64c404a22ca54.png
+//https://api.snapp.market/uploads/images/mobile-sliders/64c404c40294d.png
+//https://api.snapp.market/uploads/images/mobile-sliders/64c404e2c6e1a.png
