@@ -19,10 +19,10 @@ export default function Error({ error, reset }) {
           <Image src={snappLogo}></Image>
         </div>
         <p className=" font-iransans text-xl text-snp-primary my-5">
-          {/* مشکلی به وجود آمده! */}
-          {error.message || "مشکلی به وجود آمده!"}
+          متاسفانه خطایی رخ داده است!
+          {/* {error.message || "مشکلی به وجود آمده!"} */}
         </p>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 font-iransans">
           <Link
             href={"/"}
             className="bg-snp-primary hover:bg-snp-primaryh text-snp-white p-2 rounded-md flex items-center gap-1"

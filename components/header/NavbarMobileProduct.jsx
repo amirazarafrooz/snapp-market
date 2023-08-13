@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { itemCalculatePrice } from "@/utils/itemCalculatePrice";
-import Button from "../button/Button";
+import Button from "../common/button/Button";
 import { NavbarMobileProductButton } from "./NavbarMobileProductButton";
 import { efarsi } from "@/utils/efarsi";
 
@@ -31,7 +31,7 @@ export const NavbarMobileProduct = ({ productId, products }) => {
           <p className="text-snp-black">{efarsi(prodPrice)}</p>
           <p>تومان</p>
         </div>
-      </div> 
+      </div>
       <NavbarMobileProductButton product={filterProduct} />
     </div>
   );

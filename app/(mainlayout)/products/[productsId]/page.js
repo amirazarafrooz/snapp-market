@@ -1,17 +1,14 @@
-import Image from "next/image";
-import snappmarketlogo from "../../../../public/assets/images/snappmarket-logo.svg";
-// import { ProductInfo } from "@/components/ProductInfo/ProductInfo";
 import { getLocalData } from "@/lib/localdata";
 import { NavbarMobile } from "@/components/header/NavbarMobile";
 import dynamic from "next/dynamic";
 import delay from "@/utils/delay";
-import Loading from "./Loading";
+import ProductsLoading from "./ProductsLoading";
 
 const ProductInfo = dynamic(
   async () =>
-    await delay(import("../../../../components/ProductInfo/ProductInfo")),
+    await delay(import("../../../../components/ProductInfoPage/ProductInfo")),
   {
-    loading: () => <Loading />,
+    loading: () => <ProductsLoading />,
   }
 );
 

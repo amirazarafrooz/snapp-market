@@ -1,5 +1,5 @@
 import { getLocalData } from "@/lib/localdata";
-import { Carousel } from "../Carousel/Carousel";
+import { Carousel } from "../common/Carousel/Carousel";
 import { CategoryCarouselTittle } from "./CategoryCarouselTittle";
 
 const data = await getLocalData();
@@ -12,6 +12,7 @@ export const CategoryCarousel = ({ title, seeMore }) => {
   const filterCategoryProducts = products.filter(
     (product) => product.category.sub === title
   );
+  filterCategoryProducts.length = 9;
   return (
     <div className="my-8 border rounded overflow-hidden ">
       <CategoryCarouselTittle

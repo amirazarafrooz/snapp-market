@@ -2,8 +2,8 @@
 import Image from "next/image";
 import { useMemo, useRef } from "react";
 import { useSelector } from "react-redux";
-import { ShoppingItem } from "../ShoppinItem";
-import Button from "../button/Button";
+import { ShoppingItem } from "./ShoppinItem";
+import Button from "../common/button/Button";
 import { useEffect } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import freeBasket from "../../public/assets/images/freeBasket.svg";
@@ -12,10 +12,7 @@ import { profitShoppingCardPrice } from "@/utils/profitShoppingCardPrice";
 import { amountProducts } from "@/utils/amountProducts";
 import { efarsi } from "@/utils/efarsi";
 
-export const ShoppingCard = ({
-  handlemodalShop,
-  handleCloseShop,
-}) => {
+export const ShoppingCard = ({ handlemodalShop, handleCloseShop }) => {
   const cart = useSelector((store) => store.cart);
 
   const finalPrice = useMemo(() => finalShoppingCardPrice(cart), [cart]);
@@ -26,7 +23,6 @@ export const ShoppingCard = ({
 
   const atLeastPrice = finalPrice < 100;
 
-  
   // const handleDecrement = (id) => {
   //   dispatch(decrement(id))
   // }
@@ -90,7 +86,7 @@ export const ShoppingCard = ({
               <>
                 {isProfitProducts > 0 ? (
                   <>
-                    <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
+                    <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1 font-iransansl">
                       <span>{finalProfitPrice}</span>
                       <span className="mr-1">تومان سود خرید</span>
                     </div>

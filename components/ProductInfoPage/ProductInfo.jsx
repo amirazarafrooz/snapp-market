@@ -1,7 +1,7 @@
 import { getLocalData } from "@/lib/localdata";
 import { ProductDetails } from "./ProductDetails";
 import { CategoryCarousel } from "../Category/CategoryCarousel";
-import { BreadCrumb } from "../BreadCrumbs";
+import { BreadCrumb } from "../common/BreadCrumbs";
 import ImageSlider from "./ImageSlider";
 
 const data = await getLocalData();

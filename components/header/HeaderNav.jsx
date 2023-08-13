@@ -1,26 +1,23 @@
 import React from "react";
 import Link from "next/link";
-import { useState , useCallback } from "react";
-import CategoriesMenu  from "./CategoriesMenu";
+import { useState, useCallback } from "react";
+import CategoriesMenu from "./CategoriesMenu";
 import { CategoriesMenuModal } from "./modal/CategoriesMenuModal";
-import Button from "../button/Button";
+import Button from "../common/button/Button";
 
-
-export const HeaderNav = ({categoryItems}) => {
-
+export const HeaderNav = ({ categoryItems }) => {
   const [showcategory, setShowCategory] = useState(false);
   const categoryleHandler = useCallback(() => {
     setShowCategory(!showcategory);
   }, [showcategory]);
 
-
   const [isOpen, setIsOpen] = useState(false);
   const handlemodal = (event) => {
     event.stopPropagation();
-  } 
+  };
   const handleClose = () => {
-    setIsOpen(false)
-  }
+    setIsOpen(false);
+  };
 
   return (
     <>
@@ -30,7 +27,6 @@ export const HeaderNav = ({categoryItems}) => {
           {/* right container */}
           <div className="tablet:flex ">
             <div className="tablet:w-25 tablet:flex tablet:justify-start tablet:items-center tablet:font-iransans tablet:text-sm tablet:ml-6">
-              
               {/* <svg
                 className="ml-1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,20 +47,22 @@ export const HeaderNav = ({categoryItems}) => {
               {/* <Button btnStyleparam={'categories'}>دسته‌بندی‌ها</Button> */}
               {/* <CategoriesMenu showToggle={showcategory} categoryItems={categoryItems} clickHandler={categoryleHandler}/> */}
               {/* <span>دسته بندی ها</span> */}
-              
             </div>
             <CategoriesMenuModal handleClose={handleClose} isOpen={isOpen}>
               <div className="fixed top-32">
-            <CategoriesMenu
-                // showToggle={showcategory}
-                categoryItems={categoryItems}
-                // clickHandler={categoryleHandler}
-              />
+                <CategoriesMenu
+                  // showToggle={showcategory}
+                  categoryItems={categoryItems}
+                  // clickHandler={categoryleHandler}
+                />
               </div>
-              </CategoriesMenuModal>
-              <div className=' hidden tablet:block' onClick={() => setIsOpen(true)}>
-                <Button btnStyleparam={'categories'} >دسته‌بندی‌ها</Button>
-              </div>
+            </CategoriesMenuModal>
+            <div
+              className=" hidden tablet:block"
+              onClick={() => setIsOpen(true)}
+            >
+              <Button btnStyleparam={"categories"}>دسته‌بندی‌ها</Button>
+            </div>
             <div className="tablet:w-40 tablet:flex tablet:justify-start tablet:items-center tablet:font-iransans tablet:text-sm">
               <svg
                 className="ml-1"

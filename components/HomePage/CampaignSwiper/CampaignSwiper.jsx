@@ -1,7 +1,7 @@
 import { getLocalData } from "@/lib/localdata";
 import { CampaignSwiperTittle } from "./CampaignSwiperTittle";
-import campaignBackground from "../../public/assets/images/campaignBackground.png";
-import { Carousel } from "../Carousel/Carousel";
+import campaignBackground from "../../../public/assets/images/campaignBackground.png";
+import { Carousel } from "../../common/Carousel/Carousel";
 
 const data = await getLocalData();
 const products = data.products;
@@ -11,6 +11,7 @@ const CampaignSwiper = ({ CampaignTitle }) => {
   const campaignProducts = products.filter(
     (item) => item.category.sub === CampaignTitle
   );
+  campaignProducts.length = 9;
   const filterCategory = subCategory.filter(
     (item) => item.mainFA === CampaignTitle
   )[0].main;

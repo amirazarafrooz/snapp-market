@@ -1,13 +1,14 @@
 "use client";
 import React, { useMemo } from "react";
 import { useState, useCallback } from "react";
-import  CategoriesMenu  from "./CategoriesMenu";
+import CategoriesMenu from "./CategoriesMenu";
 import { useSelector } from "react-redux";
 import { CategoriesMenuModal } from "./modal/CategoriesMenuModal";
 import { NavbarMobileProduct } from "./NavbarMobileProduct";
 import { ShoppingCartModal } from "./modal/ShoppingCartModal";
 import { ShoppingCard } from "./ShoppingCart";
 import Link from "next/link";
+import { efarsi } from "@/utils/efarsi";
 
 export const NavbarMobile = ({ categoryItems, productId, products }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,22 +48,24 @@ export const NavbarMobile = ({ categoryItems, productId, products }) => {
       ) : (
         <div className="flex justify-center w-full bg-snp-white fixed bottom-0  tablet:hidden laptop:hidden desktop:hidden z-[200]">
           <div className="flex justify-around w-144 h-22 px-2 pt-4 pb-5">
-       <Link href={'/'} >    <div className="w-14  flex flex-col justify-center items-center font-iransansl cursor-pointer">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                color="gray"
-                viewBox="0 0 20 19"
-              >
-                <path
-                  fill="#000"
-                  fillRule="evenodd"
-                  d="M16.502 17.004a.5.5 0 00.5-.5V7.398c0-.058.005-.114.014-.17l-6.44-4.208c-.576-.38-.576-.38-1.148 0l-6.44 4.21c.009.055.014.111.014.17v9.105a.5.5 0 00.5.5h3.5v-6a1 1 0 011-1h4a1 1 0 011 1v6h3.5zm2.5-.5a2.5 2.5 0 01-2.5 2.5h-4.5a1 1 0 01-1-1v-6h-2v6a1 1 0 01-1 1h-4.5a2.5 2.5 0 01-2.5-2.5V8.398c-.978 0-1.375-1.258-.574-1.82l7.853-5.196C10 .139 10 .139 11.723 1.382l7.853 5.197c.801.56.405 1.82-.573 1.82v8.105z"
-                ></path>
-              </svg>
-              <span>خانه</span>
-            </div>
+            <Link href={"/"}>
+              {" "}
+              <div className="w-14  flex flex-col justify-center items-center font-iransansl cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  color="gray"
+                  viewBox="0 0 20 19"
+                >
+                  <path
+                    fill="#000"
+                    fillRule="evenodd"
+                    d="M16.502 17.004a.5.5 0 00.5-.5V7.398c0-.058.005-.114.014-.17l-6.44-4.208c-.576-.38-.576-.38-1.148 0l-6.44 4.21c.009.055.014.111.014.17v9.105a.5.5 0 00.5.5h3.5v-6a1 1 0 011-1h4a1 1 0 011 1v6h3.5zm2.5-.5a2.5 2.5 0 01-2.5 2.5h-4.5a1 1 0 01-1-1v-6h-2v6a1 1 0 01-1 1h-4.5a2.5 2.5 0 01-2.5-2.5V8.398c-.978 0-1.375-1.258-.574-1.82l7.853-5.196C10 .139 10 .139 11.723 1.382l7.853 5.197c.801.56.405 1.82-.573 1.82v8.105z"
+                  ></path>
+                </svg>
+                <span>خانه</span>
+              </div>
             </Link>
             <CategoriesMenuModal handleClose={handleClose} isOpen={isOpen}>
               <CategoriesMenu
@@ -95,21 +98,20 @@ export const NavbarMobile = ({ categoryItems, productId, products }) => {
               <span>دسته بندی ها</span>
             </div>
 
-
             <ShoppingCartModal
-                  handleCloseShop={handleCloseShop}
-                  shopOpen={shopOpen}
-                >
-                  <ShoppingCard
-                    handleCloseShop={handleCloseShop}
-                
-                    handlemodalShop={handlemodalShop}
-                  />
-                </ShoppingCartModal>
+              handleCloseShop={handleCloseShop}
+              shopOpen={shopOpen}
+            >
+              <ShoppingCard
+                handleCloseShop={handleCloseShop}
+                handlemodalShop={handlemodalShop}
+              />
+            </ShoppingCartModal>
 
-
-
-            <div   onClick={() => setShopOpen(true)} className="w-16 flex flex-col justify-center items-center font-iransansl cursor-pointer relative">
+            <div
+              onClick={() => setShopOpen(true)}
+              className="w-16 flex flex-col justify-center items-center font-iransansl cursor-pointer relative"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -125,8 +127,8 @@ export const NavbarMobile = ({ categoryItems, productId, products }) => {
                 </g>
               </svg>
               <span>سبد خرید</span>
-              <span className=" absolute -top-2 left-3 w-5 h-5 bg-snp-primaryh text-snp-white rounded-full text-center text-sm pt-0.5">
-                {cartCount}
+              <span className=" absolute -top-2 left-3 w-5 h-5 bg-snp-primaryh text-snp-white rounded-full text-center text-sm ">
+                {efarsi(cartCount)}
               </span>
             </div>
           </div>

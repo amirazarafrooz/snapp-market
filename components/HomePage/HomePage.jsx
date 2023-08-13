@@ -5,7 +5,7 @@ const CategoriesMenu = dynamic(
 );
 
 const DiscountSwiper = dynamic(
-  async () => await import("../DiscountSwiper/DiscountSwiper")
+  async () => await import("./DiscountSwiper/DiscountSwiper")
 );
 
 const BannerCampaign = dynamic(
@@ -15,7 +15,7 @@ const BannerCampaign = dynamic(
 const Categories = dynamic(async () => await import("../campaigns/Categories"));
 
 const CampaignSwiper = dynamic(
-  async () => await import("../CampaignSwiper/CampaignSwiper")
+  async () => await import("./CampaignSwiper/CampaignSwiper")
 );
 
 const AboutSnappmarket = dynamic(async () => await import("../captions/about"));
