@@ -18,7 +18,10 @@ export const ProductItemCardButton = ({ product }) => {
             .filter((item) => item.id == product.id)
             .map((item) => {
               return (
-                <div className="w-full flex justify-between items-center ">
+                <div
+                  key={item.id}
+                  className="w-full flex justify-between items-center "
+                >
                   {item.count == 1 ? (
                     <Button
                       btnStyleparam={"bin_addtoCartR"}

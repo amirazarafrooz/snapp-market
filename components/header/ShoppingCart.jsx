@@ -4,7 +4,6 @@ import { useMemo, useRef } from "react";
 import { useSelector } from "react-redux";
 import { ShoppingItem } from "./ShoppinItem";
 import Button from "../common/button/Button";
-import { useEffect } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import freeBasket from "../../public/assets/images/freeBasket.svg";
 import { finalShoppingCardPrice } from "@/utils/finalShoppingCardPrice";
@@ -21,16 +20,8 @@ export const ShoppingCard = ({ handlemodalShop, handleCloseShop }) => {
 
   const isProfitProducts = cart.filter((c) => c.discount > 0 && c)[0]?.discount;
 
-  const atLeastPrice = finalPrice < 100;
+  const atLeastPrice = finalPrice < 100000;
 
-  // const handleDecrement = (id) => {
-  //   dispatch(decrement(id))
-  // }
-  // const handleAdd = () => {
-  //   dispatch(add({id, name, price, discount, images }))
-  // }
-
-  // ("fixed z-50 w-full max-w-md h-full max-h-full overflow-x-hidden overflow-y-auto md:inset-0 text-gray-900 bg-white flex flex-col");
   return (
     <div
       onClick={handlemodalShop}
