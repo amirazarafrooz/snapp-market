@@ -13,11 +13,12 @@ export const SearchResult = ({
   categoryItems,
   subDevice,
   subCategory,
-  handlemodalSearch
+  handlemodalSearch,
+  handleCloseSearch
 }) => {
   // const [searchterm, setSearchterm] = useState("");
   const [searchResult, setSearchResult] = useState([]);
-  console.log(searchterm, "searchTerm");
+  console.log(searchResult, "searchResult");
   useEffect(() => {
     const result = [
       ...new Set(
@@ -33,6 +34,12 @@ export const SearchResult = ({
   const searchHandler = useCallback(() => {
     setShowSearch(!showSearch);
   }, [showSearch]);
+
+
+ 
+ 
+
+
 
   // const handleChange = useCallback((e) => {
   //   setSearchterm(e.target.value);
@@ -55,14 +62,34 @@ export const SearchResult = ({
                 <div className="bg-white w-full rounded-b-md shadow-md py-2 mobile:w-full   text-gray-500 text-sm ">
                   {searchterm !== "" && (
                     <div className="w-full  tablet:w-96 mt-0 font-iransans">
-                      <div className="p-2 flex">
-                        <Image
-                          className="ml-2"
-                          alt="search button"
-                          src={search}
-                        />
-                        نتایج جستجوی"{searchterm}" در هایپراستار صبا
-                      </div>
+                     <div className="p-2 flex items-center">
+                        <span class="relative flex justify-center items-center h-full w-5 ml-2">
+                        <span class="animate-ping absolute inline-flex h-3 w-3  rounded-full bg-sky-400 opacity-75"></span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            version="1"
+                            className="absolute inline-flex "
+                            viewBox="0 0 96 96"
+                          >
+                            <path
+                              d="M305 887c-97-33-172-98-214-187-37-79-37-201 0-280 33-70 99-136 169-169 46-22 69-26 140-26 86 0 127 13 203 62l27 18 118-118C841 94 868 72 878 82s-12 37-105 130L655 330l18 27c49 76 62 117 62 203 0 71-4 94-26 140-33 70-99 136-168 168-66 30-175 39-236 19zm229-61c105-51 161-144 161-266 0-85-21-142-74-203-82-92-237-121-353-64-160 79-215 278-118 430 80 126 246 170 384 103z"
+                              transform="matrix(.1 0 0 -.1 0 96)"
+                            ></path>
+                            <path
+                              d="M425 700l-69-70-33 32c-26 25-36 29-45 20-10-10-2-22 35-60l47-47 85 85c65 64 82 87 73 97-6 7-13 13-17 13s-38-31-76-70zM260 500c0-19 7-20 140-20s140 1 140 20-7 20-140 20-140-1-140-20zM260 380c0-19 7-20 140-20s140 1 140 20-7 20-140 20-140-1-140-20z"
+                              transform="matrix(.1 0 0 -.1 0 96)"
+                            ></path>
+                         </svg>
+                        </span>
+                       <Link onClick={handleCloseSearch} href={{
+                                pathname: "/search",
+                                query: { term: searchterm },
+                              }}  >
+                          نتایج جستجوی"{searchterm}" در هایپراستار صبا
+                          </Link>
+                        </div>
                       <div className="p-2 text-snp-black text-xs">
                         نتایج مرتبط
                       </div>
@@ -76,15 +103,7 @@ export const SearchResult = ({
                             height={15}
                             src={categoruIcon}
                           />
-                          <Link
-                            href={{
-                              pathname: "/search",
-                              query: { term: item },
-                            }}
-                          >
-                            {item}
-                          </Link>
-                          {/* <Link
+                          <Link onClick={handleCloseSearch}
                             href={`/subcategories/${
                               subCategory.filter(
                                 (subitem) => subitem.mainFA == item
@@ -92,7 +111,7 @@ export const SearchResult = ({
                             }`}
                           >
                             {item}
-                          </Link> */}
+                          </Link>
                         </div>
                       ))}
                     </div>
@@ -109,13 +128,33 @@ export const SearchResult = ({
                   <div className="bg-snp-white w-full rounded-b-md shadow-md px-2 py-2  tablet:w-96 mobile:w-full text-gray-500 text-sm ">
                     {searchterm !== "" && (
                       <div className="w-full  mobile:w-[450px] tablet:w-96 mt-0 font-iransans">
-                        <div className="p-2 flex">
-                          <Image
-                            className="ml-2"
-                            alt="search button"
-                            src={search}
-                          />
+                        <div className="p-2 flex items-center">
+                        <span class="relative flex justify-center items-center h-full w-5 ml-2">
+                        <span class="animate-ping absolute inline-flex h-3 w-3  rounded-full bg-sky-400 opacity-75"></span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            version="1"
+                            className="absolute inline-flex "
+                            viewBox="0 0 96 96"
+                          >
+                            <path
+                              d="M305 887c-97-33-172-98-214-187-37-79-37-201 0-280 33-70 99-136 169-169 46-22 69-26 140-26 86 0 127 13 203 62l27 18 118-118C841 94 868 72 878 82s-12 37-105 130L655 330l18 27c49 76 62 117 62 203 0 71-4 94-26 140-33 70-99 136-168 168-66 30-175 39-236 19zm229-61c105-51 161-144 161-266 0-85-21-142-74-203-82-92-237-121-353-64-160 79-215 278-118 430 80 126 246 170 384 103z"
+                              transform="matrix(.1 0 0 -.1 0 96)"
+                            ></path>
+                            <path
+                              d="M425 700l-69-70-33 32c-26 25-36 29-45 20-10-10-2-22 35-60l47-47 85 85c65 64 82 87 73 97-6 7-13 13-17 13s-38-31-76-70zM260 500c0-19 7-20 140-20s140 1 140 20-7 20-140 20-140-1-140-20zM260 380c0-19 7-20 140-20s140 1 140 20-7 20-140 20-140-1-140-20z"
+                              transform="matrix(.1 0 0 -.1 0 96)"
+                            ></path>
+                         </svg>
+                        </span>
+                       <Link onClick={handleCloseSearch} href={{
+                                pathname: "/search",
+                                query: { term: searchterm },
+                              }}  >
                           نتایج جستجوی"{searchterm}" در هایپراستار صبا
+                          </Link>
                         </div>
                         <div className="p-2 text-snp-black text-xs">
                           نتایج مرتبط
@@ -130,14 +169,15 @@ export const SearchResult = ({
                               height={15}
                               src={categoruIcon}
                             />
-                            <Link
-                              href={{
-                                pathname: "/search",
-                                query: { term: item },
-                              }}
-                            >
-                              {item}
-                            </Link>
+                           <Link onClick={handleCloseSearch}
+                            href={`/subcategories/${
+                              subCategory.filter(
+                                (subitem) => subitem.mainFA == item
+                              )[0].main
+                            }`}
+                          >
+                            {item}
+                          </Link>
                           </div>
                         ))}
                       </div>
@@ -159,15 +199,33 @@ export const SearchResult = ({
                   <div className="bg-snp-white  w-full rounded-b-md shadow-md px-2 py-2  tablet:w-60 laptop:w-48 desktop:w-[368px] mobile:w-full text-gray-500 text-sm ">
                     {searchterm !== "" && (
                       <div className="w-full tablet:w-96 mt-0 font-iransans">
-                        <div className="p-2 flex">
-                          <Image
-                            className="ml-2"
-                            alt="search button"
-                            src={search}
-                          />
-                          <span className="w-44 laptop:w-32 break-words">
-                            نتایج جستجوی"{searchterm}" در هایپراستار صبا
-                          </span>
+                        <div className="p-2 flex items-center">
+                        <span class="relative flex justify-center items-center h-full w-5 ml-2">
+                        <span class="animate-ping absolute inline-flex h-3 w-3  rounded-full bg-sky-400 opacity-75"></span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            version="1"
+                            className="absolute inline-flex "
+                            viewBox="0 0 96 96"
+                          >
+                            <path
+                              d="M305 887c-97-33-172-98-214-187-37-79-37-201 0-280 33-70 99-136 169-169 46-22 69-26 140-26 86 0 127 13 203 62l27 18 118-118C841 94 868 72 878 82s-12 37-105 130L655 330l18 27c49 76 62 117 62 203 0 71-4 94-26 140-33 70-99 136-168 168-66 30-175 39-236 19zm229-61c105-51 161-144 161-266 0-85-21-142-74-203-82-92-237-121-353-64-160 79-215 278-118 430 80 126 246 170 384 103z"
+                              transform="matrix(.1 0 0 -.1 0 96)"
+                            ></path>
+                            <path
+                              d="M425 700l-69-70-33 32c-26 25-36 29-45 20-10-10-2-22 35-60l47-47 85 85c65 64 82 87 73 97-6 7-13 13-17 13s-38-31-76-70zM260 500c0-19 7-20 140-20s140 1 140 20-7 20-140 20-140-1-140-20zM260 380c0-19 7-20 140-20s140 1 140 20-7 20-140 20-140-1-140-20z"
+                              transform="matrix(.1 0 0 -.1 0 96)"
+                            ></path>
+                         </svg>
+                        </span>
+                       <Link onClick={handleCloseSearch} href={{
+                                pathname: "/search",
+                                query: { term: searchterm },
+                              }}  >
+                          نتایج جستجوی"{searchterm}" در هایپراستار صبا
+                          </Link>
                         </div>
                         <div className="p-2 text-snp-black text-xs">
                           نتایج مرتبط
@@ -182,14 +240,15 @@ export const SearchResult = ({
                               height={15}
                               src={categoruIcon}
                             />
-                            <Link
-                              href={{
-                                pathname: "/search",
-                                query: { term: item },
-                              }}
-                            >
-                              {item}
-                            </Link>
+                           <Link onClick={handleCloseSearch}
+                            href={`/subcategories/${
+                              subCategory.filter(
+                                (subitem) => subitem.mainFA == item
+                              )[0].main
+                            }`}
+                          >
+                            {item}
+                          </Link>
                           </div>
                         ))}
                       </div>

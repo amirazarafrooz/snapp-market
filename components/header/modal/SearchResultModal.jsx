@@ -29,7 +29,7 @@ export const SearchResultModal = ({ children, searchOpen, handleCloseSearch }) =
         >
           <div
             onClick={handleCloseSearch}
-            className="relative  flex justify-start top-0 h-full  tablet:top-0 tablet:right-2 laptop:right-[135px] w-full  mx-6 mobile:mx-0 mobile:w-[480px] tablet:w-144 laptop:w-248 desktop:w-300   z-[202]  "> 
+            className="relative  flex justify-start top-0 h-full  tablet:top-0 tablet:right-2 laptop:right-[136px] w-full  mx-6 mobile:mx-0 mobile:w-[480px] tablet:w-144 laptop:w-248 desktop:w-300   z-[202]  "> 
             {children}
           </div> 
          </div>

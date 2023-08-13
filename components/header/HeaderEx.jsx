@@ -258,13 +258,14 @@ export const HeaderEx = ({ categoryItems, searchItem, subCategory }) => {
                 categoryItems={categoryItems}
                 subCategory={subCategory}
                 handlemodalSearch={handlemodalSearch}
+                handleCloseSearch={handleCloseSearch}
               />
             </SearchResultModal>
             <div
               className="w-full tablet:block px-2"
               // onClick={() => setSearchOpen(true)}
             >
-              <SearchBar handleChange={handleChange} />
+              <SearchBar handleChange={handleChange} searchterm={searchterm} handleCloseSearch={handleCloseSearch}/>
             </div>
           </div>
         </div>

@@ -156,13 +156,14 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
                   categoryItems={categoryItems}
                   subCategory={subCategory}
                   handlemodalSearch={handlemodalSearchTablet}
+                  handleCloseSearch={handleCloseSearchTablet}
                 />
               </SearchResultModalTablet>
               <div
                 className="hidden  tablet:w-64 tablet:flex  tablet:items-center  tablet:p-2 laptop:w-52 desktop:w-96"
                 // onClick={() => setSearchOpen(true)}
               >
-                <SearchBar handleChange={handleChangeTablet} />
+                <SearchBar handleChange={handleChangeTablet} searchterm={searchtermTablet} handleCloseSearch={handleCloseSearchTablet}/>
               </div>
 
               {/* user info */}
@@ -217,13 +218,14 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
                 categoryItems={categoryItems}
                 subCategory={subCategory}
                 handlemodalSearch={handlemodalSearchDown}
+                handleCloseSearch={handleCloseSearchDown}
               />
             </SearchResultModalDowm>
             <div
               className=" flex flex-col items-start justify-start  px-2 w-full laptop:hidden "
               // onClick={() => setSearchOpen(true)}
             >
-              <SearchBar handleChange={handleChange} />
+              <SearchBar handleChange={handleChange} searchterm={searchterm} handleCloseSearch={handleCloseSearchDown}/>
             </div>
           </div>
         </div>
