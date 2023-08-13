@@ -8,9 +8,11 @@ export const AboutSubCategory =  ({ subId }) => {
   const hasCaption=isNaN(caption.filter((item) => item.main == subId)
   ?.map((item) =>item.text?.map((captions) =>{captions.title}))[0]==undefined)?0:1
 
+
+
   return (
     <>
-     {hasCaption>0 && <div className=" flex justify-center px-1 w-full ">
+     {hasCaption > 0 && <div className=" flex justify-center px-1 w-full ">
           {caption
             .filter((item) => item.main == subId)
             .map((item) => {
