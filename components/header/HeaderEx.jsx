@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
-import headerbanner from "../../public/assets/images/header-bannerE.png";
+import headerbanner from "../../public/assets/images/header-bannerE.webp";
 import logo from "../../public/assets/images/snappmarket-logo.svg";
 import marketlogo from "../../public/assets/images/market-logo.png";
 import clock from "../../public/assets/images/clock-icon.svg";
