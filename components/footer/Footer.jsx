@@ -269,7 +269,7 @@ export const Footer = () => {
               <li>ایمیل : info@snapp.market</li>
               <li>کد پستی: ۱۹۶۷۸۶۵۶۳۱</li>
             </ul>
-            <div className="flex justify-between items-center h-9 p-1 w-full text-sm leading-9 text-gray-500">
+            <div className="flex justify-between items-center h-9 p-1 w-full mobile:w-44 text-sm leading-9 text-gray-500">
               <span>info@snapp.market</span>
               <a href="#">
                 <svg
@@ -278,7 +278,7 @@ export const Footer = () => {
                   width="32"
                   height="25"
                   fill="currentColor"
-                  className="fill-gray-normal"
+                  className="fill-gray-normal mx-1"
                   viewBox="0 0 32 25"
                   style={{ width: 20, height: 20 }}
                 >
@@ -301,7 +301,7 @@ export const Footer = () => {
                   width="32"
                   height="32"
                   fill="currentColor"
-                  className="fill-gray-normal"
+                  className="fill-gray-normal mx-1"
                   viewBox="0 0 32 32"
                   style={{ width: 20, height: 20 }}
                 >
