@@ -61,7 +61,9 @@ export const ShoppingCard = ({ handlemodalShop, handleCloseShop }) => {
             {atLeastPrice ? (
               <>
                 <div className="w-full text-center bg-snp-light text-snp-primary rounded py-2.5 mb-1">
-                  <p className=" font-iransansl">حداقل سفارش 100٬000 تومان</p>
+                  <p className=" font-iransansl">{`حداقل سفارش ${efarsi(
+                    100000
+                  )} تومان`}</p>
                 </div>
                 <Button
                   disable={true}

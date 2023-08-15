@@ -149,7 +149,7 @@ const Button = ({
               {children}
               {finalPrice != 0 && (
                 <span className="absolute left-2 items-center font-iransans text-md text-sm text-snp-white rounded-md bg-gray-700 bg-opacity-30  mr-3 py-1 px-2">
-                  <span>{finalPrice}</span>
+                  <span>{efarsi(finalPrice)}</span>
                   <span className="mr-1">تومان</span>
                 </span>
               )}
@@ -166,7 +166,7 @@ const Button = ({
               {children}
               {finalPrice != 0 && (
                 <span className="absolute left-2 items-center font-iransans text-md text-sm text-snp-white rounded-md bg-gray-700 bg-opacity-30  mr-3 py-1 px-2">
-                  <span>{finalPrice}</span>
+                  <span>{efarsi(finalPrice)}</span>
                   <span className="mr-1">تومان</span>
                 </span>
               )}
