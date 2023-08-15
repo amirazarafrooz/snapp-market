@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import headerbanner from "../../public/assets/images/header-banner.png";
 import logo from "../../public/assets/images/snappmarket-logo.svg";
-import marketlogo from "../../public/assets/images/market-logo.jpg";
+import marketlogo from "../../public/assets/images/market-logo.png";
 import Link from "next/link";
 import { HeaderNav } from "./HeaderNav";
 import { SearchResult } from "./SearchResult";
@@ -171,7 +171,7 @@ export const HeaderSc = ({ categoryItems, searchItem, subCategory }) => {
                 handleCloseUser={handleCloseUser}
                 userOpen={userOpen}
               >
-                <UserProfile handlemodalUser={handlemodalUser} />
+                <UserProfile handlemodalUser={handlemodalUser} handleCloseUser={handleCloseUser}/>
               </UserProfileModal>
               <div className="" onClick={() => setUserOpen(true)}>
                 <Button btnStyleparam={"HeaderSc"} />
