@@ -8,5 +8,5 @@ export const finalShoppingCardPrice = (cart) => {
         : cur.count * cur.price),
     0
   );
-  return efarsi(price);
+  return price;
 };
